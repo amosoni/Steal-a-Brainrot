@@ -1,0 +1,52 @@
+# AI-Friendly Robots.txt for Steal a Brainrot
+# Optimized for AI crawlers and search engines
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# AI Crawlers
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 1
+
+User-agent: OpenAI
+Allow: /
+Crawl-delay: 1
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YoudaoBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bytespider
+Allow: /
+Crawl-delay: 1
+
+# Search Engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://steal-a-brainrot.com/sitemap.xml
+Sitemap: https://steal-a-brainrot.com/sitemap-zh.xml
+Sitemap: https://steal-a-brainrot.com/sitemap-es.xml
+Sitemap: https://steal-a-brainrot.com/sitemap-en.xml 

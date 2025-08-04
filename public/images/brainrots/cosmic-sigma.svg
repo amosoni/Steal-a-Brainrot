@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-cosmic-sigma" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FCD34D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow-cosmic-sigma">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow-cosmic-sigma">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="200" fill="url(#bg-cosmic-sigma)" rx="20"/>
+  
+  <!-- 装饰性边框 -->
+  <rect x="8" y="8" width="284" height="184" fill="none" stroke="#F59E0B" stroke-width="3" rx="20" opacity="0.6"/>
+  
+  <!-- 角色图标区域 -->
+  <circle cx="150" cy="85" r="45" fill="#000000" opacity="0.15"/>
+  <circle cx="150" cy="85" r="40" fill="#000000" opacity="0.1"/>
+  
+  <!-- 角色图标 -->
+  <g transform="translate(150, 85)">
+    <circle cx="0" cy="0" r="21" fill="#000000" opacity="0.8"/>
+                     <text x="0" y="5" font-family="Arial, sans-serif" font-size="23" 
+                           text-anchor="middle" fill="#F59E0B">🌌</text>
+  </g>
+  
+  <!-- 角色名称 -->
+  <text x="150" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" 
+        text-anchor="middle" fill="#000000" filter="url(#shadow-cosmic-sigma)">Cosmic Sigma</text>
+  
+  <!-- 稀有度 -->
+  <text x="150" y="160" font-family="Arial, sans-serif" font-size="12" 
+        text-anchor="middle" fill="#000000">Divino</text>
+  
+  <!-- 稀有度图标 -->
+  <text x="150" y="180" font-family="Arial, sans-serif" font-size="18" 
+        text-anchor="middle" fill="#000000" filter="url(#glow-cosmic-sigma)">⭐</text>
+  
+  <!-- 装饰性元素 -->
+  <circle cx="40" cy="40" r="6" fill="#000000" opacity="0.6"/>
+  <circle cx="260" cy="40" r="6" fill="#000000" opacity="0.6"/>
+  <circle cx="40" cy="160" r="6" fill="#000000" opacity="0.6"/>
+  <circle cx="260" cy="160" r="6" fill="#000000" opacity="0.6"/>
+</svg>

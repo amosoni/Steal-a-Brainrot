@@ -1,0 +1,46 @@
+🚀 Cómo Ejecutar el Sitio Web Steal a Brainrot
+
+📋 Métodos de Ejecución:
+
+1. 🖱️ MÉTODO MÁS FÁCIL - Doble Clic:
+   - Encuentra el archivo "start-website.bat"
+   - Haz doble clic en él
+   - Se abrirá automáticamente el símbolo del sistema y ejecutará el script
+
+2. 🖱️ Clic Derecho:
+   - Haz clic derecho en "start-website.bat"
+   - Selecciona "Ejecutar como administrador" (si es necesario)
+   - O simplemente selecciona "Abrir"
+
+3. ⌨️ Línea de Comandos:
+   - Abre PowerShell o CMD
+   - Navega a la carpeta del proyecto
+   - Ejecuta: .\start-website.bat
+
+📱 Direcciones del Sitio Web:
+- Acceso Local: http://localhost:3002
+- Acceso de Red: http://192.168.1.3:3002
+
+⚠️ Solución de Problemas:
+
+Si ves caracteres extraños:
+- El script ahora usa codificación UTF-8
+- Debería mostrar correctamente los emojis y texto español
+
+Si el puerto 3000 está ocupado:
+- El servidor automáticamente usará el puerto 3002
+- Verifica en la consola qué puerto está usando
+
+Si hay errores:
+- Asegúrate de estar en la carpeta correcta
+- Verifica que Node.js esté instalado
+- Ejecuta "npm install" manualmente si es necesario
+
+🎯 Funciones del Sitio:
+- 🏠 Página Principal: Introducción al juego
+- 🧠 Base de Datos: Todos los personajes Brainrot
+- 💰 Calculadora: Calcular ganancias e inversiones
+- 🔄 Actualizaciones: Últimas noticias del juego
+- 📚 Guías: Tutoriales y estrategias
+
+¡Disfruta tu Herramienta de Asistencia Steal a Brainrot! 🎮 

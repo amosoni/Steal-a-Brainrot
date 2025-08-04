@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "home": "Home",
+    "brainrots": "Brainrots",
+    "calculator": "Calculator",
+    "updates": "Updates",
+    "guides": "Guides"
+  },
+  "home": {
+    "title": "Steal a Brainrot",
+    "subtitle": "Complete Guide",
+    "description": "The most complete guide for Roblox Steal a Brainrot, including character database, profit calculator, strategy guides, and other useful tools",
+    "features": {
+      "database": {
+        "title": "Brainrot Database",
+        "description": "View information of all characters, rarity and profit data"
+      },
+      "calculator": {
+        "title": "Profit Calculator",
+        "description": "Calculate optimal configuration, plan investment strategies"
+      },
+      "updates": {
+        "title": "Game Updates",
+        "description": "Latest dynamic updates and new character advancements"
+      },
+      "guides": {
+        "title": "Strategy Guides",
+        "description": "Tutorials for beginners and advanced strategies"
+      }
+    },
+    "buttons": {
+      "startExploration": "Start Exploration",
+      "playNow": "Play Now"
+    },
+    "whatIs": {
+      "title": "What is Steal a Brainrot?",
+      "description": "Steal a Brainrot is a fun, chaotic, and unique fast-paced game on Roblox where players compete to steal a valuable object called \"Brainrot\" from each other while protecting their own.",
+      "rules": "The rules are simple: grab as many brainrots as you can, use power-ups strategically, and overcome your opponents to climb the leaderboards. This game is perfect for quick matches with friends or random players online, offering infinite fun and unpredictable moments.",
+      "conclusion": "Its simple premise makes the Steal a Brainrot experience accessible to everyone, and our assistance tool is here to guide you."
+    },
+    "gameFeatures": {
+      "title": "Game Features",
+      "fastPaced": {
+        "title": "Fast-Paced Game",
+        "description": "Quick and energetic matches, every moment is full of energy"
+      },
+      "simpleControls": {
+        "title": "Simple Controls",
+        "description": "Easy to learn - just run, grab, and dodge"
+      },
+      "powerUps": {
+        "title": "Power-ups and Abilities",
+        "description": "Use special items to speed up, become invisible, or deceive other players"
+      },
+      "multiplayer": {
+        "title": "Multiplayer",
+        "description": "Play with friends or random players in fast-paced, action-packed matches"
+      },
+      "leaderboards": {
+        "title": "Leaderboards",
+        "description": "Compete to get more brainrots and climb the leaderboards"
+      },
+      "customization": {
+        "title": "Character Customization",
+        "description": "Unlock cool clothing and accessories to stand out in the game"
+      }
+    },
+    "howToPlay": {
+      "title": "How to Play Steal a Brainrot",
+      "objective": {
+        "title": "Game Objective",
+        "description": "The objective is simple: steal as many brainrots as possible while protecting your own! Success requires a combination of speed, strategy, and a bit of luck."
+      },
+      "controls": {
+        "title": "Basic Controls",
+        "movement": "Movement",
+        "movementDesc": "Use WASD or arrow keys to navigate the map",
+        "jump": "Jump",
+        "jumpDesc": "Press the spacebar to jump over obstacles and evade opponents",
+        "steal": "Steal",
+        "stealDesc": "Approach other players and use the interaction key to grab their brainrot",
+        "powerups": "Use Power-ups",
+        "powerupsDesc": "Activate special items to gain strategic advantages"
+      },
+      "powerups": {
+        "title": "Power-ups and Abilities",
+        "speed": {
+          "title": "Speed Boost",
+          "description": "Temporarily increases your movement speed, perfect for chasing or escaping"
+        },
+        "invisibility": {
+          "title": "Invisibility",
+          "description": "Become invisible for a short time to sneak up on opponents or hide your brainrot"
+        },
+        "fake": {
+          "title": "Fake Brainrot",
+          "description": "Place decoys to deceive your rivals, a smart tactic in any strategy"
+        }
+      }
+    },
+    "screenshots": {
+      "title": "Game Screenshots"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "protect": {
+        "question": "How do I protect my Brainrot?",
+        "answer": "The best way is to stay in motion, use power-ups defensively, and know the map. A player who moves constantly and is aware of their surroundings is much harder to attack."
+      },
+      "codes": {
+        "question": "Are there codes or rewards in the game?",
+        "answer": "Currently there are no active promotional codes. Developers may release codes during special events, so make sure to follow the official game announcements."
+      },
+      "improve": {
+        "question": "How can I improve at the game?",
+        "answer": "Practice is key! Focus on mastering movement, learning map layouts, and understanding when to use power-ups."
+      },
+      "rebirths": {
+        "question": "What are Rebirths?",
+        "answer": "Rebirths are a central mechanism for progressing in Steal a Brainrot. By sacrificing your current progress, you gain permanent improvements."
+      }
+    },
+    "featuredGuides": {
+      "title": "Featured Guides",
+      "secondFloor": {
+        "title": "How to Reach the Second Floor",
+        "description": "Master parkour skills on the downtown map, gain tactical advantage through our step-by-step guide."
+      },
+      "rebirth": {
+        "title": "Ultimate Rebirth Guide",
+        "description": "Understand the most important progression system, and why sacrificing current progress is key to becoming stronger."
+      },
+      "scripts": {
+        "title": "Ultimate Script Guide",
+        "description": "Explore our complete list of popular scripts, understand how they work and learn about related risks."
+      },
+      "secrets": {
+        "title": "Secrets",
+        "description": "Discover hidden areas, power-ups, and strategies to gain an advantage in Steal a Brainrot."
+      },
+      "codes": {
+        "title": "Codes (July 2025)",
+        "description": "The latest, most honest information about active and expired codes, and why there might be no available codes."
+      },
+      "modified": {
+        "title": "Modified Steal a Brainrot",
+        "description": "Learn what \"modified\" means, the features it offers, and key risks you must know before using it."
+      },
+      "scriptsNoKey": {
+        "title": "Scripts (No Key)",
+        "description": "Find the latest scripts without annoying key systems. Includes copy-paste code and safety warnings."
+      },
+      "probabilities": {
+        "title": "Secrets and Probability",
+        "description": "Discover all game secrets, understand the spawn rate of rare Brainrots. Learn how to improve your luck attribute."
+      },
+      "advancedStrategies": {
+        "title": "Advanced Strategies",
+        "description": "Advanced techniques for experienced players who want to fully master the game."
+      }
+    },
+    "moreGames": {
+      "title": "More Steal Games",
+      "stealAFish": {
+        "title": "Steal a Fish",
+        "description": "Dive into an underwater world and build your aquatic empire by collecting the rarest fish."
+      },
+      "stealALabubu": {
+        "title": "Steal a Labubu",
+        "description": "Collect the cutest and most valuable Labubu figures in this exciting art toy game."
+      },
+      "stealAnAnime": {
+        "title": "Steal an Anime",
+        "description": "Become the ultimate otaku by stealing and collecting iconic characters from your favorite anime."
+      },
+      "stealAPet": {
+        "title": "Steal a Pet",
+        "description": "Build a collection of the rarest and most powerful pets in this exciting collector game."
+      },
+      "stealAMeme": {
+        "title": "Steal a Meme",
+        "description": "Become a meme lord by collecting and stealing the most viral internet memes and characters."
+      },
+      "stealDeadlyRails": {
+        "title": "Steal a Deadly Rails",
+        "description": "Snatch valuable mobs from a deadly conveyor belt before they are lost forever in this fast-paced rhythm game."
+      },
+      "stealACar": {
+        "title": "Steal a Car",
+        "description": "Steal the most expensive cars in this high-octane car theft game."
+      },
+      "bestConsoles": "Best Game Host"
+    },
+    "moreScreenshots": {
+      "title": "More Screenshots",
+      "gameOverview": {
+        "title": "Game Overview",
+        "description": "Explore the chaotic world of Steal a Brainrot and discover all its secrets."
+      },
+      "uniqueCharacters": {
+        "title": "Unique Characters",
+        "description": "Discover characters with unique personalities and special abilities."
+      },
+      "userInterface": {
+        "title": "User Interface",
+        "description": "Intuitive controls and a clear interface for the best gaming experience."
+      },
+      "constantAction": {
+        "title": "Constant Action",
+        "description": "Games full of action where every second counts."
+      }
+    },
+    "cta": {
+      "title": "Ready to start your Brainrot adventure?",
+      "description": "Join millions of players and experience the most exciting robbery game!",
+      "playNow": "Play Now",
+      "viewGuides": "View Guides"
+    }
+  }
+} 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-divine-alpha" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EA580C;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow-divine-alpha">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="24" cy="24" r="22" fill="url(#bg-divine-alpha)" filter="url(#shadow-divine-alpha)"/>
+  
+  <!-- Border -->
+  <circle cx="24" cy="24" r="20" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Emoji icon -->
+  <text x="24" y="30" font-family="Arial, sans-serif" font-size="20" 
+        text-anchor="middle" fill="#FFFFFF" filter="url(#shadow-divine-alpha)">✨</text>
+</svg>

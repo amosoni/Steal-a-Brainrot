@@ -1,0 +1,29 @@
+🚀 Steal a Brainrot 助手工具 - 启动说明
+
+❌ 错误做法：
+在 D:\sonice\Steal-a-Brainrot 目录中运行 npm run dev
+
+✅ 正确做法：
+1. 双击运行 "start-website.bat" 文件
+   或者
+2. 在命令行中执行：
+   cd steal-brainrot-es
+   npm run dev
+
+📱 访问地址：
+- 本地访问: http://localhost:3000
+- 网络访问: http://192.168.1.3:3000
+
+🎯 网站功能：
+- 🏠 主页: 网站概览和导航
+- 🧠 角色数据库: 浏览所有Brainrot角色
+- 💰 收益计算器: 计算投资回报率
+- 🔄 游戏更新: 最新动态
+- 📚 攻略指南: 游戏技巧
+
+💡 提示：
+- 确保在 steal-brainrot-es 目录中运行命令
+- 如果遇到错误，请检查是否在正确的目录中
+- 网站启动后会自动打开浏览器
+
+🎉 享受您的 Steal a Brainrot 助手工具！ 

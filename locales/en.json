@@ -1,0 +1,1011 @@
+{
+  "nav": {
+    "home": "Home",
+    "brainrots": "Brainrots",
+    "calculator": "Calculator",
+    "updates": "Updates",
+    "guides": "Guides"
+  },
+  "common": {
+    "backToHome": "← Back to Home"
+  },
+  "brainrots": {
+    "title": "Brainrots",
+    "description": "Explore and collect unique Brainrot characters",
+    "totalCharacters": "Total Characters",
+    "totalValue": "Total Value",
+    "totalProfit": "Total Profit",
+    "uniqueCharacters": "Unique Characters",
+    "searchPlaceholder": "Search Brainrots...",
+    "showingResults": "Showing Results",
+    "allRarities": "All Rarities",
+    "common": "Common",
+    "rare": "Rare",
+    "epic": "Epic",
+    "legendary": "Legendary",
+    "mythic": "Mythic",
+    "ancient": "Ancient",
+    "divine": "Divine",
+    "sortByName": "Sort by Name",
+    "sortByPrice": "Sort by Price",
+    "sortByProfit": "Sort by Profit",
+    "sortByRarity": "Sort by Rarity",
+    "previous": "Previous",
+    "next": "Next",
+    "characterNotFound": "Character not found",
+    "characterNotFoundDesc": "The character you are looking for does not exist in our database.",
+    "backToBrainrots": "Back to Brainrots",
+    "price": "Price:",
+    "profit": "Profit:",
+    "roi": "ROI:",
+    "description": "Description:",
+    "buyNow": "Buy Now",
+    "comparisonFeatureComingSoon": "Comparison feature coming soon",
+    "noResults": "No results found",
+    "tryAdjusting": "Try adjusting your search criteria or filters"
+  },
+  "calculator": {
+    "title": "Profit Calculator",
+    "description": "Calculate your potential profits and ROI from Brainrot investments",
+    "investment": "Investment",
+    "selectCharacters": "Select Characters",
+    "totalInvestment": "Total Investment",
+    "results": "Results",
+    "hourlyProfit": "Hourly Profit",
+    "totalProfit": "Total Profit",
+    "netProfit": "Net Profit",
+    "hourlyROI": "Hourly ROI",
+    "roi": "ROI",
+    "timePeriod": "Time Period",
+    "timeFrame": "Time Frame",
+    "price": "Price:",
+    "profit": "Profit:",
+    "enterInvestmentAmount": "Enter investment amount",
+    "hours": "hours",
+    "hour": "hour",
+    "week": "week",
+    "month": "month",
+    "quickActions": "Quick Actions",
+    "selectCommons": "Select Commons",
+    "selectEpics": "Select Epics",
+    "clearSelection": "Clear Selection",
+    "selectAll": "Select All",
+    "investmentTips": "Investment Tips",
+    "tip1": "Prioritize characters with high profit/price ratio",
+    "tip2": "Consider the impact of rarity on long-term value",
+    "tip3": "Diversify your investment to reduce risk",
+    "tip4": "Regularly review market price fluctuations",
+    "tip5": "Higher rarity characters have better long-term ROI"
+  },
+  "updates": {
+    "title": "Game Updates",
+    "description": "Get the latest dynamic updates and new character progressions from Steal a Brainrot",
+    "backToHome": "← Back to Home",
+    "serverStatus": "Server Status",
+    "online": "Online",
+    "offline": "Offline",
+    "checking": "Checking...",
+    "verifyStatus": "Verify Status",
+    "updateSettings": "Update Settings",
+    "lastCheck": "Last Check",
+    "checkNow": "Check Now",
+    "checkingUpdates": "Checking Updates...",
+    "autoUpdate": "Auto Update",
+    "downloadUpdate": "Download Update",
+    "downloading": "Downloading...",
+    "clearNotifications": "Clear Notifications",
+    "filterByCategory": "Filter by Category",
+    "all": "All",
+    "characters": "Characters",
+    "balance": "Balance",
+    "interface": "Interface",
+    "system": "System",
+    "gameplay": "Gameplay",
+    "latestUpdates": "Latest Updates",
+    "upcomingUpdates": "Upcoming Updates",
+    "updateHistory": "Update History",
+    "newCharactersReleased": "New Characters Released",
+    "balanceAdjustments": "Balance Adjustments",
+    "interfaceOptimization": "Interface Optimization",
+    "newRarityLevels": "New Rarity Levels",
+    "rebirthSystemOptimization": "Rebirth System Optimization",
+    "newGameMode": "New Game Mode",
+    "cooperativeMode": "Cooperative Mode",
+    "multiplayerSupport": "Multiplayer Support",
+    "bugFixes": "Bug Fixes",
+    "performanceOptimization": "Performance Optimization",
+    "epicCharactersAdded": "Epic Characters Added",
+    "completeInterfaceRedesign": "Complete Interface Redesign",
+    "rebirthSystemAdded": "Rebirth System Added",
+    "rarityLevelSystem": "Rarity Level System",
+    "newCharactersAdded": "New Characters Added",
+    "nextWeek": "Next Week",
+    "twoWeeks": "Two Weeks",
+    "oneMonth": "One Month",
+    "successfullyDownloaded": "Successfully Downloaded",
+    "downloadError": "Download Error",
+    "newUpdateAvailable": "New Update Available",
+    "errorCheckingUpdates": "Error Checking Updates",
+    "newCharactersReleased": "New Characters Released",
+    "balanceAdjustments": "Balance Adjustments",
+    "interfaceOptimization": "Interface Optimization",
+    "newRarityLevels": "New Rarity Levels",
+    "rebirthSystemOptimization": "Rebirth System Optimization",
+    "newGameMode": "New Game Mode",
+    "cooperativeMode": "Cooperative Mode",
+    "multiplayerSupport": "Multiplayer Support",
+    "bugFixes": "Bug Fixes",
+    "performanceOptimization": "Performance Optimization",
+    "epicCharactersAdded": "Epic Characters Added",
+    "completeInterfaceRedesign": "Complete Interface Redesign",
+    "rebirthSystemAdded": "Rebirth System Added",
+    "rarityLevelSystem": "Rarity Level System",
+    "newCharactersAdded": "New Characters Added",
+    "nextWeek": "Next Week",
+    "twoWeeks": "Two Weeks",
+    "oneMonth": "One Month",
+    "successfullyDownloaded": "Successfully Downloaded",
+    "downloadError": "Download Error",
+    "newUpdateAvailable": "New Update Available",
+    "errorCheckingUpdates": "Error Checking Updates",
+    "updateHistory": "Update History",
+    "stableVersion": "Stable Version",
+    "majorUpdate": "Major Update",
+    "totalCharacters": "Total Characters",
+    "rarityLevels": "Rarity Levels",
+    "recentUpdates": "Recent Updates",
+    "updateTips": "Update Tips",
+    "followOfficialDiscord": "Follow the official Discord to get the latest news",
+    "restartAfterUpdates": "Log back into the game after updates",
+    "newCharactersAvailable": "New characters are usually available 24 hours after the update",
+    "backupImportantData": "It is recommended to back up important data before updating",
+    "joinCommunity": "Join the community to receive update notifications",
+    "enableAutoUpdate": "Activate auto-update to receive automatic notifications",
+    "checkServerStatus": "Check server status before downloading updates",
+    "autoUpdateCheck": "Automatic updates are checked every 5 minutes"
+  },
+  "home": {
+    "title": "Steal a Brainrot",
+    "subtitle": "Complete Guide",
+    "description": "The most complete guide for Roblox Steal a Brainrot, including character database, profit calculator, strategy guides, and other useful tools",
+    "features": {
+      "database": {
+        "title": "Brainrot Database",
+        "description": "View information of all characters, rarity and profit data"
+      },
+      "calculator": {
+        "title": "Profit Calculator",
+        "description": "Calculate optimal configuration, plan investment strategies"
+      },
+      "updates": {
+        "title": "Game Updates",
+        "description": "Latest dynamic updates and new character advancements"
+      },
+      "guides": {
+        "title": "Strategy Guides",
+        "description": "Tutorials for beginners and advanced strategies",
+        "quickGuide": "Quick Start Guide",
+        "step1": "Create Account",
+        "step1Desc": "Sign up on Roblox and join the Steal a Brainrot game",
+        "step2": "Learn Basics",
+        "step2Desc": "Master movement, jumping, and stealing mechanics",
+        "step3": "Practice Strategy",
+        "step3Desc": "Develop your own playstyle and improve with practice",
+        "strategies": {
+          "title": "Investment Strategies",
+          "conservative": {
+            "title": "Conservative Strategy",
+            "description": "Low risk, steady returns. Focus on common characters with stable prices."
+          },
+          "balanced": {
+            "title": "Balanced Strategy",
+            "description": "Moderate risk and returns. Mix of common and rare characters."
+          },
+          "aggressive": {
+            "title": "Aggressive Strategy",
+            "description": "High risk, high returns. Focus on legendary and divine characters."
+          }
+        },
+        "risk": "Risk:",
+        "return": "Return:",
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "optimization": {
+          "title": "Profit Optimization",
+          "tips": [
+            "Regularly review character price changes",
+            "Pay attention to new character release timing",
+            "Use the rebirth system to increase profits",
+            "Diversify investments to reduce risk",
+            "Set reasonable investment goals"
+          ]
+        },
+        "rarity": {
+          "title": "Character Rarity Guide",
+          "common": {
+            "title": "Common (Level 1)",
+            "description": "Low price, ideal for beginners"
+          },
+          "rare": {
+            "title": "Rare (Level 2)",
+            "description": "Good price/value ratio, recommended"
+          },
+          "epic": {
+            "title": "Epic (Level 3)",
+            "description": "Considerable profits, medium-term goal"
+          },
+          "legendary": {
+            "title": "Legendary+ (Levels 4-7)",
+            "description": "Elite characters, long-term investment"
+          }
+        },
+        "tips": {
+          "title": "Useful Tips",
+          "beginners": {
+            "title": "Tips for Beginners",
+            "tips": [
+              "Start with small investments",
+              "Learn to use calculator tools",
+              "Follow community discussions",
+              "Don't rush for rare characters",
+              "Establish a solid profit base"
+            ]
+          },
+          "advanced": {
+            "title": "Advanced Tips",
+            "tips": [
+              "Study market trends",
+              "Optimize character combinations",
+              "Take advantage of rebirth moments",
+              "Pay attention to update advances",
+              "Build an investment portfolio"
+            ]
+          }
+        },
+        "community": {
+          "title": "Community Resources",
+          "discord": {
+            "title": "Discord Community",
+            "description": "Join the official Discord for latest news and guides"
+          },
+          "youtube": {
+            "title": "YouTube Channel",
+            "description": "Watch video guides and gameplay"
+          },
+          "reddit": {
+            "title": "Reddit Forum",
+            "description": "Participate in discussions, share experiences and strategies"
+          }
+        }
+      }
+    },
+    "buttons": {
+      "startExploration": "Start Exploration",
+      "playNow": "Play Now"
+    },
+    "whatIs": {
+      "title": "What is Steal a Brainrot?",
+      "description": "Steal a Brainrot is a fun, chaotic, and unique fast-paced game on Roblox where players compete to steal a valuable object called \"Brainrot\" from each other while protecting their own.",
+      "rules": "The rules are simple: grab as many brainrots as you can, use power-ups strategically, and overcome your opponents to climb the leaderboards. This game is perfect for quick matches with friends or random players online, offering infinite fun and unpredictable moments.",
+      "conclusion": "Its simple premise makes the Steal a Brainrot experience accessible to everyone, and our assistance tool is here to guide you."
+    },
+    "gameFeatures": {
+      "title": "Game Features",
+      "fastPaced": {
+        "title": "Fast-Paced Game",
+        "description": "Quick and energetic matches, every moment is full of energy"
+      },
+      "simpleControls": {
+        "title": "Simple Controls",
+        "description": "Easy to learn - just run, grab, and dodge"
+      },
+      "powerUps": {
+        "title": "Power-ups and Abilities",
+        "description": "Use special items to speed up, become invisible, or deceive other players"
+      },
+      "multiplayer": {
+        "title": "Multiplayer",
+        "description": "Play with friends or random players in fast-paced, action-packed matches"
+      },
+      "leaderboards": {
+        "title": "Leaderboards",
+        "description": "Compete to get more brainrots and climb the leaderboards"
+      },
+      "customization": {
+        "title": "Character Customization",
+        "description": "Unlock cool clothing and accessories to stand out in the game"
+      }
+    },
+    "howToPlay": {
+      "title": "How to Play Steal a Brainrot",
+      "objective": {
+        "title": "Game Objective",
+        "description": "The objective is simple: steal as many brainrots as possible while protecting your own! Success requires a combination of speed, strategy, and a bit of luck."
+      },
+      "controls": {
+        "title": "Basic Controls",
+        "movement": "Movement",
+        "movementDesc": "Use WASD or arrow keys to navigate the map",
+        "jump": "Jump",
+        "jumpDesc": "Press the spacebar to jump over obstacles and evade opponents",
+        "steal": "Steal",
+        "stealDesc": "Approach other players and use the interaction key to grab their brainrot",
+        "powerups": "Use Power-ups",
+        "powerupsDesc": "Activate special items to gain strategic advantages"
+      },
+      "powerups": {
+        "title": "Power-ups and Abilities",
+        "speed": {
+          "title": "Speed Boost",
+          "description": "Temporarily increases your movement speed, perfect for chasing or escaping"
+        },
+        "invisibility": {
+          "title": "Invisibility",
+          "description": "Become invisible for a short time to sneak up on opponents or hide your brainrot"
+        },
+        "fake": {
+          "title": "Fake Brainrot",
+          "description": "Place decoys to deceive your rivals, a smart tactic in any strategy"
+        }
+      }
+    },
+    "screenshots": {
+      "title": "Game Screenshots"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "protect": {
+        "question": "How do I protect my Brainrot?",
+        "answer": "The best way is to stay in motion, use power-ups defensively, and know the map. A player who moves constantly and is aware of their surroundings is much harder to attack."
+      },
+      "codes": {
+        "question": "Are there codes or rewards in the game?",
+        "answer": "Currently there are no active promotional codes. Developers may release codes during special events, so make sure to follow the official game announcements."
+      },
+      "improve": {
+        "question": "How can I improve at the game?",
+        "answer": "Practice is key! Focus on mastering movement, learning map layouts, and understanding when to use power-ups."
+      },
+      "rebirths": {
+        "question": "What are Rebirths?",
+        "answer": "Rebirths are a central mechanism for progressing in Steal a Brainrot. By sacrificing your current progress, you gain permanent improvements."
+      }
+    },
+    "featuredGuides": {
+      "title": "Featured Guides",
+      "secondFloor": {
+        "title": "How to Reach the Second Floor",
+        "description": "Master parkour skills on the downtown map, gain tactical advantage through our step-by-step guide."
+      },
+      "rebirth": {
+        "title": "Ultimate Rebirth Guide",
+        "description": "Understand the most important progression system, and why sacrificing current progress is key to becoming stronger."
+      },
+      "scripts": {
+        "title": "Ultimate Script Guide",
+        "description": "Explore our complete list of popular scripts, understand how they work and learn about related risks."
+      },
+      "secrets": {
+        "title": "Secrets",
+        "description": "Discover hidden areas, power-ups, and strategies to gain an advantage in Steal a Brainrot."
+      },
+      "codes": {
+        "title": "Codes (July 2025)",
+        "description": "The latest, most honest information about active and expired codes, and why there might be no available codes."
+      },
+      "modified": {
+        "title": "Modified Steal a Brainrot",
+        "description": "Learn what \"modified\" means, the features it offers, and key risks you must know before using it."
+      },
+      "scriptsNoKey": {
+        "title": "Scripts (No Key)",
+        "description": "Find the latest scripts without annoying key systems. Includes copy-paste code and safety warnings."
+      },
+      "probabilities": {
+        "title": "Secrets and Probability",
+        "description": "Discover all game secrets, understand the spawn rate of rare Brainrots. Learn how to improve your luck attribute."
+      },
+      "advancedStrategies": {
+        "title": "Advanced Strategies",
+        "description": "Advanced techniques for experienced players who want to fully master the game."
+      }
+    },
+    "moreGames": {
+      "title": "More Steal Games",
+      "stealAFish": {
+        "title": "Steal a Fish",
+        "description": "Dive into an underwater world and build your aquatic empire by collecting the rarest fish."
+      },
+      "stealALabubu": {
+        "title": "Steal a Labubu",
+        "description": "Collect the cutest and most valuable Labubu figures in this exciting art toy game."
+      },
+      "stealAnAnime": {
+        "title": "Steal an Anime",
+        "description": "Become the ultimate otaku by stealing and collecting iconic characters from your favorite anime."
+      },
+      "stealAPet": {
+        "title": "Steal a Pet",
+        "description": "Build a collection of the rarest and most powerful pets in this exciting collector game."
+      },
+      "stealAMeme": {
+        "title": "Steal a Meme",
+        "description": "Become a meme lord by collecting and stealing the most viral internet memes and characters."
+      },
+      "stealDeadlyRails": {
+        "title": "Steal a Deadly Rails",
+        "description": "Snatch valuable mobs from a deadly conveyor belt before they are lost forever in this fast-paced rhythm game."
+      },
+      "stealACar": {
+        "title": "Steal a Car",
+        "description": "Steal the most expensive cars in this high-octane car theft game."
+      },
+      "bestConsoles": "Best Game Host"
+    },
+    "moreScreenshots": {
+      "title": "More Screenshots",
+      "gameOverview": {
+        "title": "Game Overview",
+        "description": "Explore the chaotic world of Steal a Brainrot and discover all its secrets."
+      },
+      "uniqueCharacters": {
+        "title": "Unique Characters",
+        "description": "Discover characters with unique personalities and special abilities."
+      },
+      "userInterface": {
+        "title": "User Interface",
+        "description": "Intuitive controls and a clear interface for the best gaming experience."
+      },
+      "constantAction": {
+        "title": "Constant Action",
+        "description": "Games full of action where every second counts."
+      }
+    },
+    "cta": {
+      "title": "Ready to start your Brainrot adventure?",
+      "description": "Join millions of players and experience the most exciting robbery game!",
+      "playNow": "Play Now",
+      "viewGuides": "View Guides"
+    }
+  },
+  "guides": {
+    "title": "Strategy Guides",
+    "description": "Complete guides from beginner to expert, to help you become a master of Steal a Brainrot",
+    "quickGuide": "Quick Start Guide",
+    "step1": "Step 1: Understand the Basics",
+    "step1Desc": "Steal a Brainrot is a character collection and improvement game. Each character has different rarity levels and profits.",
+    "step2": "Step 2: Choose Initial Characters",
+    "step2Desc": "It's recommended that beginners start with common characters like Sigma Boy or Alpha Male, which have low prices but stable profits.",
+    "step3": "Step 3: Develop Strategy",
+    "step3Desc": "Based on your investment budget and time, choose the right combination of characters to maximize profits.",
+    "strategies": {
+      "title": "Investment Strategies",
+      "conservative": {
+        "title": "Conservative Strategy",
+        "description": "Choose common characters with high profit/price ratio for stable growth"
+      },
+      "balanced": {
+        "title": "Balanced Strategy",
+        "description": "Combine common and rare characters to balance risk and profits"
+      },
+      "aggressive": {
+        "title": "Aggressive Strategy",
+        "description": "Invest in high-rarity characters to maximize profits"
+      }
+    },
+    "risk": "Risk:",
+    "return": "Return:",
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "backToGuides": "← Back to Guides",
+    "scripts": {
+      "title": "Ultimate Script Guide",
+      "subtitle": "Explore our complete list of popular scripts, understand how they work and learn about related risks",
+      "whatAreScripts": "What are Scripts?",
+      "whatAreScriptsDesc": "Scripts are codes that can automate actions in the game or provide advantages.",
+      "popularScripts": "Popular Scripts",
+      "autoFarm": {
+        "title": "Auto Farm",
+        "description": "Automate resource collection and enemy fighting."
+      },
+      "autoRebirth": {
+        "title": "Auto Rebirth",
+        "description": "Perform rebirth automatically when conditions are met."
+      },
+      "teleport": {
+        "title": "Teleport",
+        "description": "Instantly teleport to any location on the map."
+      },
+      "risks": "Risks and Warnings",
+      "risksDesc": "Using scripts may violate game terms of service and result in account suspension. Use at your own risk.",
+      "howToUse": "How to Use Scripts",
+      "instructions": {
+        "step1": "Download a script executor (like Synapse X or KRNL)",
+        "step2": "Copy the script code you want to use",
+        "step3": "Paste and execute the script in the game"
+      }
+    },
+    "segundoPiso": {
+      "title": "How to Reach the Second Floor",
+      "subtitle": "Master parkour skills on the downtown map and gain tactical advantage",
+      "stepByStep": "Step-by-Step Guide",
+      "step1": {
+        "title": "1. Starting Location",
+        "description": "The starting point is located in the southwest corner of the Downtown map. Look for a small elevated platform near the main fountain.",
+        "tip": "💡 Tip: Make sure there are no other players nearby before starting the parkour."
+      },
+      "step2": {
+        "title": "2. First Jump - Small Platform",
+        "description": "From the initial platform, jump to the right towards a small rectangular platform. This is the easiest jump but requires precision.",
+        "instructions": {
+          "step1": "Use the jump key (spacebar)",
+          "step2": "Hold the right direction key",
+          "step3": "Don't press the jump too hard"
+        }
+      },
+      "step3": {
+        "title": "3. Second Jump - Medium Platform",
+        "description": "From the first platform, jump forward towards a larger platform. This jump requires more momentum.",
+        "warning": "⚠️ Warning: If you fall here, you'll have to go back to the start."
+      },
+      "step4": {
+        "title": "4. Third Jump - The Challenge",
+        "description": "This is the most difficult jump. From the medium platform, you need to jump towards a higher and more distant platform.",
+        "instructions": {
+          "step1": "Run backwards to gain momentum",
+          "step2": "Jump with maximum force",
+          "step3": "Hold the forward direction key",
+          "step4": "Use double jump if necessary"
+        }
+      },
+      "step5": {
+        "title": "5. Final Platform",
+        "description": "Once on the highest platform, jump to the right to reach the second floor. Congratulations! You've completed the parkour.",
+        "reward": "🎉 Reward: From the second floor you have a strategic view of the map and access to exclusive power-ups."
+      },
+      "advancedTips": {
+        "title": "Advanced Tips",
+        "timing": {
+          "title": "Perfect Timing",
+          "description": "Practice the timing of your jumps. A well-timed jump can save you valuable seconds."
+        },
+        "powerups": {
+          "title": "Using Power-ups",
+          "description": "Consider using speed power-ups before starting the parkour to make jumps easier."
+        }
+      }
+    },
+    "rebirth": {
+      "title": "Ultimate Rebirth Guide",
+      "subtitle": "Understand the most important progression system, and why sacrificing current progress is key to becoming stronger",
+      "whatIsRebirth": "What is Rebirth?",
+      "whatIsRebirthDesc": "Rebirth is a progression system that allows you to sacrifice your current progress to gain permanent bonuses.",
+      "whenToRebirth": "When to Rebirth?",
+      "whenToRebirthDesc": "It's recommended to rebirth when you've reached at least level 50 and have enough resources.",
+      "rebirthBenefits": "Rebirth Benefits",
+      "benefits": [
+        "Permanent experience multipliers",
+        "Damage and defense bonuses",
+        "Access to exclusive content",
+        "Speed and jump improvements"
+      ],
+      "rebirthProcess": "Rebirth Process",
+      "step1": "1. Reach the minimum required level",
+      "step2": "2. Gather enough resources",
+      "step3": "3. Go to the Rebirth NPC",
+      "step4": "4. Confirm the sacrifice",
+      "step5": "5. Enjoy your new bonuses"
+    },
+    "secretos": {
+      "title": "Secrets",
+      "subtitle": "Discover hidden areas, power-ups, and strategies to gain an advantage in Steal a Brainrot",
+      "hiddenAreas": "Hidden Areas",
+      "secretRoom": {
+        "title": "Secret Room",
+        "description": "Located behind the main building, this room contains rare power-ups and exclusive items."
+      },
+      "underground": {
+        "title": "Underground Tunnel",
+        "description": "A hidden passage that connects different areas of the map, perfect for quick escapes."
+      },
+      "powerUps": "Secret Power-ups",
+      "invisibility": {
+        "title": "Invisibility Cloak",
+        "description": "Makes you completely invisible for 30 seconds, perfect for sneaking past enemies."
+      },
+      "speedBoost": {
+        "title": "Super Speed Boost",
+        "description": "Increases your movement speed by 200% for 15 seconds, allowing you to outrun any opponent."
+      },
+      "strategies": "Advanced Strategies",
+      "stealth": {
+        "title": "Stealth Approach",
+        "description": "Use the environment to your advantage, hide in shadows and strike when least expected."
+      },
+      "escape": {
+        "title": "Escape Routes",
+        "description": "Learn the best escape routes and always have a backup plan when things go wrong."
+      }
+    },
+    "codigos": {
+      "title": "Codes (July 2025)",
+      "subtitle": "The latest, most honest information about active and expired codes",
+      "noActiveCodes": "No Active Codes",
+      "noActiveCodesDesc": "Currently there are no active promotional codes available. The developers may release codes during special events.",
+      "expiredCodes": "Expired Codes",
+      "expiredCodesList": [
+        "BRAINROT2024 - Expired",
+        "SUMMER2024 - Expired",
+        "WINTER2024 - Expired"
+      ],
+      "whyNoCodes": "Why Are There No Codes?",
+      "reasons": [
+        "The game is still in development",
+        "Developers focus on gameplay over codes",
+        "Codes are only released during special events",
+        "The community is still growing"
+      ],
+      "howToGetRewards": "How to Get Rewards",
+      "alternatives": [
+        "Complete daily missions",
+        "Participate in events",
+        "Join the Discord community",
+        "Follow official announcements"
+      ]
+    },
+    "modificado": {
+      "title": "Modified Steal a Brainrot",
+      "subtitle": "Learn what 'modified' means, the features it offers, and key risks you must know before using it",
+      "whatIsModified": "What is Modified?",
+      "whatIsModifiedDesc": "Modified versions are unofficial game modifications that add extra features and capabilities not available in the original game.",
+      "features": "Modified Features",
+      "featuresList": [
+        "Unlimited resources and currency",
+        "Enhanced movement and speed",
+        "Access to exclusive content",
+        "Advanced automation features",
+        "Custom skins and cosmetics"
+      ],
+      "risks": "Critical Risks",
+      "risksList": [
+        "Account suspension or ban",
+        "Loss of progress and items",
+        "Security vulnerabilities",
+        "Violation of terms of service",
+        "Potential malware or viruses"
+      ],
+      "recommendation": "Our Recommendation",
+      "recommendationDesc": "We strongly advise against using modified versions. The risks far outweigh any benefits, and you may lose your account permanently."
+    },
+    "probabilidades": {
+      "title": "Secrets and Probability",
+      "subtitle": "Discover all game secrets, understand the spawn rate of rare Brainrots. Learn how to improve your luck attribute.",
+      "spawnRates": "Spawn Rates",
+      "common": {
+        "title": "Common",
+        "rate": "60%",
+        "description": "Most common characters, easy to find and collect."
+      },
+      "rare": {
+        "title": "Rare",
+        "rate": "25%",
+        "description": "Uncommon characters with better stats and abilities."
+      },
+      "epic": {
+        "title": "Epic",
+        "rate": "10%",
+        "description": "Powerful characters with unique abilities and high value."
+      },
+      "legendary": {
+        "title": "Legendary",
+        "rate": "4%",
+        "description": "Extremely rare characters with exceptional abilities."
+      },
+      "mythic": {
+        "title": "Mythic",
+        "rate": "1%",
+        "description": "The rarest characters in the game, extremely valuable."
+      },
+      "luckStat": "Luck Attribute",
+      "luckStatDesc": "Your luck attribute affects the probability of finding rare characters. Higher luck means better chances.",
+      "howToIncreaseLuck": "How to Increase Luck",
+      "luckMethods": [
+        "Complete daily missions",
+        "Participate in events",
+        "Use luck-boosting items",
+        "Join guild activities",
+        "Achieve milestones"
+      ]
+    },
+    "estrategias": {
+      "title": "Advanced Strategies",
+      "subtitle": "Advanced techniques for experienced players who want to fully master the game",
+      "combatStrategies": "Combat Strategies",
+      "hitAndRun": {
+        "title": "Hit and Run",
+        "description": "Quick attacks followed by immediate retreat to avoid counter-attacks."
+      },
+      "stealthApproach": {
+        "title": "Stealth Approach",
+        "description": "Use invisibility and silent movement to surprise enemies."
+      },
+      "teamTactics": {
+        "title": "Team Tactics",
+        "description": "Coordinate with teammates for coordinated attacks and defense."
+      },
+      "resourceManagement": "Resource Management",
+      "prioritize": {
+        "title": "Prioritize Targets",
+        "description": "Focus on high-value targets and avoid wasting resources on low-priority enemies."
+      },
+      "efficiency": {
+        "title": "Efficiency Optimization",
+        "description": "Maximize resource usage and minimize waste through strategic planning."
+      },
+      "advancedTips": "Advanced Tips",
+      "tips": [
+        "Master the timing of power-ups",
+        "Learn map layouts and shortcuts",
+        "Practice movement and evasion",
+        "Study opponent patterns",
+        "Adapt strategies to different situations"
+      ]
+    },
+    "stealAMeme": {
+      "title": "Steal a Meme Guide",
+      "subtitle": "Become a meme lord by collecting and stealing the most viral internet memes and characters",
+      "gameOverview": "Game Overview",
+      "gameOverviewDesc": "Steal a Meme is a unique game where players collect and trade popular internet memes and characters. The goal is to build the most valuable meme collection while competing with other players.",
+      "memeTypes": "Meme Types",
+      "viralMemes": {
+        "title": "Viral Memes",
+        "description": "Currently trending memes that are highly sought after and valuable."
+      },
+      "classicMemes": {
+        "title": "Classic Memes",
+        "description": "Timeless memes that have stood the test of time and remain popular."
+      },
+      "legendaryMemes": {
+        "title": "Legendary Memes",
+        "description": "Rare and extremely valuable memes that are difficult to obtain."
+      },
+      "memeCulture": "Meme Culture",
+      "cultureTips": [
+        "Stay updated with trends",
+        "Participate in meme communities",
+        "Create original content"
+      ]
+    },
+    "stealAnAnime": {
+      "title": "Steal an Anime Guide",
+      "subtitle": "Become the ultimate otaku by stealing and collecting iconic characters from your favorite anime",
+      "gameOverview": "Game Overview",
+      "gameOverviewDesc": "Steal an Anime is a unique game where players collect and trade characters from popular anime series. Build your ultimate anime collection and compete with other otaku.",
+      "animeCharacters": "Anime Characters",
+      "popularCharacters": {
+        "title": "Popular Characters",
+        "description": "Well-known characters from mainstream anime series that are easy to find."
+      },
+      "rareCharacters": {
+        "title": "Rare Characters",
+        "description": "Less common characters with unique abilities and higher value."
+      },
+      "legendaryCharacters": {
+        "title": "Legendary Characters",
+        "description": "Extremely rare characters with powerful abilities and maximum value."
+      },
+      "otakuStrategies": "Otaku Strategies",
+      "strategies": [
+        "Watch anime to understand character popularity",
+        "Join anime communities for trading tips",
+        "Focus on seasonal anime characters",
+        "Invest in classic anime characters"
+      ]
+    },
+    "stealAPet": {
+      "title": "Steal a Pet Guide",
+      "subtitle": "Build a collection of the rarest and most powerful pets in this exciting collector game",
+      "gameOverview": "Game Overview",
+      "gameOverviewDesc": "Steal a Pet is a pet collection game where players capture, train, and battle with various creatures. Build the strongest pet team and dominate the arena.",
+      "petTypes": "Pet Types",
+      "commonPets": {
+        "title": "Common Pets",
+        "description": "Basic pets that are easy to find and train."
+      },
+      "rarePets": {
+        "title": "Rare Pets",
+        "description": "Uncommon pets with special abilities and higher stats."
+      },
+      "legendaryPets": {
+        "title": "Legendary Pets",
+        "description": "Extremely rare pets with powerful abilities and maximum stats."
+      },
+      "petBattles": "Pet Battles",
+      "battleTips": [
+        "Train your pets regularly",
+        "Use type advantages in battles",
+        "Form balanced teams",
+        "Study opponent strategies"
+      ]
+    },
+    "stealALabubu": {
+      "title": "Steal a Labubu Guide",
+      "subtitle": "Collect the cutest and most valuable Labubu figures in this exciting art toy game",
+      "gameOverview": "Game Overview",
+      "gameOverviewDesc": "Steal a Labubu is a collectible art toy game featuring adorable Labubu figures. Collect rare variants and build your dream collection.",
+      "labubuTypes": "Labubu Types",
+      "commonLabubu": {
+        "title": "Common Labubu",
+        "description": "Basic Labubu figures that are widely available."
+      },
+      "rareLabubu": {
+        "title": "Rare Labubu",
+        "description": "Limited edition Labubu figures with unique designs."
+      },
+      "legendaryLabubu": {
+        "title": "Legendary Labubu",
+        "description": "Extremely rare Labubu figures with exclusive designs."
+      },
+      "collectionTips": "Collection Tips",
+      "tips": [
+        "Follow official releases",
+        "Join collector communities",
+        "Trade with other collectors",
+        "Preserve figure condition"
+      ]
+    },
+    "stealAFish": {
+      "title": "Steal a Fish Guide",
+      "subtitle": "Dive into an underwater world and build your aquatic empire by collecting the rarest fish",
+      "gameOverview": "Game Overview",
+      "gameOverviewDesc": "Steal a Fish is an underwater adventure game where players explore the ocean, catch rare fish, and build their aquatic collection.",
+      "fishTypes": "Fish Types",
+      "commonFish": {
+        "title": "Common Fish",
+        "description": "Basic fish species found in shallow waters."
+      },
+      "rareFish": {
+        "title": "Rare Fish",
+        "description": "Uncommon fish species found in deeper waters."
+      },
+      "legendaryFish": {
+        "title": "Legendary Fish",
+        "description": "Extremely rare fish species with unique abilities."
+      },
+      "strategies": "Fishing Strategies",
+      "underwaterCombat": {
+        "title": "Underwater Combat",
+        "description": "Learn to fight underwater creatures and protect your catch."
+      },
+      "fishLocations": {
+        "title": "Fish Locations",
+        "description": "Discover the best fishing spots for rare species."
+      }
+    },
+    "stealACar": {
+      "title": "Steal a Car Guide",
+      "subtitle": "Steal the most expensive cars in this high-octane car theft game",
+      "gameOverview": "Game Overview",
+      "gameOverviewDesc": "Steal a Car is an action-packed game where players steal and collect the most valuable vehicles in the world.",
+      "carTypes": "Car Types",
+      "sportsCars": {
+        "title": "Sports Cars",
+        "description": "High-performance vehicles with incredible speed and handling."
+      },
+      "luxuryCars": {
+        "title": "Luxury Cars",
+        "description": "Premium vehicles with advanced features and comfort."
+      },
+      "legendaryCars": {
+        "title": "Legendary Cars",
+        "description": "Extremely rare and valuable vehicles with unique features."
+      },
+      "heistStrategies": "Heist Strategies",
+      "strategies": [
+        "Plan your heist carefully",
+        "Use stealth to avoid detection",
+        "Upgrade your tools and skills",
+        "Work with a team for complex heists"
+      ]
+    },
+    "stealDeadlyRails": {
+      "title": "Steal a Deadly Rails Guide",
+      "subtitle": "Snatch valuable mobs from a deadly conveyor belt before they are lost forever in this fast-paced rhythm game",
+      "gameOverview": "Game Overview",
+      "gameOverviewDesc": "Steal a Deadly Rails is a fast-paced rhythm game where players must grab valuable mobs from a deadly conveyor belt before they fall into the abyss. Timing and precision are crucial for success.",
+      "monsterTypes": "Monster Types",
+      "commonMonsters": {
+        "title": "Common Monsters",
+        "description": "Basic monsters that are easy to catch but provide minimal rewards."
+      },
+      "rareMonsters": {
+        "title": "Rare Monsters",
+        "description": "Uncommon monsters that provide better rewards and are more challenging to catch."
+      },
+      "legendaryMonsters": {
+        "title": "Legendary Monsters",
+        "description": "Extremely rare monsters that provide the highest rewards and are very difficult to catch."
+      },
+      "rhythmGameplay": "Rhythm Gameplay",
+      "gameplayTips": [
+        "Master the timing of the conveyor belt",
+        "Focus on high-value monsters",
+        "Use power-ups strategically",
+        "Practice your reflexes"
+      ]
+    },
+    "optimization": {
+      "title": "Profit Optimization",
+      "tips": [
+        "Regularly review character price changes",
+        "Pay attention to new character release timing",
+        "Use the rebirth system to increase profits",
+        "Diversify investments to reduce risk",
+        "Set reasonable investment goals"
+      ]
+    },
+    "rarity": {
+      "title": "Character Rarity Guide",
+      "common": {
+        "title": "Common (Level 1)",
+        "description": "Low price, suitable for beginners"
+      },
+      "rare": {
+        "title": "Rare (Level 2)",
+        "description": "Good price/value ratio, recommended"
+      },
+      "epic": {
+        "title": "Epic (Level 3)",
+        "description": "Considerable profits, mid-term goal"
+      },
+      "legendary": {
+        "title": "Legendary+ (Level 4-7)",
+        "description": "Elite characters, long-term investment"
+      }
+    },
+    "tips": {
+      "title": "Tips and Tricks",
+      "beginners": {
+        "title": "Beginner Tips",
+        "tips": [
+          "Start with small investments",
+          "Learn to use calculator tools",
+          "Follow community discussions",
+          "Don't rush for rare characters",
+          "Establish a solid profit base"
+        ]
+      },
+      "advanced": {
+        "title": "Advanced Tips",
+        "tips": [
+          "Study market trends",
+          "Optimize character combinations",
+          "Take advantage of rebirth moments",
+          "Pay attention to update advances",
+          "Build an investment portfolio"
+        ]
+      }
+    },
+    "community": {
+      "title": "Community Resources",
+      "discord": {
+        "title": "Discord Community",
+        "description": "Join the official Discord for latest news and guides"
+      },
+      "youtube": {
+        "title": "YouTube Channel",
+        "description": "Watch video guides and gameplay"
+      },
+      "reddit": {
+        "title": "Reddit Forum",
+        "description": "Participate in discussions, share experiences and strategies"
+      }
+    }
+  },
+  "footer": {
+    "allRightsReserved": "All rights reserved",
+    "playOnRoblox": "Play on Roblox"
+  }
+} 

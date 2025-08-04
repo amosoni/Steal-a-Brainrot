@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-celestial-sigma" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow-celestial-sigma">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow-celestial-sigma">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="200" fill="url(#bg-celestial-sigma)" rx="20"/>
+  
+  <!-- 装饰性边框 -->
+  <rect x="8" y="8" width="284" height="184" fill="none" stroke="#B45309" stroke-width="3" rx="20" opacity="0.6"/>
+  
+  <!-- 角色图标区域 -->
+  <circle cx="150" cy="85" r="45" fill="#FFFFFF" opacity="0.15"/>
+  <circle cx="150" cy="85" r="40" fill="#FFFFFF" opacity="0.1"/>
+  
+  <!-- 角色图标 -->
+  <g transform="translate(150, 85)">
+    <circle cx="0" cy="0" r="20" fill="#FFFFFF" opacity="0.8"/>
+                         <text x="0" y="5" font-family="Arial, sans-serif" font-size="22" 
+                               text-anchor="middle" fill="#D97706">🌌</text>
+  </g>
+  
+  <!-- 角色名称 -->
+  <text x="150" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" 
+        text-anchor="middle" fill="#FFFFFF" filter="url(#shadow-celestial-sigma)">Celestial Sigma</text>
+  
+  <!-- 稀有度 -->
+  <text x="150" y="160" font-family="Arial, sans-serif" font-size="12" 
+        text-anchor="middle" fill="#FFFFFF">Mítico</text>
+  
+  <!-- 稀有度图标 -->
+  <text x="150" y="180" font-family="Arial, sans-serif" font-size="18" 
+        text-anchor="middle" fill="#FFFFFF" filter="url(#glow-celestial-sigma)">⭐</text>
+  
+  <!-- 装饰性元素 -->
+  <circle cx="40" cy="40" r="6" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="260" cy="40" r="6" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="40" cy="160" r="6" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="260" cy="160" r="6" fill="#FFFFFF" opacity="0.6"/>
+</svg>
