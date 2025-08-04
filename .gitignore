@@ -93,3 +93,4 @@ jspm_packages/
 
 # Embedded git repositories
 steal-brainrot-es/
+steal-brainrot-es/**
