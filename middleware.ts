@@ -5,7 +5,7 @@ const defaultLocale = 'es'
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
-  
+
   // 跳过API路由和静态文件
   if (
     pathname.startsWith('/_next') ||
@@ -31,12 +31,12 @@ export function middleware(request: NextRequest) {
     )
   }
 
+  // 关键：如果已经有语言前缀，必须返回 NextResponse.next()
   return NextResponse.next()
 }
 
 export const config = {
   matcher: [
-    // 跳过所有内部路径 (_next) 和API路由
     '/((?!_next|api|favicon.ico|robots.txt|sitemap).*)',
   ],
 } 
