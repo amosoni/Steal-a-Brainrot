@@ -1381,7 +1381,7 @@
       "lastUpdated": "Updated: December 2024",
       "quickNavigation": "Quick Navigation",
       "nav": {
-        "spawnRates": "Spawn Rates",
+      "spawnRates": "Spawn Rates",
         "luckStat": "Luck Stat",
         "strategies": "Strategies",
         "faq": "FAQ"
@@ -1483,7 +1483,7 @@
         "title": "Efficient Farming",
         "description": "Optimize your playtime to maximize spawns",
         "tips": "Farming Tips",
-        "tipsList": [
+      "tipsList": [
           "Play during peak activity hours",
           "Use luck boosters",
           "Focus your time on specific areas",
@@ -1559,7 +1559,7 @@
       "lastUpdated": "Updated: December 2024",
       "quickNavigation": "Quick Navigation",
       "nav": {
-        "combatStrategies": "Combat Strategies",
+      "combatStrategies": "Combat Strategies",
         "resourceManagement": "Resource Management",
         "advancedTips": "Advanced Tips",
         "faq": "FAQ"
@@ -1707,7 +1707,7 @@
       "subtitle": "Become a meme lord by collecting and stealing the most viral internet memes and characters",
       "quickNavigation": "Quick Navigation",
       "nav": {
-        "gameOverview": "Game Overview",
+      "gameOverview": "Game Overview",
         "memeTypes": "Meme Types",
         "viralStrategies": "Viral Strategies",
         "faq": "FAQ"
@@ -1780,7 +1780,7 @@
         "description": "Understanding and participating in meme culture effectively",
         "tips": "Tips",
         "tipsList": [
-          "Stay updated with trends",
+        "Stay updated with trends",
           "Understand the context of each meme",
           "Respect culture and avoid offensive content",
           "Create original and funny content",
@@ -2272,7 +2272,7 @@
       "subtitle": "Steal the most expensive cars in this high-octane car theft game",
       "quickNavigation": "Quick Navigation",
       "nav": {
-        "gameOverview": "Game Overview",
+      "gameOverview": "Game Overview",
         "carTypes": "Car Types",
         "heistStrategies": "Heist Strategies",
         "faq": "FAQ"
@@ -2409,7 +2409,7 @@
       "subtitle": "Snatch valuable mobs from a deadly conveyor belt before they are lost forever in this fast-paced rhythm game",
       "quickNavigation": "Quick Navigation",
       "nav": {
-        "gameOverview": "Game Overview",
+      "gameOverview": "Game Overview",
         "railTypes": "Rail Types",
         "survivalStrategies": "Survival Strategies",
         "faq": "FAQ"
@@ -2469,9 +2469,9 @@
         "description": "Strategies to protect yourself from dangers on the rails",
         "tips": "Tips",
         "tipsList": [
-          "Keep your distance from dangers",
-          "Use protection power-ups",
-          "Learn movement patterns",
+        "Keep your distance from dangers",
+        "Use protection power-ups",
+        "Learn movement patterns",
           "Practice your timing",
           "Have an escape plan"
         ],

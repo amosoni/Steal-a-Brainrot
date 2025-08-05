@@ -1285,7 +1285,7 @@
       "lastUpdated": "Actualizado: Diciembre 2024",
       "quickNavigation": "Navegación Rápida",
       "nav": {
-        "spawnRates": "Tasas de Aparición",
+      "spawnRates": "Tasas de Aparición",
         "luckStat": "Estadística de Suerte",
         "strategies": "Estrategias",
         "faq": "Preguntas Frecuentes"
@@ -1387,7 +1387,7 @@
         "title": "Farming Eficiente",
         "description": "Optimiza tu tiempo de juego para maximizar las apariciones",
         "tips": "Consejos de Farming",
-        "tipsList": [
+      "tipsList": [
           "Juega en horarios de mayor actividad",
           "Usa boosters de suerte",
           "Concentra tu tiempo en áreas específicas",
@@ -1463,7 +1463,7 @@
       "lastUpdated": "Actualizado: Diciembre 2024",
       "quickNavigation": "Navegación Rápida",
       "nav": {
-        "combatStrategies": "Estrategias de Combate",
+      "combatStrategies": "Estrategias de Combate",
         "resourceManagement": "Gestión de Recursos",
         "advancedTips": "Consejos Avanzados",
         "faq": "Preguntas Frecuentes"
@@ -1804,10 +1804,10 @@
         "description": "Enfócate en Labubus específicos para maximizar tu colección.",
         "tips": "Consejos de Colección",
         "tipsList": [
-          "Enfócate en Labubus de alta rareza",
-          "Participa en eventos especiales",
-          "Intercambia con otros jugadores",
-          "Mantén tu colección organizada"
+        "Enfócate en Labubus de alta rareza",
+        "Participa en eventos especiales",
+        "Intercambia con otros jugadores",
+        "Mantén tu colección organizada"
         ],
         "defaultTip": "Desarrolla una estrategia de colección específica"
       },
@@ -1938,7 +1938,7 @@
         "description": "Aprende sobre diferentes animes para mejorar tu colección.",
         "tips": "Consejos de Conocimiento",
         "tipsList": [
-          "Conoce bien los animes populares",
+        "Conoce bien los animes populares",
           "Investiga personajes secundarios",
           "Sigue las tendencias actuales",
           "Mantén tu colección actualizada"
@@ -1950,8 +1950,8 @@
         "description": "Únete a la comunidad otaku para mejorar tu colección.",
         "tips": "Consejos de Comunidad",
         "tipsList": [
-          "Participa en eventos temáticos",
-          "Únete a comunidades otaku",
+        "Participa en eventos temáticos",
+        "Únete a comunidades otaku",
           "Comparte tus conocimientos",
           "Colabora con otros jugadores"
         ],
@@ -2039,7 +2039,7 @@
       "subtitle": "Conviértete en un señor de los memes recolectando y robando los memes de internet más virales y personajes",
       "quickNavigation": "Navegación Rápida",
       "nav": {
-        "gameOverview": "Descripción del Juego",
+      "gameOverview": "Descripción del Juego",
         "memeTypes": "Tipos de Memes",
         "viralStrategies": "Estrategias Virales",
         "faq": "Preguntas Frecuentes"
@@ -2176,7 +2176,7 @@
       "subtitle": "Arrebata mobs valiosos de una cinta transportadora mortal antes de que se pierdan para siempre en este juego de ritmo rápido",
       "quickNavigation": "Navegación Rápida",
       "nav": {
-        "gameOverview": "Descripción del Juego",
+      "gameOverview": "Descripción del Juego",
         "railTypes": "Tipos de Rieles",
         "survivalStrategies": "Estrategias de Supervivencia",
         "faq": "Preguntas Frecuentes"
@@ -2236,9 +2236,9 @@
         "description": "Estrategias para protegerse de los peligros en los rieles",
         "tips": "Consejos",
         "tipsList": [
-          "Mantén tu distancia de los peligros",
-          "Usa power-ups de protección",
-          "Aprende los patrones de movimiento",
+        "Mantén tu distancia de los peligros",
+        "Usa power-ups de protección",
+        "Aprende los patrones de movimiento",
           "Practica tu timing",
           "Ten un plan de escape"
         ],
@@ -2313,7 +2313,7 @@
       "subtitle": "Roba los autos más caros en este juego de alto octanaje de robo de autos",
       "quickNavigation": "Navegación Rápida",
       "nav": {
-        "gameOverview": "Descripción del Juego",
+      "gameOverview": "Descripción del Juego",
         "carTypes": "Tipos de Autos",
         "heistStrategies": "Estrategias de Robo",
         "faq": "Preguntas Frecuentes"
@@ -2545,7 +2545,7 @@
           "title": "Trabajo en Equipo",
           "description": "El trabajo en equipo puede facilitar el desafío.",
           "tips": [
-            "Coordina con otros jugadores",
+        "Coordina con otros jugadores",
             "Comparte información sobre timing",
             "Ayuda a otros jugadores",
             "Forma un equipo estable"
