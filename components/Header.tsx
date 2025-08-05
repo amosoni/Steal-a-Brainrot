@@ -77,11 +77,11 @@ export default function Header() {
           <nav className="hidden md:flex space-x-2">
             {navigation.map((item) => (
               <Link
-                key={item.name}
+                key={item.name as string}
                 href={item.href}
                 className="relative px-4 py-2 text-gray-700 hover:text-blue-600 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-white/80 hover:shadow-md group"
               >
-                {item.name}
+                {item.name as string}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-200 group-hover:w-full"></span>
               </Link>
             ))}
@@ -113,12 +113,12 @@ export default function Header() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-sm border-t border-gray-200 rounded-b-lg shadow-lg">
               {navigation.map((item) => (
                 <Link
-                  key={item.name}
+                  key={item.name as string}
                   href={item.href}
                   className="text-gray-700 hover:text-blue-600 block px-4 py-3 text-base font-medium rounded-lg hover:bg-blue-50 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item.name}
+                  {item.name as string}
                 </Link>
               ))}
               {/* Mobile Language Switcher */}

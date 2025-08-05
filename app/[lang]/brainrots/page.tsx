@@ -108,19 +108,19 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg p-4 text-white">
             <div className="text-2xl font-bold">{brainrots.length}</div>
-            <div className="text-blue-100">{t('brainrots.totalCharacters')}</div>
+            <div className="text-blue-100">{t('brainrots.totalCharacters') as string}</div>
           </div>
           <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-lg p-4 text-white">
             <div className="text-2xl font-bold">{totalValue.toLocaleString()}</div>
-            <div className="text-green-100">{t('brainrots.totalValue')}</div>
-          </div>
-          <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg p-4 text-white">
-            <div className="text-2xl font-bold">{totalProfit.toLocaleString()}</div>
-            <div className="text-purple-100">{t('brainrots.totalProfit')}</div>
-          </div>
-          <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-lg p-4 text-white">
-            <div className="text-2xl font-bold">{brainrots.filter(b => b.rarity >= 6).length}</div>
-            <div className="text-yellow-100">{t('brainrots.uniqueCharacters')}</div>
+                      <div className="text-green-100">{t('brainrots.totalValue') as string}</div>
+        </div>
+        <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg p-4 text-white">
+          <div className="text-2xl font-bold">{totalProfit.toLocaleString()}</div>
+          <div className="text-purple-100">{t('brainrots.totalProfit') as string}</div>
+        </div>
+        <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-lg p-4 text-white">
+          <div className="text-2xl font-bold">{brainrots.filter(b => b.rarity >= 6).length}</div>
+          <div className="text-yellow-100">{t('brainrots.uniqueCharacters') as string}</div>
           </div>
         </div>
 
@@ -133,7 +133,7 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                 <input
                   type="text"
-                  placeholder={t('brainrots.searchPlaceholder')}
+                  placeholder={t('brainrots.searchPlaceholder') as string}
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -151,7 +151,7 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
               >
                 {rarityOptions.map((option) => (
                   <option key={option.value} value={option.value || ''}>
-                    {option.label}
+                    {option.label as string}
                   </option>
                 ))}
               </select>
@@ -166,7 +166,7 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
               >
                 {sortOptions.map((option) => (
                   <option key={option.value} value={option.value}>
-                    {option.label}
+                    {option.label as string}
                   </option>
                 ))}
               </select>
@@ -197,9 +197,9 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
 
           {/* Results Count */}
           <div className="mt-4 text-sm text-gray-600">
-            {t('brainrots.showingResults')} {filteredBrainrots.length} {t('brainrots.totalCharacters').toLowerCase()}
+            {t('brainrots.showingResults') as string} {filteredBrainrots.length} {(t('brainrots.totalCharacters') as string).toLowerCase()}
             {selectedRarity && ` (${getRarityText(selectedRarity)})`}
-            {searchTerm && ` (${t('brainrots.searchPlaceholder')}: "${searchTerm}")`}
+            {searchTerm && ` (${t('brainrots.searchPlaceholder') as string}: "${searchTerm}")`}
           </div>
         </div>
 
@@ -217,9 +217,9 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
         {filteredBrainrots.length === 0 && (
           <div className="text-center py-12">
             <div className="text-6xl mb-4">😕</div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('brainrots.noResults')}</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">{t('brainrots.noResults') as string}</h3>
             <p className="text-gray-600">
-              {t('brainrots.tryAdjusting')}
+              {t('brainrots.tryAdjusting') as string}
             </p>
           </div>
         )}
@@ -232,7 +232,7 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
               disabled={currentPage === 1}
               className="px-4 py-2 border border-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
             >
-              {t('brainrots.previous')}
+              {t('brainrots.previous') as string}
             </button>
             
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
@@ -254,7 +254,7 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
               disabled={currentPage === totalPages}
               className="px-4 py-2 border border-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
             >
-              {t('brainrots.next')}
+              {t('brainrots.next') as string}
             </button>
           </div>
         )}

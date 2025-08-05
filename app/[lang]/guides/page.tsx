@@ -35,30 +35,88 @@ export default function GuidesPage({ params }: GuidesPageProps) {
   // 策略数据
   const strategies = {
     conservative: {
-      name: t('guides.strategies.conservative.title'),
-      description: t('guides.strategies.conservative.description'),
+      name: t('guides.strategies.conservative.title') as string,
+      description: t('guides.strategies.conservative.description') as string,
       characters: ['Sigma Boy', 'Alpha Male', 'Beta Female'],
-      riskLevel: t('guides.low'),
+      riskLevel: t('guides.low') as string,
       expectedReturn: '15-25%',
       color: 'green'
     },
     balanced: {
-      name: t('guides.strategies.balanced.title'),
-      description: t('guides.strategies.balanced.description'),
+      name: t('guides.strategies.balanced.title') as string,
+      description: t('guides.strategies.balanced.description') as string,
       characters: ['Sigma Boy', 'Chad', 'Gigachad', 'Epic Character'],
-      riskLevel: t('guides.medium'),
+      riskLevel: t('guides.medium') as string,
       expectedReturn: '25-40%',
       color: 'blue'
     },
     aggressive: {
-      name: t('guides.strategies.aggressive.title'),
-      description: t('guides.strategies.aggressive.description'),
+      name: t('guides.strategies.aggressive.title') as string,
+      description: t('guides.strategies.aggressive.description') as string,
       characters: ['Legendary Character', 'Divine Character', 'Supreme Chad'],
-      riskLevel: t('guides.high'),
+      riskLevel: t('guides.high') as string,
       expectedReturn: '40-80%',
       color: 'purple'
     }
   }
+
+  // 精选指南数据
+  const featuredGuides = [
+    {
+      key: 'secondFloor',
+      title: t('home.featuredGuides.secondFloor.title') as string,
+      description: t('home.featuredGuides.secondFloor.description') as string,
+      href: `/${lang}/guides/second-floor`
+    },
+    {
+      key: 'rebirth',
+      title: t('home.featuredGuides.rebirth.title') as string,
+      description: t('home.featuredGuides.rebirth.description') as string,
+      href: `/${lang}/guides/rebirth`
+    },
+    {
+      key: 'scripts',
+      title: t('home.featuredGuides.scripts.title') as string,
+      description: t('home.featuredGuides.scripts.description') as string,
+      href: `/${lang}/guides/scripts`
+    },
+    {
+      key: 'secrets',
+      title: t('home.featuredGuides.secrets.title') as string,
+      description: t('home.featuredGuides.secrets.description') as string,
+      href: `/${lang}/guides/secrets`
+    },
+    {
+      key: 'codes',
+      title: t('home.featuredGuides.codes.title') as string,
+      description: t('home.featuredGuides.codes.description') as string,
+      href: `/${lang}/guides/codes`
+    },
+    {
+      key: 'modified',
+      title: t('home.featuredGuides.modified.title') as string,
+      description: t('home.featuredGuides.modified.description') as string,
+      href: `/${lang}/guides/modified`
+    },
+    {
+      key: 'scriptsNoKey',
+      title: t('home.featuredGuides.scriptsNoKey.title') as string,
+      description: t('home.featuredGuides.scriptsNoKey.description') as string,
+      href: `/${lang}/guides/scripts-no-key`
+    },
+    {
+      key: 'probabilities',
+      title: t('home.featuredGuides.probabilities.title') as string,
+      description: t('home.featuredGuides.probabilities.description') as string,
+      href: `/${lang}/guides/probabilities`
+    },
+    {
+      key: 'advancedStrategies',
+      title: t('home.featuredGuides.advancedStrategies.title') as string,
+      description: t('home.featuredGuides.advancedStrategies.description') as string,
+      href: `/${lang}/guides/advanced-strategies`
+    }
+  ]
 
   // 计算预期收益
   const calculateExpectedReturn = () => {
@@ -111,19 +169,43 @@ export default function GuidesPage({ params }: GuidesPageProps) {
         {/* Header */}
         <div className="text-center">
           <Link href={`/${lang}`} className="text-blue-600 hover:text-blue-700 mb-4 inline-block">
-            ← {t('common.backToHome')}
+            ← {t('common.backToHome') as string}
           </Link>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">📚 {t('guides.title')}</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">📚 {t('guides.title') as string}</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {t('guides.description')}
+            {t('guides.description') as string}
           </p>
+        </div>
+
+        {/* Featured Guides */}
+        <div className="bg-white rounded-lg shadow-md p-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+            {t('home.featuredGuides.title') as string}
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featuredGuides.map((guide) => (
+              <Link
+                key={guide.key}
+                href={guide.href}
+                className="block p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 hover:bg-gray-100"
+              >
+                <h3 className="text-lg font-semibold text-blue-600 mb-2">
+                  {guide.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {guide.description}
+                </p>
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Quick Guide */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center mb-4">
             <BookOpen className="w-6 h-6 text-blue-600 mr-3" />
-            <h2 className="text-2xl font-bold">{t('guides.quickGuide')}</h2>
+            <h2 className="text-2xl font-bold">{t('guides.quickGuide') as string}</h2>
           </div>
           
           <div className="space-y-4">
@@ -132,8 +214,8 @@ export default function GuidesPage({ params }: GuidesPageProps) {
                 <span className="text-blue-600 font-semibold">1</span>
               </div>
               <div>
-                <h3 className="font-semibold">{t('guides.step1')}</h3>
-                <p className="text-gray-600">{t('guides.step1Desc')}</p>
+                <h3 className="font-semibold">{t('guides.step1') as string}</h3>
+                <p className="text-gray-600">{t('guides.step1Desc') as string}</p>
               </div>
             </div>
             
@@ -142,8 +224,8 @@ export default function GuidesPage({ params }: GuidesPageProps) {
                 <span className="text-green-600 font-semibold">2</span>
               </div>
               <div>
-                <h3 className="font-semibold">{t('guides.step2')}</h3>
-                <p className="text-gray-600">{t('guides.step2Desc')}</p>
+                <h3 className="font-semibold">{t('guides.step2') as string}</h3>
+                <p className="text-gray-600">{t('guides.step2Desc') as string}</p>
               </div>
             </div>
             
@@ -152,8 +234,8 @@ export default function GuidesPage({ params }: GuidesPageProps) {
                 <span className="text-purple-600 font-semibold">3</span>
               </div>
               <div>
-                <h3 className="font-semibold">{t('guides.step3')}</h3>
-                <p className="text-gray-600">{t('guides.step3Desc')}</p>
+                <h3 className="font-semibold">{t('guides.step3') as string}</h3>
+                <p className="text-gray-600">{t('guides.step3Desc') as string}</p>
               </div>
             </div>
           </div>
@@ -163,7 +245,7 @@ export default function GuidesPage({ params }: GuidesPageProps) {
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center mb-4">
             <Target className="w-6 h-6 text-green-600 mr-3" />
-            <h2 className="text-2xl font-bold">{t('guides.strategies.title')}</h2>
+            <h2 className="text-2xl font-bold">{t('guides.strategies.title') as string}</h2>
           </div>
           
           <div className="grid md:grid-cols-3 gap-4">
@@ -181,11 +263,11 @@ export default function GuidesPage({ params }: GuidesPageProps) {
                 <p className="text-sm text-gray-600 mb-3">{strategy.description}</p>
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between">
-                    <span>{t('guides.risk')}</span>
+                    <span>{t('guides.risk') as string}</span>
                     <span className={`font-semibold text-${strategy.color}-600`}>{strategy.riskLevel}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>{t('guides.return')}</span>
+                    <span>{t('guides.return') as string}</span>
                     <span className="font-semibold text-green-600">{strategy.expectedReturn}</span>
                   </div>
                 </div>
@@ -198,19 +280,19 @@ export default function GuidesPage({ params }: GuidesPageProps) {
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center mb-4">
             <TrendingUp className="w-6 h-6 text-yellow-600 mr-3" />
-            <h2 className="text-2xl font-bold">{t('guides.optimization.title')}</h2>
+            <h2 className="text-2xl font-bold">{t('guides.optimization.title') as string}</h2>
           </div>
           
           <div className="bg-yellow-50 rounded-lg p-4">
             <ul className="space-y-2 text-gray-700">
-              {Array.isArray(t('guides.optimization.tips')) ? t('guides.optimization.tips').map((tip: string, index: number) => (
+              {Array.isArray(t('guides.optimization.tips') as unknown) ? (t('guides.optimization.tips') as string[]).map((tip: string, index: number) => (
                 <li key={index}>• {tip}</li>
               )) : [
-                "Regularly review character price changes",
-                "Pay attention to new character release timing", 
-                "Use the rebirth system to increase profits",
-                "Diversify investments to reduce risk",
-                "Set reasonable investment goals"
+                t('guides.optimization.tips.0') as string,
+                t('guides.optimization.tips.1') as string,
+                t('guides.optimization.tips.2') as string,
+                t('guides.optimization.tips.3') as string,
+                t('guides.optimization.tips.4') as string
               ].map((tip: string, index: number) => (
                 <li key={index}>• {tip}</li>
               ))}
@@ -222,64 +304,64 @@ export default function GuidesPage({ params }: GuidesPageProps) {
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center mb-4">
             <Star className="w-6 h-6 text-yellow-600 mr-3" />
-            <h2 className="text-2xl font-bold">{t('guides.rarity.title')}</h2>
+            <h2 className="text-2xl font-bold">{t('guides.rarity.title') as string}</h2>
           </div>
           
           <div className="grid md:grid-cols-4 gap-4">
             <div className="text-center p-4 border rounded-lg">
               <div className="text-2xl mb-2">⭐</div>
-              <h3 className="font-semibold">{t('guides.rarity.common.title')}</h3>
-              <p className="text-sm text-gray-600">{t('guides.rarity.common.description')}</p>
+              <h3 className="font-semibold">{t('guides.rarity.common.title') as string}</h3>
+              <p className="text-sm text-gray-600">{t('guides.rarity.common.description') as string}</p>
             </div>
             <div className="text-center p-4 border rounded-lg">
               <div className="text-2xl mb-2">⭐⭐</div>
-              <h3 className="font-semibold">{t('guides.rarity.rare.title')}</h3>
-              <p className="text-sm text-gray-600">{t('guides.rarity.rare.description')}</p>
+              <h3 className="font-semibold">{t('guides.rarity.rare.title') as string}</h3>
+              <p className="text-sm text-gray-600">{t('guides.rarity.rare.description') as string}</p>
             </div>
             <div className="text-center p-4 border rounded-lg">
               <div className="text-2xl mb-2">⭐⭐⭐</div>
-              <h3 className="font-semibold">{t('guides.rarity.epic.title')}</h3>
-              <p className="text-sm text-gray-600">{t('guides.rarity.epic.description')}</p>
+              <h3 className="font-semibold">{t('guides.rarity.epic.title') as string}</h3>
+              <p className="text-sm text-gray-600">{t('guides.rarity.epic.description') as string}</p>
             </div>
             <div className="text-center p-4 border rounded-lg">
               <div className="text-2xl mb-2">⭐⭐⭐⭐</div>
-              <h3 className="font-semibold">{t('guides.rarity.legendary.title')}</h3>
-              <p className="text-sm text-gray-600">{t('guides.rarity.legendary.description')}</p>
+              <h3 className="font-semibold">{t('guides.rarity.legendary.title') as string}</h3>
+              <p className="text-sm text-gray-600">{t('guides.rarity.legendary.description') as string}</p>
             </div>
           </div>
         </div>
 
         {/* Tips and Tricks */}
         <div className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-2xl font-bold mb-4">💡 {t('guides.tips.title')}</h2>
+          <h2 className="text-2xl font-bold mb-4">💡 {t('guides.tips.title') as string}</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-semibold text-lg mb-3">{t('guides.tips.beginners.title')}</h3>
+              <h3 className="font-semibold text-lg mb-3">{t('guides.tips.beginners.title') as string}</h3>
               <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.tips.beginners.tips')) ? t('guides.tips.beginners.tips').map((tip: string, index: number) => (
+                {Array.isArray(t('guides.tips.beginners.tips') as unknown) ? (t('guides.tips.beginners.tips') as string[]).map((tip: string, index: number) => (
                   <li key={index}>• {tip}</li>
                 )) : [
-                  "Start with small investments",
-                  "Learn to use calculator tools",
-                  "Follow community discussions",
-                  "Don't rush for rare characters",
-                  "Establish a solid profit base"
+                  t('guides.tips.beginners.tips.0') as string,
+                  t('guides.tips.beginners.tips.1') as string,
+                  t('guides.tips.beginners.tips.2') as string,
+                  t('guides.tips.beginners.tips.3') as string,
+                  t('guides.tips.beginners.tips.4') as string
                 ].map((tip: string, index: number) => (
                   <li key={index}>• {tip}</li>
                 ))}
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-3">{t('guides.tips.advanced.title')}</h3>
+              <h3 className="font-semibold text-lg mb-3">{t('guides.tips.advanced.title') as string}</h3>
               <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.tips.advanced.tips')) ? t('guides.tips.advanced.tips').map((tip: string, index: number) => (
+                {Array.isArray(t('guides.tips.advanced.tips') as unknown) ? (t('guides.tips.advanced.tips') as string[]).map((tip: string, index: number) => (
                   <li key={index}>• {tip}</li>
                 )) : [
-                  "Study market trends",
-                  "Optimize character combinations",
-                  "Take advantage of rebirth moments",
-                  "Pay attention to update advances",
-                  "Build an investment portfolio"
+                  t('guides.tips.advanced.tips.0') as string,
+                  t('guides.tips.advanced.tips.1') as string,
+                  t('guides.tips.advanced.tips.2') as string,
+                  t('guides.tips.advanced.tips.3') as string,
+                  t('guides.tips.advanced.tips.4') as string
                 ].map((tip: string, index: number) => (
                   <li key={index}>• {tip}</li>
                 ))}
@@ -292,20 +374,20 @@ export default function GuidesPage({ params }: GuidesPageProps) {
         <div className="bg-blue-50 rounded-lg p-6">
           <div className="flex items-center mb-4">
             <Users className="w-6 h-6 text-blue-600 mr-3" />
-            <h2 className="text-2xl font-bold">{t('guides.community.title')}</h2>
+            <h2 className="text-2xl font-bold">{t('guides.community.title') as string}</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="text-center">
-              <h3 className="font-semibold mb-2">{t('guides.community.discord.title')}</h3>
-              <p className="text-sm text-gray-600">{t('guides.community.discord.description')}</p>
+              <h3 className="font-semibold mb-2">{t('guides.community.discord.title') as string}</h3>
+              <p className="text-sm text-gray-600">{t('guides.community.discord.description') as string}</p>
             </div>
             <div className="text-center">
-              <h3 className="font-semibold mb-2">{t('guides.community.youtube.title')}</h3>
-              <p className="text-sm text-gray-600">{t('guides.community.youtube.description')}</p>
+              <h3 className="font-semibold mb-2">{t('guides.community.youtube.title') as string}</h3>
+              <p className="text-sm text-gray-600">{t('guides.community.youtube.description') as string}</p>
             </div>
             <div className="text-center">
-              <h3 className="font-semibold mb-2">{t('guides.community.reddit.title')}</h3>
-              <p className="text-sm text-gray-600">{t('guides.community.reddit.description')}</p>
+              <h3 className="font-semibold mb-2">{t('guides.community.reddit.title') as string}</h3>
+              <p className="text-sm text-gray-600">{t('guides.community.reddit.description') as string}</p>
             </div>
           </div>
         </div>

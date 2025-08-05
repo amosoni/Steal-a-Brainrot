@@ -168,7 +168,7 @@ export default function BrainrotDetailPage() {
                     {getRarityText(brainrot.rarity)}
                   </div>
                 </div>
-                <p className="text-gray-600 text-lg">{brainrot.description}</p>
+                <p className="text-gray-600 text-lg">{brainrot.description.en}</p>
               </div>
             </div>
           </div>

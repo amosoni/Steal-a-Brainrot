@@ -1,4 +1,4 @@
-export interface Brainrot {
+﻿export interface Brainrot {
   id: string
   name: string
   rarity: number

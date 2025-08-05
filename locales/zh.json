@@ -7,6 +7,11 @@
     "guides": "指南"
   },
   "home": {
+    "seo": {
+      "title": "Steal a Brainrot - 最完整的Roblox指南",
+      "description": "🎮 Roblox Steal a Brainrot的终极工具。完整的角色数据库、利润计算器、策略指南和专家建议。通过我们的专业协助掌握游戏！",
+      "keywords": "Steal a Brainrot, Roblox, Brainrot, Brainrot角色, 利润计算器, 角色数据库, 游戏指南, Brainrot策略, Roblox指南"
+    },
     "title": "Steal a Brainrot",
     "subtitle": "完整指南",
     "description": "最完整的Roblox Steal a Brainrot指南，包括角色数据库、利润计算器、策略指南和其他实用工具",
@@ -206,14 +211,8 @@
         "title": "Steal a Meme",
         "description": "通过收集和偷窃最病毒式的网络迷因和角色，成为迷因之王。"
       },
-      "stealDeadlyRails": {
-        "title": "Steal a Deadly Rails",
-        "description": "在这个快节奏的节奏游戏中，在它们永远丢失之前从致命的传送带上抢夺有价值的怪物。"
-      },
-      "stealACar": {
-        "title": "Steal a Car",
-        "description": "在这个高辛烷值的偷车游戏中偷最贵的汽车。"
-      },
+
+
       "bestConsoles": "最佳游戏主机"
     },
     "cta": {
@@ -221,6 +220,107 @@
       "description": "加入数百万玩家，体验最刺激的抢劫游戏！",
       "playNow": "立即游戏",
       "viewGuides": "查看指南"
+    },
+    "stats": {
+      "characters": "Brainrot角色",
+      "rebirthLevels": "重生等级",
+      "rarityLevels": "稀有度等级"
+    },
+    "scripts": {
+      "title": "热门脚本",
+      "warning": {
+        "title": "⚠️ 重要警告",
+        "description": "使用脚本可能导致您的账户被封禁。请自行承担风险使用。",
+        "list": [
+          "• 使用脚本可能导致账户永久封禁",
+          "• 脚本可能包含恶意代码",
+          "• 使用脚本违反游戏服务条款",
+          "• 请自行承担使用风险"
+        ]
+      },
+      "copyButton": "复制脚本",
+      "copiedButton": "已复制!",
+      "viewMoreButton": "查看更多脚本",
+      "stealEveryone": {
+        "title": "偷取所有人的Brainrot（密钥系统）",
+        "description": "完整的脚本系统，带密钥功能，可以偷取所有玩家的brainrots。"
+      },
+      "gumanbaScript": {
+        "title": "Gumanba脚本（无密钥）",
+        "description": "无密钥系统的脚本，自动收集和高级功能。"
+      },
+      "laserhunScript": {
+        "title": "Laserhun的Steal a Brainrot脚本（自动收集）",
+        "description": "带自动收集和传送功能的脚本。"
+      },
+      "easyCash": {
+        "title": "轻松赚钱（无密钥，自动锁定，移除墙壁）",
+        "description": "轻松赚钱的脚本，自动锁定和移除墙壁。"
+      },
+      "quantumPulsar": {
+        "title": "QuantumPulsar X（自动偷取，自动锁定，自动销售）",
+        "description": "高级脚本，集成自动偷取、锁定和销售功能。"
+      },
+      "scriptBlox": {
+        "title": "ScriptBlox脚本 by laserhun（自动偷取，锁定基地，无密钥系统）",
+        "description": "ScriptBlox脚本，自动偷取和锁定基地，无密钥系统。"
+      },
+      "autoLockCollect": {
+        "title": "自动锁定，收集现金和偷取脚本",
+        "description": "自动锁定、收集金钱和自动偷取的脚本。"
+      },
+      "legendHub": {
+        "title": "传奇Hub破解（瞬间偷取，无限现金）",
+        "description": "传奇Hub，瞬间偷取和无限现金。"
+      },
+      "feronikHub": {
+        "title": "Feronik Hub（自动锁定，瞬间偷取，自动购买）",
+        "description": "Feronik Hub，自动锁定、瞬间偷取和自动购买。"
+      },
+      "forkT3": {
+        "title": "ForkT3全能脚本",
+        "description": "ForkT3的全能脚本，集成所有功能。"
+      },
+      "opScript": {
+        "title": "Steal a Brainrot OP脚本",
+        "description": "OP脚本，高级功能和强大的黑客功能。"
+      },
+      "polaris": {
+        "title": "Steal a Brainrot脚本（Polaris）无密钥",
+        "description": "Polaris脚本，无密钥系统，完全免费。"
+      },
+      "keylessOP": {
+        "title": "Steal a Brainrot OP脚本无密钥",
+        "description": "OP脚本无密钥，直接访问所有功能。"
+      },
+      "lockBaseAutoSell": {
+        "title": "Steal a Brainrot OP脚本：锁定基地，自动销售",
+        "description": "OP脚本，集成锁定基地和自动销售功能。"
+      },
+      "crawlChicken": {
+        "title": "爬行小鸡3D",
+        "description": "爬行小鸡3D游戏的脚本，特殊功能。"
+      },
+      "feronikHubAlt": {
+        "title": "Feronik Hub脚本",
+        "description": "Feronik Hub的替代版本，改进的功能。"
+      },
+      "ghostHub": {
+        "title": "幽灵Hub脚本",
+        "description": "幽灵Hub脚本，潜行和隐身功能。"
+      },
+      "quantumPulsarAlt": {
+        "title": "QuantumPulsar X（替代版）",
+        "description": "QuantumPulsar X的替代版本，附加功能。"
+      },
+      "silentScript": {
+        "title": "静默脚本（锁定基地+自动销售）",
+        "description": "静默脚本，集成锁定基地和自动销售功能。"
+      },
+      "laserhunFinal": {
+        "title": "Laserhun的脚本",
+        "description": "Laserhun的最终脚本，所有功能优化。"
+      }
     }
   },
   "calculator": {
@@ -257,23 +357,7 @@
     "tip4": "定期查看市场价格波动",
     "tip5": "更高稀有度的角色具有更好的长期投资回报率"
   },
-  "updates": {
-    "title": "游戏更新",
-    "description": "获取Steal a Brainrot的最新动态更新和新角色进展",
-    "serverStatus": "服务器状态",
-    "online": "在线",
-    "offline": "离线",
-    "checking": "检查中...",
-    "checkStatus": "检查状态",
-    "lastCheck": "最后检查",
-    "checkNow": "立即检查",
-    "checkingUpdates": "检查更新中...",
-    "autoUpdate": "自动更新",
-    "downloadUpdate": "下载更新",
-    "downloading": "下载中...",
-    "clearNotifications": "清除通知",
-    "notifications": "通知"
-  },
+
   "updates": {
     "title": "游戏更新",
     "description": "获取Steal a Brainrot的最新动态更新和新角色进展",
@@ -400,10 +484,18 @@
     "useNameSearch": "使用名称搜索查找特定角色",
     "sortForBest": "按价格或利润排序找到最佳交易",
     "switchViews": "根据偏好切换网格和列表视图",
-    "usePagination": "使用分页浏览大型收藏"
+    "usePagination": "使用分页浏览大型收藏",
+    "viewDetails": "查看详情",
+    "compare": "比较",
+    "addedToCart": "已添加到购物车！",
+    "addedToFavorites": "已添加到收藏！",
+    "characterNotFound": "角色未找到",
+    "characterNotFoundDesc": "您查找的角色在我们的数据库中不存在。"
   },
   "common": {
     "backToHome": "← 返回首页",
+    "showMore": "显示更多",
+    "showLess": "显示更少",
     "loading": "加载中...",
     "error": "错误",
     "success": "成功",
@@ -526,6 +618,194 @@
         "description": "参与讨论，分享经验和策略"
       }
     },
+    "risk": "风险：",
+    "return": "回报：",
+    "low": "低",
+    "medium": "中",
+    "high": "高",
+    "backToGuides": "← 返回指南",
+    "segundoPiso": {
+      "title": "如何到达二楼",
+      "subtitle": "掌握Downtown地图的跑酷技巧，通过我们的分步指南获得战术优势",
+      "readingTime": "8分钟阅读",
+      "difficulty": "中级",
+      "rating": "4.8/5",
+      "quickNav": "快速导航",
+      "step1": {
+        "shortTitle": "准备",
+        "title": "准备和定位",
+        "description": "在尝试到达二楼之前，您需要做好充分准备。在Downtown地图上定位自己并找到主建筑。",
+        "tip": "专业提示",
+        "tipDetail": "确保在尝试这个挑战之前至少有3条生命。跑酷一开始可能会很令人沮丧。"
+      },
+      "step2": {
+        "shortTitle": "第一跳",
+        "title": "关键的第一跳",
+        "description": "第一跳是最重要的。您需要从主建筑屋顶跳到第一个平台。",
+        "instructionsTitle": "详细说明",
+        "instructions": [
+          "爬到主建筑屋顶",
+          "将角色与边缘对齐",
+          "向最近的平台跳跃",
+          "按住跳跃按钮"
+        ]
+      },
+      "step3": {
+        "shortTitle": "序列",
+        "title": "移动序列",
+        "description": "一旦到达第一个平台，您必须遵循特定的移动序列才能到达二楼。",
+        "warning": "重要警告",
+        "warningDetail": "不要着急。每个动作都必须精确。一个错误可能会让您摔倒并失去生命。"
+      },
+      "step4": {
+        "shortTitle": "最终",
+        "title": "最后的跳跃",
+        "description": "最后一跳是最具挑战性的。您需要完美计算距离和时间。",
+        "instructionsTitle": "最终步骤",
+        "instructions": [
+          "在最后一个平台上定位",
+          "计算到二楼的距离",
+          "精确执行跳跃",
+          "平稳降落在二楼"
+        ]
+      },
+      "step5": {
+        "shortTitle": "成功",
+        "title": "您到达了二楼！",
+        "description": "恭喜！您已经完成了游戏中最困难的挑战。现在您可以获得独家奖励。",
+        "reward": "独家奖励",
+        "rewardDetail": "您可以获得稀有角色、特殊道具，并比其他玩家有显著优势。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "requirements": "最低要求",
+        "list": [
+          "至少3条生命",
+          "基础跑酷经验",
+          "耐心和毅力",
+          "了解Downtown地图"
+        ],
+        "recommended": "推荐",
+        "recommendedList": [
+          "5+条生命以确保安全",
+          "速度道具",
+          "通讯设备",
+          "在安全区域预先练习"
+        ]
+      },
+      "advancedTips": {
+        "title": "高级技巧",
+        "timing": {
+          "title": "完美时机",
+          "description": "时机对这个挑战的成功至关重要。",
+          "tips": [
+            "在安全区域练习时机",
+            "使用游戏声音作为参考",
+            "保持恒定节奏",
+            "不要急于关键跳跃"
+          ]
+        },
+        "strategy": {
+          "title": "移动策略",
+          "description": "在尝试挑战之前制定坚实的策略。",
+          "tips": [
+            "提前计划每个动作",
+            "识别休息点",
+            "有备用计划",
+            "练习完整序列"
+          ]
+        },
+        "equipment": {
+          "title": "推荐装备",
+          "description": "合适的装备可以产生差异。",
+          "tips": [
+            "使用高机动性角色",
+            "装备速度道具",
+            "考虑使用辅助脚本",
+            "保持备用道具"
+          ]
+        },
+        "teamwork": {
+          "title": "团队合作",
+          "description": "团队合作可以让挑战更容易。",
+          "tips": [
+            "与其他玩家协调",
+            "分享时机信息",
+            "帮助其他玩家",
+            "组建稳定团队"
+          ]
+        }
+      },
+      "commonMistakes": {
+        "title": "常见错误",
+        "solution": "解决方案",
+        "list": [
+          {
+            "title": "过早跳跃",
+            "description": "在完全对齐之前尝试跳跃。",
+            "solution": "等待完全对齐后再跳跃。"
+          },
+          {
+            "title": "缺乏耐心",
+            "description": "急于关键动作。",
+            "solution": "慢慢来，保持冷静。"
+          },
+          {
+            "title": "忽视时机",
+            "description": "不注意跳跃时机。",
+            "solution": "练习时机直到变得自然。"
+          },
+          {
+            "title": "不使用道具",
+            "description": "在没有辅助道具的情况下尝试挑战。",
+            "solution": "使用速度和机动性道具。"
+          }
+        ]
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "学习这个技巧需要多长时间？",
+            "answer": "这取决于您的经验，但大多数玩家需要2-3小时的练习。"
+          },
+          {
+            "question": "不使用道具是否可能做到？",
+            "answer": "是的，但极其困难。建议使用速度道具。"
+          },
+          {
+            "question": "如果我失败并失去所有生命怎么办？",
+            "answer": "您可以在重新生成生命后重试或使用生命代码。"
+          },
+          {
+            "question": "二楼有特殊奖励吗？",
+            "answer": "是的，有稀有角色和独家道具只能在那里找到。"
+          }
+        ]
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "rebirth": {
+          "title": "重生指南",
+          "description": "了解重生系统以及如何最大化您的利润。"
+        },
+        "scripts": {
+          "title": "脚本指南",
+          "description": "发现改善游戏的最佳脚本。"
+        },
+        "secrets": {
+          "title": "游戏秘密",
+          "description": "探索Steal a Brainrot的所有隐藏秘密。"
+        }
+      },
+      "cta": {
+        "title": "准备好挑战了吗？",
+        "description": "现在您有了所有信息，准备好尝试到达二楼了吗？",
+        "viewCharacters": "查看角色",
+        "calculator": "计算器"
+      }
+    },
+    "high": "高",
     "backToGuides": "← 返回指南",
     "segundoPiso": {
       "title": "如何到达二楼",
@@ -580,52 +860,282 @@
     "rebirth": {
       "title": "终极重生指南",
       "subtitle": "了解最重要的进度系统，以及为什么牺牲当前进度是变强的关键",
+      "seoTitle": "Steal a Brainrot 重生指南 - 完整进度系统",
+      "seoDescription": "了解Steal a Brainrot中的重生系统，何时进行重生，其好处以及最大化进度的策略。",
+      "seoKeywords": "rebirth steal a brainrot, 进度系统, 倍数, 永久奖励",
+      "readingTime": "8 分钟阅读",
+      "difficulty": "中级",
+      "lastUpdated": "更新：2025年7月",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "whatIsRebirth": "什么是重生？",
+        "benefits": "好处",
+        "process": "过程",
+        "faq": "常见问题"
+      },
       "whatIsRebirth": "什么是重生？",
       "whatIsRebirthDesc": "重生是一个进度系统，允许你牺牲当前进度来获得永久奖励。",
-      "whenToRebirth": "什么时候重生？",
-      "whenToRebirthDesc": "建议在达到至少50级并有足够资源时进行重生。",
+      "definition": "定义",
+      "definitionDesc": "重生系统是一个进度机制，允许玩家重置进度以换取永久奖励，显著改善未来的表现。",
       "rebirthBenefits": "重生好处",
       "benefits": [
-        "永久经验倍数",
-        "伤害和防御奖励",
-        "获得专属内容",
-        "速度和跳跃改进"
+        {
+          "title": "经验倍数",
+          "description": "永久增加经验获得速度"
+        },
+        {
+          "title": "伤害奖励",
+          "description": "改善攻击伤害和战斗能力"
+        },
+        {
+          "title": "移动改进",
+          "description": "增加移动速度和跳跃能力"
+        },
+        {
+          "title": "专属访问",
+          "description": "解锁专属内容和区域"
+        }
       ],
+      "defaultBenefit": {
+        "title": "永久奖励",
+        "description": "获得让你变强的永久改进"
+      },
       "rebirthProcess": "重生过程",
+      "processSteps": [
+        {
+          "step": "1",
+          "title": "达到最低等级",
+          "description": "确保在考虑重生前至少达到50级"
+        },
+        {
+          "step": "2",
+          "title": "收集资源",
+          "description": "积累足够的brainrots和资源以最大化好处"
+        },
+        {
+          "step": "3",
+          "title": "找到NPC",
+          "description": "在游戏地图上找到重生NPC"
+        },
+        {
+          "step": "4",
+          "title": "确认牺牲",
+          "description": "确认牺牲当前进度的决定"
+        },
+        {
+          "step": "5",
+          "title": "享受改进",
+          "description": "带着永久奖励开始新生活"
+        }
+      ],
       "step1": "1. 达到最低要求等级",
       "step2": "2. 收集足够资源",
       "step3": "3. 前往重生NPC",
       "step4": "4. 确认牺牲",
-      "step5": "5. 享受新的奖励"
+      "step5": "5. 享受新的奖励",
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "什么时候应该进行第一次重生？",
+            "answer": "建议在达到50级并积累足够资源后进行第一次重生。"
+          },
+          {
+            "question": "重生时会失去所有进度吗？",
+            "answer": "是的，你会失去当前进度但获得让你变强的永久奖励。"
+          },
+          {
+            "question": "重生奖励是永久的吗？",
+            "answer": "是的，从重生获得的所有奖励都是永久的，并随着每次重生而累积。"
+          }
+        ],
+        "defaultQuestion": "什么是重生系统？",
+        "defaultAnswer": "重生是一个允许牺牲当前进度换取永久奖励的系统。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "最低等级50",
+          "足够资源",
+          "理解系统",
+          "心理准备"
+        ],
+        "default": "最低等级50"
+      },
+      "warning": {
+        "title": "重要警告",
+        "description": "重生是不可逆的。在继续之前确保完全准备好。"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "scripts": "脚本指南",
+        "codes": "代码指南",
+        "secondFloor": "二楼指南"
+      },
+      "cta": {
+        "title": "需要更多帮助？",
+        "description": "探索我们的其他指南以最大化你的进度并改善游戏体验。",
+        "button": "查看所有指南"
+      }
     },
     "scripts": {
       "title": "终极脚本指南",
       "subtitle": "探索我们完整的流行脚本列表，了解它们的工作原理并学习相关风险",
+      "seoTitle": "Steal a Brainrot 脚本 - 完整脚本和自动化指南",
+      "seoDescription": "发现Steal a Brainrot最流行的脚本，它们的特性，风险以及如何安全使用。",
+      "seoKeywords": "steal a brainrot 脚本, 自动化, 自动农场, 传送, 脚本风险",
+      "readingTime": "10 分钟阅读",
+      "difficulty": "高级",
+      "lastUpdated": "更新：2025年7月",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "whatAreScripts": "什么是脚本？",
+        "popularScripts": "流行脚本",
+        "risks": "风险",
+        "howToUse": "如何使用"
+      },
       "whatAreScripts": "什么是脚本？",
       "whatAreScriptsDesc": "脚本是可以自动化游戏操作或提供优势的代码。",
+      "definition": "定义",
+      "definitionDesc": "脚本是可以在游戏内运行以自动化任务、提供优势或修改游戏行为的计算机程序。",
       "popularScripts": "流行脚本",
-      "autoFarm": {
-        "title": "自动农场",
-        "description": "自动化资源收集和敌人战斗。"
+      "stealEveryone": {
+        "title": "偷取所有人的Brainrot（密钥系统）",
+        "description": "完整的脚本系统，带密钥功能，可以偷取所有玩家的brainrots。",
+        "features": {
+          "keySystem": "集成密钥系统",
+          "autoSteal": "自动偷取brainrots",
+          "advancedUI": "高级界面"
+        }
       },
-      "autoRebirth": {
-        "title": "自动重生",
-        "description": "当条件满足时自动执行重生。"
+      "gumanbaScript": {
+        "title": "Gumanba脚本（无密钥）",
+        "description": "无密钥系统的脚本，自动收集和高级功能。",
+        "features": {
+          "noKey": "无密钥系统",
+          "autoCollection": "自动收集",
+          "advancedFeatures": "高级功能"
+        }
       },
-      "teleport": {
-        "title": "传送",
-        "description": "瞬间传送到地图上的任何位置。"
+      "laserhunScript": {
+        "title": "Laserhun的Steal a Brainrot脚本（自动收集）",
+        "description": "带自动收集和传送功能的脚本。",
+        "features": {
+          "autoCollection": "自动收集",
+          "teleport": "传送功能",
+          "easySetup": "简单设置"
+        }
       },
       "risks": "风险和警告",
       "risksDesc": "使用脚本可能导致账号被封禁。请自行承担风险使用。",
+      "warnings": {
+        "accountBan": "账号封禁",
+        "accountBanDesc": "开发者可以检测并封禁使用脚本的账户",
+        "securityRisk": "安全风险",
+        "securityRiskDesc": "脚本可能包含恶意代码或损害你的安全",
+        "termsViolation": "违反条款",
+        "termsViolationDesc": "使用脚本违反Roblox的服务条款"
+      },
+      "importantWarning": "重要警告",
+      "warningList": [
+        "使用脚本可能导致账号永久封禁",
+        "脚本可能包含恶意代码",
+        "使用脚本违反游戏服务条款",
+        "请自行承担使用风险"
+      ],
+      "defaultWarning": "警告：脚本可能很危险",
       "howToUse": "如何使用脚本",
-      "instructions": [
-        "1. 复制脚本代码",
-        "2. 打开脚本执行器",
-        "3. 粘贴代码",
-        "4. 执行脚本",
-        "5. 监控其运行"
-      ]
+      "setup": {
+        "title": "初始设置",
+        "steps": [
+          "下载兼容的脚本执行器",
+          "安装并配置执行器",
+          "寻找可靠的脚本",
+          "首先在次要账户上测试"
+        ],
+        "defaultStep": "下载兼容的脚本执行器"
+      },
+      "instructions": {
+        "title": "使用说明",
+        "list": [
+          "复制脚本代码",
+          "打开脚本执行器",
+          "在执行器中粘贴代码",
+          "执行脚本",
+          "监控其运行"
+        ],
+        "default": "复制脚本代码"
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "使用脚本安全吗？",
+            "answer": "不安全，脚本存在重大风险，包括账号封禁和恶意软件。"
+          },
+          {
+            "question": "我应该使用哪个脚本执行器？",
+            "answer": "建议使用Synapse X或KRNL等可靠的执行器，但始终要谨慎。"
+          },
+          {
+            "question": "我可以在主账户上使用脚本吗？",
+            "answer": "不推荐。始终先在次要账户上测试脚本。"
+          }
+        ],
+        "defaultQuestion": "什么是脚本？",
+        "defaultAnswer": "脚本是可以自动化游戏操作或提供优势的代码。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "兼容的脚本执行器",
+          "用于测试的次要账户",
+          "了解风险",
+          "基本编程知识"
+        ],
+        "default": "兼容的脚本执行器"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "codes": "代码指南",
+        "modified": "修改版指南",
+        "secondFloor": "二楼指南"
+      },
+      "cta": {
+        "title": "需要更多帮助？",
+        "description": "探索我们的其他指南，学习安全和有效的策略来改善你的游戏体验。",
+        "button": "查看所有指南"
+      }
+    },
+    "scriptsNoKey": {
+      "title": "脚本（无密钥）",
+      "subtitle": "找到最新的无密钥脚本，包括复制粘贴代码和安全警告",
+      "latestScripts": "最新脚本",
+      "autoFarmScript": {
+        "title": "自动农场脚本",
+        "description": "自动收集资源和战斗敌人的脚本"
+      },
+      "teleportScript": {
+        "title": "传送脚本",
+        "description": "瞬间传送到地图上任何位置的脚本"
+      },
+      "securityWarning": "安全警告",
+      "securityWarningDesc": "使用脚本可能导致账号被封禁。请自行承担风险使用。",
+      "howToUse": "如何使用",
+      "steps": [
+        "1. 下载脚本执行器（如Synapse X或KRNL）",
+        "2. 复制你想使用的脚本代码",
+        "3. 在游戏中粘贴并执行脚本"
+      ],
+      "tips": "脚本提示",
+      "tipsList": [
+        "只使用来自可信来源的脚本",
+        "在测试环境中先试用脚本",
+        "定期备份你的游戏数据",
+        "关注脚本的更新和修复",
+        "不要分享你的个人脚本"
+      ],
+      "defaultTip": "脚本使用提示"
     },
     "secretos": {
       "title": "秘密",
@@ -661,49 +1171,202 @@
     "codigos": {
       "title": "代码（2025年7月）",
       "subtitle": "关于活跃和过期代码的最新和最诚实的信息，以及为什么没有可用的代码",
+      "seoTitle": "Steal a Brainrot 代码 2025 - 完整兑换码指南",
+      "seoDescription": "发现所有Steal a Brainrot的活跃和过期代码，获得奖励的替代方案以及最大化收益的策略。",
+      "seoKeywords": "steal a brainrot 代码, roblox 代码, 兑换码, brainrot 代码, 代码 2025",
+      "readingTime": "5 分钟阅读",
+      "difficulty": "简单",
+      "lastUpdated": "更新：2025年7月",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "activeCodes": "活跃代码",
+        "expiredCodes": "过期代码",
+        "alternatives": "替代方案",
+        "faq": "常见问题"
+      },
       "noActiveCodes": "没有活跃代码",
       "noActiveCodesDesc": "目前没有可兑换的代码。开发者没有发布新代码。",
+      "currentStatus": "当前状态",
+      "statusList": [
+        "没有可用的活跃代码",
+        "开发者尚未宣布新代码",
+        "建议使用替代方案获得奖励"
+      ],
+      "defaultStatus": "状态不可用",
       "expiredCodes": "过期代码",
       "expiredCodesList": [
         "LAUNCH2024 - 已过期",
         "WELCOME2024 - 已过期",
         "UPDATE2024 - 已过期"
       ],
-      "whyNoCodes": "为什么没有代码？",
+      "expired": "已过期",
+      "noExpiredCodes": "没有记录的过期代码",
+      "whyExpired": "为什么代码过期了？",
       "reasons": [
         "开发者没有发布新代码",
-        "之前的代码已过期",
-        "没有活跃的特殊活动"
+        "代码有自动过期日期",
+        "需要游戏更新才能获得新代码"
       ],
-      "howToGetRewards": "如何获得奖励",
+      "defaultReason": "开发者没有提供具体信息",
+      "alternativesTitle": "代码替代方案",
       "alternatives": [
         "完成每日任务",
-        "参与活动",
-        "定期游戏获得经验",
-        "加入社区保持更新"
-      ]
+        "参与特殊活动",
+        "使用收益计算器",
+        "遵循投资策略"
+      ],
+      "alternative1": {
+        "title": "每日任务"
+      },
+      "alternative2": {
+        "title": "特殊活动"
+      },
+      "alternative3": {
+        "title": "收益计算器"
+      },
+      "alternative4": {
+        "title": "投资策略"
+      },
+      "defaultAlternative": {
+        "title": "推荐替代方案",
+        "description": "使用收益计算器优化你的投资"
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "什么时候会发布新代码？",
+            "answer": "开发者尚未宣布新代码的具体日期。建议关注游戏的官方社交媒体。"
+          },
+          {
+            "question": "过期的代码会再次生效吗？",
+            "answer": "不会，过期的代码不会再次生效。每个代码都有特定的过期日期。"
+          },
+          {
+            "question": "没有代码如何获得奖励？",
+            "answer": "你可以完成每日任务，参与特殊活动，并使用优化的投资策略。"
+          }
+        ],
+        "defaultQuestion": "有可用的活跃代码吗？",
+        "defaultAnswer": "目前没有可用的活跃代码。建议使用每日任务和特殊活动等替代方案。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "活跃的Roblox账户",
+          "访问Steal a Brainrot游戏",
+          "基本游戏知识"
+        ],
+        "default": "活跃的Roblox账户"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "scripts": "脚本指南",
+        "modified": "修改版指南",
+        "secondFloor": "二楼指南"
+      },
+      "cta": {
+        "title": "需要更多帮助？",
+        "description": "探索我们的其他指南，最大化你的收益并改善你的游戏体验。",
+        "button": "查看所有指南"
+      }
     },
     "modificado": {
       "title": "Steal a Brainrot 修改版",
       "subtitle": "了解\"修改版\"的含义，它提供的功能以及在使用前需要了解的关键风险",
+      "seoTitle": "Steal a Brainrot 修改版 - 风险和功能完整指南",
+      "seoDescription": "发现什么是修改版游戏，它们的特性，关键风险以及Steal a Brainrot的安全替代方案。",
+      "seoKeywords": "steal a brainrot 修改版, 修改版游戏, 风险, 功能, 安全",
+      "readingTime": "8 分钟阅读",
+      "difficulty": "中级",
+      "lastUpdated": "更新：2025年7月",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "whatIsModified": "什么是修改版？",
+        "features": "功能",
+        "risks": "风险",
+        "faq": "常见问题"
+      },
       "whatIsModified": "什么是\"修改版\"？",
       "whatIsModifiedDesc": "修改版游戏是包含额外功能的原始游戏的修改版本。",
-      "features": "功能",
-      "featuresList": [
-        "集成脚本",
-        "增强界面",
-        "自动功能",
-        "黑客和作弊"
-      ],
-      "risks": "关键风险",
-      "risksList": [
-        "永久账号封禁",
-        "病毒和恶意软件",
-        "个人信息被盗",
-        "违反服务条款"
-      ],
+      "definition": "定义",
+      "definitionDesc": "修改版游戏是非官方版本，已被修改以包含额外功能，通常是为了提供相对于其他玩家的优势。",
+      "featuresTitle": "功能",
+      "features": {
+        "unlimitedResources": "无限资源和货币",
+        "unlimitedResourcesDesc": "访问无限量的游戏货币和资源",
+        "enhancedMovement": "增强移动和速度",
+        "enhancedMovementDesc": "增加移动速度和改进跳跃能力",
+        "exclusiveContent": "访问独家内容",
+        "exclusiveContentDesc": "解锁通常需要时间或金钱的内容",
+        "automation": "高级自动化功能",
+        "automationDesc": "脚本和机器人来自动化重复任务",
+        "customSkins": "自定义皮肤和装饰",
+        "customSkinsDesc": "访问独家独特的自定义内容"
+      },
+      "risksTitle": "关键风险",
+      "risksDescription": "使用修改版游戏存在重大风险，在使用前应考虑这些风险。",
+      "risks": {
+        "accountSuspension": "账户暂停或封禁",
+        "accountSuspensionDesc": "开发者可以检测并封禁使用修改版的账户",
+        "lossOfProgress": "失去进度和物品",
+        "lossOfProgressDesc": "你可能失去所有进度、物品和累积的货币",
+        "securityVulnerabilities": "安全漏洞",
+        "securityVulnerabilitiesDesc": "修改的文件可能包含恶意软件或损害你的安全",
+        "termsViolation": "违反服务条款",
+        "termsViolationDesc": "使用修改版违反Roblox的服务条款",
+        "malware": "潜在的恶意软件或病毒",
+        "malwareDesc": "来自非官方来源的文件可能包含恶意软件"
+      },
       "recommendation": "建议",
-      "recommendationDesc": "我们不建议使用修改版游戏。玩官方版本以获得安全体验。"
+      "recommendationDesc": "我们不建议使用修改版游戏。玩官方版本以获得安全体验。",
+      "safeAlternatives": "安全替代方案",
+      "safeAlternativesList": [
+        "玩官方游戏版本",
+        "使用合法的策略来进步",
+        "参与官方社区",
+        "遵循批准的策略指南"
+      ],
+      "defaultSafeAlternative": "玩官方游戏版本",
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "使用修改版游戏安全吗？",
+            "answer": "不安全，修改版游戏存在重大风险，包括账户封禁和恶意软件。"
+          },
+          {
+            "question": "如果被封禁，我能恢复账户吗？",
+            "answer": "通常不能。因使用修改版而封禁通常是永久性的。"
+          },
+          {
+            "question": "有合法的替代方案来更快进步吗？",
+            "answer": "是的，你可以使用优化策略，参与活动并遵循官方指南。"
+          }
+        ],
+        "defaultQuestion": "什么是修改版游戏？",
+        "defaultAnswer": "修改版游戏是包含额外功能的原始游戏的修改版本，但存在重大风险。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "了解所涉及的风险",
+          "了解服务条款",
+          "数字安全意识"
+        ],
+        "default": "了解所涉及的风险"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "scripts": "脚本指南",
+        "codes": "代码指南",
+        "secondFloor": "二楼指南"
+      },
+      "cta": {
+        "title": "需要更多信息？",
+        "description": "探索我们的其他指南，学习安全和有效的策略来改善你的游戏体验。",
+        "button": "查看所有指南"
+      }
     },
     "scriptsNoKey": {
       "title": "脚本（无密钥）",
@@ -729,155 +1392,731 @@
     },
     "probabilidades": {
       "title": "秘密和概率",
-      "subtitle": "发现游戏的所有秘密，了解稀有Brainrots的生成率。学习如何提高你的幸运属性",
+      "subtitle": "发现生成率和如何增加你的幸运值",
+      "seoTitle": "秘密和概率 - 完整生成率指南 | Steal a Brainrot",
+      "seoDescription": "发现所有角色的确切生成率，如何增加你的幸运值，以及在Steal a Brainrot中最大化概率的策略。",
+      "seoKeywords": "概率, 生成率, 幸运, 稀有度, 角色, Steal a Brainrot, 指南",
+      "readingTime": "8 分钟阅读",
+      "difficulty": "中级",
+      "lastUpdated": "更新：2024年12月",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "spawnRates": "生成率",
+        "luckStat": "幸运属性",
+        "strategies": "策略",
+        "faq": "常见问题"
+      },
       "spawnRates": "生成率",
+      "spawnRatesDesc": "了解生成率是优化游戏策略的基础。每个角色都有特定的出现概率。",
       "common": {
         "title": "普通",
-        "rate": "60%",
-        "description": "在所有区域频繁出现。"
+        "rate": "45%",
+        "description": "游戏中最常见的角色",
+        "characteristics": "特征",
+        "features": [
+          "出现频率更高",
+          "容易获得",
+          "收藏的基础",
+          "适合初学者"
+        ],
+        "defaultFeature": "基础游戏角色"
       },
       "rare": {
         "title": "稀有",
-        "rate": "25%",
-        "description": "在特定区域偶尔出现。"
+        "rate": "30%",
+        "description": "具有特殊特征的角色",
+        "characteristics": "特征",
+        "features": [
+          "增强的能力",
+          "独特的设计",
+          "中等价值",
+          "中级收藏"
+        ],
+        "defaultFeature": "具有特殊能力的角色"
       },
       "epic": {
         "title": "史诗",
-        "rate": "10%",
-        "description": "在特殊区域很少出现。"
+        "rate": "15%",
+        "description": "非常强大的角色",
+        "characteristics": "特征",
+        "features": [
+          "高级能力",
+          "独家设计",
+          "高价值",
+          "高级收藏"
+        ],
+        "defaultFeature": "具有高级能力的角色"
       },
       "legendary": {
         "title": "传说",
-        "rate": "4%",
-        "description": "在特殊活动中非常罕见。"
+        "rate": "8%",
+        "description": "极其稀有的角色",
+        "characteristics": "特征",
+        "features": [
+          "独特能力",
+          "传说设计",
+          "卓越价值",
+          "精英收藏"
+        ],
+        "defaultFeature": "具有独特能力的角色"
       },
       "mythic": {
         "title": "神话",
-        "rate": "1%",
-        "description": "极其罕见。"
+        "rate": "2%",
+        "description": "游戏中最稀有的角色",
+        "characteristics": "特征",
+        "features": [
+          "神话能力",
+          "独特设计",
+          "最大价值",
+          "至尊收藏"
+        ],
+        "defaultFeature": "游戏中最稀有的角色"
       },
       "luckStat": "幸运属性",
-      "luckStatDesc": "提高你的幸运属性可以改善稀有Brainrots的生成率。",
-      "howToIncreaseLuck": "如何提高幸运",
+      "luckStatDesc": "幸运属性是直接影响稀有角色生成率的关键因素。你的幸运值越高，概率就越好。",
+      "howToIncreaseLuck": "如何增加你的幸运值",
       "luckMethods": [
-        "完成每日任务",
-        "参与特殊活动",
-        "使用幸运能量道具",
-        "在特定时间游戏"
-      ]
+        {
+          "title": "完成任务",
+          "description": "每日和每周任务永久增加你的幸运值"
+        },
+        {
+          "title": "收集角色",
+          "description": "收藏中的每个独特角色都会增加你的幸运值"
+        },
+        {
+          "title": "参与活动",
+          "description": "特殊活动提供临时幸运加成"
+        },
+        {
+          "title": "升级装备",
+          "description": "某些物品会增加你的幸运属性"
+        }
+      ],
+      "defaultLuckMethod": {
+        "title": "基本方法",
+        "description": "完成任务和收集角色来增加你的幸运值"
+      },
+      "strategies": "高级策略",
+      "farming": {
+        "title": "高效刷怪",
+        "description": "优化你的游戏时间来最大化生成",
+        "tips": "刷怪技巧",
+        "tipsList": [
+          "在高峰活动时间游戏",
+          "使用幸运加成器",
+          "将时间集中在特定区域",
+          "保持一致的例行程序"
+        ],
+        "defaultTip": "定期游戏以增加你的概率"
+      },
+      "timing": {
+        "title": "完美时机",
+        "description": "正确的时机可以产生巨大的差异",
+        "tips": "时机技巧",
+        "tipsList": [
+          "利用特殊活动",
+          "在高峰时间游戏",
+          "使用临时加成",
+          "与更新同步"
+        ],
+        "defaultTip": "在特殊活动期间游戏以获得更好的概率"
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "幸运属性是如何工作的？",
+            "answer": "幸运是一个乘数，增加找到稀有角色的概率。它随着时间和活动而累积。"
+          },
+          {
+            "question": "生成率会改变吗？",
+            "answer": "基础率保持不变，但特殊活动可能会临时修改它们。"
+          },
+          {
+            "question": "获得神话角色的最佳策略是什么？",
+            "answer": "最大化你的幸运值，参与活动，并保持一致的游戏例行程序。"
+          }
+        ],
+        "defaultQuestion": "如何增加我的概率？",
+        "defaultAnswer": "完成任务，收集角色，并参与活动来增加你的幸运值。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "基本的游戏理解",
+          "访问每日任务",
+          "定期刷怪的时间",
+          "收集的耐心"
+        ],
+        "default": "基本游戏知识"
+      },
+      "tips": {
+        "title": "重要提示",
+        "description": "记住幸运值会随着时间累积。在你的策略中要有耐心和一致性。"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "secrets": "秘密指南",
+        "rebirth": "重生指南",
+        "scripts": "脚本指南"
+      },
+      "cta": {
+        "title": "优化你的概率！",
+        "description": "应用这些策略并最大化获得稀有角色的机会。",
+        "button": "查看所有指南"
+      }
     },
     "estrategias": {
       "title": "高级策略",
       "subtitle": "想要完全掌握游戏的有经验玩家的高级技巧",
+      "seoTitle": "高级策略 - 完整技巧指南 | Steal a Brainrot",
+      "seoDescription": "发现高级战斗策略、资源管理和专家技巧，完全掌握Steal a Brainrot。",
+      "seoKeywords": "高级策略, 战斗, 资源管理, 专家技巧, Steal a Brainrot, 指南",
+      "readingTime": "10 分钟阅读",
+      "difficulty": "高级",
+      "lastUpdated": "更新：2024年12月",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "combatStrategies": "战斗策略",
+        "resourceManagement": "资源管理",
+        "advancedTips": "高级技巧",
+        "faq": "常见问题"
+      },
       "combatStrategies": "战斗策略",
+      "combatStrategiesDesc": "战斗策略是游戏成功的基础。每种方法都有其优势和劣势。",
       "hitAndRun": {
         "title": "打就跑",
-        "description": "快速攻击并在被反击前逃脱。"
+        "description": "快速攻击并在被反击前逃脱。",
+        "advantages": "优势",
+        "advantagesList": [
+          "短时间内高伤害",
+          "最小化反击风险",
+          "适合弱目标",
+          "对慢速敌人有效"
+        ],
+        "defaultAdvantage": "快速攻击策略"
       },
       "stealthApproach": {
         "title": "潜行接近",
-        "description": "使用隐身来接近而不被发现。"
+        "description": "使用隐身来接近而不被发现。",
+        "advantages": "优势",
+        "advantagesList": [
+          "避免敌人检测",
+          "实现突袭攻击",
+          "适合有价值目标",
+          "减少伤害风险"
+        ],
+        "defaultAdvantage": "潜行策略"
       },
       "teamTactics": {
         "title": "团队战术",
-        "description": "与其他玩家协调进行协同攻击。"
+        "description": "与其他玩家协调进行协同攻击。",
+        "advantages": "优势",
+        "advantagesList": [
+          "更大火力",
+          "敌人分心",
+          "相互掩护",
+          "更大目标"
+        ],
+        "defaultAdvantage": "团队策略"
       },
       "resourceManagement": "资源管理",
       "prioritize": {
         "title": "优先目标",
-        "description": "首先专注于最有价值的目标。"
+        "description": "首先专注于最有价值的目标。",
+        "tips": "优先化技巧",
+        "tipsList": [
+          "评估每个目标的价值",
+          "考虑风险与回报",
+          "规划攻击路线",
+          "根据情况调整策略"
+        ],
+        "defaultTip": "专注于高价值目标"
       },
       "efficiency": {
         "title": "最大化效率",
-        "description": "优化你的路线以最小化浪费的时间。"
+        "description": "优化你的路线以最小化浪费的时间。",
+        "tips": "效率技巧",
+        "tipsList": [
+          "优化移动路线",
+          "最小化旅行时间",
+          "使用捷径和秘密通道",
+          "规划多个目标"
+        ],
+        "defaultTip": "优化你的游戏时间"
       },
       "advancedTips": "高级技巧",
+      "advancedTipsDesc": "高级技巧将帮助你将游戏提升到下一个水平。定期练习这些技巧。",
       "tips": [
-        "学习敌人的移动模式",
-        "记住能量道具的位置",
-        "练习攻击时机",
-        "发展你自己的游戏风格"
-      ]
+        {
+          "title": "学习模式",
+          "description": "研究敌人移动模式以预测他们的行动。"
+        },
+        {
+          "title": "记住位置",
+          "description": "记住能量道具和重要资源的位置。"
+        },
+        {
+          "title": "练习时机",
+          "description": "完善攻击时机以最大化伤害。"
+        },
+        {
+          "title": "发展你的风格",
+          "description": "基于你的优势创造你自己的游戏风格。"
+        }
+      ],
+      "defaultTip": {
+        "title": "基本技巧",
+        "description": "定期练习以提高你的技能。"
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "什么是最好的战斗策略？",
+            "answer": "最佳策略取决于你的游戏风格和情况。尝试不同的方法。"
+          },
+          {
+            "question": "如何高效管理资源？",
+            "answer": "优先考虑高价值目标并优化路线以最大化效率。"
+          },
+          {
+            "question": "哪些技巧最重要？",
+            "answer": "学习敌人模式和练习时机是成功的基础。"
+          }
+        ],
+        "defaultQuestion": "如何改进我的策略？",
+        "defaultAnswer": "定期练习，研究敌人模式，并尝试不同的方法。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "基本游戏经验",
+          "理解基本机制",
+          "定期练习时间",
+          "愿意实验"
+        ],
+        "default": "基本游戏经验"
+      },
+      "warning": {
+        "title": "警告",
+        "description": "这些策略需要练习和经验。如果你不能立即掌握它们，不要气馁。"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "secrets": "秘密指南",
+        "probabilities": "概率指南",
+        "scripts": "脚本指南"
+      },
+      "cta": {
+        "title": "掌握策略！",
+        "description": "应用这些高级技巧并将你的游戏提升到下一个水平。",
+        "button": "查看所有指南"
+      }
     },
     "stealAFish": {
       "title": "Steal a Fish",
       "subtitle": "潜入水下世界，通过收集最稀有的鱼类建立你的水生帝国",
+      "seoTitle": "Steal a Fish - 完整水下游戏指南 | Steal a Brainrot",
+      "seoDescription": "发现偷取稀有鱼类、建立水生帝国和统治水下世界的策略。",
+      "seoKeywords": "steal a fish, 稀有鱼类, 水下游戏, 水生帝国, 偷鱼, Steal a Brainrot, 指南",
+      "readingTime": "7分钟阅读",
+      "difficulty": "中级",
+      "lastUpdated": "更新：2024年12月",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "gameOverview": "游戏概述",
+        "fishTypes": "鱼类类型",
+        "strategies": "策略",
+        "faq": "常见问题"
+      },
       "gameOverview": "游戏概述",
       "gameOverviewDesc": "Steal a Fish是一个水下收集游戏，你必须从其他玩家那里偷取稀有鱼类。",
+      "gameFeatures": "游戏特色",
+      "gameFeaturesList": [
+        "沉浸式水下世界",
+        "水生战斗系统",
+        "稀有鱼类收集",
+        "水下经济",
+        "玩家竞争"
+      ],
+      "defaultFeature": "水下收集游戏",
       "fishTypes": "鱼类类型",
       "commonFish": {
         "title": "普通鱼类",
-        "description": "容易找到但价值低。"
+        "description": "容易找到但价值低。",
+        "characteristics": "特征",
+        "features": [
+          "经常出现",
+          "价值低",
+          "适合新手",
+          "收藏基础"
+        ],
+        "defaultFeature": "基础游戏鱼类"
       },
       "rareFish": {
         "title": "稀有鱼类",
-        "description": "更难找到但价值更高。"
+        "description": "更难找到但价值更高。",
+        "characteristics": "特征",
+        "features": [
+          "偶尔出现",
+          "中等价值",
+          "特殊能力",
+          "中级收藏"
+        ],
+        "defaultFeature": "具有特殊能力的鱼类"
       },
       "legendaryFish": {
         "title": "传说鱼类",
-        "description": "极其稀有且非常有价值。"
+        "description": "极其稀有且非常有价值。",
+        "characteristics": "特征",
+        "features": [
+          "极其罕见",
+          "高价值",
+          "独特能力",
+          "高级收藏"
+        ],
+        "defaultFeature": "游戏中最有价值的鱼类"
       },
       "strategies": "策略",
       "underwaterCombat": {
         "title": "水下战斗",
-        "description": "学习在水下高效战斗。"
+        "description": "学习在水下与其他玩家战斗。",
+        "tips": "战斗技巧",
+        "tipsList": [
+          "利用水下环境优势",
+          "利用有限视野",
+          "与团队协调攻击",
+          "保持氧气供应"
+        ],
+        "defaultTip": "学习水下战斗机制"
       },
       "fishLocations": {
         "title": "鱼类位置",
-        "description": "发现每种鱼类的寻找位置。"
+        "description": "发现最稀有鱼类的寻找位置。",
+        "tips": "位置技巧",
+        "tipsList": [
+          "探索不同深度",
+          "搜索珊瑚礁",
+          "访问水下洞穴",
+          "检查沉船"
+        ],
+        "defaultTip": "探索不同水下区域"
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "如何找到传说鱼类？",
+            "answer": "传说鱼类出现在特定位置和特定深度。探索珊瑚礁和水下洞穴。"
+          },
+          {
+            "question": "最佳战斗策略是什么？",
+            "answer": "利用环境优势，与团队协调，在水下战斗中保持氧气供应。"
+          },
+          {
+            "question": "如何建立我的水生帝国？",
+            "answer": "从普通鱼类开始，然后寻找稀有鱼类，最后追求传说鱼类以最大化你的价值。"
+          }
+        ],
+        "defaultQuestion": "如何在Steal a Fish中开始？",
+        "defaultAnswer": "从探索浅水区域和收集普通鱼类开始，建立你的收藏。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "基本游戏理解",
+          "基础水下装备",
+          "探索时间",
+          "收藏策略"
+        ],
+        "default": "基本游戏知识"
+      },
+      "tips": {
+        "title": "重要提示",
+        "description": "记住氧气在水下世界至关重要。仔细规划你的探险。"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "pet": "Steal a Pet指南",
+        "car": "Steal a Car指南",
+        "meme": "Steal a Meme指南"
+      },
+      "cta": {
+        "title": "建立你的水生帝国！",
+        "description": "应用这些策略并统治Steal a Fish的水下世界。",
+        "button": "查看所有指南"
       }
     },
     "stealALabubu": {
       "title": "Steal a Labubu",
       "subtitle": "在这个令人兴奋的艺术玩具游戏中收集最可爱、最有价值的Labubu手办",
+      "seoTitle": "Steal a Labubu - 完整手办收集游戏指南 | Steal a Brainrot",
+      "seoDescription": "发现偷取稀有Labubu手办、建立艺术收藏和统治收藏玩具世界的策略。",
+      "seoKeywords": "steal a labubu, labubu手办, 艺术玩具, 手办收藏, 偷取labubu, Steal a Brainrot, 指南",
+      "readingTime": "6分钟阅读",
+      "difficulty": "中级",
+      "lastUpdated": "更新：2024年12月",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "gameOverview": "游戏概述",
+        "labubuTypes": "Labubu类型",
+        "collectionStrategies": "收集策略",
+        "faq": "常见问题"
+      },
       "gameOverview": "游戏概述",
       "gameOverviewDesc": "Steal a Labubu是一个手办收集游戏，你必须从其他玩家那里偷取稀有Labubu。",
+      "gameFeatures": "游戏特色",
+      "gameFeaturesList": [
+        "收藏手办世界",
+        "Labubu稀有度系统",
+        "数字艺术收藏",
+        "玩具经济",
+        "收藏家竞争"
+      ],
+      "defaultFeature": "手办收集游戏",
       "labubuTypes": "Labubu类型",
       "commonLabubu": {
         "title": "普通Labubu",
-        "description": "容易找到但价值低。"
+        "description": "容易找到但价值低。",
+        "characteristics": "特征",
+        "features": [
+          "经常出现",
+          "价值低",
+          "适合新手",
+          "收藏基础"
+        ],
+        "defaultFeature": "基础游戏Labubu"
       },
       "rareLabubu": {
         "title": "稀有Labubu",
-        "description": "更难找到但价值更高。"
+        "description": "更难找到但价值更高。",
+        "characteristics": "特征",
+        "features": [
+          "偶尔出现",
+          "中等价值",
+          "特殊设计",
+          "中级收藏"
+        ],
+        "defaultFeature": "具有特殊设计的Labubu"
       },
       "legendaryLabubu": {
         "title": "传说Labubu",
-        "description": "极其稀有且非常有价值。"
+        "description": "极其稀有且非常有价值。",
+        "characteristics": "特征",
+        "features": [
+          "极其罕见",
+          "高价值",
+          "独特设计",
+          "高级收藏"
+        ],
+        "defaultFeature": "游戏中最有价值的Labubu"
       },
-      "collectionTips": "收集技巧",
-      "tips": [
-        "专注于高稀有度的Labubu",
-        "参与特殊活动",
-        "与其他玩家交易",
-        "保持你的收藏有序"
-      ]
+      "collectionStrategies": "收集策略",
+      "targetedCollection": {
+        "title": "定向收集",
+        "description": "专注于特定的Labubu以最大化你的收藏。",
+        "tips": "收集技巧",
+        "tipsList": [
+          "专注于高稀有度的Labubu",
+          "参与特殊活动",
+          "与其他玩家交易",
+          "保持你的收藏有序"
+        ],
+        "defaultTip": "制定特定的收集策略"
+      },
+      "communityTrading": {
+        "title": "社区交易",
+        "description": "加入社区进行交易并改善你的收藏。",
+        "tips": "交易技巧",
+        "tipsList": [
+          "加入收藏家群组",
+          "参与拍卖",
+          "提供公平交易",
+          "建立你的声誉"
+        ],
+        "defaultTip": "积极参与社区"
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "如何找到传说Labubu？",
+            "answer": "传说Labubu出现在特殊活动中，并通过与其他玩家的交易获得。"
+          },
+          {
+            "question": "最佳收集策略是什么？",
+            "answer": "专注于高稀有度的Labubu，参与活动，并保持你的收藏有序。"
+          },
+          {
+            "question": "如何建立我的Labubu收藏？",
+            "answer": "从普通Labubu开始，然后寻找稀有Labubu，最后追求传说Labubu。"
+          }
+        ],
+        "defaultQuestion": "如何在Steal a Labubu中开始？",
+        "defaultAnswer": "从收集普通Labubu和参与活动开始，建立你的收藏。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "基本游戏理解",
+          "对手办收藏的兴趣",
+          "参与活动的时间",
+          "收集策略"
+        ],
+        "default": "基本游戏知识"
+      },
+      "tips": {
+        "title": "重要提示",
+        "description": "记住耐心是手办收藏的关键。传说Labubu需要时间和奉献。"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "fish": "Steal a Fish指南",
+        "pet": "Steal a Pet指南",
+        "anime": "Steal an Anime指南"
+      },
+      "cta": {
+        "title": "建立你的Labubu收藏！",
+        "description": "应用这些策略并统治Steal a Labubu中的收藏手办世界。",
+        "button": "查看所有指南"
+      }
     },
     "stealAnAnime": {
       "title": "Steal an Anime",
       "subtitle": "通过偷窃和收集你最喜欢的动漫中的标志性角色，成为终极御宅族",
+      "seoTitle": "Steal an Anime - 完整角色收集游戏指南 | Steal a Brainrot",
+      "seoDescription": "发现偷取稀有动漫角色、建立御宅族收藏和统治动漫角色世界的策略。",
+      "seoKeywords": "steal an anime, 动漫角色, 御宅族, 动漫收藏, 偷取角色, Steal a Brainrot, 指南",
+      "readingTime": "8分钟阅读",
+      "difficulty": "中级",
+      "lastUpdated": "更新：2024年12月",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "gameOverview": "游戏概述",
+        "animeCharacters": "动漫角色",
+        "otakuStrategies": "御宅族策略",
+        "faq": "常见问题"
+      },
       "gameOverview": "游戏概述",
       "gameOverviewDesc": "Steal an Anime是一个收集游戏，你必须从其他玩家那里偷取稀有动漫角色。",
+      "gameFeatures": "游戏特色",
+      "gameFeaturesList": [
+        "动漫角色世界",
+        "角色稀有度系统",
+        "御宅族收藏",
+        "动漫经济",
+        "御宅族竞争"
+      ],
+      "defaultFeature": "动漫角色收集游戏",
       "animeCharacters": "动漫角色",
       "popularCharacters": {
         "title": "流行角色",
-        "description": "来自流行动漫的知名角色。"
+        "description": "来自流行动漫的知名角色。",
+        "characteristics": "特征",
+        "features": [
+          "经常出现",
+          "中等价值",
+          "容易识别",
+          "收藏基础"
+        ],
+        "defaultFeature": "基础动漫角色"
       },
       "rareCharacters": {
         "title": "稀有角色",
-        "description": "不太知名但有价值的角色。"
+        "description": "不太知名但有价值的角色。",
+        "characteristics": "特征",
+        "features": [
+          "偶尔出现",
+          "高价值",
+          "特殊能力",
+          "中级收藏"
+        ],
+        "defaultFeature": "具有特殊能力的角色"
       },
       "legendaryCharacters": {
         "title": "传说角色",
-        "description": "极其稀有且有价值的角色。"
+        "description": "极其稀有且有价值的角色。",
+        "characteristics": "特征",
+        "features": [
+          "极其罕见",
+          "高价值",
+          "独特能力",
+          "高级收藏"
+        ],
+        "defaultFeature": "游戏中最有价值的角色"
       },
       "otakuStrategies": "御宅族策略",
-      "strategies": [
-        "熟悉流行动漫",
-        "参与主题活动",
-        "加入御宅族社区",
-        "保持你的收藏更新"
-      ]
+      "animeKnowledge": {
+        "title": "动漫知识",
+        "description": "学习不同的动漫以改善你的收藏。",
+        "tips": "知识技巧",
+        "tipsList": [
+          "熟悉流行动漫",
+          "研究配角",
+          "关注当前趋势",
+          "保持收藏更新"
+        ],
+        "defaultTip": "发展深厚的动漫知识"
+      },
+      "communityParticipation": {
+        "title": "社区参与",
+        "description": "加入御宅族社区以改善你的收藏。",
+        "tips": "社区技巧",
+        "tipsList": [
+          "参与主题活动",
+          "加入御宅族社区",
+          "分享你的知识",
+          "与其他玩家合作"
+        ],
+        "defaultTip": "积极参与御宅族社区"
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "如何找到传说角色？",
+            "answer": "传说角色出现在特殊活动中，并通过与其他玩家的交易获得。"
+          },
+          {
+            "question": "最佳御宅族策略是什么？",
+            "answer": "熟悉流行动漫，参与主题活动，并保持你的收藏更新。"
+          },
+          {
+            "question": "如何建立我的动漫收藏？",
+            "answer": "从流行角色开始，然后寻找稀有角色，最后追求传说角色。"
+          }
+        ],
+        "defaultQuestion": "如何在Steal an Anime中开始？",
+        "defaultAnswer": "从收集流行角色和参与活动开始，建立你的收藏。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "基本动漫知识",
+          "对动漫角色的兴趣",
+          "参与活动的时间",
+          "收集策略"
+        ],
+        "default": "基本动漫知识"
+      },
+      "tips": {
+        "title": "重要提示",
+        "description": "记住动漫知识是关键。传说角色需要研究和奉献。"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "fish": "Steal a Fish指南",
+        "labubu": "Steal a Labubu指南",
+        "pet": "Steal a Pet指南"
+      },
+      "cta": {
+        "title": "成为终极御宅族！",
+        "description": "应用这些策略并统治Steal an Anime中的动漫角色世界。",
+        "button": "查看所有指南"
+      }
     },
     "stealAPet": {
       "title": "Steal a Pet",
@@ -906,82 +2145,415 @@
       ]
     },
     "stealAMeme": {
-      "title": "Steal a Meme",
+      "seoTitle": "Steal a Meme - 偷窃病毒式迷因完整指南",
+      "seoDescription": "学习偷窃病毒式迷因、创作有趣内容和掌握迷因文化的高级策略。",
+      "seoKeywords": "steal a meme, 病毒式迷因, 迷因文化, 偷窃迷因, 有趣内容, 迷因策略",
+      "readingTime": "8分钟阅读",
+      "difficulty": "中级",
+      "lastUpdated": "更新：2024年12月",
+      "title": "Steal a Meme - 完整指南",
       "subtitle": "通过收集和偷窃最病毒式的网络迷因和角色，成为迷因之王",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "gameOverview": "游戏概述",
+        "memeTypes": "迷因类型",
+        "viralStrategies": "病毒策略",
+        "faq": "常见问题"
+      },
       "gameOverview": "游戏概述",
-      "gameOverviewDesc": "Steal a Meme是一个迷因收集游戏，你必须从其他玩家那里偷取病毒式迷因。",
+      "gameOverviewDesc": "Steal a Meme是一个创新的游戏，你可以偷窃病毒式迷因、创作有趣内容并掌握迷因文化。这个游戏将创造力、策略和幽默结合在独特的体验中。",
+      "gameFeatures": "游戏特色",
+      "gameFeaturesList": [
+        "病毒式迷因偷窃系统",
+        "自定义内容创作",
+        "迷因创作者社区",
+        "实时趋势系统",
+        "高级编辑工具",
+        "迷因竞赛"
+      ],
+      "defaultFeature": "游戏特色",
       "memeTypes": "迷因类型",
       "viralMemes": {
         "title": "病毒式迷因",
-        "description": "在互联网上变得流行的迷因。"
+        "description": "当下最受欢迎、主导社交媒体的迷因",
+        "characteristics": "特征",
+        "features": [
+          "高病毒传播潜力",
+          "易于分享",
+          "适用于多种场景",
+          "寿命短但强度高"
+        ],
+        "defaultFeature": "病毒特征"
       },
       "classicMemes": {
         "title": "经典迷因",
-        "description": "经受住时间考验的迷因。"
+        "description": "经受住时间考验并保持相关性的迷因",
+        "characteristics": "特征",
+        "features": [
+          "普遍认可",
+          "长期持久性",
+          "适应新情况",
+          "已建立的互联网文化"
+        ],
+        "defaultFeature": "经典特征"
       },
       "legendaryMemes": {
         "title": "传说迷因",
-        "description": "极其稀有且有价值的迷因。"
+        "description": "定义时代的稀有且最有价值的迷因",
+        "characteristics": "特征",
+        "features": [
+          "极度稀有",
+          "历史文化价值",
+          "对流行文化的影响",
+          "高级收藏性"
+        ],
+        "defaultFeature": "传说特征"
       },
-      "memeLordStrategies": "迷因之王策略",
-      "strategies": [
-        "跟上趋势",
-        "参与迷因社区",
-        "创作原创内容",
-        "战略性地分享迷因"
-      ]
+      "viralStrategies": "病毒策略",
+      "trendingTactics": {
+        "title": "趋势战术",
+        "description": "创建和偷窃病毒式迷因的策略",
+        "tips": "技巧",
+        "tipsList": [
+          "实时监控趋势",
+          "用你的独特触感改编现有迷因",
+          "使用相关且流行的标签",
+          "在高峰活动时间发布",
+          "与其他迷因创作者合作"
+        ],
+        "defaultTip": "跟随当前趋势"
+      },
+      "memeCulture": {
+        "title": "迷因文化",
+        "description": "有效理解和参与迷因文化",
+        "tips": "技巧",
+        "tipsList": [
+          "跟上趋势",
+          "理解每个迷因的背景",
+          "尊重文化并避免冒犯性内容",
+          "创作原创且有趣的内容",
+          "参与迷因社区"
+        ],
+        "defaultTip": "沉浸在迷因文化中"
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "如何偷窃迷因而不被检测到？",
+            "answer": "使用高级编辑工具并修改迷因使其独特。始终添加你的个人风格。"
+          },
+          {
+            "question": "什么让迷因变得病毒式？",
+            "answer": "幽默、时机、文化相关性和易于分享的组合决定了病毒传播潜力。"
+          },
+          {
+            "question": "我可以用迷因赚钱吗？",
+            "answer": "是的，你可以通过赞助、商品销售和内容平台来变现你的内容。"
+          }
+        ],
+        "defaultQuestion": "如何开始Steal a Meme？",
+        "defaultAnswer": "从探索当前病毒式迷因和练习内容创作开始。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "互联网文化基础知识",
+          "图像编辑工具",
+          "社交媒体账户",
+          "创造力和幽默感"
+        ],
+        "default": "迷因基础知识"
+      },
+      "tips": {
+        "title": "重要提示",
+        "description": "保持内容原创并尊重版权。创造力是成功的关键。"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "fish": "Steal a Fish - 钓鱼指南",
+        "labubu": "Steal a Labubu - 收藏指南",
+        "anime": "Steal an Anime - 御宅族指南"
+      },
+      "cta": {
+        "title": "开始创作迷因！",
+        "description": "加入迷因创作者社区，掌握病毒式幽默的艺术。",
+        "button": "探索更多指南"
+      }
     },
     "stealDeadlyRails": {
-      "title": "Steal a Deadly Rails",
+      "seoTitle": "Steal a Deadly Rails - 致命轨道生存完整指南",
+      "seoDescription": "学习在致命轨道上生存、偷取有价值怪物和掌握快节奏游戏的高级策略。",
+      "seoKeywords": "steal deadly rails, 致命轨道, 有价值怪物, 节奏游戏, 生存, 策略",
+      "readingTime": "10分钟阅读",
+      "difficulty": "高级",
+      "lastUpdated": "更新：2024年12月",
+      "title": "Steal a Deadly Rails - 完整指南",
       "subtitle": "在这个快节奏的节奏游戏中，在它们永远丢失之前从致命的传送带上抢夺有价值的怪物",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "gameOverview": "游戏概述",
+        "railTypes": "轨道类型",
+        "survivalStrategies": "生存策略",
+        "faq": "常见问题"
+      },
       "gameOverview": "游戏概述",
-      "gameOverviewDesc": "Steal a Deadly Rails是一个快节奏游戏，你必须从危险的传送带上偷取怪物。",
+      "gameOverviewDesc": "Steal a Deadly Rails是一个快节奏、高肾上腺素的游戏，你必须从致命的传送带上偷取有价值的怪物。速度和精确度是生存的关键。",
+      "gameFeatures": "游戏特色",
+      "gameFeaturesList": [
+        "多难度轨道系统",
+        "持续运动的有价值怪物",
+        "高级生存机制",
+        "实时评分系统",
+        "保护能量道具",
+        "玩家竞争"
+      ],
+      "defaultFeature": "游戏特色",
       "railTypes": "轨道类型",
       "easyRails": {
         "title": "简单轨道",
-        "description": "有普通怪物且危险较少的轨道。"
+        "description": "有普通怪物且危险较少的轨道，适合初学者",
+        "characteristics": "特征",
+        "features": [
+          "中等速度",
+          "普通怪物",
+          "低危险",
+          "适合初学者"
+        ],
+        "defaultFeature": "简单特征"
       },
       "hardRails": {
         "title": "困难轨道",
-        "description": "有稀有怪物但更危险的轨道。"
+        "description": "有稀有怪物但危险更大的轨道",
+        "characteristics": "特征",
+        "features": [
+          "高速度",
+          "稀有怪物",
+          "中等危险",
+          "更好奖励"
+        ],
+        "defaultFeature": "困难特征"
       },
       "deadlyRails": {
         "title": "致命轨道",
-        "description": "有传说怪物但极其危险的轨道。"
+        "description": "有传说怪物但极其危险的轨道",
+        "characteristics": "特征",
+        "features": [
+          "极速",
+          "传说怪物",
+          "最大危险",
+          "最大奖励"
+        ],
+        "defaultFeature": "致命特征"
       },
-      "survivalTips": "生存技巧",
-      "tips": [
-        "与危险保持距离",
-        "使用保护能量道具",
-        "学习移动模式",
-        "练习你的时机"
-      ]
+      "survivalStrategies": "生存策略",
+      "defenseTactics": {
+        "title": "防御战术",
+        "description": "保护自己免受轨道上危险的策略",
+        "tips": "技巧",
+        "tipsList": [
+          "与危险保持距离",
+          "使用保护能量道具",
+          "学习移动模式",
+          "练习你的时机",
+          "制定逃脱计划"
+        ],
+        "defaultTip": "保持安全距离"
+      },
+      "timingStrategies": {
+        "title": "时机策略",
+        "description": "掌握完美时机以不被检测地偷取怪物",
+        "tips": "技巧",
+        "tipsList": [
+          "研究移动模式",
+          "计算怪物速度",
+          "预测方向变化",
+          "利用动量优势",
+          "先在简单轨道练习"
+        ],
+        "defaultTip": "练习时机"
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "如何在致命轨道上生存？",
+            "answer": "先在简单轨道练习，学习模式，使用保护能量道具。经验是关键。"
+          },
+          {
+            "question": "哪些怪物最有价值？",
+            "answer": "致命轨道上的传说怪物最有价值，但也最难偷取。"
+          },
+          {
+            "question": "我可以组队玩吗？",
+            "answer": "是的，你可以与其他玩家协调以更高效地偷取怪物。"
+          }
+        ],
+        "defaultQuestion": "如何开始Steal a Deadly Rails？",
+        "defaultAnswer": "从简单轨道开始学习基本机制。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "快速反应",
+          "节奏游戏经验",
+          "移动模式知识",
+          "生存策略"
+        ],
+        "default": "基本反应"
+      },
+      "warning": {
+        "title": "重要警告",
+        "description": "这个游戏极其困难。致命轨道对初学者来说可能很令人沮丧。"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "fish": "Steal a Fish - 钓鱼指南",
+        "labubu": "Steal a Labubu - 收藏指南",
+        "anime": "Steal an Anime - 御宅族指南"
+      },
+      "cta": {
+        "title": "掌握致命轨道！",
+        "description": "加入最勇敢的玩家，掌握致命轨道生存的艺术。",
+        "button": "探索更多指南"
+      }
     },
     "stealACar": {
-      "title": "Steal a Car",
+      "seoTitle": "Steal a Car - 偷窃豪华汽车完整指南",
+      "seoDescription": "学习偷窃豪华汽车、策划完美抢劫和掌握偷车游戏的高级策略。",
+      "seoKeywords": "steal a car, 偷车, 豪华汽车, 抢劫, 偷窃策略, 汽车游戏",
+      "readingTime": "12分钟阅读",
+      "difficulty": "高级",
+      "lastUpdated": "更新：2024年12月",
+      "title": "Steal a Car - 完整指南",
       "subtitle": "在这个高辛烷值的偷车游戏中偷最贵的汽车",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "gameOverview": "游戏概述",
+        "carTypes": "汽车类型",
+        "heistStrategies": "抢劫策略",
+        "faq": "常见问题"
+      },
       "gameOverview": "游戏概述",
-      "gameOverviewDesc": "Steal a Car是一个偷车游戏，你必须偷取最有价值的车辆。",
+      "gameOverviewDesc": "Steal a Car是一个高肾上腺素的游戏，你必须偷取世界上最有价值的车辆。计划、精确度和团队合作是成功的关键。",
+      "gameFeatures": "游戏特色",
+      "gameFeaturesList": [
+        "多价值汽车系统",
+        "真实偷窃机制",
+        "专业工具",
+        "高级安全系统",
+        "团队合作",
+        "玩家竞争"
+      ],
+      "defaultFeature": "游戏特色",
       "carTypes": "汽车类型",
       "commonCars": {
         "title": "普通汽车",
-        "description": "容易偷但价值低。"
+        "description": "容易偷但价值低，适合初学者",
+        "characteristics": "特征",
+        "features": [
+          "基本安全",
+          "低价值",
+          "容易接近",
+          "适合初学者"
+        ],
+        "defaultFeature": "普通特征"
       },
       "luxuryCars": {
         "title": "豪华汽车",
-        "description": "更难偷但价值更高。"
+        "description": "更难偷但价值更高",
+        "characteristics": "特征",
+        "features": [
+          "高级安全",
+          "高价值",
+          "防盗系统",
+          "更好奖励"
+        ],
+        "defaultFeature": "豪华特征"
       },
-      "superCars": {
-        "title": "超级汽车",
-        "description": "极其难偷但非常有价值。"
+      "legendaryCars": {
+        "title": "传说汽车",
+        "description": "游戏中最稀有和最有价值的汽车",
+        "characteristics": "特征",
+        "features": [
+          "最高安全",
+          "极高价值",
+          "高科技系统",
+          "最大奖励"
+        ],
+        "defaultFeature": "传说特征"
       },
       "heistStrategies": "抢劫策略",
-      "strategies": [
-        "计划你的逃脱路线",
-        "使用专业工具",
-        "与其他玩家协调",
-        "避免安全检测"
-      ]
+      "planningTactics": {
+        "title": "计划战术",
+        "description": "策划完美抢劫的策略",
+        "tips": "技巧",
+        "tipsList": [
+          "彻底研究目标",
+          "计划多条逃脱路线",
+          "与团队协调",
+          "识别弱点",
+          "准备专业工具"
+        ],
+        "defaultTip": "计划每个细节"
+      },
+      "executionTactics": {
+        "title": "执行战术",
+        "description": "不被检测执行抢劫的策略",
+        "tips": "技巧",
+        "tipsList": [
+          "保持谨慎",
+          "使用静音工具",
+          "协调精确动作",
+          "避免安全系统",
+          "制定应急计划"
+        ],
+        "defaultTip": "精确执行"
+      },
+      "faq": {
+        "title": "常见问题",
+        "questions": [
+          {
+            "question": "如何偷车而不被检测到？",
+            "answer": "仔细计划，使用专业工具，与团队协调。谨慎是关键。"
+          },
+          {
+            "question": "哪些汽车最有价值？",
+            "answer": "传说汽车最有价值，但由于高级安全系统也最难偷。"
+          },
+          {
+            "question": "我可以单独玩还是需要团队？",
+            "answer": "你可以单独玩，但团队合作显著提高成功机会。"
+          }
+        ],
+        "defaultQuestion": "如何开始Steal a Car？",
+        "defaultAnswer": "从普通汽车开始学习基本机制。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "偷窃机制知识",
+          "专业工具",
+          "协调技能",
+          "逃脱策略"
+        ],
+        "default": "基本偷窃知识"
+      },
+      "warning": {
+        "title": "重要警告",
+        "description": "这个游戏模拟非法活动。仅供娱乐。"
+      },
+      "relatedGuides": {
+        "title": "相关指南",
+        "fish": "Steal a Fish - 钓鱼指南",
+        "labubu": "Steal a Labubu - 收藏指南",
+        "anime": "Steal an Anime - 御宅族指南"
+      },
+      "cta": {
+        "title": "掌握偷车艺术！",
+        "description": "加入最好的偷车贼，掌握完美抢劫的艺术。",
+        "button": "探索更多指南"
+      }
     },
     "common": {
       "backToHome": "← 返回首页",
@@ -1016,5 +2588,4 @@
       "allRightsReserved": "版权所有"
     }
   }
-} 
- 
+}

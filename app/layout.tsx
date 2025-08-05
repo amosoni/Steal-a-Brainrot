@@ -26,7 +26,11 @@ export const metadata: Metadata = {
     "Brainrot characters",
     "Profit calculator",
     "Game strategy",
-    "Roblox game guide"
+    "Roblox game guide",
+    "Brainrot database",
+    "Steal a Brainrot calculator",
+    "Roblox game tips",
+    "Brainrot strategies"
   ],
   authors: [{ name: "Steal a Brainrot Team" }],
   creator: "Steal a Brainrot Team",
@@ -109,6 +113,9 @@ export const metadata: Metadata = {
     'target-audience': 'roblox-players,gamers',
     'content-quality': 'expert',
     'update-frequency': 'daily',
+    'author': 'Steal a Brainrot Team',
+    'viewport': 'width=device-width, initial-scale=1',
+    'charset': 'utf-8',
   },
 };
 

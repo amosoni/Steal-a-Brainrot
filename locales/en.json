@@ -7,7 +7,9 @@
     "guides": "Guides"
   },
   "common": {
-    "backToHome": "← Back to Home"
+    "backToHome": "← Back to Home",
+    "showMore": "Show more",
+    "showLess": "Show less"
   },
   "brainrots": {
     "title": "Brainrots",
@@ -42,7 +44,11 @@
     "buyNow": "Buy Now",
     "comparisonFeatureComingSoon": "Comparison feature coming soon",
     "noResults": "No results found",
-    "tryAdjusting": "Try adjusting your search criteria or filters"
+    "tryAdjusting": "Try adjusting your search criteria or filters",
+    "viewDetails": "View Details",
+    "compare": "Compare",
+    "addedToCart": "Added to cart!",
+    "addedToFavorites": "Added to favorites!"
   },
   "calculator": {
     "title": "Profit Calculator",
@@ -165,6 +171,11 @@
     "autoUpdateCheck": "Automatic updates are checked every 5 minutes"
   },
   "home": {
+    "seo": {
+      "title": "Steal a Brainrot - The Most Complete Roblox Guide",
+      "description": "🎮 The ultimate tool for Steal a Brainrot on Roblox. Complete character database, profit calculator, strategy guides and expert tips. Master the game with our professional assistance!",
+      "keywords": "Steal a Brainrot, Roblox, Brainrot, Brainrot Characters, Profit Calculator, Character Database, Game Guide, Brainrot Strategies, Roblox Guide"
+    },
     "title": "Steal a Brainrot",
     "subtitle": "Complete Guide",
     "description": "The most complete guide for Roblox Steal a Brainrot, including character database, profit calculator, strategy guides, and other useful tools",
@@ -351,7 +362,23 @@
       }
     },
     "screenshots": {
-      "title": "Game Screenshots"
+      "title": "Game Screenshots",
+      "gameOverview": {
+        "title": "Game Overview",
+        "description": "Explore the chaotic world of Steal a Brainrot and discover all its secrets."
+      },
+      "userInterface": {
+        "title": "User Interface",
+        "description": "Intuitive controls and a clear interface for the best gaming experience."
+      },
+      "uniqueCharacters": {
+        "title": "Unique Characters",
+        "description": "Discover characters with unique personalities and special abilities."
+      },
+      "constantAction": {
+        "title": "Constant Action",
+        "description": "Games full of action where every second counts."
+      }
     },
     "faq": {
       "title": "Frequently Asked Questions",
@@ -467,6 +494,107 @@
       "description": "Join millions of players and experience the most exciting robbery game!",
       "playNow": "Play Now",
       "viewGuides": "View Guides"
+    },
+    "stats": {
+      "characters": "Brainrot Characters",
+      "rebirthLevels": "Rebirth Levels",
+      "rarityLevels": "Rarity Levels"
+    },
+    "scripts": {
+      "title": "Popular Scripts",
+      "warning": {
+        "title": "⚠️ Important Warning",
+        "description": "The use of scripts may result in your account being banned. Use them at your own risk.",
+        "list": [
+          "• The use of scripts may result in permanent account ban",
+          "• Scripts may contain malicious code",
+          "• The use of scripts violates the game's terms of service",
+          "• Use scripts at your own risk"
+        ]
+      },
+      "copyButton": "Copy Script",
+      "copiedButton": "Copied!",
+      "viewMoreButton": "View More Scripts",
+      "stealEveryone": {
+        "title": "Steal Everyone's Brainrot (Key System)",
+        "description": "Complete script system with key system to steal brainrots from all players."
+      },
+      "gumanbaScript": {
+        "title": "Gumanba Script (No Key)",
+        "description": "Script without key system, auto collection and advanced features."
+      },
+      "laserhunScript": {
+        "title": "Laserhun's Steal a Brainrot Script (Auto Collection)",
+        "description": "Script with automatic collection and teleport functions."
+      },
+      "easyCash": {
+        "title": "Easy Cash (No Key, Auto Lock, Remove Walls)",
+        "description": "Script for easy money, auto lock and remove walls."
+      },
+      "quantumPulsar": {
+        "title": "QuantumPulsar X (Auto Steal, Auto Lock, Auto Sell)",
+        "description": "Advanced script with integrated auto steal, lock and sell features."
+      },
+      "scriptBlox": {
+        "title": "ScriptBlox Script by laserhun (Auto Steal, Lock Base, No Key System)",
+        "description": "ScriptBlox script with auto steal and lock base, no key system."
+      },
+      "autoLockCollect": {
+        "title": "Auto Lock, Collect Cash, and Steal Script",
+        "description": "Script for auto lock, collect money and auto steal."
+      },
+      "legendHub": {
+        "title": "Legend Hub Hack (Instant Steal, Infinite Cash)",
+        "description": "Legendary hub with instant steal and infinite cash."
+      },
+      "feronikHub": {
+        "title": "Feronik Hub (Auto Lock, Instant Steal, Auto Buy)",
+        "description": "Feronik Hub with auto lock, instant steal and auto buy."
+      },
+      "forkT3": {
+        "title": "ForkT3's All-in-One",
+        "description": "ForkT3's all-in-one script with all features integrated."
+      },
+      "opScript": {
+        "title": "Steal a Brainrot OP Script",
+        "description": "OP script with advanced features and powerful hacks."
+      },
+      "polaris": {
+        "title": "Steal a Brainrot Script (Polaris) No Key",
+        "description": "Polaris script without key system, completely free."
+      },
+      "keylessOP": {
+        "title": "Steal a Brainrot OP Script Keyless",
+        "description": "OP script without keys, direct access to all features."
+      },
+      "lockBaseAutoSell": {
+        "title": "Steal a Brainrot OP Script: Lock Base, Auto Sell",
+        "description": "OP script with integrated lock base and auto sell features."
+      },
+      "crawlChicken": {
+        "title": "Crawl Chicken 3D",
+        "description": "Script for Crawl Chicken 3D game with special features."
+      },
+      "feronikHubAlt": {
+        "title": "Feronik Hub Script",
+        "description": "Alternative version of Feronik Hub with improved features."
+      },
+      "ghostHub": {
+        "title": "Ghost Hub Script",
+        "description": "Ghost Hub script with stealth and invisibility features."
+      },
+      "quantumPulsarAlt": {
+        "title": "QuantumPulsar X (Alternative)",
+        "description": "Alternative version of QuantumPulsar X with additional features."
+      },
+      "silentScript": {
+        "title": "Silent Script (Lock Base + Auto Sell)",
+        "description": "Silent script with integrated lock base and auto sell features."
+      },
+      "laserhunFinal": {
+        "title": "Laserhun's Script",
+        "description": "Laserhun's final script with all features optimized."
+      }
     }
   },
   "guides": {
@@ -500,32 +628,345 @@
     "medium": "Medium",
     "high": "High",
     "backToGuides": "← Back to Guides",
+    "segundoPiso": {
+      "title": "How to Reach the Second Floor",
+      "subtitle": "Master parkour on the Downtown map and gain a tactical advantage with our step-by-step guide",
+      "readingTime": "8 min read",
+      "difficulty": "Intermediate",
+      "rating": "4.8/5",
+      "quickNav": "Quick Navigation",
+      "step1": {
+        "shortTitle": "Preparation",
+        "title": "Preparation and Location",
+        "description": "Before attempting to reach the second floor, you need to prepare properly. Locate yourself on the Downtown map and find the main building.",
+        "tip": "Pro Tip",
+        "tipDetail": "Make sure you have at least 3 lives before attempting this challenge. Parkour can be frustrating at first."
+      },
+      "step2": {
+        "shortTitle": "First Jump",
+        "title": "The Critical First Jump",
+        "description": "The first jump is the most important. You need to jump from the roof of the main building to the first platform.",
+        "instructionsTitle": "Detailed Instructions",
+        "instructions": [
+          "Climb to the roof of the main building",
+          "Align your character with the edge",
+          "Jump towards the nearest platform",
+          "Hold the jump button"
+        ]
+      },
+      "step3": {
+        "shortTitle": "Sequence",
+        "title": "Movement Sequence",
+        "description": "Once on the first platform, you must follow a specific sequence of movements to reach the second floor.",
+        "warning": "Important Warning",
+        "warningDetail": "Don't rush. Each movement must be precise. One mistake can make you fall and lose lives."
+      },
+      "step4": {
+        "shortTitle": "Final",
+        "title": "The Final Jump",
+        "description": "The last jump is the most challenging. You need to calculate the distance and timing perfectly.",
+        "instructionsTitle": "Final Steps",
+        "instructions": [
+          "Position yourself on the last platform",
+          "Calculate the distance to the second floor",
+          "Execute the jump with precision",
+          "Land smoothly on the second floor"
+        ]
+      },
+      "step5": {
+        "shortTitle": "Success",
+        "title": "You Reached the Second Floor!",
+        "description": "Congratulations! You've completed the most difficult challenge in the game. Now you have access to exclusive rewards.",
+        "reward": "Exclusive Reward",
+        "rewardDetail": "You gain access to rare characters, special power-ups, and a significant advantage over other players."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "requirements": "Minimum Requirements",
+        "list": [
+          "At least 3 lives",
+          "Basic parkour experience",
+          "Patience and perseverance",
+          "Knowledge of Downtown map"
+        ],
+        "recommended": "Recommended",
+        "recommendedList": [
+          "5+ lives for greater safety",
+          "Speed power-ups",
+          "Communication equipment",
+          "Previous practice in safe areas"
+        ]
+      },
+      "advancedTips": {
+        "title": "Advanced Tips",
+        "timing": {
+          "title": "Perfect Timing",
+          "description": "Timing is crucial for success in this challenge.",
+          "tips": [
+            "Practice timing in safe areas",
+            "Use game sound as reference",
+            "Maintain a constant rhythm",
+            "Don't rush critical jumps"
+          ]
+        },
+        "strategy": {
+          "title": "Movement Strategy",
+          "description": "Develop a solid strategy before attempting the challenge.",
+          "tips": [
+            "Plan each movement in advance",
+            "Identify rest points",
+            "Have a backup plan",
+            "Practice the complete sequence"
+          ]
+        },
+        "equipment": {
+          "title": "Recommended Equipment",
+          "description": "Proper equipment can make a difference.",
+          "tips": [
+            "Use characters with high mobility",
+            "Equip speed power-ups",
+            "Consider using assistance scripts",
+            "Keep backup power-ups"
+          ]
+        },
+        "teamwork": {
+          "title": "Teamwork",
+          "description": "Teamwork can make the challenge easier.",
+          "tips": [
+            "Coordinate with other players",
+            "Share timing information",
+            "Help other players",
+            "Form a stable team"
+          ]
+        }
+      },
+      "commonMistakes": {
+        "title": "Common Mistakes",
+        "solution": "Solution",
+        "list": [
+          {
+            "title": "Premature Jump",
+            "description": "Trying to jump before being completely aligned.",
+            "solution": "Wait until you're perfectly aligned before jumping."
+          },
+          {
+            "title": "Lack of Patience",
+            "description": "Rushing critical movements.",
+            "solution": "Take your time and stay calm."
+          },
+          {
+            "title": "Ignoring Timing",
+            "description": "Not paying attention to jump timing.",
+            "solution": "Practice timing until it becomes natural."
+          },
+          {
+            "title": "Not Using Power-ups",
+            "description": "Attempting the challenge without assistance power-ups.",
+            "solution": "Use speed and mobility power-ups."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "How long does it take to learn this trick?",
+            "answer": "It depends on your experience, but most players need 2-3 hours of practice."
+          },
+          {
+            "question": "Is it possible to do it without power-ups?",
+            "answer": "Yes, but it's extremely difficult. Using speed power-ups is recommended."
+          },
+          {
+            "question": "What happens if I fail and lose all my lives?",
+            "answer": "You can try again after regenerating lives or use life codes."
+          },
+          {
+            "question": "Are there special rewards on the second floor?",
+            "answer": "Yes, there are rare characters and exclusive power-ups that can only be found there."
+          }
+        ]
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "rebirth": {
+          "title": "Rebirth Guide",
+          "description": "Learn about the rebirth system and how to maximize your profits."
+        },
+        "scripts": {
+          "title": "Scripts Guide",
+          "description": "Discover the best scripts to improve your game."
+        },
+        "secrets": {
+          "title": "Game Secrets",
+          "description": "Explore all the hidden secrets of Steal a Brainrot."
+        }
+      },
+      "cta": {
+        "title": "Ready for the Challenge?",
+        "description": "Now that you have all the information, are you ready to try reaching the second floor?",
+        "viewCharacters": "View Characters",
+        "calculator": "Calculator"
+      }
+    },
     "scripts": {
       "title": "Ultimate Script Guide",
       "subtitle": "Explore our complete list of popular scripts, understand how they work and learn about related risks",
+      "seoTitle": "Steal a Brainrot Scripts - Complete Script and Automation Guide",
+      "seoDescription": "Discover the most popular scripts for Steal a Brainrot, their features, risks and how to use them safely.",
+      "seoKeywords": "steal a brainrot scripts, automation, auto farm, teleport, script risks",
+      "readingTime": "10 min read",
+      "difficulty": "Advanced",
+      "lastUpdated": "Updated: July 2025",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "whatAreScripts": "What are Scripts?",
+        "popularScripts": "Popular Scripts",
+        "risks": "Risks",
+        "howToUse": "How to Use"
+      },
       "whatAreScripts": "What are Scripts?",
       "whatAreScriptsDesc": "Scripts are codes that can automate actions in the game or provide advantages.",
+      "definition": "Definition",
+      "definitionDesc": "Scripts are computer programs that can run within the game to automate tasks, provide advantages or modify game behavior.",
       "popularScripts": "Popular Scripts",
-      "autoFarm": {
-        "title": "Auto Farm",
-        "description": "Automate resource collection and enemy fighting."
+      "stealEveryone": {
+        "title": "Steal Everyone's Brainrot (Key System)",
+        "description": "Complete script system with key system to steal brainrots from all players.",
+        "features": {
+          "keySystem": "Integrated key system",
+          "autoSteal": "Automatic brainrot stealing",
+          "advancedUI": "Advanced interface"
+        }
       },
-      "autoRebirth": {
-        "title": "Auto Rebirth",
-        "description": "Perform rebirth automatically when conditions are met."
+      "gumanbaScript": {
+        "title": "Gumanba Script (No Key)",
+        "description": "Script without key system, auto collection and advanced features.",
+        "features": {
+          "noKey": "No key system",
+          "autoCollection": "Automatic collection",
+          "advancedFeatures": "Advanced features"
+        }
       },
-      "teleport": {
-        "title": "Teleport",
-        "description": "Instantly teleport to any location on the map."
+      "laserhunScript": {
+        "title": "Laserhun's Steal a Brainrot Script (Auto Collection)",
+        "description": "Script with automatic collection and teleport functions.",
+        "features": {
+          "autoCollection": "Automatic collection",
+          "teleport": "Teleport function",
+          "easySetup": "Easy setup"
+        }
       },
       "risks": "Risks and Warnings",
-      "risksDesc": "Using scripts may violate game terms of service and result in account suspension. Use at your own risk.",
+      "risksDesc": "Using scripts can result in account bans. Use them at your own risk.",
+      "warnings": {
+        "accountBan": "Account ban",
+        "accountBanDesc": "Developers can detect and ban accounts using scripts",
+        "securityRisk": "Security risk",
+        "securityRiskDesc": "Scripts may contain malicious code or compromise your security",
+        "termsViolation": "Terms violation",
+        "termsViolationDesc": "Using scripts violates Roblox's terms of service"
+      },
+      "importantWarning": "Important Warning",
+      "warningList": [
+        "Using scripts can result in permanent account bans",
+        "Scripts may contain malicious code",
+        "Using scripts violates the game's terms of service",
+        "Use scripts at your own risk"
+      ],
+      "defaultWarning": "Warning: Scripts can be dangerous",
       "howToUse": "How to Use Scripts",
+      "setup": {
+        "title": "Initial Setup",
+        "steps": [
+          "Download a compatible script executor",
+          "Install and configure the executor",
+          "Find reliable scripts",
+          "Test on a secondary account first"
+        ],
+        "defaultStep": "Download a compatible script executor"
+      },
       "instructions": {
-        "step1": "Download a script executor (like Synapse X or KRNL)",
-        "step2": "Copy the script code you want to use",
-        "step3": "Paste and execute the script in the game"
+        "title": "Usage Instructions",
+        "list": [
+          "Copy the script code",
+          "Open the script executor",
+          "Paste the code in the executor",
+          "Execute the script",
+          "Monitor its operation"
+        ],
+        "default": "Copy the script code"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "Is it safe to use scripts?",
+            "answer": "No, scripts carry significant risks including account bans and malware."
+          },
+          {
+            "question": "Which script executor should I use?",
+            "answer": "It's recommended to use reliable executors like Synapse X or KRNL, but always with caution."
+          },
+          {
+            "question": "Can I use scripts on my main account?",
+            "answer": "Not recommended. Always test scripts on a secondary account first."
+          }
+        ],
+        "defaultQuestion": "What are scripts?",
+        "defaultAnswer": "Scripts are codes that can automate actions in the game or provide advantages."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Compatible script executor",
+          "Secondary account for testing",
+          "Understanding of risks",
+          "Basic programming knowledge"
+        ],
+        "default": "Compatible script executor"
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "codes": "Codes Guide",
+        "modified": "Modified Guide",
+        "secondFloor": "Second Floor Guide"
+      },
+      "cta": {
+        "title": "Need More Help?",
+        "description": "Explore our other guides to learn safe and effective strategies to improve your gaming experience.",
+        "button": "View All Guides"
       }
+    },
+    "scriptsNoKey": {
+      "title": "Scripts (No Key)",
+      "subtitle": "Find the latest scripts without annoying key systems. Includes copy-paste code and safety warnings.",
+      "latestScripts": "Latest Scripts",
+      "autoFarmScript": {
+        "title": "Auto Farm Script",
+        "description": "Script to automatically collect resources and fight enemies"
+      },
+      "teleportScript": {
+        "title": "Teleport Script",
+        "description": "Script to instantly teleport to any location on the map"
+      },
+      "securityWarning": "Security Warning",
+      "securityWarningDesc": "Using scripts may result in account suspension. Use at your own risk.",
+      "howToUse": "How to Use",
+      "steps": [
+        "1. Download a script executor (like Synapse X or KRNL)",
+        "2. Copy the script code you want to use",
+        "3. Paste and execute the script in the game"
+      ],
+      "tips": "Script Tips",
+      "tipsList": [
+        "Only use scripts from trusted sources",
+        "Test scripts in a safe environment first",
+        "Regularly backup your game data",
+        "Keep track of script updates and fixes",
+        "Don't share your personal scripts"
+      ],
+      "defaultTip": "Script usage tips"
     },
     "segundoPiso": {
       "title": "How to Reach the Second Floor",
@@ -580,23 +1021,123 @@
     "rebirth": {
       "title": "Ultimate Rebirth Guide",
       "subtitle": "Understand the most important progression system, and why sacrificing current progress is key to becoming stronger",
+      "seoTitle": "Steal a Brainrot Rebirth Guide - Complete Progression System",
+      "seoDescription": "Learn everything about the Rebirth system in Steal a Brainrot, when to do it, its benefits and strategies to maximize your progress.",
+      "seoKeywords": "rebirth steal a brainrot, progression system, multipliers, permanent bonuses",
+      "readingTime": "8 min read",
+      "difficulty": "Intermediate",
+      "lastUpdated": "Updated: July 2025",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "whatIsRebirth": "What is Rebirth?",
+        "benefits": "Benefits",
+        "process": "Process",
+        "faq": "FAQ"
+      },
       "whatIsRebirth": "What is Rebirth?",
       "whatIsRebirthDesc": "Rebirth is a progression system that allows you to sacrifice your current progress to gain permanent bonuses.",
-      "whenToRebirth": "When to Rebirth?",
-      "whenToRebirthDesc": "It's recommended to rebirth when you've reached at least level 50 and have enough resources.",
+      "definition": "Definition",
+      "definitionDesc": "The Rebirth system is a progression mechanism that allows players to reset their progress in exchange for permanent bonuses that significantly improve their future performance.",
       "rebirthBenefits": "Rebirth Benefits",
       "benefits": [
-        "Permanent experience multipliers",
-        "Damage and defense bonuses",
-        "Access to exclusive content",
-        "Speed and jump improvements"
+        {
+          "title": "Experience Multipliers",
+          "description": "Permanently increase the rate of experience gain"
+        },
+        {
+          "title": "Damage Bonuses",
+          "description": "Improve attack damage and combat capabilities"
+        },
+        {
+          "title": "Movement Improvements",
+          "description": "Increase movement speed and jumping ability"
+        },
+        {
+          "title": "Exclusive Access",
+          "description": "Unlock exclusive content and areas"
+        }
       ],
+      "defaultBenefit": {
+        "title": "Permanent Bonuses",
+        "description": "Get permanent improvements that will make you stronger"
+      },
       "rebirthProcess": "Rebirth Process",
+      "processSteps": [
+        {
+          "step": "1",
+          "title": "Reach Minimum Level",
+          "description": "Make sure you have reached at least level 50 before considering Rebirth"
+        },
+        {
+          "step": "2",
+          "title": "Gather Resources",
+          "description": "Accumulate enough brainrots and resources to maximize benefits"
+        },
+        {
+          "step": "3",
+          "title": "Find the NPC",
+          "description": "Locate the Rebirth NPC on the game map"
+        },
+        {
+          "step": "4",
+          "title": "Confirm Sacrifice",
+          "description": "Confirm your decision to sacrifice your current progress"
+        },
+        {
+          "step": "5",
+          "title": "Enjoy Improvements",
+          "description": "Start your new life with permanent bonuses"
+        }
+      ],
       "step1": "1. Reach the minimum required level",
       "step2": "2. Gather enough resources",
       "step3": "3. Go to the Rebirth NPC",
       "step4": "4. Confirm the sacrifice",
-      "step5": "5. Enjoy your new bonuses"
+      "step5": "5. Enjoy your new bonuses",
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "When should I do my first Rebirth?",
+            "answer": "It is recommended to do the first Rebirth after reaching level 50 and having accumulated sufficient resources."
+          },
+          {
+            "question": "Do I lose all my progress when doing Rebirth?",
+            "answer": "Yes, you lose your current progress but gain permanent bonuses that will make you stronger."
+          },
+          {
+            "question": "Are Rebirth benefits permanent?",
+            "answer": "Yes, all bonuses obtained from Rebirth are permanent and accumulate with each Rebirth."
+          }
+        ],
+        "defaultQuestion": "What is the Rebirth system?",
+        "defaultAnswer": "Rebirth is a system that allows sacrificing current progress for permanent bonuses."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Minimum level 50",
+          "Sufficient resources",
+          "Understanding of the system",
+          "Mental preparation"
+        ],
+        "default": "Minimum level 50"
+      },
+      "warning": {
+        "title": "Important Warning",
+        "description": "Rebirth is irreversible. Make sure you are completely prepared before proceeding."
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "scripts": "Scripts Guide",
+        "codes": "Codes Guide",
+        "secondFloor": "Second Floor Guide"
+      },
+      "cta": {
+        "title": "Need more help?",
+        "description": "Explore our other guides to maximize your progress and improve your gaming experience.",
+        "button": "View All Guides"
+      }
     },
     "secretos": {
       "title": "Secrets",
@@ -632,177 +1173,799 @@
     "codigos": {
       "title": "Codes (July 2025)",
       "subtitle": "The latest, most honest information about active and expired codes",
+      "seoTitle": "Steal a Brainrot Codes 2025 - Complete Redeem Code Guide",
+      "seoDescription": "Discover all active and expired codes for Steal a Brainrot, alternatives to get rewards and strategies to maximize your earnings.",
+      "seoKeywords": "steal a brainrot codes, roblox codes, redeem codes, brainrot codes, codes 2025",
+      "readingTime": "5 min read",
+      "difficulty": "Easy",
+      "lastUpdated": "Updated: July 2025",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "activeCodes": "Active Codes",
+        "expiredCodes": "Expired Codes",
+        "alternatives": "Alternatives",
+        "faq": "FAQ"
+      },
       "noActiveCodes": "No Active Codes",
       "noActiveCodesDesc": "Currently there are no active promotional codes available. The developers may release codes during special events.",
+      "currentStatus": "Current Status",
+      "statusList": [
+        "No active codes available",
+        "Developers haven't announced new codes",
+        "Recommended to use alternatives for rewards"
+      ],
+      "defaultStatus": "Status not available",
       "expiredCodes": "Expired Codes",
       "expiredCodesList": [
         "BRAINROT2024 - Expired",
         "SUMMER2024 - Expired",
         "WINTER2024 - Expired"
       ],
-      "whyNoCodes": "Why Are There No Codes?",
+      "expired": "Expired",
+      "noExpiredCodes": "No expired codes recorded",
+      "whyExpired": "Why Codes Expired",
       "reasons": [
-        "The game is still in development",
-        "Developers focus on gameplay over codes",
-        "Codes are only released during special events",
-        "The community is still growing"
+        "Developers haven't released new codes",
+        "Codes have automatic expiration dates",
+        "Game update required for new codes"
       ],
-      "howToGetRewards": "How to Get Rewards",
+      "defaultReason": "Developers haven't provided specific information",
+      "alternativesTitle": "Code Alternatives",
       "alternatives": [
         "Complete daily missions",
-        "Participate in events",
-        "Join the Discord community",
-        "Follow official announcements"
-      ]
+        "Participate in special events",
+        "Use the profit calculator",
+        "Follow investment strategies"
+      ],
+      "alternative1": {
+        "title": "Daily Missions"
+      },
+      "alternative2": {
+        "title": "Special Events"
+      },
+      "alternative3": {
+        "title": "Profit Calculator"
+      },
+      "alternative4": {
+        "title": "Investment Strategies"
+      },
+      "defaultAlternative": {
+        "title": "Recommended Alternative",
+        "description": "Use the profit calculator to optimize your investments"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "When will new codes be released?",
+            "answer": "Developers haven't announced specific dates for new codes. It's recommended to follow the game's official social media."
+          },
+          {
+            "question": "Will expired codes work again?",
+            "answer": "No, expired codes don't work again. Each code has a specific expiration date."
+          },
+          {
+            "question": "How can I get rewards without codes?",
+            "answer": "You can complete daily missions, participate in special events, and use optimized investment strategies."
+          }
+        ],
+        "defaultQuestion": "Are there active codes available?",
+        "defaultAnswer": "Currently there are no active codes available. It's recommended to use alternatives like daily missions and special events."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Active Roblox account",
+          "Access to Steal a Brainrot game",
+          "Basic game knowledge"
+        ],
+        "default": "Active Roblox account"
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "scripts": "Scripts Guide",
+        "modified": "Modified Guide",
+        "secondFloor": "Second Floor Guide"
+      },
+      "cta": {
+        "title": "Need More Help?",
+        "description": "Explore our other guides to maximize your earnings and improve your gaming experience.",
+        "button": "View All Guides"
+      }
     },
     "modificado": {
       "title": "Modified Steal a Brainrot",
       "subtitle": "Learn what 'modified' means, the features it offers, and key risks you must know before using it",
+      "seoTitle": "Modified Steal a Brainrot - Complete Guide to Risks and Features",
+      "seoDescription": "Discover what modified games are, their features, critical risks and safe alternatives for Steal a Brainrot.",
+      "seoKeywords": "modified steal a brainrot, modified game, risks, features, security",
+      "readingTime": "8 min read",
+      "difficulty": "Intermediate",
+      "lastUpdated": "Updated: July 2025",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "whatIsModified": "What is Modified?",
+        "features": "Features",
+        "risks": "Risks",
+        "faq": "FAQ"
+      },
       "whatIsModified": "What is Modified?",
       "whatIsModifiedDesc": "Modified versions are unofficial game modifications that add extra features and capabilities not available in the original game.",
-      "features": "Modified Features",
-      "featuresList": [
-        "Unlimited resources and currency",
-        "Enhanced movement and speed",
-        "Access to exclusive content",
-        "Advanced automation features",
-        "Custom skins and cosmetics"
-      ],
-      "risks": "Critical Risks",
-      "risksList": [
-        "Account suspension or ban",
-        "Loss of progress and items",
-        "Security vulnerabilities",
-        "Violation of terms of service",
-        "Potential malware or viruses"
-      ],
+      "definition": "Definition",
+      "definitionDesc": "Modified games are unofficial versions that have been altered to include additional functions, usually to provide advantages over other players.",
+      "featuresTitle": "Features",
+      "features": {
+        "unlimitedResources": "Unlimited resources and currency",
+        "unlimitedResourcesDesc": "Access to unlimited amounts of in-game currency and resources",
+        "enhancedMovement": "Enhanced movement and speed",
+        "enhancedMovementDesc": "Increased movement speed and improved jumping capabilities",
+        "exclusiveContent": "Access to exclusive content",
+        "exclusiveContentDesc": "Unlock content that normally requires time or money",
+        "automation": "Advanced automation features",
+        "automationDesc": "Scripts and bots to automate repetitive tasks",
+        "customSkins": "Custom skins and cosmetics",
+        "customSkinsDesc": "Access to exclusive and unique customizations"
+      },
+      "risksTitle": "Critical Risks",
+      "risksDescription": "Using modified games carries significant risks that you should consider before using them.",
+      "risks": {
+        "accountSuspension": "Account suspension or ban",
+        "accountSuspensionDesc": "Developers can detect and ban accounts using modified versions",
+        "lossOfProgress": "Loss of progress and items",
+        "lossOfProgressDesc": "You may lose all your progress, items and accumulated currency",
+        "securityVulnerabilities": "Security vulnerabilities",
+        "securityVulnerabilitiesDesc": "Modified files may contain malware or compromise your security",
+        "termsViolation": "Violation of terms of service",
+        "termsViolationDesc": "Using modifications violates Roblox's terms of service",
+        "malware": "Potential malware or viruses",
+        "malwareDesc": "Files from unofficial sources may contain malicious software"
+      },
       "recommendation": "Our Recommendation",
-      "recommendationDesc": "We strongly advise against using modified versions. The risks far outweigh any benefits, and you may lose your account permanently."
+      "recommendationDesc": "We strongly advise against using modified versions. The risks far outweigh any benefits, and you may lose your account permanently.",
+      "safeAlternatives": "Safe Alternatives",
+      "safeAlternativesList": [
+        "Play the official game version",
+        "Use legitimate strategies to progress",
+        "Participate in the official community",
+        "Follow approved strategy guides"
+      ],
+      "defaultSafeAlternative": "Play the official game version",
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "Is it safe to use modified games?",
+            "answer": "No, modified games carry significant risks including account bans and malware."
+          },
+          {
+            "question": "Can I recover my account if I get banned?",
+            "answer": "Generally no. Bans for using modifications are usually permanent."
+          },
+          {
+            "question": "Are there legitimate alternatives to progress faster?",
+            "answer": "Yes, you can use optimized strategies, participate in events and follow official guides."
+          }
+        ],
+        "defaultQuestion": "What are modified games?",
+        "defaultAnswer": "Modified games are altered versions of the original game that include additional features, but carry significant risks."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Understanding of the risks involved",
+          "Knowledge of terms of service",
+          "Digital security awareness"
+        ],
+        "default": "Understanding of the risks involved"
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "scripts": "Scripts Guide",
+        "codes": "Codes Guide",
+        "secondFloor": "Second Floor Guide"
+      },
+      "cta": {
+        "title": "Need More Information?",
+        "description": "Explore our other guides to learn safe and effective strategies to improve your gaming experience.",
+        "button": "View All Guides"
+      }
     },
     "probabilidades": {
-      "title": "Secrets and Probability",
-      "subtitle": "Discover all game secrets, understand the spawn rate of rare Brainrots. Learn how to improve your luck attribute.",
+      "title": "Secrets and Probabilities",
+      "subtitle": "Discover spawn rates and how to increase your luck",
+      "seoTitle": "Secrets and Probabilities - Complete Spawn Rate Guide | Steal a Brainrot",
+      "seoDescription": "Discover exact spawn rates for all characters, how to increase your luck, and strategies to maximize your probabilities in Steal a Brainrot.",
+      "seoKeywords": "probabilities, spawn rates, luck, rarity, characters, Steal a Brainrot, guide",
+      "readingTime": "8 min read",
+      "difficulty": "Intermediate",
+      "lastUpdated": "Updated: December 2024",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "spawnRates": "Spawn Rates",
+        "luckStat": "Luck Stat",
+        "strategies": "Strategies",
+        "faq": "FAQ"
+      },
       "spawnRates": "Spawn Rates",
+      "spawnRatesDesc": "Understanding spawn rates is fundamental to optimizing your game strategy. Each character has a specific probability of appearing.",
       "common": {
         "title": "Common",
-        "rate": "60%",
-        "description": "Most common characters, easy to find and collect."
+        "rate": "45%",
+        "description": "The most frequent characters in the game",
+        "characteristics": "Characteristics",
+        "features": [
+          "Appear more frequently",
+          "Easy to obtain",
+          "Base for collections",
+          "Ideal for beginners"
+        ],
+        "defaultFeature": "Basic game characters"
       },
       "rare": {
         "title": "Rare",
-        "rate": "25%",
-        "description": "Uncommon characters with better stats and abilities."
+        "rate": "30%",
+        "description": "Characters with special features",
+        "characteristics": "Characteristics",
+        "features": [
+          "Enhanced abilities",
+          "Unique designs",
+          "Moderate value",
+          "Intermediate collection"
+        ],
+        "defaultFeature": "Characters with special abilities"
       },
       "epic": {
         "title": "Epic",
-        "rate": "10%",
-        "description": "Powerful characters with unique abilities and high value."
+        "rate": "15%",
+        "description": "Very powerful characters",
+        "characteristics": "Characteristics",
+        "features": [
+          "Advanced abilities",
+          "Exclusive designs",
+          "High value",
+          "Premium collection"
+        ],
+        "defaultFeature": "Characters with advanced abilities"
       },
       "legendary": {
         "title": "Legendary",
-        "rate": "4%",
-        "description": "Extremely rare characters with exceptional abilities."
+        "rate": "8%",
+        "description": "Extremely rare characters",
+        "characteristics": "Characteristics",
+        "features": [
+          "Unique abilities",
+          "Legendary designs",
+          "Exceptional value",
+          "Elite collection"
+        ],
+        "defaultFeature": "Characters with unique abilities"
       },
       "mythic": {
         "title": "Mythic",
-        "rate": "1%",
-        "description": "The rarest characters in the game, extremely valuable."
+        "rate": "2%",
+        "description": "The rarest characters in the game",
+        "characteristics": "Characteristics",
+        "features": [
+          "Mythical abilities",
+          "Unique designs",
+          "Maximum value",
+          "Supreme collection"
+        ],
+        "defaultFeature": "The rarest characters in the game"
       },
-      "luckStat": "Luck Attribute",
-      "luckStatDesc": "Your luck attribute affects the probability of finding rare characters. Higher luck means better chances.",
-      "howToIncreaseLuck": "How to Increase Luck",
+      "luckStat": "Luck Stat",
+      "luckStatDesc": "The luck stat is a crucial factor that directly affects spawn rates of rare characters. The higher your luck, the better your probabilities.",
+      "howToIncreaseLuck": "How to Increase Your Luck",
       "luckMethods": [
-        "Complete daily missions",
-        "Participate in events",
-        "Use luck-boosting items",
-        "Join guild activities",
-        "Achieve milestones"
-      ]
+        {
+          "title": "Complete Missions",
+          "description": "Daily and weekly missions permanently increase your luck"
+        },
+        {
+          "title": "Collect Characters",
+          "description": "Each unique character in your collection increases your luck"
+        },
+        {
+          "title": "Participate in Events",
+          "description": "Special events offer temporary luck bonuses"
+        },
+        {
+          "title": "Upgrade Equipment",
+          "description": "Certain items increase your luck stat"
+        }
+      ],
+      "defaultLuckMethod": {
+        "title": "Basic Methods",
+        "description": "Complete missions and collect characters to increase your luck"
+      },
+      "strategies": "Advanced Strategies",
+      "farming": {
+        "title": "Efficient Farming",
+        "description": "Optimize your playtime to maximize spawns",
+        "tips": "Farming Tips",
+        "tipsList": [
+          "Play during peak activity hours",
+          "Use luck boosters",
+          "Focus your time on specific areas",
+          "Maintain a consistent routine"
+        ],
+        "defaultTip": "Play regularly to increase your probabilities"
+      },
+      "timing": {
+        "title": "Perfect Timing",
+        "description": "The right moment can make all the difference",
+        "tips": "Timing Tips",
+        "tipsList": [
+          "Take advantage of special events",
+          "Play during peak hours",
+          "Use temporary bonuses",
+          "Sync with updates"
+        ],
+        "defaultTip": "Play during special events for better probabilities"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "How does the luck stat work?",
+            "answer": "Luck is a multiplier that increases the probability of finding rare characters. It accumulates over time and through activities."
+          },
+          {
+            "question": "Do spawn rates change?",
+            "answer": "Base rates remain constant, but special events can modify them temporarily."
+          },
+          {
+            "question": "What's the best strategy for mythic characters?",
+            "answer": "Maximize your luck, participate in events, and maintain a consistent gaming routine."
+          }
+        ],
+        "defaultQuestion": "How to increase my probabilities?",
+        "defaultAnswer": "Complete missions, collect characters, and participate in events to increase your luck."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Basic game understanding",
+          "Access to daily missions",
+          "Time for regular farming",
+          "Patience for collecting"
+        ],
+        "default": "Basic game knowledge"
+      },
+      "tips": {
+        "title": "Important Tips",
+        "description": "Remember that luck accumulates over time. Be patient and consistent in your strategy."
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "secrets": "Secrets Guide",
+        "rebirth": "Rebirth Guide",
+        "scripts": "Scripts Guide"
+      },
+      "cta": {
+        "title": "Optimize Your Probabilities!",
+        "description": "Apply these strategies and maximize your chances of obtaining rare characters.",
+        "button": "View All Guides"
+      }
     },
     "estrategias": {
       "title": "Advanced Strategies",
       "subtitle": "Advanced techniques for experienced players who want to fully master the game",
+      "seoTitle": "Advanced Strategies - Complete Technique Guide | Steal a Brainrot",
+      "seoDescription": "Discover advanced combat strategies, resource management, and expert techniques to fully master Steal a Brainrot.",
+      "seoKeywords": "advanced strategies, combat, resource management, expert techniques, Steal a Brainrot, guide",
+      "readingTime": "10 min read",
+      "difficulty": "Advanced",
+      "lastUpdated": "Updated: December 2024",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "combatStrategies": "Combat Strategies",
+        "resourceManagement": "Resource Management",
+        "advancedTips": "Advanced Tips",
+        "faq": "FAQ"
+      },
       "combatStrategies": "Combat Strategies",
+      "combatStrategiesDesc": "Combat strategies are fundamental to success in the game. Each approach has its advantages and disadvantages.",
       "hitAndRun": {
         "title": "Hit and Run",
-        "description": "Quick attacks followed by immediate retreat to avoid counter-attacks."
+        "description": "Quick attacks followed by immediate retreat to avoid counter-attacks.",
+        "advantages": "Advantages",
+        "advantagesList": [
+          "High damage in short time",
+          "Minimizes counter-attack risk",
+          "Ideal for weak targets",
+          "Effective against slow enemies"
+        ],
+        "defaultAdvantage": "Fast attack strategy"
       },
       "stealthApproach": {
         "title": "Stealth Approach",
-        "description": "Use invisibility and silent movement to surprise enemies."
+        "description": "Use invisibility and silent movement to surprise enemies.",
+        "advantages": "Advantages",
+        "advantagesList": [
+          "Avoids enemy detection",
+          "Enables surprise attacks",
+          "Ideal for valuable targets",
+          "Reduces damage risk"
+        ],
+        "defaultAdvantage": "Stealth strategy"
       },
       "teamTactics": {
         "title": "Team Tactics",
-        "description": "Coordinate with teammates for coordinated attacks and defense."
+        "description": "Coordinate with teammates for coordinated attacks and defense.",
+        "advantages": "Advantages",
+        "advantagesList": [
+          "Greater firepower",
+          "Enemy distraction",
+          "Mutual coverage",
+          "Larger targets"
+        ],
+        "defaultAdvantage": "Team strategy"
       },
       "resourceManagement": "Resource Management",
       "prioritize": {
         "title": "Prioritize Targets",
-        "description": "Focus on high-value targets and avoid wasting resources on low-priority enemies."
+        "description": "Focus on high-value targets and avoid wasting resources on low-priority enemies.",
+        "tips": "Prioritization Tips",
+        "tipsList": [
+          "Evaluate each target's value",
+          "Consider risk vs reward",
+          "Plan your attack route",
+          "Adapt strategy to situation"
+        ],
+        "defaultTip": "Focus on high-value targets"
       },
       "efficiency": {
         "title": "Efficiency Optimization",
-        "description": "Maximize resource usage and minimize waste through strategic planning."
+        "description": "Maximize resource usage and minimize waste through strategic planning.",
+        "tips": "Efficiency Tips",
+        "tipsList": [
+          "Optimize movement routes",
+          "Minimize travel time",
+          "Use shortcuts and secret passages",
+          "Plan multiple objectives"
+        ],
+        "defaultTip": "Optimize your playtime"
       },
       "advancedTips": "Advanced Tips",
+      "advancedTipsDesc": "Advanced tips will help you take your game to the next level. Practice these techniques regularly.",
       "tips": [
-        "Master the timing of power-ups",
-        "Learn map layouts and shortcuts",
-        "Practice movement and evasion",
-        "Study opponent patterns",
-        "Adapt strategies to different situations"
-      ]
+        {
+          "title": "Learn Patterns",
+          "description": "Study enemy movement patterns to anticipate their actions."
+        },
+        {
+          "title": "Memorize Locations",
+          "description": "Remember power-up and important resource locations."
+        },
+        {
+          "title": "Practice Timing",
+          "description": "Perfect your attack timing to maximize damage."
+        },
+        {
+          "title": "Develop Your Style",
+          "description": "Create your own play style based on your strengths."
+        }
+      ],
+      "defaultTip": {
+        "title": "Basic Tip",
+        "description": "Practice regularly to improve your skills."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "What's the best combat strategy?",
+            "answer": "The best strategy depends on your play style and situation. Experiment with different approaches."
+          },
+          {
+            "question": "How to manage resources efficiently?",
+            "answer": "Prioritize high-value targets and optimize your routes to maximize efficiency."
+          },
+          {
+            "question": "Which tips are most important?",
+            "answer": "Learning enemy patterns and practicing timing are fundamental to success."
+          }
+        ],
+        "defaultQuestion": "How to improve my strategies?",
+        "defaultAnswer": "Practice regularly, study enemy patterns, and experiment with different approaches."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Basic game experience",
+          "Understanding of fundamental mechanics",
+          "Time for regular practice",
+          "Willingness to experiment"
+        ],
+        "default": "Basic game experience"
+      },
+      "warning": {
+        "title": "Warning",
+        "description": "These strategies require practice and experience. Don't get discouraged if you don't master them immediately."
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "secrets": "Secrets Guide",
+        "probabilities": "Probabilities Guide",
+        "scripts": "Scripts Guide"
+      },
+      "cta": {
+        "title": "Master the Strategies!",
+        "description": "Apply these advanced techniques and take your game to the next level.",
+        "button": "View All Guides"
+      }
     },
     "stealAMeme": {
-      "title": "Steal a Meme Guide",
+      "seoTitle": "Steal a Meme - Complete Guide to Stealing Viral Memes",
+      "seoDescription": "Learn advanced strategies for stealing viral memes, creating funny content, and mastering meme culture in Steal a Meme.",
+      "seoKeywords": "steal a meme, viral memes, meme culture, steal memes, funny content, meme strategies",
+      "readingTime": "8 min read",
+      "difficulty": "Intermediate",
+      "lastUpdated": "Updated: December 2024",
+      "title": "Steal a Meme - Complete Guide",
       "subtitle": "Become a meme lord by collecting and stealing the most viral internet memes and characters",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "gameOverview": "Game Overview",
+        "memeTypes": "Meme Types",
+        "viralStrategies": "Viral Strategies",
+        "faq": "FAQ"
+      },
       "gameOverview": "Game Overview",
-      "gameOverviewDesc": "Steal a Meme is a unique game where players collect and trade popular internet memes and characters. The goal is to build the most valuable meme collection while competing with other players.",
+      "gameOverviewDesc": "Steal a Meme is an innovative game where you can steal viral memes, create funny content, and master meme culture. This game combines creativity, strategy, and humor in a unique experience.",
+      "gameFeatures": "Game Features",
+      "gameFeaturesList": [
+        "Viral meme stealing system",
+        "Custom content creation",
+        "Meme creator community",
+        "Real-time trend system",
+        "Advanced editing tools",
+        "Meme competitions"
+      ],
+      "defaultFeature": "Game feature",
       "memeTypes": "Meme Types",
       "viralMemes": {
         "title": "Viral Memes",
-        "description": "Currently trending memes that are highly sought after and valuable."
+        "description": "The most popular memes of the moment that dominate social media",
+        "characteristics": "Characteristics",
+        "features": [
+          "High viral potential",
+          "Easy to share",
+          "Applicable to multiple contexts",
+          "Short but intense lifespan"
+        ],
+        "defaultFeature": "Viral feature"
       },
       "classicMemes": {
         "title": "Classic Memes",
-        "description": "Timeless memes that have stood the test of time and remain popular."
+        "description": "Memes that have stood the test of time and remain relevant",
+        "characteristics": "Characteristics",
+        "features": [
+          "Universal recognition",
+          "Long-term durability",
+          "Adaptability to new situations",
+          "Established internet culture"
+        ],
+        "defaultFeature": "Classic feature"
       },
       "legendaryMemes": {
         "title": "Legendary Memes",
-        "description": "Rare and extremely valuable memes that are difficult to obtain."
+        "description": "The rarest and most valuable memes that define eras",
+        "characteristics": "Characteristics",
+        "features": [
+          "Extreme rarity",
+          "Historical cultural value",
+          "Influence on pop culture",
+          "Premium collectibility"
+        ],
+        "defaultFeature": "Legendary feature"
       },
-      "memeCulture": "Meme Culture",
-      "cultureTips": [
-        "Stay updated with trends",
-        "Participate in meme communities",
-        "Create original content"
-      ]
+      "viralStrategies": "Viral Strategies",
+      "trendingTactics": {
+        "title": "Trending Tactics",
+        "description": "Strategies for creating and stealing memes that go viral",
+        "tips": "Tips",
+        "tipsList": [
+          "Monitor trends in real-time",
+          "Adapt existing memes with your unique touch",
+          "Use relevant and popular hashtags",
+          "Post during peak activity times",
+          "Collaborate with other meme creators"
+        ],
+        "defaultTip": "Follow current trends"
+      },
+      "memeCulture": {
+        "title": "Meme Culture",
+        "description": "Understanding and participating in meme culture effectively",
+        "tips": "Tips",
+        "tipsList": [
+          "Stay updated with trends",
+          "Understand the context of each meme",
+          "Respect culture and avoid offensive content",
+          "Create original and funny content",
+          "Participate in meme communities"
+        ],
+        "defaultTip": "Immerse yourself in meme culture"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "How can I steal memes without being detected?",
+            "answer": "Use advanced editing tools and modify memes to make them unique. Always add your personal touch."
+          },
+          {
+            "question": "What makes a meme go viral?",
+            "answer": "The combination of humor, timing, cultural relevance, and ease of sharing determines viral potential."
+          },
+          {
+            "question": "Can I make money with memes?",
+            "answer": "Yes, you can monetize your content through sponsorships, merchandising, and content platforms."
+          }
+        ],
+        "defaultQuestion": "How do I start with Steal a Meme?",
+        "defaultAnswer": "Start by exploring current viral memes and practicing content creation."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Basic knowledge of internet culture",
+          "Image editing tools",
+          "Social media accounts",
+          "Creativity and sense of humor"
+        ],
+        "default": "Basic meme knowledge"
+      },
+      "tips": {
+        "title": "Important Tips",
+        "description": "Keep your content original and respect copyright. Creativity is key to success."
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "fish": "Steal a Fish - Fishing Guide",
+        "labubu": "Steal a Labubu - Collection Guide",
+        "anime": "Steal an Anime - Otaku Guide"
+      },
+      "cta": {
+        "title": "Start Creating Memes!",
+        "description": "Join the meme creator community and master the art of viral humor.",
+        "button": "Explore More Guides"
+      }
     },
     "stealAnAnime": {
       "title": "Steal an Anime Guide",
       "subtitle": "Become the ultimate otaku by stealing and collecting iconic characters from your favorite anime",
+      "seoTitle": "Steal an Anime - Complete Character Collection Game Guide | Steal a Brainrot",
+      "seoDescription": "Discover strategies for stealing rare anime characters, building your otaku collection, and dominating the world of anime characters.",
+      "seoKeywords": "steal an anime, anime characters, otaku, anime collection, character stealing, Steal a Brainrot, guide",
+      "readingTime": "8 min read",
+      "difficulty": "Intermediate",
+      "lastUpdated": "Updated: December 2024",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "gameOverview": "Game Overview",
+        "animeCharacters": "Anime Characters",
+        "otakuStrategies": "Otaku Strategies",
+        "faq": "FAQ"
+      },
       "gameOverview": "Game Overview",
       "gameOverviewDesc": "Steal an Anime is a unique game where players collect and trade characters from popular anime series. Build your ultimate anime collection and compete with other otaku.",
+      "gameFeatures": "Game Features",
+      "gameFeaturesList": [
+        "Anime character world",
+        "Character rarity system",
+        "Otaku collection",
+        "Anime economy",
+        "Otaku competition"
+      ],
+      "defaultFeature": "Anime character collection game",
       "animeCharacters": "Anime Characters",
       "popularCharacters": {
         "title": "Popular Characters",
-        "description": "Well-known characters from mainstream anime series that are easy to find."
+        "description": "Well-known characters from mainstream anime series that are easy to find.",
+        "characteristics": "Characteristics",
+        "features": [
+          "Appear frequently",
+          "Moderate value",
+          "Easy to recognize",
+          "Base for collections"
+        ],
+        "defaultFeature": "Basic anime characters"
       },
       "rareCharacters": {
         "title": "Rare Characters",
-        "description": "Less common characters with unique abilities and higher value."
+        "description": "Less common characters with unique abilities and higher value.",
+        "characteristics": "Characteristics",
+        "features": [
+          "Appear occasionally",
+          "High value",
+          "Special abilities",
+          "Intermediate collection"
+        ],
+        "defaultFeature": "Characters with special abilities"
       },
       "legendaryCharacters": {
         "title": "Legendary Characters",
-        "description": "Extremely rare characters with powerful abilities and maximum value."
+        "description": "Extremely rare characters with powerful abilities and maximum value.",
+        "characteristics": "Characteristics",
+        "features": [
+          "Appear very rarely",
+          "High value",
+          "Unique abilities",
+          "Premium collection"
+        ],
+        "defaultFeature": "The most valuable characters in the game"
       },
       "otakuStrategies": "Otaku Strategies",
-      "strategies": [
-        "Watch anime to understand character popularity",
-        "Join anime communities for trading tips",
-        "Focus on seasonal anime characters",
-        "Invest in classic anime characters"
-      ]
+      "animeKnowledge": {
+        "title": "Anime Knowledge",
+        "description": "Learn about different anime to improve your collection.",
+        "tips": "Knowledge Tips",
+        "tipsList": [
+          "Know popular anime well",
+          "Research supporting characters",
+          "Follow current trends",
+          "Keep your collection updated"
+        ],
+        "defaultTip": "Develop deep anime knowledge"
+      },
+      "communityParticipation": {
+        "title": "Community Participation",
+        "description": "Join the otaku community to improve your collection.",
+        "tips": "Community Tips",
+        "tipsList": [
+          "Participate in themed events",
+          "Join otaku communities",
+          "Share your knowledge",
+          "Collaborate with other players"
+        ],
+        "defaultTip": "Actively participate in the otaku community"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "How do I find legendary characters?",
+            "answer": "Legendary characters appear in special events and through trades with other players."
+          },
+          {
+            "question": "What's the best otaku strategy?",
+            "answer": "Know popular anime well, participate in themed events, and keep your collection updated."
+          },
+          {
+            "question": "How do I build my anime collection?",
+            "answer": "Start with popular characters, then seek rare ones, and finally pursue legendary ones."
+          }
+        ],
+        "defaultQuestion": "How do I start in Steal an Anime?",
+        "defaultAnswer": "Start by collecting popular characters and participating in events to build your collection."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Basic anime knowledge",
+          "Interest in anime characters",
+          "Time for events",
+          "Collection strategy"
+        ],
+        "default": "Basic anime knowledge"
+      },
+      "tips": {
+        "title": "Important Tips",
+        "description": "Remember that anime knowledge is key. Legendary characters require research and dedication."
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "fish": "Steal a Fish Guide",
+        "labubu": "Steal a Labubu Guide",
+        "pet": "Steal a Pet Guide"
+      },
+      "cta": {
+        "title": "Become the Ultimate Otaku!",
+        "description": "Apply these strategies and dominate the world of anime characters in Steal an Anime.",
+        "button": "View All Guides"
+      }
     },
     "stealAPet": {
       "title": "Steal a Pet Guide",
@@ -833,108 +1996,544 @@
     "stealALabubu": {
       "title": "Steal a Labubu Guide",
       "subtitle": "Collect the cutest and most valuable Labubu figures in this exciting art toy game",
+      "seoTitle": "Steal a Labubu - Complete Figure Collection Game Guide | Steal a Brainrot",
+      "seoDescription": "Discover strategies for stealing rare Labubu figures, building your art collection, and dominating the world of collectible toys.",
+      "seoKeywords": "steal a labubu, labubu figures, art toys, figure collection, labubu stealing, Steal a Brainrot, guide",
+      "readingTime": "6 min read",
+      "difficulty": "Intermediate",
+      "lastUpdated": "Updated: December 2024",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "gameOverview": "Game Overview",
+        "labubuTypes": "Labubu Types",
+        "collectionStrategies": "Collection Strategies",
+        "faq": "FAQ"
+      },
       "gameOverview": "Game Overview",
       "gameOverviewDesc": "Steal a Labubu is a collectible art toy game featuring adorable Labubu figures. Collect rare variants and build your dream collection.",
+      "gameFeatures": "Game Features",
+      "gameFeaturesList": [
+        "Collectible figure world",
+        "Labubu rarity system",
+        "Digital art collection",
+        "Toy economy",
+        "Collector competition"
+      ],
+      "defaultFeature": "Figure collection game",
       "labubuTypes": "Labubu Types",
       "commonLabubu": {
         "title": "Common Labubu",
-        "description": "Basic Labubu figures that are widely available."
+        "description": "Basic Labubu figures that are widely available.",
+        "characteristics": "Characteristics",
+        "features": [
+          "Appear frequently",
+          "Low value",
+          "Ideal for beginners",
+          "Base for collections"
+        ],
+        "defaultFeature": "Basic game Labubu"
       },
       "rareLabubu": {
         "title": "Rare Labubu",
-        "description": "Limited edition Labubu figures with unique designs."
+        "description": "Limited edition Labubu figures with unique designs.",
+        "characteristics": "Characteristics",
+        "features": [
+          "Appear occasionally",
+          "Moderate value",
+          "Special designs",
+          "Intermediate collection"
+        ],
+        "defaultFeature": "Labubu with special designs"
       },
       "legendaryLabubu": {
         "title": "Legendary Labubu",
-        "description": "Extremely rare Labubu figures with exclusive designs."
+        "description": "Extremely rare Labubu figures with exclusive designs.",
+        "characteristics": "Characteristics",
+        "features": [
+          "Appear very rarely",
+          "High value",
+          "Unique designs",
+          "Premium collection"
+        ],
+        "defaultFeature": "The most valuable Labubu in the game"
       },
-      "collectionTips": "Collection Tips",
-      "tips": [
-        "Follow official releases",
-        "Join collector communities",
-        "Trade with other collectors",
-        "Preserve figure condition"
-      ]
+      "collectionStrategies": "Collection Strategies",
+      "targetedCollection": {
+        "title": "Targeted Collection",
+        "description": "Focus on specific Labubu to maximize your collection.",
+        "tips": "Collection Tips",
+        "tipsList": [
+          "Focus on high-rarity Labubu",
+          "Participate in special events",
+          "Trade with other players",
+          "Keep your collection organized"
+        ],
+        "defaultTip": "Develop a specific collection strategy"
+      },
+      "communityTrading": {
+        "title": "Community Trading",
+        "description": "Join the community to trade and improve your collection.",
+        "tips": "Trading Tips",
+        "tipsList": [
+          "Join collector groups",
+          "Participate in auctions",
+          "Offer fair trades",
+          "Build your reputation"
+        ],
+        "defaultTip": "Actively participate in the community"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "How do I find legendary Labubu?",
+            "answer": "Legendary Labubu appear in special events and through trades with other players."
+          },
+          {
+            "question": "What's the best collection strategy?",
+            "answer": "Focus on high-rarity Labubu, participate in events, and keep your collection organized."
+          },
+          {
+            "question": "How do I build my Labubu collection?",
+            "answer": "Start with common Labubu, then seek rare ones, and finally pursue legendary ones."
+          }
+        ],
+        "defaultQuestion": "How do I start in Steal a Labubu?",
+        "defaultAnswer": "Start by collecting common Labubu and participating in events to build your collection."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Basic game understanding",
+          "Interest in collectible figures",
+          "Time for events",
+          "Collection strategy"
+        ],
+        "default": "Basic game knowledge"
+      },
+      "tips": {
+        "title": "Important Tips",
+        "description": "Remember that patience is key in figure collecting. Legendary Labubu require time and dedication."
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "fish": "Steal a Fish Guide",
+        "pet": "Steal a Pet Guide",
+        "anime": "Steal an Anime Guide"
+      },
+      "cta": {
+        "title": "Build Your Labubu Collection!",
+        "description": "Apply these strategies and dominate the world of collectible figures in Steal a Labubu.",
+        "button": "View All Guides"
+      }
     },
     "stealAFish": {
       "title": "Steal a Fish Guide",
       "subtitle": "Dive into an underwater world and build your aquatic empire by collecting the rarest fish",
+      "seoTitle": "Steal a Fish - Complete Underwater Game Guide | Steal a Brainrot",
+      "seoDescription": "Discover strategies for stealing rare fish, building your aquatic empire, and dominating the underwater world in Steal a Fish.",
+      "seoKeywords": "steal a fish, rare fish, underwater game, aquatic empire, fish stealing, Steal a Brainrot, guide",
+      "readingTime": "7 min read",
+      "difficulty": "Intermediate",
+      "lastUpdated": "Updated: December 2024",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "gameOverview": "Game Overview",
+        "fishTypes": "Fish Types",
+        "strategies": "Strategies",
+        "faq": "FAQ"
+      },
       "gameOverview": "Game Overview",
       "gameOverviewDesc": "Steal a Fish is an underwater adventure game where players explore the ocean, catch rare fish, and build their aquatic collection.",
+      "gameFeatures": "Game Features",
+      "gameFeaturesList": [
+        "Immersive underwater world",
+        "Aquatic combat system",
+        "Rare fish collection",
+        "Underwater economy",
+        "Player competition"
+      ],
+      "defaultFeature": "Underwater collection game",
       "fishTypes": "Fish Types",
       "commonFish": {
         "title": "Common Fish",
-        "description": "Basic fish species found in shallow waters."
+        "description": "Basic fish species found in shallow waters.",
+        "characteristics": "Characteristics",
+        "features": [
+          "Appear frequently",
+          "Low value",
+          "Ideal for beginners",
+          "Base for collections"
+        ],
+        "defaultFeature": "Basic game fish"
       },
       "rareFish": {
         "title": "Rare Fish",
-        "description": "Uncommon fish species found in deeper waters."
+        "description": "Uncommon fish species found in deeper waters.",
+        "characteristics": "Characteristics",
+        "features": [
+          "Appear occasionally",
+          "Moderate value",
+          "Special abilities",
+          "Intermediate collection"
+        ],
+        "defaultFeature": "Fish with special abilities"
       },
       "legendaryFish": {
         "title": "Legendary Fish",
-        "description": "Extremely rare fish species with unique abilities."
+        "description": "Extremely rare fish species with unique abilities.",
+        "characteristics": "Characteristics",
+        "features": [
+          "Appear very rarely",
+          "High value",
+          "Unique abilities",
+          "Premium collection"
+        ],
+        "defaultFeature": "The most valuable fish in the game"
       },
       "strategies": "Fishing Strategies",
       "underwaterCombat": {
         "title": "Underwater Combat",
-        "description": "Learn to fight underwater creatures and protect your catch."
+        "description": "Learn to fight underwater creatures and protect your catch.",
+        "tips": "Combat Tips",
+        "tipsList": [
+          "Use the underwater environment to your advantage",
+          "Take advantage of limited visibility",
+          "Coordinate attacks with your team",
+          "Maintain your oxygen"
+        ],
+        "defaultTip": "Learn underwater combat mechanics"
       },
       "fishLocations": {
         "title": "Fish Locations",
-        "description": "Discover the best fishing spots for rare species."
+        "description": "Discover the best fishing spots for rare species.",
+        "tips": "Location Tips",
+        "tipsList": [
+          "Explore different depths",
+          "Search coral reefs",
+          "Visit underwater caves",
+          "Check shipwrecks"
+        ],
+        "defaultTip": "Explore different underwater areas"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "How do I find legendary fish?",
+            "answer": "Legendary fish appear in specific locations and at certain depths. Explore reefs and underwater caves."
+          },
+          {
+            "question": "What's the best combat strategy?",
+            "answer": "Use the environment to your advantage, coordinate with your team, and maintain your oxygen during underwater battles."
+          },
+          {
+            "question": "How do I build my aquatic empire?",
+            "answer": "Start with common fish, then seek rare fish, and finally pursue legendary ones to maximize your value."
+          }
+        ],
+        "defaultQuestion": "How do I start in Steal a Fish?",
+        "defaultAnswer": "Start by exploring shallow waters and collecting common fish to build your collection."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Basic game understanding",
+          "Basic underwater equipment",
+          "Time for exploration",
+          "Collection strategy"
+        ],
+        "default": "Basic game knowledge"
+      },
+      "tips": {
+        "title": "Important Tips",
+        "description": "Remember that oxygen is crucial in the underwater world. Plan your expeditions carefully."
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "pet": "Steal a Pet Guide",
+        "car": "Steal a Car Guide",
+        "meme": "Steal a Meme Guide"
+      },
+      "cta": {
+        "title": "Build Your Aquatic Empire!",
+        "description": "Apply these strategies and dominate the underwater world of Steal a Fish.",
+        "button": "View All Guides"
       }
     },
     "stealACar": {
-      "title": "Steal a Car Guide",
+      "seoTitle": "Steal a Car - Complete Guide to Stealing Luxury Cars",
+      "seoDescription": "Learn advanced strategies for stealing luxury cars, planning perfect heists, and mastering the car theft game.",
+      "seoKeywords": "steal a car, car theft, luxury cars, heist, theft strategies, car game",
+      "readingTime": "12 min read",
+      "difficulty": "Advanced",
+      "lastUpdated": "Updated: December 2024",
+      "title": "Steal a Car - Complete Guide",
       "subtitle": "Steal the most expensive cars in this high-octane car theft game",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "gameOverview": "Game Overview",
+        "carTypes": "Car Types",
+        "heistStrategies": "Heist Strategies",
+        "faq": "FAQ"
+      },
       "gameOverview": "Game Overview",
-      "gameOverviewDesc": "Steal a Car is an action-packed game where players steal and collect the most valuable vehicles in the world.",
+      "gameOverviewDesc": "Steal a Car is a high-adrenaline game where you must steal the world's most valuable vehicles. Planning, precision, and teamwork are key to success.",
+      "gameFeatures": "Game Features",
+      "gameFeaturesList": [
+        "Multiple value car system",
+        "Realistic theft mechanics",
+        "Specialized tools",
+        "Advanced security system",
+        "Teamwork",
+        "Player competition"
+      ],
+      "defaultFeature": "Game feature",
       "carTypes": "Car Types",
-      "sportsCars": {
-        "title": "Sports Cars",
-        "description": "High-performance vehicles with incredible speed and handling."
+      "commonCars": {
+        "title": "Common Cars",
+        "description": "Easy to steal but low value for beginners",
+        "characteristics": "Characteristics",
+        "features": [
+          "Basic security",
+          "Low value",
+          "Easy access",
+          "Ideal for beginners"
+        ],
+        "defaultFeature": "Common feature"
       },
       "luxuryCars": {
         "title": "Luxury Cars",
-        "description": "Premium vehicles with advanced features and comfort."
+        "description": "Harder to steal but higher value",
+        "characteristics": "Characteristics",
+        "features": [
+          "Advanced security",
+          "High value",
+          "Anti-theft systems",
+          "Better rewards"
+        ],
+        "defaultFeature": "Luxury feature"
       },
       "legendaryCars": {
         "title": "Legendary Cars",
-        "description": "Extremely rare and valuable vehicles with unique features."
+        "description": "The rarest and most valuable cars in the game",
+        "characteristics": "Characteristics",
+        "features": [
+          "Maximum security",
+          "Extreme value",
+          "High-tech systems",
+          "Maximum rewards"
+        ],
+        "defaultFeature": "Legendary feature"
       },
       "heistStrategies": "Heist Strategies",
-      "strategies": [
-        "Plan your heist carefully",
-        "Use stealth to avoid detection",
-        "Upgrade your tools and skills",
-        "Work with a team for complex heists"
-      ]
+      "planningTactics": {
+        "title": "Planning Tactics",
+        "description": "Strategies for planning the perfect heist",
+        "tips": "Tips",
+        "tipsList": [
+          "Study the target thoroughly",
+          "Plan multiple escape routes",
+          "Coordinate with your team",
+          "Identify weak points",
+          "Prepare specialized tools"
+        ],
+        "defaultTip": "Plan every detail"
+      },
+      "executionTactics": {
+        "title": "Execution Tactics",
+        "description": "Strategies for executing the heist without detection",
+        "tips": "Tips",
+        "tipsList": [
+          "Maintain discretion",
+          "Use silent tools",
+          "Coordinate precise movements",
+          "Avoid security systems",
+          "Have a contingency plan"
+        ],
+        "defaultTip": "Execute with precision"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "How can I steal cars without being detected?",
+            "answer": "Plan carefully, use specialized tools, and coordinate with your team. Discretion is key."
+          },
+          {
+            "question": "Which cars are most valuable?",
+            "answer": "Legendary cars are most valuable, but also hardest to steal due to advanced security."
+          },
+          {
+            "question": "Can I play alone or do I need a team?",
+            "answer": "You can play alone, but teamwork significantly increases success chances."
+          }
+        ],
+        "defaultQuestion": "How do I start with Steal a Car?",
+        "defaultAnswer": "Start with common cars to learn basic mechanics."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Knowledge of theft mechanics",
+          "Specialized tools",
+          "Coordination skills",
+          "Escape strategy"
+        ],
+        "default": "Basic theft knowledge"
+      },
+      "warning": {
+        "title": "Important Warning",
+        "description": "This game simulates illegal activities. For entertainment only."
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "fish": "Steal a Fish - Fishing Guide",
+        "labubu": "Steal a Labubu - Collection Guide",
+        "anime": "Steal an Anime - Otaku Guide"
+      },
+      "cta": {
+        "title": "Master the Art of Car Theft!",
+        "description": "Join the best car thieves and master the art of the perfect heist.",
+        "button": "Explore More Guides"
+      }
     },
     "stealDeadlyRails": {
-      "title": "Steal a Deadly Rails Guide",
+      "seoTitle": "Steal a Deadly Rails - Complete Guide to Surviving Deadly Rails",
+      "seoDescription": "Learn advanced strategies for surviving deadly rails, stealing valuable mobs, and mastering the fast-paced rhythm game.",
+      "seoKeywords": "steal deadly rails, deadly rails, valuable mobs, rhythm game, survival, strategies",
+      "readingTime": "10 min read",
+      "difficulty": "Advanced",
+      "lastUpdated": "Updated: December 2024",
+      "title": "Steal a Deadly Rails - Complete Guide",
       "subtitle": "Snatch valuable mobs from a deadly conveyor belt before they are lost forever in this fast-paced rhythm game",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "gameOverview": "Game Overview",
+        "railTypes": "Rail Types",
+        "survivalStrategies": "Survival Strategies",
+        "faq": "FAQ"
+      },
       "gameOverview": "Game Overview",
-      "gameOverviewDesc": "Steal a Deadly Rails is a fast-paced rhythm game where players must grab valuable mobs from a deadly conveyor belt before they fall into the abyss. Timing and precision are crucial for success.",
-      "monsterTypes": "Monster Types",
-      "commonMonsters": {
-        "title": "Common Monsters",
-        "description": "Basic monsters that are easy to catch but provide minimal rewards."
+      "gameOverviewDesc": "Steal a Deadly Rails is a fast-paced, high-adrenaline game where you must steal valuable mobs from a deadly conveyor belt. Speed and precision are key to survival.",
+      "gameFeatures": "Game Features",
+      "gameFeaturesList": [
+        "Multiple difficulty rail system",
+        "Valuable mobs in constant motion",
+        "Advanced survival mechanics",
+        "Real-time scoring system",
+        "Protection power-ups",
+        "Player competition"
+      ],
+      "defaultFeature": "Game feature",
+      "railTypes": "Rail Types",
+      "easyRails": {
+        "title": "Easy Rails",
+        "description": "Rails with common mobs and less danger for beginners",
+        "characteristics": "Characteristics",
+        "features": [
+          "Moderate speed",
+          "Common mobs",
+          "Low danger",
+          "Ideal for beginners"
+        ],
+        "defaultFeature": "Easy feature"
       },
-      "rareMonsters": {
-        "title": "Rare Monsters",
-        "description": "Uncommon monsters that provide better rewards and are more challenging to catch."
+      "hardRails": {
+        "title": "Hard Rails",
+        "description": "Rails with rare mobs but greater danger",
+        "characteristics": "Characteristics",
+        "features": [
+          "High speed",
+          "Rare mobs",
+          "Moderate danger",
+          "Better rewards"
+        ],
+        "defaultFeature": "Hard feature"
       },
-      "legendaryMonsters": {
-        "title": "Legendary Monsters",
-        "description": "Extremely rare monsters that provide the highest rewards and are very difficult to catch."
+      "deadlyRails": {
+        "title": "Deadly Rails",
+        "description": "Rails with legendary mobs but extremely dangerous",
+        "characteristics": "Characteristics",
+        "features": [
+          "Extreme speed",
+          "Legendary mobs",
+          "Maximum danger",
+          "Maximum rewards"
+        ],
+        "defaultFeature": "Deadly feature"
       },
-      "rhythmGameplay": "Rhythm Gameplay",
-      "gameplayTips": [
-        "Master the timing of the conveyor belt",
-        "Focus on high-value monsters",
-        "Use power-ups strategically",
-        "Practice your reflexes"
-      ]
+      "survivalStrategies": "Survival Strategies",
+      "defenseTactics": {
+        "title": "Defense Tactics",
+        "description": "Strategies to protect yourself from dangers on the rails",
+        "tips": "Tips",
+        "tipsList": [
+          "Keep your distance from dangers",
+          "Use protection power-ups",
+          "Learn movement patterns",
+          "Practice your timing",
+          "Have an escape plan"
+        ],
+        "defaultTip": "Maintain safe distance"
+      },
+      "timingStrategies": {
+        "title": "Timing Strategies",
+        "description": "Master perfect timing to steal mobs without being detected",
+        "tips": "Tips",
+        "tipsList": [
+          "Study movement patterns",
+          "Calculate mob speeds",
+          "Anticipate direction changes",
+          "Use momentum to your advantage",
+          "Practice on easy rails first"
+        ],
+        "defaultTip": "Practice timing"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+          {
+            "question": "How can I survive on deadly rails?",
+            "answer": "Practice on easy rails first, learn the patterns, and use protection power-ups. Experience is key."
+          },
+          {
+            "question": "Which mobs are most valuable?",
+            "answer": "Legendary mobs on deadly rails are most valuable, but also most dangerous to steal."
+          },
+          {
+            "question": "Can I play in teams?",
+            "answer": "Yes, you can coordinate with other players to steal mobs more efficiently."
+          }
+        ],
+        "defaultQuestion": "How do I start with Steal a Deadly Rails?",
+        "defaultAnswer": "Start on easy rails to learn basic mechanics."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Fast reflexes",
+          "Rhythm game experience",
+          "Movement pattern knowledge",
+          "Survival strategy"
+        ],
+        "default": "Basic reflexes"
+      },
+      "warning": {
+        "title": "Important Warning",
+        "description": "This game is extremely difficult. Deadly rails can be frustrating for beginners."
+      },
+      "relatedGuides": {
+        "title": "Related Guides",
+        "fish": "Steal a Fish - Fishing Guide",
+        "labubu": "Steal a Labubu - Collection Guide",
+        "anime": "Steal an Anime - Otaku Guide"
+      },
+      "cta": {
+        "title": "Master the Deadly Rails!",
+        "description": "Join the bravest players and master the art of survival on deadly rails.",
+        "button": "Explore More Guides"
+      }
     },
     "optimization": {
       "title": "Profit Optimization",

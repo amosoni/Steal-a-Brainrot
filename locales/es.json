@@ -7,6 +7,11 @@
     "guides": "Guías"
   },
   "home": {
+    "seo": {
+      "title": "Steal a Brainrot - La Guía Más Completa de Roblox",
+      "description": "🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos completa de personajes, calculadora de ganancias, guías de estrategia y consejos expertos. ¡Domina el juego con nuestra asistencia profesional!",
+      "keywords": "Steal a Brainrot, Roblox, Brainrot, Personajes Brainrot, Calculadora de ganancias, Base de datos de personajes, Guía de juego, Estrategias Brainrot, Guía de Roblox"
+    },
     "title": "Steal a Brainrot",
     "subtitle": "Guía Completa",
     "description": "La guía más completa de Roblox Steal a Brainrot, incluyendo base de datos de personajes, calculadora de ganancias, guías de estrategia y otras herramientas útiles",
@@ -206,21 +211,200 @@
         "title": "Steal a Meme",
         "description": "Conviértete en un señor de los memes recolectando y robando los memes de internet más virales y personajes."
       },
-      "stealDeadlyRails": {
-        "title": "Steal a Deadly Rails",
-        "description": "Arrebata mobs valiosos de una cinta transportadora mortal antes de que se pierdan para siempre en este juego de ritmo rápido."
-      },
-      "stealACar": {
-        "title": "Steal a Car",
-        "description": "Roba los autos más caros en este juego de alto octanaje de robo de autos."
-      },
+
+
       "bestConsoles": "Mejores consolas de videojuegos"
+    },
+    "scripts": {
+      "title": "Scripts Populares",
+      "description": "Scripts útiles para mejorar tu experiencia de juego",
+      "stealEveryone": {
+        "title": "Steal Everyone's Brainrot (Key System)",
+        "description": "Script completo con sistema de llaves para robar brainrots de todos los jugadores."
+      },
+      "gumanbaScript": {
+        "title": "Gumanba Script (No Key)",
+        "description": "Script sin sistema de llaves, auto collection y funciones avanzadas."
+      },
+      "laserhunScript": {
+        "title": "Laserhun's Steal a Brainrot Script (Auto Collection)",
+        "description": "Script con auto collection automático y funciones de teletransporte."
+      },
+      "easyCash": {
+        "title": "Easy Cash (No Key, Auto Lock, Remove Walls)",
+        "description": "Script para obtener dinero fácil, auto lock y remover paredes."
+      },
+      "quantumPulsar": {
+        "title": "QuantumPulsar X (Auto Steal, Auto Lock, Auto Sell)",
+        "description": "Script avanzado con auto steal, auto lock y auto sell integrado."
+      },
+      "scriptBlox": {
+        "title": "ScriptBlox Script by laserhun (Auto Steal, Lock Base, No Key System)",
+        "description": "Script de ScriptBlox con auto steal y lock base sin sistema de llaves."
+      },
+      "autoLockCollect": {
+        "title": "Auto Lock, Collect Cash, and Steal Script",
+        "description": "Script para auto lock, recolectar dinero y robar automáticamente."
+      },
+      "legendHub": {
+        "title": "Legend Hub Hack (Instant Steal, Infinite Cash)",
+        "description": "Hub legendario con robo instantáneo y dinero infinito."
+      },
+      "feronikHub": {
+        "title": "Feronik Hub (Auto Lock, Instant Steal, Auto Buy)",
+        "description": "Hub de Feronik con auto lock, robo instantáneo y compra automática."
+      },
+      "forkT3": {
+        "title": "ForkT3's All-in-One",
+        "description": "Script todo en uno de ForkT3 con todas las funciones integradas."
+      },
+      "opScript": {
+        "title": "Steal a Brainrot OP Script",
+        "description": "Script OP con funciones avanzadas y hacks potentes."
+      },
+      "polaris": {
+        "title": "Steal a Brainrot Script (Polaris) No Key",
+        "description": "Script de Polaris sin sistema de llaves, completamente gratuito."
+      },
+      "keylessOP": {
+        "title": "Steal a Brainrot OP Script Keyless",
+        "description": "Script OP sin llaves, acceso directo a todas las funciones."
+      },
+      "lockBaseAutoSell": {
+        "title": "Steal a Brainrot OP Script: Lock Base, Auto Sell",
+        "description": "Script OP con lock base y auto sell integrado."
+      },
+      "crawlChicken": {
+        "title": "Crawl Chicken 3D",
+        "description": "Script para el juego Crawl Chicken 3D con funciones especiales."
+      },
+      "feronikHubAlt": {
+        "title": "Feronik Hub Script",
+        "description": "Versión alternativa del hub de Feronik con funciones mejoradas."
+      },
+      "ghostHub": {
+        "title": "Ghost Hub Script",
+        "description": "Script del Ghost Hub con funciones furtivas y invisibilidad."
+      },
+      "quantumPulsarAlt": {
+        "title": "QuantumPulsar X (Alternative)",
+        "description": "Versión alternativa de QuantumPulsar X con funciones adicionales."
+      },
+      "silentScript": {
+        "title": "Silent Script (Lock Base + Auto Sell)",
+        "description": "Script silencioso con lock base y auto sell integrado."
+      },
+      "laserhunFinal": {
+        "title": "Laserhun's Script",
+        "description": "Script final de Laserhun con todas las funciones optimizadas."
+      }
     },
     "cta": {
       "title": "¿Listo para comenzar tu aventura Brainrot?",
       "description": "¡Únete a millones de jugadores y experimenta el juego de robo más emocionante!",
       "playNow": "Jugar Ahora",
       "viewGuides": "Ver Guías"
+    },
+    "stats": {
+      "characters": "Personajes Brainrot",
+      "rebirthLevels": "Niveles de Rebirth",
+      "rarityLevels": "Niveles de Rareza"
+    },
+    "scripts": {
+      "title": "Scripts Populares",
+      "warning": {
+        "title": "⚠️ Advertencia Importante",
+        "description": "El uso de scripts puede resultar en baneo de tu cuenta. Úsalos bajo tu propia responsabilidad.",
+        "list": [
+          "• El uso de scripts puede resultar en baneo permanente de tu cuenta",
+          "• Los scripts pueden contener código malicioso",
+          "• El uso de scripts viola los términos de servicio del juego",
+          "• Usa los scripts bajo tu propia responsabilidad"
+        ]
+      },
+      "copyButton": "Copiar Script",
+      "copiedButton": "¡Copiado!",
+      "viewMoreButton": "Ver Más Scripts",
+      "stealEveryone": {
+        "title": "Steal Everyone's Brainrot (Key System)",
+        "description": "Script completo con sistema de llaves para robar brainrots de todos los jugadores."
+      },
+      "gumanbaScript": {
+        "title": "Gumanba Script (No Key)",
+        "description": "Script sin sistema de llaves, auto collection y funciones avanzadas."
+      },
+      "laserhunScript": {
+        "title": "Laserhun's Steal a Brainrot Script (Auto Collection)",
+        "description": "Script con auto collection automático y funciones de teletransporte."
+      },
+      "easyCash": {
+        "title": "Easy Cash (No Key, Auto Lock, Remove Walls)",
+        "description": "Script para obtener dinero fácil, auto lock y remover paredes."
+      },
+      "quantumPulsar": {
+        "title": "QuantumPulsar X (Auto Steal, Auto Lock, Auto Sell)",
+        "description": "Script avanzado con auto steal, auto lock y auto sell integrado."
+      },
+      "scriptBlox": {
+        "title": "ScriptBlox Script by laserhun (Auto Steal, Lock Base, No Key System)",
+        "description": "Script de ScriptBlox con auto steal y lock base sin sistema de llaves."
+      },
+      "autoLockCollect": {
+        "title": "Auto Lock, Collect Cash, and Steal Script",
+        "description": "Script para auto lock, recolectar dinero y robar automáticamente."
+      },
+      "legendHub": {
+        "title": "Legend Hub Hack (Instant Steal, Infinite Cash)",
+        "description": "Hub legendario con robo instantáneo y dinero infinito."
+      },
+      "feronikHub": {
+        "title": "Feronik Hub (Auto Lock, Instant Steal, Auto Buy)",
+        "description": "Hub de Feronik con auto lock, robo instantáneo y compra automática."
+      },
+      "forkT3": {
+        "title": "ForkT3's All-in-One",
+        "description": "Script todo en uno de ForkT3 con todas las funciones integradas."
+      },
+      "opScript": {
+        "title": "Steal a Brainrot OP Script",
+        "description": "Script OP con funciones avanzadas y hacks potentes."
+      },
+      "polaris": {
+        "title": "Steal a Brainrot Script (Polaris) No Key",
+        "description": "Script de Polaris sin sistema de llaves, completamente gratuito."
+      },
+      "keylessOP": {
+        "title": "Steal a Brainrot OP Script Keyless",
+        "description": "Script OP sin llaves, acceso directo a todas las funciones."
+      },
+      "lockBaseAutoSell": {
+        "title": "Steal a Brainrot OP Script: Lock Base, Auto Sell",
+        "description": "Script OP con lock base y auto sell integrado."
+      },
+      "crawlChicken": {
+        "title": "Crawl Chicken 3D",
+        "description": "Script para el juego Crawl Chicken 3D con funciones especiales."
+      },
+      "feronikHubAlt": {
+        "title": "Feronik Hub Script",
+        "description": "Versión alternativa del hub de Feronik con funciones mejoradas."
+      },
+      "ghostHub": {
+        "title": "Ghost Hub Script",
+        "description": "Script del Ghost Hub con funciones furtivas y invisibilidad."
+      },
+      "quantumPulsarAlt": {
+        "title": "QuantumPulsar X (Alternative)",
+        "description": "Versión alternativa de QuantumPulsar X con funciones adicionales."
+      },
+      "silentScript": {
+        "title": "Silent Script (Lock Base + Auto Sell)",
+        "description": "Script silencioso con lock base y auto sell integrado."
+      },
+      "laserhunFinal": {
+        "title": "Laserhun's Script",
+        "description": "Script final de Laserhun con todas las funciones optimizadas."
+      }
     }
   },
   "calculator": {
@@ -233,11 +417,17 @@
     "hourlyProfit": "Ganancia por Hora",
     "roi": "ROI",
     "quickActions": "Acciones Rápidas",
-    "selectCommon": "Seleccionar Comunes",
-    "selectEpic": "Seleccionar Épicos",
-    "clearAll": "Limpiar Todo",
+    "selectCommons": "Seleccionar Comunes",
+    "selectEpics": "Seleccionar Épicos",
+    "clearSelection": "Limpiar Selección",
     "selectAll": "Seleccionar Todo",
     "selectCharacters": "Seleccionar Personajes",
+    "investmentTips": "Consejos de Inversión",
+    "tip1": "Prioriza personajes con alta relación ganancia/precio",
+    "tip2": "Considera el impacto de la rareza en el valor a largo plazo",
+    "tip3": "Diversifica tu inversión para reducir el riesgo",
+    "tip4": "Revisa regularmente las fluctuaciones de precios del mercado",
+    "tip5": "Los personajes de mayor rareza tienen mejor ROI a largo plazo",
     "investmentAmount": "Cantidad de Inversión",
     "timePeriod": "Período de Tiempo",
     "price": "Precio",
@@ -249,14 +439,16 @@
   "updates": {
     "title": "Actualizaciones del Juego",
     "description": "Obtén las últimas actualizaciones dinámicas y avances de nuevos personajes de Steal a Brainrot",
+    "backToHome": "← Volver al Inicio",
     "serverStatus": "Estado del Servidor",
     "online": "En Línea",
     "offline": "Desconectado",
     "checking": "Verificando...",
-    "checkStatus": "Verificar Estado",
+    "verifyStatus": "Verificar Estado",
     "lastCheck": "Última verificación",
     "checkNow": "Verificar Ahora",
     "checkingUpdates": "Verificando actualizaciones...",
+    "updateSettings": "Configuración de Actualizaciones",
     "autoUpdate": "Auto-actualización",
     "downloadUpdate": "Descargar Actualización",
     "downloading": "Descargando...",
@@ -265,7 +457,63 @@
     "newUpdateAvailable": "Nueva actualización disponible",
     "updateDownloaded": "Actualización descargada exitosamente",
     "errorChecking": "Error al verificar actualizaciones",
-    "errorDownloading": "Error al descargar actualización"
+    "errorDownloading": "Error al descargar actualización",
+    "filterByCategory": "Filtrar por Categoría",
+    "all": "Todos",
+    "characters": "Personajes",
+    "balance": "Balance",
+    "ui": "Interfaz",
+    "system": "Sistema",
+    "gameplay": "Jugabilidad",
+    "latestUpdates": "Últimas Actualizaciones",
+    "upcomingUpdates": "Próximas Actualizaciones",
+    "newCharactersReleased": "Nuevos Personajes Lanzados",
+    "newCharactersAdded": "Nuevos Personajes Agregados",
+    "newFunction": "Nueva Función",
+    "balanceAdjustments": "Ajustes de Balance",
+    "interfaceOptimization": "Optimización de Interfaz",
+    "newRarityLevels": "Nuevos Niveles de Rareza",
+    "rebirthSystemOptimization": "Optimización del Sistema de Rebirth",
+    "newGameMode": "Nuevo Modo de Juego",
+    "cooperativeMode": "Modo Cooperativo",
+    "nextWeek": "Próxima Semana",
+    "twoWeeks": "Dos Semanas",
+    "oneMonth": "Un Mes",
+    "highPriority": "Alta Prioridad",
+    "mediumPriority": "Prioridad Media",
+    "improvement": "Mejora",
+    "updateTips": "Consejos de Actualización",
+    "tip1": "Sigue el Discord oficial para obtener las últimas noticias",
+    "tip2": "Vuelve a iniciar sesión en el juego después de las actualizaciones",
+    "tip3": "Los nuevos personajes suelen estar disponibles 24 horas después de la actualización",
+    "tip4": "Se recomienda hacer una copia de seguridad de datos importantes antes de actualizar",
+    "tip5": "Únete a la comunidad para recibir notificaciones de actualizaciones",
+    "tip6": "Activa la auto-actualización para recibir notificaciones automáticas",
+    "tip7": "Verifica el estado del servidor antes de descargar actualizaciones",
+    "tip8": "Las actualizaciones automáticas se verifican cada 5 minutos",
+    "totalCharacters": "Total de Personajes",
+    "rarityLevels": "Niveles de Rareza",
+    "recentUpdates": "Actualizaciones Recientes",
+    "majorUpdate": "Actualización Principal",
+    "stableVersion": "Versión Estable",
+    "completeInterfaceRedesign": "Rediseño Completo de Interfaz",
+    "rebirthSystemAdded": "Sistema de Rebirth Agregado",
+    "rarityLevelSystem": "Sistema de Niveles de Rareza",
+    "newCharactersAdded": "Nuevos Personajes Agregados",
+    "bugFixes": "Correcciones de Errores",
+    "performanceOptimization": "Optimización de Rendimiento",
+    "epicCharactersAdded": "Personajes Épicos Agregados",
+    "followOfficialDiscord": "Sigue el Discord oficial para obtener las últimas noticias",
+    "restartAfterUpdates": "Vuelve a iniciar sesión en el juego después de las actualizaciones",
+    "newCharactersAvailable": "Los nuevos personajes suelen estar disponibles 24 horas después de la actualización",
+    "backupImportantData": "Se recomienda hacer una copia de seguridad de datos importantes antes de actualizar",
+    "joinCommunity": "Únete a la comunidad para recibir notificaciones de actualizaciones",
+    "enableAutoUpdate": "Activa la auto-actualización para recibir notificaciones automáticas",
+    "checkServerStatus": "Verifica el estado del servidor antes de descargar actualizaciones",
+    "autoUpdateCheck": "Las actualizaciones automáticas se verifican cada 5 minutos",
+    "updateHistory": "Historial de Actualizaciones",
+    "highPriority": "Alta Prioridad",
+    "mediumPriority": "Prioridad Media"
   },
   "guides": {
     "title": "Guías de Estrategia",
@@ -367,6 +615,8 @@
   },
   "common": {
     "backToHome": "← Volver al Inicio",
+    "showMore": "Ver más",
+    "showLess": "Ver menos",
     "loading": "Cargando...",
     "error": "Error",
     "success": "Éxito",
@@ -481,56 +731,299 @@
     "rebirth": {
       "title": "Guía Definitiva de Rebirth",
       "subtitle": "Entiende el sistema de progresión más importante y por qué sacrificar tu progreso es clave para volverte más fuerte",
+      "seoTitle": "Guía de Rebirth Steal a Brainrot - Sistema de Progresión Completo",
+      "seoDescription": "Aprende todo sobre el sistema de Rebirth en Steal a Brainrot, cuándo hacerlo, sus beneficios y estrategias para maximizar tu progreso.",
+      "seoKeywords": "rebirth steal a brainrot, sistema de progresión, multiplicadores, bonificaciones permanentes",
+      "readingTime": "8 min de lectura",
+      "difficulty": "Intermedio",
+      "lastUpdated": "Actualizado: Julio 2025",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "whatIsRebirth": "¿Qué es Rebirth?",
+        "benefits": "Beneficios",
+        "process": "Proceso",
+        "faq": "Preguntas Frecuentes"
+      },
       "whatIsRebirth": "¿Qué es Rebirth?",
       "whatIsRebirthDesc": "Rebirth es un sistema de progresión que te permite sacrificar tu progreso actual para obtener bonificaciones permanentes.",
-      "whenToRebirth": "¿Cuándo hacer Rebirth?",
-      "whenToRebirthDesc": "Se recomienda hacer Rebirth cuando hayas alcanzado al menos el nivel 50 y tengas suficientes recursos.",
+      "definition": "Definición",
+      "definitionDesc": "El sistema de Rebirth es un mecanismo de progresión que permite a los jugadores reiniciar su progreso a cambio de bonificaciones permanentes que mejoran significativamente su rendimiento futuro.",
       "rebirthBenefits": "Beneficios del Rebirth",
       "benefits": [
-        "Multiplicadores de experiencia permanentes",
-        "Bonificaciones de daño y defensa",
-        "Acceso a contenido exclusivo",
-        "Mejoras de velocidad y salto"
+        {
+          "title": "Multiplicadores de Experiencia",
+          "description": "Aumenta permanentemente la velocidad de ganancia de experiencia"
+        },
+        {
+          "title": "Bonificaciones de Daño",
+          "description": "Mejora el daño de ataque y las capacidades de combate"
+        },
+        {
+          "title": "Mejoras de Movimiento",
+          "description": "Aumenta la velocidad de movimiento y capacidad de salto"
+        },
+        {
+          "title": "Acceso Exclusivo",
+          "description": "Desbloquea contenido y áreas exclusivas"
+        }
       ],
+      "defaultBenefit": {
+        "title": "Bonificaciones Permanentes",
+        "description": "Obtén mejoras permanentes que te harán más fuerte"
+      },
       "rebirthProcess": "Proceso de Rebirth",
+      "processSteps": [
+        {
+          "step": "1",
+          "title": "Alcanza el Nivel Mínimo",
+          "description": "Asegúrate de haber alcanzado al menos el nivel 50 antes de considerar el Rebirth"
+        },
+        {
+          "step": "2",
+          "title": "Reúne Recursos",
+          "description": "Acumula suficientes brainrots y recursos para maximizar los beneficios"
+        },
+        {
+          "step": "3",
+          "title": "Encuentra el NPC",
+          "description": "Localiza al NPC de Rebirth en el mapa del juego"
+        },
+        {
+          "step": "4",
+          "title": "Confirma el Sacrificio",
+          "description": "Confirma tu decisión de sacrificar tu progreso actual"
+        },
+        {
+          "step": "5",
+          "title": "Disfruta las Mejoras",
+          "description": "Comienza tu nueva vida con bonificaciones permanentes"
+        }
+      ],
       "step1": "1. Alcanza el nivel mínimo requerido",
       "step2": "2. Reúne suficientes recursos",
       "step3": "3. Ve al NPC de Rebirth",
       "step4": "4. Confirma el sacrificio",
-      "step5": "5. Disfruta de tus nuevas bonificaciones"
+      "step5": "5. Disfruta de tus nuevas bonificaciones",
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cuándo debo hacer mi primer Rebirth?",
+            "answer": "Se recomienda hacer el primer Rebirth después de alcanzar el nivel 50 y haber acumulado suficientes recursos."
+          },
+          {
+            "question": "¿Pierdo todo mi progreso al hacer Rebirth?",
+            "answer": "Sí, pierdes tu progreso actual pero obtienes bonificaciones permanentes que te harán más fuerte."
+          },
+          {
+            "question": "¿Los beneficios del Rebirth son permanentes?",
+            "answer": "Sí, todas las bonificaciones obtenidas del Rebirth son permanentes y se acumulan con cada Rebirth."
+          }
+        ],
+        "defaultQuestion": "¿Qué es el sistema de Rebirth?",
+        "defaultAnswer": "El Rebirth es un sistema que permite sacrificar progreso actual por bonificaciones permanentes."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "list": [
+          "Nivel mínimo 50",
+          "Recursos suficientes",
+          "Comprensión del sistema",
+          "Preparación mental"
+        ],
+        "default": "Nivel mínimo 50"
+      },
+      "warning": {
+        "title": "Advertencia Importante",
+        "description": "El Rebirth es irreversible. Asegúrate de estar completamente preparado antes de proceder."
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "scripts": "Guía de Scripts",
+        "codes": "Guía de Códigos",
+        "secondFloor": "Guía del Segundo Piso"
+      },
+      "cta": {
+        "title": "¿Necesitas más ayuda?",
+        "description": "Explora nuestras otras guías para maximizar tu progreso y mejorar tu experiencia de juego.",
+        "button": "Ver Todas las Guías"
+      }
     },
     "scripts": {
       "title": "Guía Definitiva de Scripts",
       "subtitle": "Explora nuestra lista completa de scripts populares, entiende cómo funcionan y aprende sobre los riesgos involucrados",
+      "seoTitle": "Scripts Steal a Brainrot - Guía Completa de Scripts y Automatización",
+      "seoDescription": "Descubre los scripts más populares para Steal a Brainrot, sus características, riesgos y cómo usarlos de forma segura.",
+      "seoKeywords": "scripts steal a brainrot, automatización, auto farm, teleport, riesgos scripts",
+      "readingTime": "10 min de lectura",
+      "difficulty": "Avanzado",
+      "lastUpdated": "Actualizado: Julio 2025",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "whatAreScripts": "¿Qué son los Scripts?",
+        "popularScripts": "Scripts Populares",
+        "risks": "Riesgos",
+        "howToUse": "Cómo Usar"
+      },
       "whatAreScripts": "¿Qué son los Scripts?",
       "whatAreScriptsDesc": "Los scripts son códigos que pueden automatizar acciones en el juego o proporcionar ventajas.",
+      "definition": "Definición",
+      "definitionDesc": "Los scripts son programas informáticos que pueden ejecutarse dentro del juego para automatizar tareas, proporcionar ventajas o modificar el comportamiento del juego.",
       "popularScripts": "Scripts Populares",
-      "autoFarm": {
-        "title": "Auto Farm",
-        "description": "Automatiza la recolección de recursos y la lucha contra enemigos."
+      "stealEveryone": {
+        "title": "Steal Everyone's Brainrot (Key System)",
+        "description": "Complete script system with key system to steal brainrots from all players.",
+        "features": {
+          "keySystem": "Sistema de llaves integrado",
+          "autoSteal": "Robo automático de brainrots",
+          "advancedUI": "Interfaz avanzada"
+        }
       },
-      "autoRebirth": {
-        "title": "Auto Rebirth",
-        "description": "Realiza rebirth automáticamente cuando se cumplan las condiciones."
+      "gumanbaScript": {
+        "title": "Gumanba Script (No Key)",
+        "description": "Script without key system, auto collection and advanced features.",
+        "features": {
+          "noKey": "Sin sistema de llaves",
+          "autoCollection": "Recolección automática",
+          "advancedFeatures": "Características avanzadas"
+        }
       },
-      "teleport": {
-        "title": "Teleport",
-        "description": "Teletranspórtate instantáneamente a cualquier ubicación del mapa."
+      "laserhunScript": {
+        "title": "Laserhun's Steal a Brainrot Script (Auto Collection)",
+        "description": "Script with automatic collection and teleport functions.",
+        "features": {
+          "autoCollection": "Recolección automática",
+          "teleport": "Función de teletransporte",
+          "easySetup": "Configuración fácil"
+        }
       },
       "risks": "Riesgos y Advertencias",
       "risksDesc": "El uso de scripts puede resultar en baneo de tu cuenta. Úsalos bajo tu propia responsabilidad.",
+      "warnings": {
+        "accountBan": "Baneo de cuenta",
+        "accountBanDesc": "Los desarrolladores pueden detectar y banear cuentas que usen scripts",
+        "securityRisk": "Riesgo de seguridad",
+        "securityRiskDesc": "Los scripts pueden contener código malicioso o comprometer tu seguridad",
+        "termsViolation": "Violación de términos",
+        "termsViolationDesc": "El uso de scripts viola los términos de servicio de Roblox"
+      },
+      "importantWarning": "Advertencia Importante",
+      "warningList": [
+        "El uso de scripts puede resultar en baneo permanente de tu cuenta",
+        "Los scripts pueden contener código malicioso",
+        "El uso de scripts viola los términos de servicio del juego",
+        "Usa los scripts bajo tu propia responsabilidad"
+      ],
+      "defaultWarning": "Advertencia: Los scripts pueden ser peligrosos",
       "howToUse": "Cómo Usar Scripts",
-      "instructions": [
-        "1. Copia el código del script",
-        "2. Abre el ejecutor de scripts",
-        "3. Pega el código",
-        "4. Ejecuta el script",
-        "5. Monitorea su funcionamiento"
-      ]
+      "setup": {
+        "title": "Configuración Inicial",
+        "steps": [
+          "Descarga un ejecutor de scripts compatible",
+          "Instala y configura el ejecutor",
+          "Busca scripts confiables",
+          "Prueba en una cuenta secundaria primero"
+        ],
+        "defaultStep": "Descarga un ejecutor de scripts compatible"
+      },
+      "instructions": {
+        "title": "Instrucciones de Uso",
+        "list": [
+          "Copia el código del script",
+          "Abre el ejecutor de scripts",
+          "Pega el código en el ejecutor",
+          "Ejecuta el script",
+          "Monitorea su funcionamiento"
+        ],
+        "default": "Copia el código del script"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Es seguro usar scripts?",
+            "answer": "No, los scripts conllevan riesgos significativos incluyendo baneo de cuenta y malware."
+          },
+          {
+            "question": "¿Qué ejecutor de scripts debo usar?",
+            "answer": "Se recomienda usar ejecutores confiables como Synapse X o KRNL, pero siempre con precaución."
+          },
+          {
+            "question": "¿Puedo usar scripts en mi cuenta principal?",
+            "answer": "No se recomienda. Siempre prueba scripts en una cuenta secundaria primero."
+          }
+        ],
+        "defaultQuestion": "¿Qué son los scripts?",
+        "defaultAnswer": "Los scripts son códigos que pueden automatizar acciones en el juego o proporcionar ventajas."
+      },
+      "prerequisites": {
+        "title": "Requisitos Previos",
+        "list": [
+          "Ejecutor de scripts compatible",
+          "Cuenta secundaria para pruebas",
+          "Comprensión de los riesgos",
+          "Conocimiento básico de programación"
+        ],
+        "default": "Ejecutor de scripts compatible"
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "codes": "Guía de Códigos",
+        "modified": "Guía de Modificados",
+        "secondFloor": "Guía del Segundo Piso"
+      },
+      "cta": {
+        "title": "¿Necesitas Más Ayuda?",
+        "description": "Explora nuestras otras guías para aprender estrategias seguras y efectivas para mejorar tu experiencia de juego.",
+        "button": "Ver Todas las Guías"
+      }
+    },
+    "scriptsNoKey": {
+      "title": "Scripts (Sin Llaves)",
+      "subtitle": "Encuentra los últimos scripts sin molestos sistemas de llaves. Incluye código copy-paste y advertencias de seguridad.",
+      "latestScripts": "Últimos Scripts",
+      "autoFarmScript": {
+        "title": "Script Auto Farm",
+        "description": "Script para recolectar recursos automáticamente y luchar contra enemigos"
+      },
+      "teleportScript": {
+        "title": "Script Teleport",
+        "description": "Script para teletransportarse instantáneamente a cualquier ubicación del mapa"
+      },
+      "securityWarning": "Advertencia de Seguridad",
+      "securityWarningDesc": "El uso de scripts puede resultar en suspensión de cuenta. Úsalos bajo tu propia responsabilidad.",
+      "howToUse": "Cómo Usar",
+      "steps": [
+        "1. Descarga un ejecutor de scripts (como Synapse X o KRNL)",
+        "2. Copia el código del script que quieres usar",
+        "3. Pega y ejecuta el script en el juego"
+      ],
+      "tips": "Consejos de Scripts",
+      "tipsList": [
+        "Solo usa scripts de fuentes confiables",
+        "Prueba los scripts en un entorno seguro primero",
+        "Haz respaldo regular de tus datos del juego",
+        "Mantente al día con las actualizaciones y correcciones de scripts",
+        "No compartas tus scripts personales"
+      ],
+      "defaultTip": "Consejos de uso de scripts"
     },
     "secretos": {
       "title": "Secretos",
       "subtitle": "Descubre áreas ocultas, power-ups y estrategias para obtener una ventaja en Steal a Brainrot",
+      "seoTitle": "Secretos Steal a Brainrot - Áreas Ocultas y Power-ups Completos",
+      "seoDescription": "Descubre todos los secretos de Steal a Brainrot, áreas ocultas, power-ups especiales y estrategias avanzadas para dominar el juego.",
+      "seoKeywords": "secretos steal a brainrot, áreas ocultas, power-ups, estrategias, habitación secreta",
+      "readingTime": "6 min de lectura",
+      "difficulty": "Intermedio",
+      "lastUpdated": "Actualizado: Julio 2025",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "hiddenAreas": "Áreas Ocultas",
+        "powerUps": "Power-ups",
+        "strategies": "Estrategias",
+        "faq": "Preguntas Frecuentes"
+      },
       "hiddenAreas": "Áreas Ocultas",
       "secretRoom": {
         "title": "Sala Secreta",
@@ -562,49 +1055,202 @@
     "codigos": {
       "title": "Códigos (Julio 2025)",
       "subtitle": "La información más reciente y honesta sobre códigos activos y expirados, y por qué no hay ninguno disponible",
+      "seoTitle": "Códigos Steal a Brainrot 2025 - Guía Completa de Códigos de Canje",
+      "seoDescription": "Descubre todos los códigos activos y expirados de Steal a Brainrot, alternativas para obtener recompensas y estrategias para maximizar tus ganancias.",
+      "seoKeywords": "códigos steal a brainrot, códigos roblox, códigos de canje, brainrot codes, códigos 2025",
+      "readingTime": "5 min de lectura",
+      "difficulty": "Fácil",
+      "lastUpdated": "Actualizado: Julio 2025",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "activeCodes": "Códigos Activos",
+        "expiredCodes": "Códigos Expirados",
+        "alternatives": "Alternativas",
+        "faq": "Preguntas Frecuentes"
+      },
       "noActiveCodes": "No hay códigos activos",
       "noActiveCodesDesc": "Actualmente no hay códigos de canje disponibles. Los desarrolladores no han lanzado nuevos códigos.",
+      "currentStatus": "Estado Actual",
+      "statusList": [
+        "No hay códigos activos disponibles",
+        "Los desarrolladores no han anunciado nuevos códigos",
+        "Se recomienda usar alternativas para obtener recompensas"
+      ],
+      "defaultStatus": "Estado no disponible",
       "expiredCodes": "Códigos Expirados",
       "expiredCodesList": [
         "LAUNCH2024 - Expirado",
         "WELCOME2024 - Expirado",
         "UPDATE2024 - Expirado"
       ],
-      "whyNoCodes": "¿Por qué no hay códigos?",
+      "expired": "Expirado",
+      "noExpiredCodes": "No hay códigos expirados registrados",
+      "whyExpired": "¿Por qué expiraron los códigos?",
       "reasons": [
         "Los desarrolladores no han lanzado nuevos códigos",
-        "Los códigos anteriores han expirado",
-        "No hay eventos especiales activos"
+        "Los códigos tienen fechas de expiración automáticas",
+        "Se requiere actualización del juego para nuevos códigos"
       ],
-      "howToGetRewards": "Cómo Obtener Recompensas",
+      "defaultReason": "Los desarrolladores no han proporcionado información específica",
+      "alternativesTitle": "Alternativas a los Códigos",
       "alternatives": [
-        "Completa misiones diarias",
-        "Participa en eventos",
-        "Juega regularmente para ganar experiencia",
-        "Únete a la comunidad para estar al día"
-      ]
+        "Completar misiones diarias",
+        "Participar en eventos especiales",
+        "Usar la calculadora de ganancias",
+        "Seguir estrategias de inversión"
+      ],
+      "alternative1": {
+        "title": "Misiones Diarias"
+      },
+      "alternative2": {
+        "title": "Eventos Especiales"
+      },
+      "alternative3": {
+        "title": "Calculadora de Ganancias"
+      },
+      "alternative4": {
+        "title": "Estrategias de Inversión"
+      },
+      "defaultAlternative": {
+        "title": "Alternativa Recomendada",
+        "description": "Usa la calculadora de ganancias para optimizar tus inversiones"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cuándo se lanzarán nuevos códigos?",
+            "answer": "Los desarrolladores no han anunciado fechas específicas para nuevos códigos. Se recomienda seguir las redes sociales oficiales del juego."
+          },
+          {
+            "question": "¿Los códigos expirados volverán a funcionar?",
+            "answer": "No, los códigos expirados no vuelven a funcionar. Cada código tiene una fecha de expiración específica."
+          },
+          {
+            "question": "¿Cómo puedo obtener recompensas sin códigos?",
+            "answer": "Puedes completar misiones diarias, participar en eventos especiales y usar estrategias de inversión optimizadas."
+          }
+        ],
+        "defaultQuestion": "¿Hay códigos activos disponibles?",
+        "defaultAnswer": "Actualmente no hay códigos activos disponibles. Se recomienda usar alternativas como misiones diarias y eventos especiales."
+      },
+      "prerequisites": {
+        "title": "Requisitos Previos",
+        "list": [
+          "Cuenta de Roblox activa",
+          "Acceso al juego Steal a Brainrot",
+          "Conocimiento básico del juego"
+        ],
+        "default": "Cuenta de Roblox activa"
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "scripts": "Guía de Scripts",
+        "modified": "Guía de Modificados",
+        "secondFloor": "Guía del Segundo Piso"
+      },
+      "cta": {
+        "title": "¿Necesitas Más Ayuda?",
+        "description": "Explora nuestras otras guías para maximizar tus ganancias y mejorar tu experiencia de juego.",
+        "button": "Ver Todas las Guías"
+      }
     },
     "modificado": {
       "title": "Steal a Brainrot Modificado",
       "subtitle": "Aprende qué significa \"modificado\", las características que ofrece y los riesgos críticos que debes conocer antes de usar uno",
+      "seoTitle": "Steal a Brainrot Modificado - Guía Completa de Riesgos y Características",
+      "seoDescription": "Descubre qué son los juegos modificados, sus características, riesgos críticos y alternativas seguras para Steal a Brainrot.",
+      "seoKeywords": "steal a brainrot modificado, juego modificado, riesgos, características, seguridad",
+      "readingTime": "8 min de lectura",
+      "difficulty": "Intermedio",
+      "lastUpdated": "Actualizado: Julio 2025",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "whatIsModified": "¿Qué es Modificado?",
+        "features": "Características",
+        "risks": "Riesgos",
+        "faq": "Preguntas Frecuentes"
+      },
       "whatIsModified": "¿Qué es \"Modificado\"?",
       "whatIsModifiedDesc": "Un juego modificado es una versión alterada del juego original que incluye características adicionales.",
-      "features": "Características",
-      "featuresList": [
-        "Scripts integrados",
-        "Interfaz mejorada",
-        "Funciones automáticas",
-        "Hacks y cheats"
-      ],
-      "risks": "Riesgos Críticos",
-      "risksList": [
-        "Baneo permanente de la cuenta",
-        "Virus y malware",
-        "Robo de información personal",
-        "Violación de términos de servicio"
-      ],
+      "definition": "Definición",
+      "definitionDesc": "Los juegos modificados son versiones no oficiales que han sido alteradas para incluir funciones adicionales, generalmente para proporcionar ventajas sobre otros jugadores.",
+      "featuresTitle": "Características",
+      "features": {
+        "unlimitedResources": "Recursos y moneda ilimitados",
+        "unlimitedResourcesDesc": "Acceso a cantidades ilimitadas de moneda y recursos del juego",
+        "enhancedMovement": "Movimiento y velocidad mejorados",
+        "enhancedMovementDesc": "Velocidad de movimiento aumentada y capacidades de salto mejoradas",
+        "exclusiveContent": "Acceso a contenido exclusivo",
+        "exclusiveContentDesc": "Desbloqueo de contenido que normalmente requiere tiempo o dinero",
+        "automation": "Funciones de automatización avanzadas",
+        "automationDesc": "Scripts y bots para automatizar tareas repetitivas",
+        "customSkins": "Pieles y cosméticos personalizados",
+        "customSkinsDesc": "Acceso a personalizaciones exclusivas y únicas"
+      },
+      "risksTitle": "Riesgos Críticos",
+      "risksDescription": "El uso de juegos modificados conlleva riesgos significativos que debes considerar antes de usarlos.",
+      "risks": {
+        "accountSuspension": "Suspensión o baneo de cuenta",
+        "accountSuspensionDesc": "Los desarrolladores pueden detectar y banear cuentas que usen versiones modificadas",
+        "lossOfProgress": "Pérdida de progreso y elementos",
+        "lossOfProgressDesc": "Puedes perder todo tu progreso, elementos y moneda acumulada",
+        "securityVulnerabilities": "Vulnerabilidades de seguridad",
+        "securityVulnerabilitiesDesc": "Los archivos modificados pueden contener malware o comprometer tu seguridad",
+        "termsViolation": "Violación de términos de servicio",
+        "termsViolationDesc": "El uso de modificaciones viola los términos de servicio de Roblox",
+        "malware": "Malware o virus potenciales",
+        "malwareDesc": "Los archivos de fuentes no oficiales pueden contener software malicioso"
+      },
       "recommendation": "Recomendación",
-      "recommendationDesc": "No recomendamos usar versiones modificadas del juego. Juega la versión oficial para una experiencia segura."
+      "recommendationDesc": "No recomendamos usar versiones modificadas del juego. Juega la versión oficial para una experiencia segura.",
+      "safeAlternatives": "Alternativas Seguras",
+      "safeAlternativesList": [
+        "Jugar la versión oficial del juego",
+        "Usar estrategias legítimas para progresar",
+        "Participar en la comunidad oficial",
+        "Seguir guías de estrategia aprobadas"
+      ],
+      "defaultSafeAlternative": "Jugar la versión oficial del juego",
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Es seguro usar juegos modificados?",
+            "answer": "No, los juegos modificados conllevan riesgos significativos incluyendo baneo de cuenta y malware."
+          },
+          {
+            "question": "¿Puedo recuperar mi cuenta si me banean?",
+            "answer": "Generalmente no. Los baneos por usar modificaciones suelen ser permanentes."
+          },
+          {
+            "question": "¿Hay alternativas legítimas para progresar más rápido?",
+            "answer": "Sí, puedes usar estrategias optimizadas, participar en eventos y seguir guías oficiales."
+          }
+        ],
+        "defaultQuestion": "¿Qué son los juegos modificados?",
+        "defaultAnswer": "Los juegos modificados son versiones alteradas del juego original que incluyen características adicionales, pero conllevan riesgos significativos."
+      },
+      "prerequisites": {
+        "title": "Requisitos Previos",
+        "list": [
+          "Comprensión de los riesgos involucrados",
+          "Conocimiento de los términos de servicio",
+          "Awareness de seguridad digital"
+        ],
+        "default": "Comprensión de los riesgos involucrados"
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "scripts": "Guía de Scripts",
+        "codes": "Guía de Códigos",
+        "secondFloor": "Guía del Segundo Piso"
+      },
+      "cta": {
+        "title": "¿Necesitas Más Información?",
+        "description": "Explora nuestras otras guías para aprender estrategias seguras y efectivas para mejorar tu experiencia de juego.",
+        "button": "Ver Todas las Guías"
+      }
     },
     "scriptsNoKey": {
       "title": "Scripts (Sin Clave)",
@@ -630,155 +1276,731 @@
     },
     "probabilidades": {
       "title": "Secretos y Probabilidades",
-      "subtitle": "Descubre todos los secretos del juego y entiende las tasas de aparición para Brainrots raros. Aprende cómo aumentar tu estadística de Suerte",
+      "subtitle": "Descubre las tasas de aparición y cómo aumentar tu suerte",
+      "seoTitle": "Secretos y Probabilidades - Guía Completa de Tasas de Aparición | Steal a Brainrot",
+      "seoDescription": "Descubre las tasas de aparición exactas de todos los personajes, cómo aumentar tu suerte y estrategias para maximizar tus probabilidades en Steal a Brainrot.",
+      "seoKeywords": "probabilidades, tasas de aparición, suerte, rareza, personajes, Steal a Brainrot, guía",
+      "readingTime": "8 min de lectura",
+      "difficulty": "Intermedio",
+      "lastUpdated": "Actualizado: Diciembre 2024",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "spawnRates": "Tasas de Aparición",
+        "luckStat": "Estadística de Suerte",
+        "strategies": "Estrategias",
+        "faq": "Preguntas Frecuentes"
+      },
       "spawnRates": "Tasas de Aparición",
+      "spawnRatesDesc": "Comprender las tasas de aparición es fundamental para optimizar tu estrategia de juego. Cada personaje tiene una probabilidad específica de aparecer.",
       "common": {
-        "title": "Comunes",
-        "rate": "60%",
-        "description": "Aparecen frecuentemente en todas las áreas."
+        "title": "Común",
+        "rate": "45%",
+        "description": "Los personajes más frecuentes en el juego",
+        "characteristics": "Características",
+        "features": [
+          "Aparecen con mayor frecuencia",
+          "Fácil de obtener",
+          "Base para colecciones",
+          "Ideal para principiantes"
+        ],
+        "defaultFeature": "Personajes básicos del juego"
       },
       "rare": {
-        "title": "Raros",
-        "rate": "25%",
-        "description": "Aparecen ocasionalmente en áreas específicas."
+        "title": "Raro",
+        "rate": "30%",
+        "description": "Personajes con características especiales",
+        "characteristics": "Características",
+        "features": [
+          "Habilidades mejoradas",
+          "Diseños únicos",
+          "Valor moderado",
+          "Colección intermedia"
+        ],
+        "defaultFeature": "Personajes con habilidades especiales"
       },
       "epic": {
-        "title": "Épicos",
-        "rate": "10%",
-        "description": "Aparecen raramente en áreas especiales."
+        "title": "Épico",
+        "rate": "15%",
+        "description": "Personajes muy poderosos",
+        "characteristics": "Características",
+        "features": [
+          "Habilidades avanzadas",
+          "Diseños exclusivos",
+          "Alto valor",
+          "Colección premium"
+        ],
+        "defaultFeature": "Personajes con habilidades avanzadas"
       },
       "legendary": {
-        "title": "Legendarios",
-        "rate": "4%",
-        "description": "Aparecen muy raramente en eventos especiales."
+        "title": "Legendario",
+        "rate": "8%",
+        "description": "Personajes extremadamente raros",
+        "characteristics": "Características",
+        "features": [
+          "Habilidades únicas",
+          "Diseños legendarios",
+          "Valor excepcional",
+          "Colección elite"
+        ],
+        "defaultFeature": "Personajes con habilidades únicas"
       },
       "mythic": {
-        "title": "Míticos",
-        "rate": "1%",
-        "description": "Aparecen extremadamente raramente."
+        "title": "Mítico",
+        "rate": "2%",
+        "description": "Los personajes más raros del juego",
+        "characteristics": "Características",
+        "features": [
+          "Habilidades míticas",
+          "Diseños únicos",
+          "Valor máximo",
+          "Colección suprema"
+        ],
+        "defaultFeature": "Los personajes más raros del juego"
       },
       "luckStat": "Estadística de Suerte",
-      "luckStatDesc": "Aumentar tu estadística de Suerte puede mejorar las tasas de aparición de Brainrots raros.",
-      "howToIncreaseLuck": "Cómo Aumentar la Suerte",
+      "luckStatDesc": "La estadística de suerte es un factor crucial que afecta directamente las tasas de aparición de personajes raros. Cuanto mayor sea tu suerte, mejores serán tus probabilidades.",
+      "howToIncreaseLuck": "Cómo Aumentar tu Suerte",
       "luckMethods": [
-        "Completa misiones diarias",
-        "Participa en eventos especiales",
-        "Usa power-ups de suerte",
-        "Juega en horarios específicos"
-      ]
+        {
+          "title": "Completar Misiones",
+          "description": "Las misiones diarias y semanales aumentan tu suerte permanentemente"
+        },
+        {
+          "title": "Coleccionar Personajes",
+          "description": "Cada personaje único en tu colección aumenta tu suerte"
+        },
+        {
+          "title": "Participar en Eventos",
+          "description": "Los eventos especiales ofrecen bonificaciones de suerte temporales"
+        },
+        {
+          "title": "Mejorar Equipamiento",
+          "description": "Ciertos items aumentan tu estadística de suerte"
+        }
+      ],
+      "defaultLuckMethod": {
+        "title": "Métodos Básicos",
+        "description": "Completa misiones y colecciona personajes para aumentar tu suerte"
+      },
+      "strategies": "Estrategias Avanzadas",
+      "farming": {
+        "title": "Farming Eficiente",
+        "description": "Optimiza tu tiempo de juego para maximizar las apariciones",
+        "tips": "Consejos de Farming",
+        "tipsList": [
+          "Juega en horarios de mayor actividad",
+          "Usa boosters de suerte",
+          "Concentra tu tiempo en áreas específicas",
+          "Mantén una rutina consistente"
+        ],
+        "defaultTip": "Juega regularmente para aumentar tus probabilidades"
+      },
+      "timing": {
+        "title": "Timing Perfecto",
+        "description": "El momento correcto puede hacer la diferencia",
+        "tips": "Consejos de Timing",
+        "tipsList": [
+          "Aprovecha los eventos especiales",
+          "Juega durante las horas pico",
+          "Usa bonificaciones temporales",
+          "Sincroniza con actualizaciones"
+        ],
+        "defaultTip": "Juega durante eventos especiales para mejores probabilidades"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cómo funciona la estadística de suerte?",
+            "answer": "La suerte es un multiplicador que aumenta las probabilidades de encontrar personajes raros. Se acumula con el tiempo y las actividades."
+          },
+          {
+            "question": "¿Las tasas de aparición cambian?",
+            "answer": "Las tasas base permanecen constantes, pero eventos especiales pueden modificarlas temporalmente."
+          },
+          {
+            "question": "¿Cuál es la mejor estrategia para personajes míticos?",
+            "answer": "Maximiza tu suerte, participa en eventos y mantén una rutina consistente de juego."
+          }
+        ],
+        "defaultQuestion": "¿Cómo aumentar mis probabilidades?",
+        "defaultAnswer": "Completa misiones, colecciona personajes y participa en eventos para aumentar tu suerte."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "list": [
+          "Comprensión básica del juego",
+          "Acceso a misiones diarias",
+          "Tiempo para farming regular",
+          "Paciencia para coleccionar"
+        ],
+        "default": "Conocimiento básico del juego"
+      },
+      "tips": {
+        "title": "Consejos Importantes",
+        "description": "Recuerda que la suerte se acumula con el tiempo. Sé paciente y consistente en tu estrategia."
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "secrets": "Guía de Secretos",
+        "rebirth": "Guía de Rebirth",
+        "scripts": "Guía de Scripts"
+      },
+      "cta": {
+        "title": "¡Optimiza tus Probabilidades!",
+        "description": "Aplica estas estrategias y maximiza tus chances de obtener personajes raros.",
+        "button": "Ver Todas las Guías"
+      }
     },
     "estrategias": {
       "title": "Estrategias Avanzadas",
       "subtitle": "Técnicas avanzadas para jugadores experimentados que quieren dominar completamente el juego",
+      "seoTitle": "Estrategias Avanzadas - Guía Completa de Técnicas | Steal a Brainrot",
+      "seoDescription": "Descubre estrategias avanzadas de combate, gestión de recursos y técnicas expertas para dominar completamente Steal a Brainrot.",
+      "seoKeywords": "estrategias avanzadas, combate, gestión de recursos, técnicas expertas, Steal a Brainrot, guía",
+      "readingTime": "10 min de lectura",
+      "difficulty": "Avanzado",
+      "lastUpdated": "Actualizado: Diciembre 2024",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "combatStrategies": "Estrategias de Combate",
+        "resourceManagement": "Gestión de Recursos",
+        "advancedTips": "Consejos Avanzados",
+        "faq": "Preguntas Frecuentes"
+      },
       "combatStrategies": "Estrategias de Combate",
+      "combatStrategiesDesc": "Las estrategias de combate son fundamentales para el éxito en el juego. Cada enfoque tiene sus ventajas y desventajas.",
       "hitAndRun": {
         "title": "Golpea y Corre",
-        "description": "Ataca rápidamente y escapa antes de que te contraataquen."
+        "description": "Ataca rápidamente y escapa antes de que te contraataquen.",
+        "advantages": "Ventajas",
+        "advantagesList": [
+          "Alto daño en poco tiempo",
+          "Minimiza el riesgo de contraataque",
+          "Ideal para objetivos débiles",
+          "Efectivo contra enemigos lentos"
+        ],
+        "defaultAdvantage": "Estrategia de ataque rápido"
       },
       "stealthApproach": {
         "title": "Enfoque Furtivo",
-        "description": "Usa invisibilidad para acercarte sin ser detectado."
+        "description": "Usa invisibilidad para acercarte sin ser detectado.",
+        "advantages": "Ventajas",
+        "advantagesList": [
+          "Evita detección enemiga",
+          "Permite ataques sorpresa",
+          "Ideal para objetivos valiosos",
+          "Reduce el riesgo de daño"
+        ],
+        "defaultAdvantage": "Estrategia de sigilo"
       },
       "teamTactics": {
         "title": "Tácticas de Equipo",
-        "description": "Coordina con otros jugadores para ataques coordinados."
+        "description": "Coordina con otros jugadores para ataques coordinados.",
+        "advantages": "Ventajas",
+        "advantagesList": [
+          "Mayor poder de fuego",
+          "Distracción de enemigos",
+          "Cobertura mutua",
+          "Objetivos más grandes"
+        ],
+        "defaultAdvantage": "Estrategia de equipo"
       },
       "resourceManagement": "Gestión de Recursos",
       "prioritize": {
         "title": "Prioriza Objetivos",
-        "description": "Enfócate en los objetivos más valiosos primero."
+        "description": "Enfócate en los objetivos más valiosos primero.",
+        "tips": "Consejos de Priorización",
+        "tipsList": [
+          "Evalúa el valor de cada objetivo",
+          "Considera el riesgo vs recompensa",
+          "Planifica tu ruta de ataque",
+          "Adapta tu estrategia según la situación"
+        ],
+        "defaultTip": "Enfócate en objetivos de alto valor"
       },
       "efficiency": {
         "title": "Maximiza Eficiencia",
-        "description": "Optimiza tus rutas para minimizar el tiempo perdido."
+        "description": "Optimiza tus rutas para minimizar el tiempo perdido.",
+        "tips": "Consejos de Eficiencia",
+        "tipsList": [
+          "Optimiza tus rutas de movimiento",
+          "Minimiza el tiempo de viaje",
+          "Usa atajos y pasajes secretos",
+          "Planifica múltiples objetivos"
+        ],
+        "defaultTip": "Optimiza tu tiempo de juego"
       },
       "advancedTips": "Consejos Avanzados",
+      "advancedTipsDesc": "Los consejos avanzados te ayudarán a llevar tu juego al siguiente nivel. Practica estas técnicas regularmente.",
       "tips": [
-        "Aprende los patrones de movimiento de los enemigos",
-        "Memoriza las ubicaciones de los power-ups",
-        "Practica el timing de tus ataques",
-        "Desarrolla tu propio estilo de juego"
-      ]
+        {
+          "title": "Aprende los Patrones",
+          "description": "Estudia los patrones de movimiento de los enemigos para anticipar sus acciones."
+        },
+        {
+          "title": "Memoriza Ubicaciones",
+          "description": "Recuerda las ubicaciones de power-ups y recursos importantes."
+        },
+        {
+          "title": "Practica el Timing",
+          "description": "Perfecciona el timing de tus ataques para maximizar el daño."
+        },
+        {
+          "title": "Desarrolla tu Estilo",
+          "description": "Crea tu propio estilo de juego basado en tus fortalezas."
+        }
+      ],
+      "defaultTip": {
+        "title": "Consejo Básico",
+        "description": "Practica regularmente para mejorar tus habilidades."
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cuál es la mejor estrategia de combate?",
+            "answer": "La mejor estrategia depende de tu estilo de juego y la situación. Experimenta con diferentes enfoques."
+          },
+          {
+            "question": "¿Cómo gestionar recursos eficientemente?",
+            "answer": "Prioriza objetivos de alto valor y optimiza tus rutas para maximizar la eficiencia."
+          },
+          {
+            "question": "¿Qué consejos son más importantes?",
+            "answer": "Aprender patrones enemigos y practicar el timing son fundamentales para el éxito."
+          }
+        ],
+        "defaultQuestion": "¿Cómo mejorar mis estrategias?",
+        "defaultAnswer": "Practica regularmente, estudia patrones enemigos y experimenta con diferentes enfoques."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "list": [
+          "Experiencia básica en el juego",
+          "Comprensión de mecánicas fundamentales",
+          "Tiempo para práctica regular",
+          "Disposición para experimentar"
+        ],
+        "default": "Experiencia básica en el juego"
+      },
+      "warning": {
+        "title": "Advertencia",
+        "description": "Estas estrategias requieren práctica y experiencia. No te desanimes si no las dominas inmediatamente."
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "secrets": "Guía de Secretos",
+        "probabilities": "Guía de Probabilidades",
+        "scripts": "Guía de Scripts"
+      },
+      "cta": {
+        "title": "¡Domina las Estrategias!",
+        "description": "Aplica estas técnicas avanzadas y lleva tu juego al siguiente nivel.",
+        "button": "Ver Todas las Guías"
+      }
     },
     "stealAFish": {
       "title": "Steal a Fish",
       "subtitle": "Sumérgete en un mundo submarino y construye tu imperio acuático recolectando los peces más raros",
+      "seoTitle": "Steal a Fish - Guía Completa del Juego Submarino | Steal a Brainrot",
+      "seoDescription": "Descubre estrategias para robar peces raros, construir tu imperio acuático y dominar el mundo submarino en Steal a Fish.",
+      "seoKeywords": "steal a fish, peces raros, juego submarino, imperio acuático, robo de peces, Steal a Brainrot, guía",
+      "readingTime": "7 min de lectura",
+      "difficulty": "Intermedio",
+      "lastUpdated": "Actualizado: Diciembre 2024",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "gameOverview": "Descripción del Juego",
+        "fishTypes": "Tipos de Peces",
+        "strategies": "Estrategias",
+        "faq": "Preguntas Frecuentes"
+      },
       "gameOverview": "Descripción del Juego",
       "gameOverviewDesc": "Steal a Fish es un juego de recolección submarina donde debes robar peces raros de otros jugadores.",
+      "gameFeatures": "Características del Juego",
+      "gameFeaturesList": [
+        "Mundo submarino inmersivo",
+        "Sistema de combate acuático",
+        "Colección de peces raros",
+        "Economía submarina",
+        "Competencia entre jugadores"
+      ],
+      "defaultFeature": "Juego de recolección submarina",
       "fishTypes": "Tipos de Peces",
       "commonFish": {
         "title": "Peces Comunes",
-        "description": "Fáciles de encontrar pero de bajo valor."
+        "description": "Fáciles de encontrar pero de bajo valor.",
+        "characteristics": "Características",
+        "features": [
+          "Aparecen frecuentemente",
+          "Valor bajo",
+          "Ideal para principiantes",
+          "Base para colecciones"
+        ],
+        "defaultFeature": "Peces básicos del juego"
       },
       "rareFish": {
         "title": "Peces Raros",
-        "description": "Más difíciles de encontrar y de mayor valor."
+        "description": "Más difíciles de encontrar y de mayor valor.",
+        "characteristics": "Características",
+        "features": [
+          "Aparecen ocasionalmente",
+          "Valor moderado",
+          "Habilidades especiales",
+          "Colección intermedia"
+        ],
+        "defaultFeature": "Peces con habilidades especiales"
       },
       "legendaryFish": {
         "title": "Peces Legendarios",
-        "description": "Extremadamente raros y muy valiosos."
+        "description": "Extremadamente raros y muy valiosos.",
+        "characteristics": "Características",
+        "features": [
+          "Aparecen muy raramente",
+          "Alto valor",
+          "Habilidades únicas",
+          "Colección premium"
+        ],
+        "defaultFeature": "Los peces más valiosos del juego"
       },
       "strategies": "Estrategias",
       "underwaterCombat": {
         "title": "Combate Submarino",
-        "description": "Aprende a luchar eficientemente bajo el agua."
+        "description": "Aprende a luchar bajo el agua contra otros jugadores.",
+        "tips": "Consejos de Combate",
+        "tipsList": [
+          "Usa el entorno submarino a tu favor",
+          "Aprovecha la visibilidad limitada",
+          "Coordina ataques con tu equipo",
+          "Mantén tu oxígeno"
+        ],
+        "defaultTip": "Aprende las mecánicas de combate submarino"
       },
       "fishLocations": {
         "title": "Ubicaciones de Peces",
-        "description": "Descubre dónde encontrar cada tipo de pez."
+        "description": "Descubre dónde encontrar los peces más raros.",
+        "tips": "Consejos de Ubicación",
+        "tipsList": [
+          "Explora diferentes profundidades",
+          "Busca en arrecifes de coral",
+          "Visita cuevas submarinas",
+          "Revisa naufragios"
+        ],
+        "defaultTip": "Explora diferentes áreas submarinas"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cómo encuentro peces legendarios?",
+            "answer": "Los peces legendarios aparecen en ubicaciones específicas y a ciertas profundidades. Explora arrecifes y cuevas submarinas."
+          },
+          {
+            "question": "¿Cuál es la mejor estrategia de combate?",
+            "answer": "Usa el entorno a tu favor, coordina con tu equipo y mantén tu oxígeno durante las batallas submarinas."
+          },
+          {
+            "question": "¿Cómo construyo mi imperio acuático?",
+            "answer": "Comienza con peces comunes, luego busca peces raros y finalmente persigue los legendarios para maximizar tu valor."
+          }
+        ],
+        "defaultQuestion": "¿Cómo empezar en Steal a Fish?",
+        "defaultAnswer": "Comienza explorando aguas poco profundas y recolectando peces comunes para construir tu colección."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "list": [
+          "Comprensión básica del juego",
+          "Equipo submarino básico",
+          "Tiempo para exploración",
+          "Estrategia de colección"
+        ],
+        "default": "Conocimiento básico del juego"
+      },
+      "tips": {
+        "title": "Consejos Importantes",
+        "description": "Recuerda que el oxígeno es crucial en el mundo submarino. Planifica tus expediciones cuidadosamente."
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "pet": "Guía de Steal a Pet",
+        "car": "Guía de Steal a Car",
+        "meme": "Guía de Steal a Meme"
+      },
+      "cta": {
+        "title": "¡Construye tu Imperio Acuático!",
+        "description": "Aplica estas estrategias y domina el mundo submarino de Steal a Fish.",
+        "button": "Ver Todas las Guías"
       }
     },
     "stealALabubu": {
       "title": "Steal a Labubu",
       "subtitle": "Recolecta las figuras Labubu más lindas y valiosas en este emocionante juego de juguetes de arte",
+      "seoTitle": "Steal a Labubu - Guía Completa del Juego de Figuras | Steal a Brainrot",
+      "seoDescription": "Descubre estrategias para robar figuras Labubu raras, construir tu colección de arte y dominar el mundo de los juguetes coleccionables.",
+      "seoKeywords": "steal a labubu, figuras labubu, juguetes de arte, colección de figuras, robo de labubu, Steal a Brainrot, guía",
+      "readingTime": "6 min de lectura",
+      "difficulty": "Intermedio",
+      "lastUpdated": "Actualizado: Diciembre 2024",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "gameOverview": "Descripción del Juego",
+        "labubuTypes": "Tipos de Labubu",
+        "collectionStrategies": "Estrategias de Colección",
+        "faq": "Preguntas Frecuentes"
+      },
       "gameOverview": "Descripción del Juego",
       "gameOverviewDesc": "Steal a Labubu es un juego de recolección de figuras donde debes robar Labubus raros de otros jugadores.",
+      "gameFeatures": "Características del Juego",
+      "gameFeaturesList": [
+        "Mundo de figuras coleccionables",
+        "Sistema de rareza de Labubu",
+        "Colección de arte digital",
+        "Economía de juguetes",
+        "Competencia entre coleccionistas"
+      ],
+      "defaultFeature": "Juego de recolección de figuras",
       "labubuTypes": "Tipos de Labubu",
       "commonLabubu": {
         "title": "Labubu Comunes",
-        "description": "Fáciles de encontrar pero de bajo valor."
+        "description": "Fáciles de encontrar pero de bajo valor.",
+        "characteristics": "Características",
+        "features": [
+          "Aparecen frecuentemente",
+          "Valor bajo",
+          "Ideal para principiantes",
+          "Base para colecciones"
+        ],
+        "defaultFeature": "Labubu básicos del juego"
       },
       "rareLabubu": {
         "title": "Labubu Raros",
-        "description": "Más difíciles de encontrar y de mayor valor."
+        "description": "Más difíciles de encontrar y de mayor valor.",
+        "characteristics": "Características",
+        "features": [
+          "Aparecen ocasionalmente",
+          "Valor moderado",
+          "Diseños especiales",
+          "Colección intermedia"
+        ],
+        "defaultFeature": "Labubu con diseños especiales"
       },
       "legendaryLabubu": {
         "title": "Labubu Legendarios",
-        "description": "Extremadamente raros y muy valiosos."
+        "description": "Extremadamente raros y muy valiosos.",
+        "characteristics": "Características",
+        "features": [
+          "Aparecen muy raramente",
+          "Alto valor",
+          "Diseños únicos",
+          "Colección premium"
+        ],
+        "defaultFeature": "Los Labubu más valiosos del juego"
       },
-      "collectionTips": "Consejos de Colección",
-      "tips": [
-        "Enfócate en Labubus de alta rareza",
-        "Participa en eventos especiales",
-        "Intercambia con otros jugadores",
-        "Mantén tu colección organizada"
-      ]
+      "collectionStrategies": "Estrategias de Colección",
+      "targetedCollection": {
+        "title": "Colección Dirigida",
+        "description": "Enfócate en Labubus específicos para maximizar tu colección.",
+        "tips": "Consejos de Colección",
+        "tipsList": [
+          "Enfócate en Labubus de alta rareza",
+          "Participa en eventos especiales",
+          "Intercambia con otros jugadores",
+          "Mantén tu colección organizada"
+        ],
+        "defaultTip": "Desarrolla una estrategia de colección específica"
+      },
+      "communityTrading": {
+        "title": "Comercio Comunitario",
+        "description": "Únete a la comunidad para intercambiar y mejorar tu colección.",
+        "tips": "Consejos de Comercio",
+        "tipsList": [
+          "Únete a grupos de coleccionistas",
+          "Participa en subastas",
+          "Ofrece intercambios justos",
+          "Construye tu reputación"
+        ],
+        "defaultTip": "Participa activamente en la comunidad"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cómo encuentro Labubu legendarios?",
+            "answer": "Los Labubu legendarios aparecen en eventos especiales y a través de intercambios con otros jugadores."
+          },
+          {
+            "question": "¿Cuál es la mejor estrategia de colección?",
+            "answer": "Enfócate en Labubus de alta rareza, participa en eventos y mantén tu colección organizada."
+          },
+          {
+            "question": "¿Cómo construyo mi colección de Labubu?",
+            "answer": "Comienza con Labubus comunes, luego busca los raros y finalmente persigue los legendarios."
+          }
+        ],
+        "defaultQuestion": "¿Cómo empezar en Steal a Labubu?",
+        "defaultAnswer": "Comienza recolectando Labubus comunes y participando en eventos para construir tu colección."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "list": [
+          "Comprensión básica del juego",
+          "Interés en figuras coleccionables",
+          "Tiempo para eventos",
+          "Estrategia de colección"
+        ],
+        "default": "Conocimiento básico del juego"
+      },
+      "tips": {
+        "title": "Consejos Importantes",
+        "description": "Recuerda que la paciencia es clave en la colección de figuras. Los Labubu legendarios requieren tiempo y dedicación."
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "fish": "Guía de Steal a Fish",
+        "pet": "Guía de Steal a Pet",
+        "anime": "Guía de Steal an Anime"
+      },
+      "cta": {
+        "title": "¡Construye tu Colección de Labubu!",
+        "description": "Aplica estas estrategias y domina el mundo de las figuras coleccionables de Steal a Labubu.",
+        "button": "Ver Todas las Guías"
+      }
     },
     "stealAnAnime": {
       "title": "Steal an Anime",
       "subtitle": "Conviértete en el otaku definitivo robando y recolectando personajes icónicos de tus animes favoritos",
+      "seoTitle": "Steal an Anime - Guía Completa del Juego de Personajes | Steal a Brainrot",
+      "seoDescription": "Descubre estrategias para robar personajes de anime raros, construir tu colección otaku y dominar el mundo de los personajes de anime.",
+      "seoKeywords": "steal an anime, personajes de anime, otaku, colección de anime, robo de personajes, Steal a Brainrot, guía",
+      "readingTime": "8 min de lectura",
+      "difficulty": "Intermedio",
+      "lastUpdated": "Actualizado: Diciembre 2024",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "gameOverview": "Descripción del Juego",
+        "animeCharacters": "Personajes de Anime",
+        "otakuStrategies": "Estrategias Otaku",
+        "faq": "Preguntas Frecuentes"
+      },
       "gameOverview": "Descripción del Juego",
       "gameOverviewDesc": "Steal an Anime es un juego de recolección donde debes robar personajes de anime raros de otros jugadores.",
+      "gameFeatures": "Características del Juego",
+      "gameFeaturesList": [
+        "Mundo de personajes de anime",
+        "Sistema de rareza de personajes",
+        "Colección otaku",
+        "Economía de anime",
+        "Competencia entre otakus"
+      ],
+      "defaultFeature": "Juego de recolección de personajes de anime",
       "animeCharacters": "Personajes de Anime",
       "popularCharacters": {
         "title": "Personajes Populares",
-        "description": "Personajes conocidos de animes populares."
+        "description": "Personajes conocidos de animes populares.",
+        "characteristics": "Características",
+        "features": [
+          "Aparecen frecuentemente",
+          "Valor moderado",
+          "Fácil de reconocer",
+          "Base para colecciones"
+        ],
+        "defaultFeature": "Personajes básicos de anime"
       },
       "rareCharacters": {
         "title": "Personajes Raros",
-        "description": "Personajes menos conocidos pero valiosos."
+        "description": "Personajes menos conocidos pero valiosos.",
+        "characteristics": "Características",
+        "features": [
+          "Aparecen ocasionalmente",
+          "Valor alto",
+          "Habilidades especiales",
+          "Colección intermedia"
+        ],
+        "defaultFeature": "Personajes con habilidades especiales"
       },
       "legendaryCharacters": {
         "title": "Personajes Legendarios",
-        "description": "Personajes extremadamente raros y valiosos."
+        "description": "Personajes extremadamente raros y valiosos.",
+        "characteristics": "Características",
+        "features": [
+          "Aparecen muy raramente",
+          "Alto valor",
+          "Habilidades únicas",
+          "Colección premium"
+        ],
+        "defaultFeature": "Los personajes más valiosos del juego"
       },
       "otakuStrategies": "Estrategias Otaku",
-      "strategies": [
-        "Conoce bien los animes populares",
-        "Participa en eventos temáticos",
-        "Únete a comunidades otaku",
-        "Mantén tu colección actualizada"
-      ]
+      "animeKnowledge": {
+        "title": "Conocimiento de Anime",
+        "description": "Aprende sobre diferentes animes para mejorar tu colección.",
+        "tips": "Consejos de Conocimiento",
+        "tipsList": [
+          "Conoce bien los animes populares",
+          "Investiga personajes secundarios",
+          "Sigue las tendencias actuales",
+          "Mantén tu colección actualizada"
+        ],
+        "defaultTip": "Desarrolla un conocimiento profundo de anime"
+      },
+      "communityParticipation": {
+        "title": "Participación Comunitaria",
+        "description": "Únete a la comunidad otaku para mejorar tu colección.",
+        "tips": "Consejos de Comunidad",
+        "tipsList": [
+          "Participa en eventos temáticos",
+          "Únete a comunidades otaku",
+          "Comparte tus conocimientos",
+          "Colabora con otros jugadores"
+        ],
+        "defaultTip": "Participa activamente en la comunidad otaku"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cómo encuentro personajes legendarios?",
+            "answer": "Los personajes legendarios aparecen en eventos especiales y a través de intercambios con otros jugadores."
+          },
+          {
+            "question": "¿Cuál es la mejor estrategia otaku?",
+            "answer": "Conoce bien los animes populares, participa en eventos temáticos y mantén tu colección actualizada."
+          },
+          {
+            "question": "¿Cómo construyo mi colección de anime?",
+            "answer": "Comienza con personajes populares, luego busca los raros y finalmente persigue los legendarios."
+          }
+        ],
+        "defaultQuestion": "¿Cómo empezar en Steal an Anime?",
+        "defaultAnswer": "Comienza recolectando personajes populares y participando en eventos para construir tu colección."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "list": [
+          "Conocimiento básico de anime",
+          "Interés en personajes de anime",
+          "Tiempo para eventos",
+          "Estrategia de colección"
+        ],
+        "default": "Conocimiento básico de anime"
+      },
+      "tips": {
+        "title": "Consejos Importantes",
+        "description": "Recuerda que el conocimiento de anime es clave. Los personajes legendarios requieren investigación y dedicación."
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "fish": "Guía de Steal a Fish",
+        "labubu": "Guía de Steal a Labubu",
+        "pet": "Guía de Steal a Pet"
+      },
+      "cta": {
+        "title": "¡Conviértete en el Otaku Definitivo!",
+        "description": "Aplica estas estrategias y domina el mundo de los personajes de anime en Steal an Anime.",
+        "button": "Ver Todas las Guías"
+      }
     },
     "stealAPet": {
       "title": "Steal a Pet",
@@ -807,82 +2029,597 @@
       ]
     },
     "stealAMeme": {
-      "title": "Steal a Meme",
+      "seoTitle": "Steal a Meme - Guía Completa para Robar Memes Virales",
+      "seoDescription": "Aprende estrategias avanzadas para robar memes virales, crear contenido divertido y dominar la cultura de memes en Steal a Meme.",
+      "seoKeywords": "steal a meme, memes virales, cultura de memes, robar memes, contenido divertido, estrategias memes",
+      "readingTime": "8 min de lectura",
+      "difficulty": "Intermedio",
+      "lastUpdated": "Actualizado: Diciembre 2024",
+      "title": "Steal a Meme - Guía Completa",
       "subtitle": "Conviértete en un señor de los memes recolectando y robando los memes de internet más virales y personajes",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "gameOverview": "Descripción del Juego",
+        "memeTypes": "Tipos de Memes",
+        "viralStrategies": "Estrategias Virales",
+        "faq": "Preguntas Frecuentes"
+      },
       "gameOverview": "Descripción del Juego",
-      "gameOverviewDesc": "Steal a Meme es un juego de recolección de memes donde debes robar memes virales de otros jugadores.",
+      "gameOverviewDesc": "Steal a Meme es un juego innovador donde puedes robar memes virales, crear contenido divertido y dominar la cultura de memes. Este juego combina creatividad, estrategia y humor en una experiencia única.",
+      "gameFeatures": "Características del Juego",
+      "gameFeaturesList": [
+        "Sistema de robo de memes virales",
+        "Creación de contenido personalizado",
+        "Comunidad de creadores de memes",
+        "Sistema de tendencias en tiempo real",
+        "Herramientas de edición avanzadas",
+        "Competencias de memes"
+      ],
+      "defaultFeature": "Característica del juego",
       "memeTypes": "Tipos de Memes",
       "viralMemes": {
         "title": "Memes Virales",
-        "description": "Memes que se han vuelto populares en internet."
+        "description": "Los memes más populares del momento que dominan las redes sociales",
+        "characteristics": "Características",
+        "features": [
+          "Alto potencial viral",
+          "Fácil de compartir",
+          "Aplicable a múltiples contextos",
+          "Tiempo de vida corto pero intenso"
+        ],
+        "defaultFeature": "Característica viral"
       },
       "classicMemes": {
         "title": "Memes Clásicos",
-        "description": "Memes que han resistido la prueba del tiempo."
+        "description": "Memes que han resistido la prueba del tiempo y siguen siendo relevantes",
+        "characteristics": "Características",
+        "features": [
+          "Reconocimiento universal",
+          "Durabilidad a largo plazo",
+          "Adaptabilidad a nuevas situaciones",
+          "Cultura de internet establecida"
+        ],
+        "defaultFeature": "Característica clásica"
       },
       "legendaryMemes": {
         "title": "Memes Legendarios",
-        "description": "Memes extremadamente raros y valiosos."
+        "description": "Los memes más raros y valiosos que definen épocas",
+        "characteristics": "Características",
+        "features": [
+          "Extrema rareza",
+          "Valor cultural histórico",
+          "Influencia en la cultura pop",
+          "Coleccionabilidad premium"
+        ],
+        "defaultFeature": "Característica legendaria"
       },
-      "memeLordStrategies": "Estrategias de Señor de Memes",
-      "strategies": [
-        "Mantente al día con las tendencias",
-        "Participa en comunidades de memes",
-        "Crea contenido original",
-        "Comparte memes estratégicamente"
-      ]
+      "viralStrategies": "Estrategias Virales",
+      "trendingTactics": {
+        "title": "Tácticas de Tendencia",
+        "description": "Estrategias para crear y robar memes que se vuelvan virales",
+        "tips": "Consejos",
+        "tipsList": [
+          "Monitorea las tendencias en tiempo real",
+          "Adapta memes existentes con tu toque único",
+          "Usa hashtags relevantes y populares",
+          "Publica en los momentos de mayor actividad",
+          "Colabora con otros creadores de memes"
+        ],
+        "defaultTip": "Sigue las tendencias actuales"
+      },
+      "memeCulture": {
+        "title": "Cultura de Memes",
+        "description": "Entender y participar en la cultura de memes de manera efectiva",
+        "tips": "Consejos",
+        "tipsList": [
+          "Mantente actualizado con las tendencias",
+          "Entiende el contexto de cada meme",
+          "Respeta la cultura y evita contenido ofensivo",
+          "Crea contenido original y divertido",
+          "Participa en comunidades de memes"
+        ],
+        "defaultTip": "Sumérgete en la cultura de memes"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cómo puedo robar memes sin ser detectado?",
+            "answer": "Usa herramientas de edición avanzadas y modifica los memes para hacerlos únicos. Siempre agrega tu toque personal."
+          },
+          {
+            "question": "¿Qué hace que un meme se vuelva viral?",
+            "answer": "La combinación de humor, timing, relevancia cultural y facilidad de compartir determina el potencial viral."
+          },
+          {
+            "question": "¿Puedo ganar dinero con memes?",
+            "answer": "Sí, puedes monetizar tu contenido a través de sponsorships, merchandising y plataformas de contenido."
+          }
+        ],
+        "defaultQuestion": "¿Cómo empezar con Steal a Meme?",
+        "defaultAnswer": "Comienza explorando los memes virales actuales y practicando la creación de contenido."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "list": [
+          "Conocimiento básico de cultura de internet",
+          "Herramientas de edición de imágenes",
+          "Cuenta en redes sociales",
+          "Creatividad y sentido del humor"
+        ],
+        "default": "Conocimiento básico de memes"
+      },
+      "tips": {
+        "title": "Consejos Importantes",
+        "description": "Mantén tu contenido original y respeta los derechos de autor. La creatividad es clave para el éxito."
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "fish": "Steal a Fish - Guía de Pesca",
+        "labubu": "Steal a Labubu - Guía de Colección",
+        "anime": "Steal an Anime - Guía de Otaku"
+      },
+      "cta": {
+        "title": "¡Comienza a Crear Memes!",
+        "description": "Únete a la comunidad de creadores de memes y domina el arte del humor viral.",
+        "button": "Explorar Más Guías"
+      }
     },
     "stealDeadlyRails": {
-      "title": "Steal a Deadly Rails",
+      "seoTitle": "Steal a Deadly Rails - Guía Completa para Sobrevivir en Rieles Mortales",
+      "seoDescription": "Aprende estrategias avanzadas para sobrevivir en rieles mortales, robar mobs valiosos y dominar el juego de ritmo rápido.",
+      "seoKeywords": "steal deadly rails, rieles mortales, mobs valiosos, juego de ritmo, supervivencia, estrategias",
+      "readingTime": "10 min de lectura",
+      "difficulty": "Avanzado",
+      "lastUpdated": "Actualizado: Diciembre 2024",
+      "title": "Steal a Deadly Rails - Guía Completa",
       "subtitle": "Arrebata mobs valiosos de una cinta transportadora mortal antes de que se pierdan para siempre en este juego de ritmo rápido",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "gameOverview": "Descripción del Juego",
+        "railTypes": "Tipos de Rieles",
+        "survivalStrategies": "Estrategias de Supervivencia",
+        "faq": "Preguntas Frecuentes"
+      },
       "gameOverview": "Descripción del Juego",
-      "gameOverviewDesc": "Steal a Deadly Rails es un juego de ritmo rápido donde debes robar mobs de una cinta transportadora peligrosa.",
+      "gameOverviewDesc": "Steal a Deadly Rails es un juego de ritmo rápido y alta adrenalina donde debes robar mobs valiosos de una cinta transportadora mortal. La velocidad y la precisión son clave para sobrevivir.",
+      "gameFeatures": "Características del Juego",
+      "gameFeaturesList": [
+        "Sistema de rieles de diferentes dificultades",
+        "Mobs valiosos en movimiento constante",
+        "Mecánicas de supervivencia avanzadas",
+        "Sistema de puntuación en tiempo real",
+        "Power-ups de protección",
+        "Competencia entre jugadores"
+      ],
+      "defaultFeature": "Característica del juego",
       "railTypes": "Tipos de Rieles",
       "easyRails": {
         "title": "Rieles Fáciles",
-        "description": "Rieles con mobs comunes y menos peligro."
+        "description": "Rieles con mobs comunes y menos peligro para principiantes",
+        "characteristics": "Características",
+        "features": [
+          "Velocidad moderada",
+          "Mobs comunes",
+          "Peligro bajo",
+          "Ideal para principiantes"
+        ],
+        "defaultFeature": "Característica fácil"
       },
       "hardRails": {
         "title": "Rieles Difíciles",
-        "description": "Rieles con mobs raros pero más peligro."
+        "description": "Rieles con mobs raros pero mayor peligro",
+        "characteristics": "Características",
+        "features": [
+          "Velocidad alta",
+          "Mobs raros",
+          "Peligro moderado",
+          "Recompensas mejores"
+        ],
+        "defaultFeature": "Característica difícil"
       },
       "deadlyRails": {
         "title": "Rieles Mortales",
-        "description": "Rieles con mobs legendarios pero extremadamente peligro."
+        "description": "Rieles con mobs legendarios pero extremadamente peligro",
+        "characteristics": "Características",
+        "features": [
+          "Velocidad extrema",
+          "Mobs legendarios",
+          "Peligro máximo",
+          "Recompensas máximas"
+        ],
+        "defaultFeature": "Característica mortal"
       },
-      "survivalTips": "Consejos de Supervivencia",
-      "tips": [
-        "Mantén tu distancia de los peligros",
-        "Usa power-ups de protección",
-        "Aprende los patrones de movimiento",
-        "Practica tu timing"
-      ]
+      "survivalStrategies": "Estrategias de Supervivencia",
+      "defenseTactics": {
+        "title": "Tácticas de Defensa",
+        "description": "Estrategias para protegerse de los peligros en los rieles",
+        "tips": "Consejos",
+        "tipsList": [
+          "Mantén tu distancia de los peligros",
+          "Usa power-ups de protección",
+          "Aprende los patrones de movimiento",
+          "Practica tu timing",
+          "Ten un plan de escape"
+        ],
+        "defaultTip": "Mantén la distancia de seguridad"
+      },
+      "timingStrategies": {
+        "title": "Estrategias de Timing",
+        "description": "Dominar el timing perfecto para robar mobs sin ser detectado",
+        "tips": "Consejos",
+        "tipsList": [
+          "Estudia los patrones de movimiento",
+          "Calcula la velocidad de los mobs",
+          "Anticipa los cambios de dirección",
+          "Usa el momentum a tu favor",
+          "Practica en rieles fáciles primero"
+        ],
+        "defaultTip": "Practica el timing"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cómo puedo sobrevivir en rieles mortales?",
+            "answer": "Practica en rieles fáciles primero, aprende los patrones y usa power-ups de protección. La experiencia es clave."
+          },
+          {
+            "question": "¿Qué mobs son los más valiosos?",
+            "answer": "Los mobs legendarios en rieles mortales son los más valiosos, pero también los más peligrosos de robar."
+          },
+          {
+            "question": "¿Puedo jugar en equipo?",
+            "answer": "Sí, puedes coordinar con otros jugadores para robar mobs más eficientemente."
+          }
+        ],
+        "defaultQuestion": "¿Cómo empezar con Steal a Deadly Rails?",
+        "defaultAnswer": "Comienza en rieles fáciles para aprender las mecánicas básicas."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "list": [
+          "Reflejos rápidos",
+          "Experiencia en juegos de ritmo",
+          "Conocimiento de patrones de movimiento",
+          "Estrategia de supervivencia"
+        ],
+        "default": "Reflejos básicos"
+      },
+      "warning": {
+        "title": "Advertencia Importante",
+        "description": "Este juego es extremadamente difícil. Los rieles mortales pueden ser frustrantes para principiantes."
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "fish": "Steal a Fish - Guía de Pesca",
+        "labubu": "Steal a Labubu - Guía de Colección",
+        "anime": "Steal an Anime - Guía de Otaku"
+      },
+      "cta": {
+        "title": "¡Domina los Rieles Mortales!",
+        "description": "Únete a los jugadores más valientes y domina el arte de la supervivencia en rieles mortales.",
+        "button": "Explorar Más Guías"
+      }
     },
     "stealACar": {
-      "title": "Steal a Car",
+      "seoTitle": "Steal a Car - Guía Completa para Robar Autos de Lujo",
+      "seoDescription": "Aprende estrategias avanzadas para robar autos de lujo, planificar heists perfectos y dominar el juego de robo de autos.",
+      "seoKeywords": "steal a car, robo de autos, autos de lujo, heist, estrategias de robo, juego de autos",
+      "readingTime": "12 min de lectura",
+      "difficulty": "Avanzado",
+      "lastUpdated": "Actualizado: Diciembre 2024",
+      "title": "Steal a Car - Guía Completa",
       "subtitle": "Roba los autos más caros en este juego de alto octanaje de robo de autos",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "gameOverview": "Descripción del Juego",
+        "carTypes": "Tipos de Autos",
+        "heistStrategies": "Estrategias de Robo",
+        "faq": "Preguntas Frecuentes"
+      },
       "gameOverview": "Descripción del Juego",
-      "gameOverviewDesc": "Steal a Car es un juego de robo de autos donde debes robar los vehículos más valiosos.",
+      "gameOverviewDesc": "Steal a Car es un juego de alta adrenalina donde debes robar los vehículos más valiosos del mundo. La planificación, la precisión y el trabajo en equipo son clave para el éxito.",
+      "gameFeatures": "Características del Juego",
+      "gameFeaturesList": [
+        "Sistema de autos de diferentes valores",
+        "Mecánicas de robo realistas",
+        "Herramientas especializadas",
+        "Sistema de seguridad avanzado",
+        "Trabajo en equipo",
+        "Competencia entre jugadores"
+      ],
+      "defaultFeature": "Característica del juego",
       "carTypes": "Tipos de Autos",
       "commonCars": {
         "title": "Autos Comunes",
-        "description": "Fáciles de robar pero de bajo valor."
+        "description": "Fáciles de robar pero de bajo valor para principiantes",
+        "characteristics": "Características",
+        "features": [
+          "Seguridad básica",
+          "Valor bajo",
+          "Fácil acceso",
+          "Ideal para principiantes"
+        ],
+        "defaultFeature": "Característica común"
       },
       "luxuryCars": {
         "title": "Autos de Lujo",
-        "description": "Más difíciles de robar pero de mayor valor."
+        "description": "Más difíciles de robar pero de mayor valor",
+        "characteristics": "Características",
+        "features": [
+          "Seguridad avanzada",
+          "Alto valor",
+          "Sistemas anti-robo",
+          "Recompensas mejores"
+        ],
+        "defaultFeature": "Característica de lujo"
       },
-      "superCars": {
-        "title": "Super Autos",
-        "description": "Extremadamente difíciles de robar pero muy valiosos."
+      "legendaryCars": {
+        "title": "Autos Legendarios",
+        "description": "Los autos más raros y valiosos del juego",
+        "characteristics": "Características",
+        "features": [
+          "Seguridad máxima",
+          "Valor extremo",
+          "Sistemas de alta tecnología",
+          "Recompensas máximas"
+        ],
+        "defaultFeature": "Característica legendaria"
       },
       "heistStrategies": "Estrategias de Robo",
-      "strategies": [
-        "Planifica tu ruta de escape",
-        "Usa herramientas especializadas",
-        "Coordina con otros jugadores",
-        "Evita la detección de seguridad"
-      ]
+      "planningTactics": {
+        "title": "Tácticas de Planificación",
+        "description": "Estrategias para planificar el robo perfecto",
+        "tips": "Consejos",
+        "tipsList": [
+          "Estudia el objetivo detalladamente",
+          "Planifica múltiples rutas de escape",
+          "Coordina con tu equipo",
+          "Identifica puntos débiles",
+          "Prepara herramientas especializadas"
+        ],
+        "defaultTip": "Planifica cada detalle"
+      },
+      "executionTactics": {
+        "title": "Tácticas de Ejecución",
+        "description": "Estrategias para ejecutar el robo sin ser detectado",
+        "tips": "Consejos",
+        "tipsList": [
+          "Mantén la discreción",
+          "Usa herramientas silenciosas",
+          "Coordina movimientos precisos",
+          "Evita sistemas de seguridad",
+          "Ten un plan de contingencia"
+        ],
+        "defaultTip": "Ejecuta con precisión"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cómo puedo robar autos sin ser detectado?",
+            "answer": "Planifica cuidadosamente, usa herramientas especializadas y coordina con tu equipo. La discreción es clave."
+          },
+          {
+            "question": "¿Qué autos son los más valiosos?",
+            "answer": "Los autos legendarios son los más valiosos, pero también los más difíciles de robar debido a su seguridad avanzada."
+          },
+          {
+            "question": "¿Puedo jugar solo o necesito equipo?",
+            "answer": "Puedes jugar solo, pero el trabajo en equipo aumenta significativamente las posibilidades de éxito."
+          }
+        ],
+        "defaultQuestion": "¿Cómo empezar con Steal a Car?",
+        "defaultAnswer": "Comienza con autos comunes para aprender las mecánicas básicas."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "list": [
+          "Conocimiento de mecánicas de robo",
+          "Herramientas especializadas",
+          "Habilidades de coordinación",
+          "Estrategia de escape"
+        ],
+        "default": "Conocimiento básico de robos"
+      },
+      "warning": {
+        "title": "Advertencia Importante",
+        "description": "Este juego simula actividades ilegales. Solo es para entretenimiento."
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "fish": "Steal a Fish - Guía de Pesca",
+        "labubu": "Steal a Labubu - Guía de Colección",
+        "anime": "Steal an Anime - Guía de Otaku"
+      },
+      "cta": {
+        "title": "¡Domina el Arte del Robo de Autos!",
+        "description": "Únete a los mejores ladrones de autos y domina el arte del heist perfecto.",
+        "button": "Explorar Más Guías"
+      }
+    },
+    "backToGuides": "← Volver a Guías",
+    "segundoPiso": {
+      "title": "Cómo Llegar al Segundo Piso",
+      "subtitle": "Domina el parkour en el mapa Downtown y obtén una ventaja táctica con nuestra guía paso a paso",
+      "readingTime": "8 min de lectura",
+      "difficulty": "Intermedio",
+      "rating": "4.8/5",
+      "quickNav": "Navegación Rápida",
+      "step1": {
+        "shortTitle": "Preparación",
+        "title": "Preparación y Ubicación",
+        "description": "Antes de intentar llegar al segundo piso, necesitas prepararte adecuadamente. Ubícate en el mapa Downtown y busca el edificio principal.",
+        "tip": "Consejo Pro",
+        "tipDetail": "Asegúrate de tener al menos 3 vidas antes de intentar este desafío. El parkour puede ser frustrante al principio."
+      },
+      "step2": {
+        "shortTitle": "Primer Salto",
+        "title": "El Primer Salto Crítico",
+        "description": "El primer salto es el más importante. Necesitas saltar desde el techo del edificio principal hacia la primera plataforma.",
+        "instructionsTitle": "Instrucciones Detalladas",
+        "instructions": [
+          "Sube al techo del edificio principal",
+          "Alinea tu personaje con el borde",
+          "Salta hacia la plataforma más cercana",
+          "Mantén presionado el botón de salto"
+        ]
+      },
+      "step3": {
+        "shortTitle": "Secuencia",
+        "title": "Secuencia de Movimientos",
+        "description": "Una vez en la primera plataforma, debes seguir una secuencia específica de movimientos para llegar al segundo piso.",
+        "warning": "Advertencia Importante",
+        "warningDetail": "No te apresures. Cada movimiento debe ser preciso. Un error puede hacerte caer y perder vidas."
+      },
+      "step4": {
+        "shortTitle": "Final",
+        "title": "El Salto Final",
+        "description": "El último salto es el más desafiante. Necesitas calcular perfectamente la distancia y el timing.",
+        "instructionsTitle": "Pasos Finales",
+        "instructions": [
+          "Posiciónate en la última plataforma",
+          "Calcula la distancia al segundo piso",
+          "Ejecuta el salto con precisión",
+          "Aterriza suavemente en el segundo piso"
+        ]
+      },
+      "step5": {
+        "shortTitle": "Éxito",
+        "title": "¡Llegaste al Segundo Piso!",
+        "description": "¡Felicidades! Has completado el desafío más difícil del juego. Ahora tienes acceso a recompensas exclusivas.",
+        "reward": "Recompensa Exclusiva",
+        "rewardDetail": "Obtienes acceso a personajes raros, power-ups especiales y una ventaja significativa sobre otros jugadores."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "requirements": "Requisitos Mínimos",
+        "list": [
+          "Al menos 3 vidas",
+          "Experiencia básica en parkour",
+          "Paciencia y perseverancia",
+          "Conocimiento del mapa Downtown"
+        ],
+        "recommended": "Recomendado",
+        "recommendedList": [
+          "5+ vidas para mayor seguridad",
+          "Power-ups de velocidad",
+          "Equipo de comunicación",
+          "Práctica previa en áreas seguras"
+        ]
+      },
+      "advancedTips": {
+        "title": "Consejos Avanzados",
+        "timing": {
+          "title": "Timing Perfecto",
+          "description": "El timing es crucial para el éxito en este desafío.",
+          "tips": [
+            "Practica el timing en áreas seguras",
+            "Usa el sonido del juego como referencia",
+            "Mantén un ritmo constante",
+            "No te apresures en los saltos críticos"
+          ]
+        },
+        "strategy": {
+          "title": "Estrategia de Movimiento",
+          "description": "Desarrolla una estrategia sólida antes de intentar el desafío.",
+          "tips": [
+            "Planifica cada movimiento con anticipación",
+            "Identifica puntos de descanso",
+            "Ten un plan de respaldo",
+            "Practica la secuencia completa"
+          ]
+        },
+        "equipment": {
+          "title": "Equipo Recomendado",
+          "description": "El equipo adecuado puede marcar la diferencia.",
+          "tips": [
+            "Usa personajes con alta movilidad",
+            "Equipa power-ups de velocidad",
+            "Considera usar scripts de asistencia",
+            "Mantén power-ups de respaldo"
+          ]
+        },
+        "teamwork": {
+          "title": "Trabajo en Equipo",
+          "description": "El trabajo en equipo puede facilitar el desafío.",
+          "tips": [
+            "Coordina con otros jugadores",
+            "Comparte información sobre timing",
+            "Ayuda a otros jugadores",
+            "Forma un equipo estable"
+          ]
+        }
+      },
+      "commonMistakes": {
+        "title": "Errores Comunes",
+        "solution": "Solución",
+        "list": [
+          {
+            "title": "Salto Prematuro",
+            "description": "Intentar saltar antes de estar completamente alineado.",
+            "solution": "Espera hasta estar perfectamente alineado antes de saltar."
+          },
+          {
+            "title": "Falta de Paciencia",
+            "description": "Apresurarse en los movimientos críticos.",
+            "solution": "Tómate tu tiempo y mantén la calma."
+          },
+          {
+            "title": "Ignorar el Timing",
+            "description": "No prestar atención al timing de los saltos.",
+            "solution": "Practica el timing hasta que sea natural."
+          },
+          {
+            "title": "No Usar Power-ups",
+            "description": "Intentar el desafío sin power-ups de asistencia.",
+            "solution": "Usa power-ups de velocidad y movilidad."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cuánto tiempo toma aprender este truco?",
+            "answer": "Depende de tu experiencia, pero la mayoría de jugadores necesitan 2-3 horas de práctica."
+          },
+          {
+            "question": "¿Es posible hacerlo sin power-ups?",
+            "answer": "Sí, pero es extremadamente difícil. Se recomienda usar power-ups de velocidad."
+          },
+          {
+            "question": "¿Qué pasa si fallo y pierdo todas mis vidas?",
+            "answer": "Puedes intentar nuevamente después de regenerar vidas o usar códigos de vidas."
+          },
+          {
+            "question": "¿Hay recompensas especiales en el segundo piso?",
+            "answer": "Sí, hay personajes raros y power-ups exclusivos que solo se encuentran allí."
+          }
+        ]
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "rebirth": {
+          "title": "Guía de Rebirth",
+          "description": "Aprende sobre el sistema de rebirth y cómo maximizar tus ganancias."
+        },
+        "scripts": {
+          "title": "Guía de Scripts",
+          "description": "Descubre los mejores scripts para mejorar tu juego."
+        },
+        "secrets": {
+          "title": "Secretos del Juego",
+          "description": "Explora todos los secretos ocultos de Steal a Brainrot."
+        }
+      },
+      "cta": {
+        "title": "¿Listo para el Desafío?",
+        "description": "Ahora que tienes toda la información, ¿estás listo para intentar llegar al segundo piso?",
+        "viewCharacters": "Ver Personajes",
+        "calculator": "Calculadora"
+      }
     }
   },
   "brainrots": {
@@ -909,7 +2646,20 @@
     "previous": "Anterior",
     "next": "Siguiente",
     "noResults": "No se encontraron resultados",
-    "tryAdjusting": "Intenta ajustar los filtros de búsqueda"
+    "tryAdjusting": "Intenta ajustar los filtros de búsqueda",
+    "viewDetails": "Ver Detalles",
+    "compare": "Comparar",
+    "addedToCart": "¡Agregado al carrito!",
+    "addedToFavorites": "¡Agregado a favoritos!",
+    "characterNotFound": "Personaje no encontrado",
+    "characterNotFoundDesc": "El personaje que buscas no existe en nuestra base de datos.",
+    "backToBrainrots": "Volver a Brainrots",
+    "price": "Precio:",
+    "profit": "Ganancia:",
+    "roi": "ROI:",
+    "description": "Descripción:",
+    "buyNow": "Comprar Ahora",
+    "comparisonFeatureComingSoon": "Función de comparación próximamente"
   }
 } 
  

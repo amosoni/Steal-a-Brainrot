@@ -119,18 +119,24 @@ export const checkImageExists = async (imageUrl: string): Promise<boolean> => {
   }
 }
 
-// 获取备用图片URL
-export const getFallbackImageUrl = (characterName: string, rarity: number): string => {
-  // 基于稀有度返回不同的备用图片
-  const fallbackImages = {
-    1: '/images/brainrots/chad.png',
-    2: '/images/brainrots/gigachad.png',
-    3: '/images/brainrots/ultra-chad.png',
-    4: '/images/brainrots/legendary-chad.png',
-    5: '/images/brainrots/celestial-sigma.png',
-    6: '/images/brainrots/ancient-chad.png',
-    7: '/images/brainrots/cosmic-sigma.png',
+import { characterImages, getDefaultImageByRarity } from '../data/imageMapping'
+
+// 获取角色图片URL，处理多语言路由问题
+export const getCharacterImageUrl = (characterId: string, rarity?: number): string => {
+  // 首先尝试从映射中获取
+  const mappedImage = characterImages[characterId]
+  if (mappedImage) {
+    // 使用绝对路径避免多语言路由问题
+    return mappedImage.startsWith('http') ? mappedImage : `http://localhost:3002${mappedImage}`
   }
   
-  return fallbackImages[rarity as keyof typeof fallbackImages] || '/images/brainrots/chad.png'
+  // 如果没有映射，使用默认图片
+  const defaultImage = getDefaultImageByRarity(rarity || 1)
+  return defaultImage.startsWith('http') ? defaultImage : `http://localhost:3002${defaultImage}`
+}
+
+// 获取备用图片URL
+export const getFallbackImageUrl = (rarity: number): string => {
+  const defaultImage = getDefaultImageByRarity(rarity)
+  return defaultImage.startsWith('http') ? defaultImage : `http://localhost:3002${defaultImage}`
 } 

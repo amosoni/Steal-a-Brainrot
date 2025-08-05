@@ -48,22 +48,16 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
         <div className="text-center py-12">
           <div className="text-6xl mb-4">😕</div>
           <h3 className="text-xl font-semibold text-gray-900 mb-2">
-            {lang === 'es' ? 'Personaje no encontrado' : 
-             lang === 'zh' ? '角色未找到' : 
-             'Character not found'}
+            {t('brainrots.characterNotFound') as string}
           </h3>
           <p className="text-gray-600 mb-6">
-            {lang === 'es' ? 'El personaje que buscas no existe en nuestra base de datos.' :
-             lang === 'zh' ? '您查找的角色在我们的数据库中不存在。' :
-             'The character you are looking for does not exist in our database.'}
+            {t('brainrots.characterNotFoundDesc') as string}
           </p>
           <Link 
             href={`/${lang}/brainrots`}
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
           >
-            {lang === 'es' ? 'Volver a Brainrots' :
-             lang === 'zh' ? '返回角色库' :
-             'Back to Brainrots'}
+            {t('brainrots.backToBrainrots') as string}
           </Link>
         </div>
       </div>
@@ -85,14 +79,14 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
 
   const getRarityText = (rarity: number) => {
     switch (rarity) {
-      case 1: return lang === 'es' ? 'Común' : lang === 'zh' ? '普通' : 'Common'
-      case 2: return lang === 'es' ? 'Raro' : lang === 'zh' ? '稀有' : 'Rare'
-      case 3: return lang === 'es' ? 'Épico' : lang === 'zh' ? '史诗' : 'Epic'
-      case 4: return lang === 'es' ? 'Legendario' : lang === 'zh' ? '传说' : 'Legendary'
-      case 5: return lang === 'es' ? 'Mítico' : lang === 'zh' ? '神话' : 'Mythic'
-      case 6: return lang === 'es' ? 'Antiguo' : lang === 'zh' ? '远古' : 'Ancient'
-      case 7: return lang === 'es' ? 'Divino' : lang === 'zh' ? '神圣' : 'Divine'
-      default: return lang === 'es' ? 'Desconocido' : lang === 'zh' ? '未知' : 'Unknown'
+      case 1: return t('brainrots.common')
+      case 2: return t('brainrots.rare')
+      case 3: return t('brainrots.epic')
+      case 4: return t('brainrots.legendary')
+      case 5: return t('brainrots.mythic')
+      case 6: return t('brainrots.ancient')
+      case 7: return t('brainrots.divine')
+      default: return t('brainrots.common')
     }
   }
 
@@ -114,26 +108,20 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
   // 功能按钮处理函数
   const handleBuyNow = () => {
     console.log('Buy Now clicked!', brainrot)
-    setShowSuccessMessage(lang === 'es' ? '¡Agregado al carrito!' : 
-                        lang === 'zh' ? '已添加到购物车！' : 
-                        'Added to cart!')
+    setShowSuccessMessage(t('brainrots.addedToCart') as string)
     setTimeout(() => setShowSuccessMessage(''), 3000)
   }
 
   const handleAddToFavorites = () => {
     console.log('Add to Favorites clicked!', brainrot)
     setIsLiked(true)
-    setShowSuccessMessage(lang === 'es' ? '¡Agregado a favoritos!' :
-                        lang === 'zh' ? '已添加到收藏！' :
-                        'Added to favorites!')
+    setShowSuccessMessage(t('brainrots.addedToFavorites') as string)
     setTimeout(() => setShowSuccessMessage(''), 3000)
   }
 
   const handleComparePrices = () => {
     console.log('Compare Prices clicked!', brainrot)
-    setShowSuccessMessage(lang === 'es' ? 'Función de comparación próximamente' :
-                        lang === 'zh' ? '比较功能即将推出' :
-                        'Comparison feature coming soon')
+    setShowSuccessMessage(t('brainrots.comparisonFeatureComingSoon') as string)
     setTimeout(() => setShowSuccessMessage(''), 3000)
   }
 
@@ -153,9 +141,7 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
           className="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
-          {lang === 'es' ? 'Volver a Brainrots' :
-           lang === 'zh' ? '返回角色库' :
-           'Back to Brainrots'}
+          {t('brainrots.backToBrainrots') as string}
         </Link>
       </div>
 
@@ -171,7 +157,7 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
               <h1 className="text-3xl font-bold text-gray-900 mb-2">{brainrot.name}</h1>
               <div className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${getRarityBgColor(brainrot.rarity)} ${getRarityColor(brainrot.rarity)}`}>
                 <Star className="w-4 h-4 mr-1" />
-                {getRarityText(brainrot.rarity)}
+                {getRarityText(brainrot.rarity) as string}
               </div>
             </div>
           </div>
@@ -182,7 +168,7 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
               {/* Price */}
               <div className="flex items-center justify-between">
                 <span className="text-gray-600">
-                  {lang === 'es' ? 'Precio:' : lang === 'zh' ? '价格:' : 'Price:'}
+                  {t('brainrots.price') as string}
                 </span>
                 <div className="flex items-center text-green-600 font-semibold text-xl">
                   <DollarSign className="w-5 h-5 mr-1" />
@@ -193,7 +179,7 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
               {/* Profit */}
               <div className="flex items-center justify-between">
                 <span className="text-gray-600">
-                  {lang === 'es' ? 'Ganancia:' : lang === 'zh' ? '收益:' : 'Profit:'}
+                  {t('brainrots.profit') as string}
                 </span>
                 <div className="flex items-center text-blue-600 font-semibold text-xl">
                   <TrendingUp className="w-5 h-5 mr-1" />
@@ -203,7 +189,7 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
 
               {/* ROI */}
               <div className="flex items-center justify-between">
-                <span className="text-gray-600">ROI:</span>
+                <span className="text-gray-600">{t('brainrots.roi') as string}</span>
                 <div className="flex items-center text-purple-600 font-semibold text-xl">
                   <Eye className="w-5 h-5 mr-1" />
                   {roi}%
@@ -213,7 +199,7 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
               {/* Description */}
               <div className="border-t pt-6">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  {lang === 'es' ? 'Descripción:' : lang === 'zh' ? '描述:' : 'Description:'}
+                  {t('brainrots.description') as string}
                 </h3>
                 <p className="text-gray-600">{brainrot.description[lang as keyof typeof brainrot.description] || brainrot.description.en}</p>
               </div>
@@ -225,7 +211,7 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
                   className="flex-1 bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center"
                 >
                   <ShoppingCart className="w-4 h-4 mr-2" />
-                  {lang === 'es' ? 'Comprar Ahora' : lang === 'zh' ? '立即购买' : 'Buy Now'}
+                  {t('brainrots.buyNow') as string}
                 </button>
                 <button
                   onClick={handleAddToFavorites}
