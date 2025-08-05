@@ -50,7 +50,7 @@ export default function AIFriendlyStructuredData({
       "name": "Steal a Brainrot Team",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://steal-a-brainrot.com/favicon.svg"
+        "url": "https://www.stealabrainrot.live/favicon.svg"
       }
     },
     "inLanguage": language,

@@ -4,42 +4,42 @@
   
   <!-- 主页 -->
   <url>
-    <loc>https://steal-a-brainrot.com/</loc>
+    <loc>https://www.stealabrainrot.live/</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://steal-a-brainrot.com/es"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://steal-a-brainrot.com/en"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://steal-a-brainrot.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.stealabrainrot.live/es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.stealabrainrot.live/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.stealabrainrot.live/zh"/>
   </url>
   
   <!-- 西班牙语页面 -->
   <url>
-    <loc>https://steal-a-brainrot.com/es</loc>
+    <loc>https://www.stealabrainrot.live/es</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/es/brainrots</loc>
+    <loc>https://www.stealabrainrot.live/es/brainrots</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/es/calculadora</loc>
+    <loc>https://www.stealabrainrot.live/es/calculadora</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/es/updates</loc>
+    <loc>https://www.stealabrainrot.live/es/updates</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/es/guides</loc>
+    <loc>https://www.stealabrainrot.live/es/guides</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -47,31 +47,31 @@
   
   <!-- 英语页面 -->
   <url>
-    <loc>https://steal-a-brainrot.com/en</loc>
+    <loc>https://www.stealabrainrot.live/en</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/en/brainrots</loc>
+    <loc>https://www.stealabrainrot.live/en/brainrots</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/en/calculator</loc>
+    <loc>https://www.stealabrainrot.live/en/calculator</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/en/updates</loc>
+    <loc>https://www.stealabrainrot.live/en/updates</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/en/guides</loc>
+    <loc>https://www.stealabrainrot.live/en/guides</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -79,31 +79,31 @@
   
   <!-- 中文页面 -->
   <url>
-    <loc>https://steal-a-brainrot.com/zh</loc>
+    <loc>https://www.stealabrainrot.live/zh</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/zh/brainrots</loc>
+    <loc>https://www.stealabrainrot.live/zh/brainrots</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/zh/calculadora</loc>
+    <loc>https://www.stealabrainrot.live/zh/calculadora</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/zh/updates</loc>
+    <loc>https://www.stealabrainrot.live/zh/updates</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/zh/guides</loc>
+    <loc>https://www.stealabrainrot.live/zh/guides</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -111,25 +111,25 @@
   
   <!-- 指南页面 -->
   <url>
-    <loc>https://steal-a-brainrot.com/es/guides/steal-deadly-rails</loc>
+    <loc>https://www.stealabrainrot.live/es/guides/steal-deadly-rails</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/es/guides/rebirth</loc>
+    <loc>https://www.stealabrainrot.live/es/guides/rebirth</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/en/guides/steal-deadly-rails</loc>
+    <loc>https://www.stealabrainrot.live/en/guides/steal-deadly-rails</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://steal-a-brainrot.com/en/guides/rebirth</loc>
+    <loc>https://www.stealabrainrot.live/en/guides/rebirth</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

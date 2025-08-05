@@ -40,8 +40,8 @@ export default function PageSEO({
   category = 'Gaming',
   tags = []
 }: PageSEOProps) {
-  const fullUrl = `https://steal-a-brainrot.com${url}`
-  const imageUrl = `https://steal-a-brainrot.com${image}`
+  const fullUrl = `https://www.stealabrainrot.live${url}`
+  const imageUrl = `https://www.stealabrainrot.live${image}`
   const keywordsArray = keywords ? keywords.split(',').map(k => k.trim()) : []
 
   return (
@@ -69,10 +69,10 @@ export default function PageSEO({
         <link rel="canonical" href={fullUrl} />
         
         {/* 语言替代链接 */}
-        <link rel="alternate" hrefLang="es" href={`https://steal-a-brainrot.com/es${url.replace(/^\/[a-z]{2}/, '')}`} />
-        <link rel="alternate" hrefLang="en" href={`https://steal-a-brainrot.com/en${url.replace(/^\/[a-z]{2}/, '')}`} />
-        <link rel="alternate" hrefLang="zh" href={`https://steal-a-brainrot.com/zh${url.replace(/^\/[a-z]{2}/, '')}`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://steal-a-brainrot.com/es${url.replace(/^\/[a-z]{2}/, '')}`} />
+        <link rel="alternate" hrefLang="es" href={`https://www.stealabrainrot.live/es${url.replace(/^\/[a-z]{2}/, '')}`} />
+        <link rel="alternate" hrefLang="en" href={`https://www.stealabrainrot.live/en${url.replace(/^\/[a-z]{2}/, '')}`} />
+        <link rel="alternate" hrefLang="zh" href={`https://www.stealabrainrot.live/zh${url.replace(/^\/[a-z]{2}/, '')}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://www.stealabrainrot.live/es${url.replace(/^\/[a-z]{2}/, '')}`} />
         
         {/* Open Graph */}
         <meta property="og:title" content={title} />

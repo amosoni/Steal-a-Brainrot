@@ -46,12 +46,12 @@ const SEO_TESTS = {
 
 // 测试URL列表
 const TEST_URLS = [
-  'https://steal-a-brainrot.com/',
-  'https://steal-a-brainrot.com/es',
-  'https://steal-a-brainrot.com/en',
-  'https://steal-a-brainrot.com/zh',
-  'https://steal-a-brainrot.com/es/guides',
-  'https://steal-a-brainrot.com/es/brainrots'
+  'https://www.stealabrainrot.live/',
+  'https://www.stealabrainrot.live/es',
+  'https://www.stealabrainrot.live/en',
+  'https://www.stealabrainrot.live/zh',
+  'https://www.stealabrainrot.live/es/guides',
+  'https://www.stealabrainrot.live/es/brainrots'
 ];
 
 /**
@@ -105,7 +105,7 @@ function checkStructuredData(html) {
  */
 async function checkRobotsTxt() {
   try {
-    const robotsContent = await fetchPage('https://steal-a-brainrot.com/robots.txt');
+    const robotsContent = await fetchPage('https://www.stealabrainrot.live/robots.txt');
     const aiCrawlers = [
       'ChatGPT-User',
       'OpenAI',
@@ -138,7 +138,7 @@ async function checkRobotsTxt() {
  */
 async function checkSitemap() {
   try {
-    const sitemapContent = await fetchPage('https://steal-a-brainrot.com/sitemap.xml');
+    const sitemapContent = await fetchPage('https://www.stealabrainrot.live/sitemap.xml');
     const urlCount = (sitemapContent.match(/<url>/g) || []).length;
     
     return {

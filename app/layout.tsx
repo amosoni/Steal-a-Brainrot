@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://steal-a-brainrot.com'),
+      metadataBase: new URL('https://www.stealabrainrot.live'),
   alternates: {
     canonical: '/',
     languages: {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Steal a Brainrot - La Guía Más Completa de Roblox",
     description: "🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos completa de personajes, calculadora de ganancias, guías de estrategia y consejos expertos.",
-    url: 'https://steal-a-brainrot.com',
+          url: 'https://www.stealabrainrot.live',
     siteName: 'Steal a Brainrot',
     images: [
       {
@@ -147,10 +147,10 @@ export default function RootLayout({
               "@type": "WebSite",
               "name": "Steal a Brainrot",
               "description": "La guía más completa de Roblox Steal a Brainrot, incluyendo base de datos de personajes, calculadora de ganancias, guías de estrategia y otras herramientas útiles",
-              "url": "https://steal-a-brainrot.com",
+              "url": "https://www.stealabrainrot.live",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://steal-a-brainrot.com/brainrots?search={search_term_string}",
+                "target": "https://www.stealabrainrot.live/brainrots?search={search_term_string}",
                 "query-input": "required name=search_term_string"
               },
               "sameAs": [
@@ -162,7 +162,7 @@ export default function RootLayout({
                 "name": "Steal a Brainrot Team",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://steal-a-brainrot.com/favicon.svg"
+                  "url": "https://www.stealabrainrot.live/favicon.svg"
                 }
               }
             })
@@ -198,7 +198,7 @@ export default function RootLayout({
               "description": "Herramienta de asistencia para Steal a Brainrot con base de datos de personajes, calculadora de ganancias y guías de estrategia",
               "applicationCategory": "Game Guide",
               "operatingSystem": "Web Browser",
-              "url": "https://steal-a-brainrot.com",
+              "url": "https://www.stealabrainrot.live",
               "featureList": [
                 "Base de datos de personajes",
                 "Calculadora de ganancias",
