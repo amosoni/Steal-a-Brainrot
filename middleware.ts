@@ -23,12 +23,11 @@ export function middleware(request: NextRequest) {
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   )
 
-  // 重定向到默认语言
+  // 重定向到默认语言，使用301永久重定向
   if (pathnameIsMissingLocale) {
     const locale = defaultLocale
-    return NextResponse.redirect(
-      new URL(`/${locale}${pathname}`, request.url)
-    )
+    const newUrl = new URL(`/${locale}${pathname}`, request.url)
+    return NextResponse.redirect(newUrl, 301)
   }
 
   // 关键：如果已经有语言前缀，必须返回 NextResponse.next()

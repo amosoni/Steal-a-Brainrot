@@ -19,8 +19,8 @@ export default function SEOHead({
   lang = 'es',
   type = 'website'
 }: SEOHeadProps) {
-  const fullUrl = url ? `https://stealabrainrot.com${url}` : 'https://stealabrainrot.com'
-  const fullImage = image.startsWith('http') ? image : `https://stealabrainrot.com${image}`
+  const fullUrl = url ? `https://www.stealabrainrot.live${url}` : 'https://www.stealabrainrot.live'
+  const fullImage = image.startsWith('http') ? image : `https://www.stealabrainrot.live${image}`
 
   return (
     <Head>
@@ -56,10 +56,10 @@ export default function SEOHead({
       <link rel="canonical" href={fullUrl} />
       
       {/* Alternate Language Links */}
-      <link rel="alternate" hrefLang="es" href={`https://stealabrainrot.com/es${url}`} />
-      <link rel="alternate" hrefLang="en" href={`https://stealabrainrot.com/en${url}`} />
-      <link rel="alternate" hrefLang="zh" href={`https://stealabrainrot.com/zh${url}`} />
-      <link rel="alternate" hrefLang="x-default" href={`https://stealabrainrot.com/es${url}`} />
+      <link rel="alternate" hrefLang="es" href={`https://www.stealabrainrot.live/es${url}`} />
+      <link rel="alternate" hrefLang="en" href={`https://www.stealabrainrot.live/en${url}`} />
+      <link rel="alternate" hrefLang="zh" href={`https://www.stealabrainrot.live/zh${url}`} />
+      <link rel="alternate" hrefLang="x-default" href={`https://www.stealabrainrot.live/es${url}`} />
       
       {/* Structured Data */}
       <script
@@ -82,7 +82,7 @@ export default function SEOHead({
               "name": "Steal a Brainrot Guide",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://stealabrainrot.com/logo.png"
+                "url": "https://www.stealabrainrot.live/logo.png"
               }
             },
             "mainEntity": {
