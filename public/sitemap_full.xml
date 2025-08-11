@@ -48,15 +48,9 @@
   
   <!-- 西班牙语指南页面 -->
   <url>
-    <loc>https://www.stealabrainrot.live/es/guides/second-floor</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.stealabrainrot.live/es/guides/codigos</loc>
     <lastmod>2024-12-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -72,13 +66,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/es/guides/rebirth</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.stealabrainrot.live/es/guides/secretos</loc>
+    <loc>https://www.stealabrainrot.live/es/guides/estrategias</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -90,21 +78,25 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/es/guides/estrategias</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Steal系列游戏指南 -->
-  <url>
-    <loc>https://www.stealabrainrot.live/es/guides/steal-a-fish</loc>
+    <loc>https://www.stealabrainrot.live/es/guides/rebirth</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/es/guides/steal-a-labubu</loc>
+    <loc>https://www.stealabrainrot.live/es/guides/second-floor</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/es/guides/secretos</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/es/guides/steal-deadly-rails</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -128,13 +120,37 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/es/guides/steal-deadly-rails</loc>
+    <loc>https://www.stealabrainrot.live/es/guides/steal-a-labubu</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/es/guides/steal-a-fish</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.stealabrainrot.live/es/guides/steal-a-car</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/es/guides/segundo-piso</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/es/guides/advanced-strategies</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/es/guides/scripts-no-key</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -154,7 +170,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/en/calculator</loc>
+    <loc>https://www.stealabrainrot.live/en/calculadora</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -174,15 +190,9 @@
   
   <!-- 英语指南页面 -->
   <url>
-    <loc>https://www.stealabrainrot.live/en/guides/second-floor</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.stealabrainrot.live/en/guides/codigos</loc>
     <lastmod>2024-12-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -198,13 +208,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/en/guides/rebirth</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.stealabrainrot.live/en/guides/secretos</loc>
+    <loc>https://www.stealabrainrot.live/en/guides/estrategias</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -216,21 +220,25 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/en/guides/estrategias</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- 英语Steal系列游戏指南 -->
-  <url>
-    <loc>https://www.stealabrainrot.live/en/guides/steal-a-fish</loc>
+    <loc>https://www.stealabrainrot.live/en/guides/rebirth</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/en/guides/steal-a-labubu</loc>
+    <loc>https://www.stealabrainrot.live/en/guides/second-floor</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/en/guides/secretos</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/en/guides/steal-deadly-rails</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -254,13 +262,37 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/en/guides/steal-deadly-rails</loc>
+    <loc>https://www.stealabrainrot.live/en/guides/steal-a-labubu</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/en/guides/steal-a-fish</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.stealabrainrot.live/en/guides/steal-a-car</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/en/guides/segundo-piso</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/en/guides/advanced-strategies</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/en/guides/scripts-no-key</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -300,15 +332,9 @@
   
   <!-- 中文指南页面 -->
   <url>
-    <loc>https://www.stealabrainrot.live/zh/guides/second-floor</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.stealabrainrot.live/zh/guides/codigos</loc>
     <lastmod>2024-12-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -324,13 +350,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/zh/guides/rebirth</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.stealabrainrot.live/zh/guides/secretos</loc>
+    <loc>https://www.stealabrainrot.live/zh/guides/estrategias</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -342,21 +362,25 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/zh/guides/estrategias</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- 中文Steal系列游戏指南 -->
-  <url>
-    <loc>https://www.stealabrainrot.live/zh/guides/steal-a-fish</loc>
+    <loc>https://www.stealabrainrot.live/zh/guides/rebirth</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/zh/guides/steal-a-labubu</loc>
+    <loc>https://www.stealabrainrot.live/zh/guides/second-floor</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/zh/guides/secretos</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/zh/guides/steal-deadly-rails</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -380,13 +404,37 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.stealabrainrot.live/zh/guides/steal-deadly-rails</loc>
+    <loc>https://www.stealabrainrot.live/zh/guides/steal-a-labubu</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/zh/guides/steal-a-fish</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.stealabrainrot.live/zh/guides/steal-a-car</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/zh/guides/segundo-piso</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/zh/guides/advanced-strategies</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.stealabrainrot.live/zh/guides/scripts-no-key</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

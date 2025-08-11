@@ -1,34 +1,16 @@
 'use client'
-import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { useTranslation } from '@/hooks/useTranslation'
-import SEOHead from '@/components/SEOHead'
-import { 
-  ArrowLeft, 
-  Star, 
-  Clock, 
-  Eye, 
-  CheckCircle, 
-  Calendar,
-  Map,
-  Info,
-  Shield,
-  Zap,
-  Target,
-  Users,
-  Award,
-  AlertTriangle,
-  Search,
-  Lock
-} from 'lucide-react'
+import { ArrowLeft, Eye, Lock, Target, Zap, Shield, Users, Trophy, AlertTriangle, Star, Key } from 'lucide-react'
 
-interface SecretosGuideProps {
+interface SecretosPageProps {
   params: Promise<{ lang: string }>
 }
 
-export default function SecretosGuide({ params }: SecretosGuideProps) {
+export default function SecretosPage({ params }: SecretosPageProps) {
   const [lang, setLang] = useState('es')
-
+  
   useEffect(() => {
     params.then((resolvedParams) => {
       setLang(resolvedParams.lang)
@@ -38,306 +20,182 @@ export default function SecretosGuide({ params }: SecretosGuideProps) {
   const { t } = useTranslation(lang)
 
   return (
-    <>
-      <SEOHead
-        title={t('guides.secretos.seoTitle') as string}
-        description={t('guides.secretos.seoDescription') as string}
-        keywords={t('guides.secretos.seoKeywords') as string}
-        url={`/${lang}/guides/secretos`}
-        lang={lang}
-        type="guide"
-      />
-      
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="space-y-8">
         {/* Header */}
-        <div className="mb-8">
-          <Link href={`/${lang}/guides`} className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-4">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            {t('guides.backToGuides') as string}
+        <div className="text-center">
+          <Link href={`/${lang}/guides`} className="text-blue-600 hover:text-blue-700 mb-4 inline-block">
+            <ArrowLeft className="w-4 h-4 inline mr-2" />
+            {t('common.backToGuides') as string}
           </Link>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('guides.secretos.title') as string}</h1>
-          <p className="text-xl text-gray-600 mb-6">{t('guides.secretos.subtitle') as string}</p>
-          
-          {/* SEO Meta Information */}
-          <div className="flex flex-wrap gap-4 text-sm text-gray-500 mb-6">
-            <div className="flex items-center">
-              <Clock className="w-4 h-4 mr-1" />
-              {t('guides.secretos.readingTime') as string}
-            </div>
-            <div className="flex items-center">
-              <Star className="w-4 h-4 mr-1" />
-              {t('guides.secretos.difficulty') as string}
-            </div>
-            <div className="flex items-center">
-              <Calendar className="w-4 h-4 mr-1" />
-              {t('guides.secretos.lastUpdated') as string}
-            </div>
-          </div>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            🔐 {t('guides.secretos.title') as string}
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            {t('guides.secretos.description') as string}
+          </p>
         </div>
 
-        {/* Quick Navigation */}
-        <div className="bg-blue-50 rounded-xl p-6 mb-8">
-          <h2 className="text-xl font-bold text-blue-900 mb-4">{t('guides.secretos.quickNavigation') as string}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <a href="#hidden-areas" className="text-blue-700 hover:text-blue-800 text-sm">
-              {t('guides.secretos.nav.hiddenAreas') as string}
-            </a>
-            <a href="#power-ups" className="text-blue-700 hover:text-blue-800 text-sm">
-              {t('guides.secretos.nav.powerUps') as string}
-            </a>
-            <a href="#strategies" className="text-blue-700 hover:text-blue-800 text-sm">
-              {t('guides.secretos.nav.strategies') as string}
-            </a>
-            <a href="#faq" className="text-blue-700 hover:text-blue-800 text-sm">
-              {t('guides.secretos.nav.faq') as string}
-            </a>
-          </div>
-        </div>
-
-        <div className="grid lg:grid-cols-3 gap-8">
-          {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
-            {/* Hidden Areas Section */}
-            <div id="hidden-areas" className="bg-white rounded-2xl shadow-lg p-8">
-              <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6 mb-6">
-                <div className="flex items-center mb-4">
-                  <Map className="w-6 h-6 text-purple-600 mr-3" />
-                  <h2 className="text-2xl font-bold text-purple-800">{t('guides.secretos.hiddenAreas') as string}</h2>
-                </div>
-                <p className="text-gray-700 text-lg mb-4">
-                  {t('guides.secretos.hiddenAreasDesc') as string}
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-blue-600 mb-3">{t('guides.secretos.secretRoom.title') as string}</h3>
-                  <p className="text-gray-700 mb-4">{t('guides.secretos.secretRoom.description') as string}</p>
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">{t('guides.secretos.secretRoom.howToFind') as string}</h4>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.secretos.secretRoom.instructions')) ? 
-                        (t('guides.secretos.secretRoom.instructions') as string[]).map((instruction: string, index: number) => (
-                          <li key={index} className="flex items-start">
-                            <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            {instruction}
-                          </li>
-                        )) : 
-                        <li className="flex items-start">
-                          <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                          {t('guides.secretos.secretRoom.defaultInstruction') as string}
-                        </li>
-                      }
-                    </ul>
-                  </div>
-                </div>
-                
-                <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-purple-600 mb-3">{t('guides.secretos.underground.title') as string}</h3>
-                  <p className="text-gray-700 mb-4">{t('guides.secretos.underground.description') as string}</p>
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">{t('guides.secretos.underground.howToFind') as string}</h4>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.secretos.underground.instructions')) ? 
-                        (t('guides.secretos.underground.instructions') as string[]).map((instruction: string, index: number) => (
-                          <li key={index} className="flex items-start">
-                            <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            {instruction}
-                          </li>
-                        )) : 
-                        <li className="flex items-start">
-                          <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                          {t('guides.secretos.underground.defaultInstruction') as string}
-                        </li>
-                      }
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Power-ups Section */}
-            <div id="power-ups" className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.secretos.powerUps') as string}</h2>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-green-600 mb-3">{t('guides.secretos.invisibility.title') as string}</h3>
-                  <p className="text-gray-700 mb-4">{t('guides.secretos.invisibility.description') as string}</p>
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">{t('guides.secretos.invisibility.howToUse') as string}</h4>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.secretos.invisibility.tips')) ? 
-                        (t('guides.secretos.invisibility.tips') as string[]).map((tip: string, index: number) => (
-                          <li key={index} className="flex items-start">
-                            <Zap className="w-4 h-4 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                            {tip}
-                          </li>
-                        )) : 
-                        <li className="flex items-start">
-                          <Zap className="w-4 h-4 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                          {t('guides.secretos.invisibility.defaultTip') as string}
-                        </li>
-                      }
-                    </ul>
-                  </div>
-                </div>
-                
-                <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-yellow-600 mb-3">{t('guides.secretos.speedBoost.title') as string}</h3>
-                  <p className="text-gray-700 mb-4">{t('guides.secretos.speedBoost.description') as string}</p>
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">{t('guides.secretos.speedBoost.howToUse') as string}</h4>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.secretos.speedBoost.tips')) ? 
-                        (t('guides.secretos.speedBoost.tips') as string[]).map((tip: string, index: number) => (
-                          <li key={index} className="flex items-start">
-                            <Zap className="w-4 h-4 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                            {tip}
-                          </li>
-                        )) : 
-                        <li className="flex items-start">
-                          <Zap className="w-4 h-4 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                          {t('guides.secretos.speedBoost.defaultTip') as string}
-                        </li>
-                      }
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Strategies Section */}
-            <div id="strategies" className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.secretos.strategies') as string}</h2>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-indigo-600 mb-3">{t('guides.secretos.stealth.title') as string}</h3>
-                  <p className="text-gray-700 mb-4">{t('guides.secretos.stealth.description') as string}</p>
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">{t('guides.secretos.stealth.techniques') as string}</h4>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.secretos.stealth.techniquesList')) ? 
-                        (t('guides.secretos.stealth.techniquesList') as string[]).map((technique: string, index: number) => (
-                          <li key={index} className="flex items-start">
-                            <Eye className="w-4 h-4 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" />
-                            {technique}
-                          </li>
-                        )) : 
-                        <li className="flex items-start">
-                          <Eye className="w-4 h-4 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" />
-                          {t('guides.secretos.stealth.defaultTechnique') as string}
-                        </li>
-                      }
-                    </ul>
-                  </div>
-                </div>
-                
-                <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-red-600 mb-3">{t('guides.secretos.escape.title') as string}</h3>
-                  <p className="text-gray-700 mb-4">{t('guides.secretos.escape.description') as string}</p>
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">{t('guides.secretos.escape.routes') as string}</h4>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.secretos.escape.routesList')) ? 
-                        (t('guides.secretos.escape.routesList') as string[]).map((route: string, index: number) => (
-                          <li key={index} className="flex items-start">
-                            <Target className="w-4 h-4 text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                            {route}
-                          </li>
-                        )) : 
-                        <li className="flex items-start">
-                          <Target className="w-4 h-4 text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                          {t('guides.secretos.escape.defaultRoute') as string}
-                        </li>
-                      }
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* FAQ Section */}
-            <div id="faq" className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.secretos.faq.title') as string}</h2>
-              <div className="space-y-6">
-                {Array.isArray(t('guides.secretos.faq.questions')) ? 
-                  (t('guides.secretos.faq.questions') as Array<{question: string, answer: string}>).map((faq, index: number) => (
-                    <div key={index} className="border-b border-gray-200 pb-4">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
-                      <p className="text-gray-700">{faq.answer}</p>
-                    </div>
-                  )) : 
-                  <div className="border-b border-gray-200 pb-4">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('guides.secretos.faq.defaultQuestion') as string}</h3>
-                    <p className="text-gray-700">{t('guides.secretos.faq.defaultAnswer') as string}</p>
-                  </div>
-                }
-              </div>
-            </div>
-          </div>
-
-          {/* Sidebar */}
-          <div className="space-y-6">
-            {/* Prerequisites */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">{t('guides.secretos.prerequisites.title') as string}</h3>
-              <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.secretos.prerequisites.list')) ? 
-                  (t('guides.secretos.prerequisites.list') as string[]).map((prereq: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                      {prereq}
-                    </li>
-                  )) : 
-                  <li className="flex items-start">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    {t('guides.secretos.prerequisites.default') as string}
-                  </li>
-                }
+        {/* What are Secrets */}
+        <div className="bg-white rounded-lg shadow-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <Eye className="w-6 h-6 text-blue-500" />
+            {t('guides.secretos.whatAre.title') as string}
+          </h2>
+          <p className="text-gray-700 mb-4">
+            {t('guides.secretos.whatAre.description') as string}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-green-50 p-4 rounded-lg">
+              <h3 className="font-semibold text-green-800 mb-2">{t('guides.secretos.whatAre.types.title') as string}</h3>
+              <ul className="text-green-700 space-y-1">
+                <li>• {t('guides.secretos.whatAre.types.type1') as string}</li>
+                <li>• {t('guides.secretos.whatAre.types.type2') as string}</li>
+                <li>• {t('guides.secretos.whatAre.types.type3') as string}</li>
               </ul>
             </div>
-
-            {/* Warning */}
-            <div className="bg-yellow-50 rounded-xl p-6">
-              <div className="flex items-center mb-3">
-                <AlertTriangle className="w-5 h-5 text-yellow-600 mr-2" />
-                <h3 className="text-lg font-bold text-yellow-800">{t('guides.secretos.warning.title') as string}</h3>
-              </div>
-              <p className="text-yellow-700 text-sm">{t('guides.secretos.warning.description') as string}</p>
-            </div>
-
-            {/* Related Guides */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">{t('guides.secretos.relatedGuides.title') as string}</h3>
-              <div className="space-y-3">
-                <Link href={`/${lang}/guides/rebirth`} className="block text-blue-600 hover:text-blue-700">
-                  {t('guides.secretos.relatedGuides.rebirth') as string}
-                </Link>
-                <Link href={`/${lang}/guides/scripts`} className="block text-blue-600 hover:text-blue-700">
-                  {t('guides.secretos.relatedGuides.scripts') as string}
-                </Link>
-                <Link href={`/${lang}/guides/segundo-piso`} className="block text-blue-600 hover:text-blue-700">
-                  {t('guides.secretos.relatedGuides.secondFloor') as string}
-                </Link>
-              </div>
-            </div>
-
-            {/* Call to Action */}
-            <div className="bg-gradient-to-r from-purple-500 to-blue-600 rounded-xl p-6 text-white">
-              <h3 className="text-lg font-bold mb-2">{t('guides.secretos.cta.title') as string}</h3>
-              <p className="text-purple-100 mb-4">{t('guides.secretos.cta.description') as string}</p>
-              <Link 
-                href={`/${lang}/guides`} 
-                className="inline-block bg-white text-purple-600 px-4 py-2 rounded-lg font-semibold hover:bg-purple-50 transition-colors"
-              >
-                {t('guides.secretos.cta.button') as string}
-              </Link>
+            <div className="bg-purple-50 p-4 rounded-lg">
+              <h3 className="font-semibold text-purple-800 mb-2">{t('guides.secretos.whatAre.rewards.title') as string}</h3>
+              <ul className="text-purple-700 space-y-1">
+                <li>• {t('guides.secretos.whatAre.rewards.reward1') as string}</li>
+                <li>• {t('guides.secretos.whatAre.rewards.reward2') as string}</li>
+                <li>• {t('guides.secretos.whatAre.rewards.reward3') as string}</li>
+              </ul>
             </div>
           </div>
         </div>
+
+        {/* How to Find Secrets */}
+        <div className="bg-white rounded-lg shadow-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <Key className="w-6 h-6 text-yellow-500" />
+            {t('guides.secretos.howToFind.title') as string}
+          </h2>
+          <div className="space-y-4">
+            <div className="flex items-start gap-3">
+              <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+              <div>
+                <h3 className="font-semibold text-gray-800">{t('guides.secretos.howToFind.method1.title') as string}</h3>
+                <p className="text-gray-600">{t('guides.secretos.howToFind.method1.description') as string}</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+              <div>
+                <h3 className="font-semibold text-gray-800">{t('guides.secretos.howToFind.method2.title') as string}</h3>
+                <p className="text-gray-600">{t('guides.secretos.howToFind.method2.description') as string}</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
+              <div>
+                <h3 className="font-semibold text-gray-800">{t('guides.secretos.howToFind.method3.title') as string}</h3>
+                <p className="text-gray-600">{t('guides.secretos.howToFind.method3.description') as string}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Secret Locations */}
+        <div className="bg-white rounded-lg shadow-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <Target className="w-6 h-6 text-green-500" />
+            {t('guides.secretos.locations.title') as string}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <h3 className="font-semibold text-gray-800">{t('guides.secretos.locations.easy.title') as string}</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>• {t('guides.secretos.locations.easy.loc1') as string}</li>
+                <li>• {t('guides.secretos.locations.easy.loc2') as string}</li>
+                <li>• {t('guides.secretos.locations.easy.loc3') as string}</li>
+              </ul>
+            </div>
+            <div className="space-y-4">
+              <h3 className="font-semibold text-gray-800">{t('guides.secretos.locations.hard.title') as string}</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>• {t('guides.secretos.locations.hard.loc1') as string}</li>
+                <li>• {t('guides.secretos.locations.hard.loc2') as string}</li>
+                <li>• {t('guides.secretos.locations.hard.loc3') as string}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Tips */}
+        <div className="bg-white rounded-lg shadow-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <Star className="w-6 h-6 text-yellow-500" />
+            {t('guides.secretos.tips.title') as string}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-semibold text-green-700 mb-3 flex items-center gap-2">
+                <Zap className="w-5 h-5" />
+                {t('guides.secretos.tips.dos.title') as string}
+              </h3>
+              <ul className="space-y-2 text-green-700">
+                <li>• {t('guides.secretos.tips.dos.tip1') as string}</li>
+                <li>• {t('guides.secretos.tips.dos.tip2') as string}</li>
+                <li>• {t('guides.secretos.tips.dos.tip3') as string}</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-red-700 mb-3 flex items-center gap-2">
+                <Shield className="w-5 h-5" />
+                {t('guides.secretos.tips.donts.title') as string}
+              </h3>
+              <ul className="space-y-2 text-red-700">
+                <li>• {t('guides.secretos.tips.donts.tip1') as string}</li>
+                <li>• {t('guides.secretos.tips.donts.tip2') as string}</li>
+                <li>• {t('guides.secretos.tips.donts.tip3') as string}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Warnings */}
+        <div className="bg-red-50 rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-red-800 mb-4 flex items-center gap-2">
+            <AlertTriangle className="w-6 h-6 text-red-500" />
+            {t('guides.secretos.warnings.title') as string}
+          </h2>
+          <div className="space-y-3 text-red-700">
+            <p>• {t('guides.secretos.warnings.warning1') as string}</p>
+            <p>• {t('guides.secretos.warnings.warning2') as string}</p>
+            <p>• {t('guides.secretos.warnings.warning3') as string}</p>
+          </div>
+        </div>
+
+        {/* Community Insights */}
+        <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <Users className="w-6 h-6 text-purple-500" />
+            {t('guides.secretos.community.title') as string}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <h3 className="font-semibold text-gray-800 mb-2">{t('guides.secretos.community.experience.title') as string}</h3>
+              <p className="text-gray-600 text-sm">{t('guides.secretos.community.experience.description') as string}</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <h3 className="font-semibold text-gray-800 mb-2">{t('guides.secretos.community.strategies.title') as string}</h3>
+              <p className="text-gray-600 text-sm">{t('guides.secretos.community.strategies.description') as string}</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center">
+          <Link
+            href={`/${lang}/brainrots`}
+            className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            <Trophy className="w-5 h-5" />
+            {t('guides.secretos.cta') as string}
+          </Link>
+        </div>
       </div>
-    </>
+    </div>
   )
 } 

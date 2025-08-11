@@ -96,9 +96,6 @@ Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
 
-# Sitemaps - Enhanced with multiple language support
+# Sitemaps - Only include existing files
 Sitemap: https://www.stealabrainrot.live/sitemap.xml
-Sitemap: https://www.stealabrainrot.live/sitemap_full.xml
-Sitemap: https://www.stealabrainrot.live/sitemap-es.xml
-Sitemap: https://www.stealabrainrot.live/sitemap-en.xml
-Sitemap: https://www.stealabrainrot.live/sitemap-zh.xml 
+Sitemap: https://www.stealabrainrot.live/sitemap_full.xml 
