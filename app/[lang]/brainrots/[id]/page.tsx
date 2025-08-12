@@ -1,7 +1,6 @@
 'use client'
-import { useParams } from 'next/navigation'
 import { getBrainrotById } from '@/data/brainrots'
-import { Star, TrendingUp, DollarSign, Eye, ArrowLeft, Heart, Share2, ShoppingCart, BarChart3 } from 'lucide-react'
+import { Star, TrendingUp, DollarSign, Eye, ArrowLeft, Heart, ShoppingCart, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { useTranslation } from '@/hooks/useTranslation'
@@ -25,7 +24,8 @@ interface Brainrot {
 
 export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) {
   const [lang, setLang] = useState('en')
-  const [id, setId] = useState('')
+  // id 当前未使用，但保留以备将来使用
+  // const [id, setId] = useState('')
   const [brainrot, setBrainrot] = useState<Brainrot | null>(null)
   const [isLiked, setIsLiked] = useState(false)
   const [showSuccessMessage, setShowSuccessMessage] = useState('')
@@ -34,7 +34,7 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
   useEffect(() => {
     params.then((resolvedParams) => {
       setLang(resolvedParams.lang)
-      setId(resolvedParams.id)
+      // setId(resolvedParams.id) // 当前未使用
       const brainrotData = getBrainrotById(resolvedParams.id)
       setBrainrot(brainrotData || null)
     })

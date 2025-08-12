@@ -87,7 +87,7 @@ export async function GET() {
       gameVersion: 'v2.2.0',
       serverStatus: 'online'
     })
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { 
         success: false, 
@@ -136,7 +136,7 @@ export async function POST(request: Request) {
           { status: 400 }
         )
     }
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { success: false, error: 'Error en el servidor' },
       { status: 500 }

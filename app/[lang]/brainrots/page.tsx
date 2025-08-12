@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { brainrots, getRarityText } from '@/data/brainrots'
 import BrainrotCard from '@/components/BrainrotCard'
-import { Filter, Search, SortAsc, SortDesc, Grid, List, Info, BarChart3 } from 'lucide-react'
+import { Filter, Search, SortAsc, SortDesc, Grid, List } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from '../../../hooks/useTranslation'
 import { use } from 'react'
@@ -81,11 +81,12 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
     { value: 'rarity', label: t('brainrots.sortByRarity') }
   ]
 
-  const rarityStats = rarityOptions.slice(1).map(option => ({
-    rarity: option.value as number,
-    label: option.label,
-    count: brainrots.filter(b => b.rarity === option.value).length
-  }))
+  // 稀有度统计 - 当前未使用，但保留以备将来使用
+  // const rarityStats = rarityOptions.slice(1).map(option => ({
+  //   rarity: option.value as number,
+  //   label: option.label,
+  //   count: brainrots.filter(b => b.rarity === option.value).length
+  // }))
 
   const totalValue = brainrots.reduce((sum, b) => sum + b.price, 0)
   const totalProfit = brainrots.reduce((sum, b) => sum + b.profit, 0)

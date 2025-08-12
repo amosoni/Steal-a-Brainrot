@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { RefreshCw, Calendar, Star, TrendingUp, Users, Zap, Shield, Gamepad2, Bell, CheckCircle, AlertCircle, Wifi, WifiOff, Download, Clock } from 'lucide-react'
+import { Calendar, Star, TrendingUp, Users, Bell, CheckCircle, AlertCircle, Download, Clock } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
 
 interface UpdatesPageProps {
@@ -22,22 +22,23 @@ export default function UpdatesPage({ params }: UpdatesPageProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [lastUpdate, setLastUpdate] = useState<Date>(new Date())
   const [isChecking, setIsChecking] = useState(false)
-  const [autoRefresh, setAutoRefresh] = useState(false)
+  // autoRefresh 当前未使用，但保留以备将来使用
+  // const [autoRefresh, setAutoRefresh] = useState(false)
   const [notifications, setNotifications] = useState<string[]>([])
   const [serverStatus, setServerStatus] = useState<'online' | 'offline' | 'checking'>('online')
   const [updateProgress, setUpdateProgress] = useState(0)
   const [isDownloading, setIsDownloading] = useState(false)
 
-  // 自动检查更新
-  useEffect(() => {
-    if (autoRefresh) {
-      const interval = setInterval(() => {
-        checkForUpdates()
-      }, 300000) // 每5分钟检查一次
+  // 自动检查更新 - 当前未使用，但保留以备将来使用
+  // useEffect(() => {
+  //   if (autoRefresh) {
+  //     const interval = setInterval(() => {
+  //       checkForUpdates()
+  //     }, 300000) // 每5分钟检查一次
 
-      return () => clearInterval(interval)
-    }
-  }, [autoRefresh])
+  //     return () => clearInterval(interval)
+  //   }
+  // }, [autoRefresh])
 
   // 检查服务器状态
   useEffect(() => {
@@ -51,7 +52,7 @@ export default function UpdatesPage({ params }: UpdatesPageProps) {
       const response = await fetch('/api/updates')
       const data = await response.json()
       setServerStatus(data.serverStatus)
-    } catch (error) {
+    } catch {
       setServerStatus('offline')
     }
   }
@@ -109,9 +110,10 @@ export default function UpdatesPage({ params }: UpdatesPageProps) {
     checkForUpdates()
   }
 
-  const toggleAutoRefresh = () => {
-    setAutoRefresh(!autoRefresh)
-  }
+  // toggleAutoRefresh 当前未使用，但保留以备将来使用
+  // const toggleAutoRefresh = () => {
+  //   setAutoRefresh(!autoRefresh)
+  // }
 
   const clearNotifications = () => {
     setNotifications([])

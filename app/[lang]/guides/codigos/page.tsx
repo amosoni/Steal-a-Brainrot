@@ -10,9 +10,7 @@ import {
   AlertTriangle, 
   CheckCircle, 
   Calendar,
-  RefreshCw,
   Info,
-  Shield,
   Zap
 } from 'lucide-react'
 

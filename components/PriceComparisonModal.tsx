@@ -1,5 +1,6 @@
 'use client'
-import { useState } from 'react'
+// useState 当前未使用，但保留以备将来使用
+// import { useState } from 'react'
 import { X, TrendingUp, TrendingDown, DollarSign, BarChart3 } from 'lucide-react'
 import { PriceComparisonManager } from '@/utils/cartUtils'
 
@@ -18,7 +19,8 @@ export default function PriceComparisonModal({
   itemName, 
   currentPrice 
 }: PriceComparisonModalProps) {
-  const [isLoading, setIsLoading] = useState(false)
+  // 加载状态 - 当前未使用，但保留以备将来使用
+  // const [isLoading, setIsLoading] = useState(false)
 
   if (!isOpen) return null
 

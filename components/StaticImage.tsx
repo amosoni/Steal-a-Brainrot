@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+// usePathname 当前未使用，但保留以备将来使用
+// import { usePathname } from 'next/navigation';
 
 interface StaticImageProps {
   src: string;
@@ -12,8 +13,6 @@ interface StaticImageProps {
 }
 
 export default function StaticImage({ src, alt, fill, width, height, className, unoptimized = true }: StaticImageProps) {
-  const pathname = usePathname();
-  
   // 移除语言前缀，确保图片路径正确
   const cleanSrc = src.startsWith('/') ? src : `/${src}`;
   

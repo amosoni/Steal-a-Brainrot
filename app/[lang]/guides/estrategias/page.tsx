@@ -9,22 +9,22 @@ import {
   Clock, 
   CheckCircle, 
   Calendar,
-  TrendingUp,
-  Info,
-  Shield,
+  Sword,
   Zap,
+  Shield,
   Target,
   Users,
   Award,
-  AlertTriangle,
-  Sword,
-  Shield as ShieldIcon,
-  Zap as ZapIcon,
-  Target as TargetIcon,
-  Users as UsersIcon,
-  Award as AwardIcon,
-  AlertTriangle as AlertTriangleIcon
+  AlertTriangle
 } from 'lucide-react'
+
+// 创建别名以避免命名冲突
+const ZapIcon = Zap
+const ShieldIcon = Shield
+const TargetIcon = Target
+const UsersIcon = Users
+const AwardIcon = Award
+const AlertTriangleIcon = AlertTriangle
 
 interface EstrategiasGuideProps {
   params: Promise<{ lang: string }>

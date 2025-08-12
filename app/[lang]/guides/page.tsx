@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { BookOpen, Target, TrendingUp, Users, Star, Calculator, CheckCircle, AlertCircle, ArrowRight, Zap, Shield, Gamepad2, Clock, DollarSign, BarChart3 } from 'lucide-react'
+import { BookOpen, Target, TrendingUp, Users, Star } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
 
 interface GuidesPageProps {
@@ -11,12 +11,13 @@ interface GuidesPageProps {
 export default function GuidesPage({ params }: GuidesPageProps) {
   const [lang, setLang] = useState('es')
   const [selectedStrategy, setSelectedStrategy] = useState<string>('conservative')
-  const [investmentAmount, setInvestmentAmount] = useState<number>(1000)
-  const [timeFrame, setTimeFrame] = useState<string>('1month')
-  const [experienceLevel, setExperienceLevel] = useState<string>('beginner')
-  const [showCalculator, setShowCalculator] = useState(false)
-  const [completedSteps, setCompletedSteps] = useState<number[]>([])
-  const [currentStep, setCurrentStep] = useState<number>(1)
+  // 这些状态变量当前未使用，但保留以备将来使用
+  // const [investmentAmount, setInvestmentAmount] = useState<number>(1000)
+  // const [timeFrame, setTimeFrame] = useState<string>('1month')
+  // const [experienceLevel, setExperienceLevel] = useState<string>('beginner')
+  // const [showCalculator, setShowCalculator] = useState(false)
+  // const [completedSteps, setCompletedSteps] = useState<number[]>([])
+  // const [currentStep, setCurrentStep] = useState<number>(1)
 
   // 获取语言参数
   useEffect(() => {
@@ -118,50 +119,51 @@ export default function GuidesPage({ params }: GuidesPageProps) {
     }
   ]
 
-  // 计算预期收益
-  const calculateExpectedReturn = () => {
-    const baseReturn = {
-      conservative: 0.2,
-      balanced: 0.35,
-      aggressive: 0.6
-    }
+  // 计算预期收益 - 当前未使用，但保留以备将来使用
+  // const calculateExpectedReturn = () => {
+  //   const baseReturn = {
+  //     conservative: 0.2,
+  //     balanced: 0.35,
+  //     aggressive: 0.6
+  //   }
     
-    const timeMultiplier = {
-      '1week': 0.25,
-      '1month': 1,
-      '3months': 3,
-      '6months': 6
-    }
+  //   const timeMultiplier = {
+  //     '1week': 0.25,
+  //     '1month': 1,
+  //     '3months': 3,
+  //     '6months': 6
+  //   }
     
-    const strategy = strategies[selectedStrategy as keyof typeof strategies]
-    const baseRate = baseReturn[selectedStrategy as keyof typeof baseReturn]
-    const multiplier = timeMultiplier[timeFrame as keyof typeof timeMultiplier]
+  //   // 这些变量当前未使用，但保留以备将来使用
+  //   // const strategy = strategies[selectedStrategy as keyof typeof strategies]
+  //   // const baseRate = baseReturn[selectedStrategy as keyof typeof baseReturn]
+  //   // const multiplier = timeMultiplier[timeFrame as keyof typeof timeMultiplier]
     
-    return investmentAmount * baseRate * multiplier
-  }
+  //   // return investmentAmount * baseRate * multiplier
+  // }
 
-  // 完成步骤
-  const completeStep = (stepNumber: number) => {
-    if (!completedSteps.includes(stepNumber)) {
-      setCompletedSteps([...completedSteps, stepNumber])
-    }
-  }
+  // 完成步骤 - 当前未使用，但保留以备将来使用
+  // const completeStep = (stepNumber: number) => {
+  //   if (!completedSteps.includes(stepNumber)) {
+  //     setCompletedSteps([...completedSteps, stepNumber])
+  //   }
+  // }
 
-  // 下一步
-  const nextStep = () => {
-    if (currentStep < 5) {
-      setCurrentStep(currentStep + 1)
-    }
-  }
+  // 下一步 - 当前未使用，但保留以备将来使用
+  // const nextStep = () => {
+  //   if (currentStep < 5) {
+  //     setCurrentStep(currentStep + 1)
+  //   }
+  // }
 
-  // 上一步
-  const prevStep = () => {
-    if (currentStep > 1) {
-      setCurrentStep(currentStep - 1)
-    }
-  }
+  // 上一步 - 当前未使用，但保留以备将来使用
+  // const prevStep = () => {
+  //   if (currentStep > 1) {
+  //     setCurrentStep(currentStep - 1)
+  //   }
+  // }
 
-  const expectedReturn = calculateExpectedReturn()
+  // const expectedReturn = calculateExpectedReturn()
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

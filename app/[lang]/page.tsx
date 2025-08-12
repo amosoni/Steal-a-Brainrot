@@ -197,14 +197,15 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     }
   ]
 
-  const gameFeatures = [
-    { icon: Zap, title: t('home.gameFeatures.fastPaced.title'), desc: t('home.gameFeatures.fastPaced.description') },
-    { icon: Play, title: t('home.gameFeatures.simpleControls.title'), desc: t('home.gameFeatures.simpleControls.description') },
-    { icon: Shield, title: t('home.gameFeatures.powerUps.title'), desc: t('home.gameFeatures.powerUps.description') },
-    { icon: Users, title: t('home.gameFeatures.multiplayer.title'), desc: t('home.gameFeatures.multiplayer.description') },
-    { icon: Trophy, title: t('home.gameFeatures.leaderboards.title'), desc: t('home.gameFeatures.leaderboards.description') },
-    { icon: Star, title: t('home.gameFeatures.customization.title'), desc: t('home.gameFeatures.customization.description') }
-  ]
+  // 游戏特性数据 - 当前未使用，但保留以备将来使用
+  // const gameFeatures = [
+  //   { icon: Zap, title: t('home.gameFeatures.fastPaced.title'), desc: t('home.gameFeatures.fastPaced.description') },
+  //   { icon: Play, title: t('home.gameFeatures.simpleControls.title'), desc: t('home.gameFeatures.simpleControls.description') },
+  //   { icon: Shield, title: t('home.gameFeatures.powerUps.title'), desc: t('home.gameFeatures.powerUps.description') },
+  //   { icon: Users, title: t('home.gameFeatures.multiplayer.title'), desc: t('home.gameFeatures.multiplayer.description') },
+  //   { icon: Trophy, title: t('home.gameFeatures.leaderboards.title'), desc: t('home.gameFeatures.leaderboards.description') },
+  //   { icon: Star, title: t('home.gameFeatures.customization.title'), desc: t('home.gameFeatures.customization.description') }
+  // ]
 
   const faqs = [
     {
@@ -246,10 +247,12 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
       <section className="relative text-center py-20 rounded-none shadow-xl mb-8 overflow-hidden">
         {/* 毛玻璃背景图片 */}
         <div className="absolute inset-0 overflow-hidden">
-          <img 
+          <Image 
             src="/api/images/Steal-a-Brainrot1.webp" 
             alt="Steal a Brainrot Background" 
-            className="absolute inset-0 w-full h-full object-cover opacity-30"
+            fill
+            className="object-cover opacity-30"
+            priority
           />
           <div className="absolute inset-0 glass-overlay"></div>
         </div>
@@ -327,10 +330,20 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               {/* 游戏截图展示 */}
               <div className="grid grid-cols-2 gap-3">
                 <div className="relative w-full h-32">
-                  <img src="/api/images/Steal-a-Brainrot1.webp" alt="Steal a Brainrot Screenshot 1" className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-md" />
+                  <Image 
+                    src="/api/images/Steal-a-Brainrot1.webp" 
+                    alt="Steal a Brainrot Screenshot 1" 
+                    fill
+                    className="object-cover rounded-lg shadow-md"
+                  />
                 </div>
                 <div className="relative w-full h-32">
-                  <img src="/api/images/Steal-a-Brainrot2.webp" alt="Steal a Brainrot Screenshot 2" className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-md" />
+                  <Image 
+                    src="/api/images/Steal-a-Brainrot2.webp" 
+                    alt="Steal a Brainrot Screenshot 2" 
+                    fill
+                    className="object-cover rounded-lg shadow-md"
+                  />
                 </div>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-xl flex flex-col gap-4">
@@ -427,25 +440,45 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-3">
               <div className="relative w-full h-32">
-                <img src="/api/images/Steal-a-Brainrot1.webp" alt="Steal a Brainrot Gameplay 1" className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-md" />
+                <Image 
+                  src="/api/images/Steal-a-Brainrot1.webp" 
+                  alt="Steal a Brainrot Gameplay 1" 
+                  fill
+                  className="object-cover rounded-lg shadow-md"
+                />
               </div>
               <p className="text-sm text-gray-600 mt-2 text-center">{t('home.screenshots.gameOverview.title') as string}</p>
             </div>
             <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-3">
               <div className="relative w-full h-32">
-                <img src="/api/images/Steal-a-Brainrot2.webp" alt="Steal a Brainrot Gameplay 2" className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-md" />
+                <Image 
+                  src="/api/images/Steal-a-Brainrot2.webp" 
+                  alt="Steal a Brainrot Gameplay 2" 
+                  fill
+                  className="object-cover rounded-md"
+                />
               </div>
               <p className="text-sm text-gray-600 mt-2 text-center">{t('home.screenshots.userInterface.title') as string}</p>
             </div>
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-3">
               <div className="relative w-full h-32">
-                <img src="/api/images/Steal-a-Brainrot3.webp" alt="Steal a Brainrot Gameplay 3" className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-md" />
+                <Image 
+                  src="/api/images/Steal-a-Brainrot3.webp" 
+                  alt="Steal a Brainrot Gameplay 3" 
+                  fill
+                  className="object-cover rounded-lg shadow-md"
+                />
               </div>
               <p className="text-sm text-gray-600 mt-2 text-center">{t('home.screenshots.uniqueCharacters.title') as string}</p>
             </div>
             <div className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-xl p-3">
               <div className="relative w-full h-32">
-                <img src="/api/images/Steal-a-Brainrot4.webp" alt="Steal a Brainrot Gameplay 4" className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-md" />
+                <Image 
+                  src="/api/images/Steal-a-Brainrot4.webp" 
+                  alt="Steal a Brainrot Gameplay 4" 
+                  fill
+                  className="object-cover rounded-lg shadow-md"
+                />
               </div>
               <p className="text-sm text-gray-600 mt-2 text-center">{t('home.screenshots.constantAction.title') as string}</p>
             </div>
@@ -674,14 +707,24 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
             <div className="space-y-4">
               <div className="bg-white rounded-xl p-4 shadow-md">
                 <div className="relative w-full h-40">
-                  <img src="/api/images/Steal-a-Brainrot1.webp" alt="Steal a Brainrot Screenshot 1" className="absolute inset-0 w-full h-full object-cover rounded-lg mb-3" />
+                  <Image 
+                    src="/api/images/Steal-a-Brainrot1.webp" 
+                    alt="Steal a Brainrot Screenshot 1" 
+                    fill
+                    className="object-cover rounded-lg mb-3"
+                  />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.gameOverview.title') as string}</h3>
                 <p className="text-sm text-gray-600">{t('home.moreScreenshots.gameOverview.description') as string}</p>
               </div>
               <div className="bg-white rounded-xl p-4 shadow-md">
                 <div className="relative w-full h-40">
-                  <img src="/api/images/Steal-a-Brainrot2.webp" alt="Steal a Brainrot Screenshot 2" className="absolute inset-0 w-full h-full object-cover rounded-lg mb-3" />
+                  <Image 
+                    src="/api/images/Steal-a-Brainrot2.webp" 
+                    alt="Steal a Brainrot Screenshot 2" 
+                    fill
+                    className="object-cover rounded-lg mb-3"
+                  />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.userInterface.title') as string}</h3>
                 <p className="text-sm text-gray-600">{t('home.moreScreenshots.userInterface.description') as string}</p>
@@ -690,14 +733,24 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
             <div className="space-y-4">
               <div className="bg-white rounded-xl p-4 shadow-md">
                 <div className="relative w-full h-40">
-                  <img src="/api/images/Steal-a-Brainrot3.webp" alt="Steal a Brainrot Screenshot 3" className="absolute inset-0 w-full h-full object-cover rounded-lg mb-3" />
+                  <Image 
+                    src="/api/images/Steal-a-Brainrot3.webp" 
+                    alt="Steal a Brainrot Screenshot 3" 
+                    fill
+                    className="object-cover rounded-lg mb-3"
+                  />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.uniqueCharacters.title') as string}</h3>
                 <p className="text-sm text-gray-600">{t('home.moreScreenshots.uniqueCharacters.description') as string}</p>
               </div>
               <div className="bg-white rounded-xl p-4 shadow-md">
                 <div className="relative w-full h-40">
-                  <img src="/api/images/Steal-a-Brainrot4.webp" alt="Steal a Brainrot Screenshot 4" className="absolute inset-0 w-full h-full object-cover rounded-lg mb-3" />
+                  <Image 
+                    src="/api/images/Steal-a-Brainrot4.webp" 
+                    alt="Steal a Brainrot Screenshot 4" 
+                    fill
+                    className="object-cover rounded-lg mb-3"
+                  />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.constantAction.title') as string}</h3>
                 <p className="text-sm text-gray-600">{t('home.moreScreenshots.constantAction.description') as string}</p>

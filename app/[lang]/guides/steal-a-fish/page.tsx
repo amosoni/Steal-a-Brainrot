@@ -9,16 +9,9 @@ import {
   Clock, 
   CheckCircle, 
   Calendar,
-  TrendingUp,
-  Info,
-  Shield,
   Zap,
-  Target,
-  Users,
-  Award,
-  AlertTriangle,
+  Info,
   Fish,
-  Anchor,
   Compass
 } from 'lucide-react'
 

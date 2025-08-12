@@ -11,12 +11,8 @@ import {
   Calendar,
   TrendingUp,
   Info,
-  Shield,
   Zap,
   Target,
-  Users,
-  Award,
-  AlertTriangle,
   Smile,
   Laugh,
   Sparkles

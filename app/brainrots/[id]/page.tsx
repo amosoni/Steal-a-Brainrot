@@ -4,7 +4,7 @@ import { getBrainrotById } from '@/data/brainrots'
 import { Star, TrendingUp, DollarSign, Eye, ArrowLeft, Heart, Share2, ShoppingCart, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
-import { CartManager, FavoritesManager, PriceComparisonManager } from '@/utils/cartUtils'
+import { CartManager, FavoritesManager } from '@/utils/cartUtils'
 import CartModal from '@/components/CartModal'
 import PriceComparisonModal from '@/components/PriceComparisonModal'
 

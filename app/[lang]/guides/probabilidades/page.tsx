@@ -7,17 +7,11 @@ import {
   ArrowLeft, 
   Star, 
   Clock, 
-  Percent, 
   CheckCircle, 
   Calendar,
   TrendingUp,
   Info,
-  Shield,
   Zap,
-  Target,
-  Users,
-  Award,
-  AlertTriangle,
   BarChart3
 } from 'lucide-react'
 

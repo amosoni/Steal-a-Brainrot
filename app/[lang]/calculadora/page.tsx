@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { brainrots } from '@/data/brainrots'
-import { Calculator, DollarSign, Target, TrendingUp, Clock, Users } from 'lucide-react'
+import { DollarSign, Target, Users } from 'lucide-react'
 
 import Link from 'next/link'
 import { useTranslation } from '@/hooks/useTranslation'

@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useTranslation } from '@/hooks/useTranslation'
-import { ArrowLeft, Eye, Lock, Target, Zap, Shield, Users, Trophy, AlertTriangle, Star, Key } from 'lucide-react'
+import { ArrowLeft, Eye, Target, Zap, Shield, Users, Trophy, AlertTriangle, Star, Key } from 'lucide-react'
 
 interface SecretosPageProps {
   params: Promise<{ lang: string }>

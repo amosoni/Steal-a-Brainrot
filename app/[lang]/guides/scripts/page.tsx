@@ -15,8 +15,6 @@ import {
   Info,
   Shield,
   Users,
-  TrendingUp,
-  Download,
   Settings
 } from 'lucide-react'
 

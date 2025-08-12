@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useTranslation } from '@/hooks/useTranslation'
-import { ArrowLeft, Star, TrendingUp, Clock, Target, Zap, Shield, Users, Trophy, AlertTriangle } from 'lucide-react'
+import { ArrowLeft, Star, TrendingUp, Target, Zap, Shield, Users, Trophy, AlertTriangle } from 'lucide-react'
 
 interface RebirthPageProps {
   params: Promise<{ lang: string }>
