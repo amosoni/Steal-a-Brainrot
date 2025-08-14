@@ -3,13 +3,165 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Calculator, Database, TrendingUp, BookOpen, Play, Users, Trophy, Shield, Zap, Star, Copy, Check, ArrowRight } from 'lucide-react'
 import { useTranslation } from '../../hooks/useTranslation'
-import { use, useState } from 'react'
+import { use, useState, useEffect, useRef } from 'react'
 import PageSEO from '../../components/PageSEO'
+import Script from 'next/script'
+
+// 网络信息接口定义
+interface NetworkInformation {
+  effectiveType: 'slow-2g' | '2g' | '3g' | '4g';
+  downlink: number;
+  rtt: number;
+  saveData: boolean;
+}
 
 export default function HomePage({ params }: { params: Promise<{ lang: string }> }) {
   const resolvedParams = use(params)
   const { t } = useTranslation(resolvedParams.lang)
   const [copiedScript, setCopiedScript] = useState<string | null>(null)
+  const [currentGame, setCurrentGame] = useState('main') // 'main', 'game1'
+  const [gameLoadingState, setGameLoadingState] = useState<'loading' | 'timeout' | 'error' | 'loaded' | 'unavailable' | 'available' | 'testing' | 'testingAlt' | 'comprehensiveCheck' | 'networkMonitor'>('loading')
+  const [gameLoadTimeout, setGameLoadTimeout] = useState<NodeJS.Timeout | null>(null)
+
+  // 游戏URL映射 - 只保留两个游戏
+  const gameUrls = {
+    main: "https://app-447526.games.s3.yandex.net/447526/f3nbrv390m42ja34gqhu9h6abw0011sm/index.html?sdk=%2Fsdk%2Fv2.c68e1234372250dd975a.js#origin=https%3A%2F%2Fplayhop.com&app-id=447526&device-type=desktop",
+    game1: "https://app-291696.games.s3.yandex.net/291696/x9n9e72j49hyd5vp176oor871e83datc_brotli/index.html?sdk=%2Fsdk%2F_%2Fv2.c68e1234372250dd975a.js#origin=https%3A%2F%2Fplayhop.com&app-id=291696&device-type=desktop"
+  }
+
+  // 游戏信息
+  const gameInfo = {
+    main: {
+      title: 'Steal a Brainrot Original 3D',
+      description: resolvedParams.lang === 'es' ? 'Juego Principal' : 
+                   resolvedParams.lang === 'en' ? 'Main Game' : '主游戏',
+      image: '/images/Steal-a-Brainrot-Original-3D.webp',
+      video: '/videos/Steal-a-Brainrot-Original-3D.mp4',
+      icon: '🎮',
+      color: 'from-yellow-400 to-orange-500'
+    },
+    game1: {
+      title: 'Obby: Gym Simulator, Escape',
+      description: resolvedParams.lang === 'es' ? 'Simulador de Gimnasio' : 
+                   resolvedParams.lang === 'en' ? 'Gym Simulator' : '健身房模拟器',
+      image: '/images/Obby-Gym-Simulator-Escape.webp',
+      video: '/videos/Obby-Gym-Simulator-Escape.mp4',
+      icon: '🏋️',
+      color: 'from-green-400 to-blue-500'
+    }
+  }
+
+  // 从游戏URL中提取app-id
+  const getAppIdFromUrl = (url: string) => {
+    const match = url.match(/app-id=(\d+)/)
+    return match ? match[1] : '447526' // 默认值
+  }
+
+  // 动态更新SDK配置
+  const updateSDKConfig = (gameKey: string) => {
+    if (typeof window !== 'undefined') {
+      const gameUrl = gameUrls[gameKey as keyof typeof gameUrls]
+      const appId = getAppIdFromUrl(gameUrl)
+      
+      // @ts-expect-error - 动态添加全局变量
+      window.appData = {
+        appId: appId,
+        deviceType: 'desktop',
+        origin: 'https://playhop.com'
+      }
+      
+      // @ts-expect-error - 动态添加全局变量
+      window.playPageData = {
+        gameUrl: gameUrl,
+        isEmbedded: true
+      }
+      
+      console.log(`已更新SDK配置: app-id=${appId}, game=${gameKey}`)
+    }
+  }
+
+  // 初始化Yandex Games SDK环境
+  useEffect(() => {
+    // 模拟playhop.com的全局变量初始化
+    if (typeof window !== 'undefined') {
+      updateSDKConfig('main')
+      
+      // @ts-expect-error - 动态添加全局变量
+      window.YandexGamesSDK = {
+        ready: () => Promise.resolve(),
+        init: () => Promise.resolve(),
+        features: {
+          LoadingAPI: {
+            ready: () => Promise.resolve()
+          }
+        }
+      }
+    }
+  }, [])
+
+  // 预加载所有游戏资源
+  useEffect(() => {
+    const preloadGames = () => {
+      const games = Object.values(gameUrls)
+      
+      games.forEach((gameUrl, index) => {
+        const link = document.createElement('link')
+        link.rel = 'preload'
+        link.as = 'document'
+        link.href = gameUrl
+        link.id = `game-preload-${index}`
+        document.head.appendChild(link)
+      })
+    }
+    
+    preloadGames()
+  }, [gameUrls])
+
+  // 游戏加载超时处理
+  useEffect(() => {
+    if (gameLoadingState === 'loading') {
+      const timeout = setTimeout(() => {
+        setGameLoadingState('timeout')
+        console.log('游戏加载超时，尝试重试...')
+        // 自动重试一次
+        setTimeout(() => {
+          retryGameLoad()
+        }, 2000)
+      }, 30000) // 减少到30秒
+      
+      setGameLoadTimeout(timeout)
+      
+      return () => {
+        if (timeout) clearTimeout(timeout)
+      }
+    }
+  }, [gameLoadingState])
+
+  // 重置游戏加载状态
+  const resetGameLoading = () => {
+    setGameLoadingState('loading')
+    if (gameLoadTimeout) {
+      clearTimeout(gameLoadTimeout)
+      setGameLoadTimeout(null)
+    }
+  }
+
+  // 重试加载游戏
+  const retryGameLoad = () => {
+    console.log('重试加载游戏...')
+    resetGameLoading()
+    
+    // 强制刷新iframe
+    if (iframeRef.current) {
+      const currentSrc = iframeRef.current.src
+      iframeRef.current.src = ''
+      setTimeout(() => {
+        if (iframeRef.current) {
+          iframeRef.current.src = currentSrc
+        }
+      }, 100)
+    }
+  }
 
   // 复制脚本到剪贴板
   const copyToClipboard = async (script: string, scriptName: string) => {
@@ -18,154 +170,28 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
       setCopiedScript(scriptName)
       setTimeout(() => setCopiedScript(null), 2000)
     } catch (err) {
-      console.error('Failed to copy script:', err)
+      console.error('复制失败:', err)
     }
   }
 
-  // 脚本数据
-  const scripts = [
-    {
-      name: 'StealEveryone',
-      title: t('home.scripts.stealEveryone.title') as string,
-      description: t('home.scripts.stealEveryone.description') as string,
-      code: `loadstring(game:HttpGet('https://raw.githubusercontent.com/checkurasshole/Script/refs/heads/main/IQ'))();`,
-      color: 'blue'
-    },
-    {
-      name: 'GumanbaScript',
-      title: t('home.scripts.gumanbaScript.title') as string,
-      description: t('home.scripts.gumanbaScript.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/StealaBrainrot", true))()`,
-      color: 'green'
-    },
-    {
-      name: 'LaserhunScript',
-      title: t('home.scripts.laserhunScript.title') as string,
-      description: t('home.scripts.laserhunScript.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/Hamza3270308/Stealabrainrot/refs/heads/main/Laserhun.lua"))()`,
-      color: 'purple'
-    },
-    {
-      name: 'EasyCash',
-      title: t('home.scripts.easyCash.title') as string,
-      description: t('home.scripts.easyCash.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/StealaBrainrot"))()`,
-      color: 'orange'
-    },
-    {
-      name: 'QuantumPulsar',
-      title: t('home.scripts.quantumPulsar.title') as string,
-      description: t('home.scripts.quantumPulsar.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/Estevansit0/KJJK/refs/heads/main/PusarX-loader.lua"))()`,
-      color: 'red'
-    },
-    {
-      name: 'ScriptBlox',
-      title: t('home.scripts.scriptBlox.title') as string,
-      description: t('home.scripts.scriptBlox.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/Akbar123s/Script-Roblox-/refs/heads/main/Script%20Brainrot%20New"))()`,
-      color: 'indigo'
-    },
-    {
-      name: 'AutoLockCollect',
-      title: t('home.scripts.autoLockCollect.title') as string,
-      description: t('home.scripts.autoLockCollect.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/Hamza3270308/Stealabrainrot/refs/heads/main/StealScript.lua", true))()`,
-      color: 'pink'
-    },
-    {
-      name: 'LegendHub',
-      title: t('home.scripts.legendHub.title') as string,
-      description: t('home.scripts.legendHub.description') as string,
-      code: `loadstring(game:HttpGet("https://scripts.city/LegendHub.lua"))()`,
-      color: 'yellow'
-    },
-    {
-      name: 'FeronikHub',
-      title: t('home.scripts.feronikHub.title') as string,
-      description: t('home.scripts.feronikHub.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/Fenorik/FenorikHub/refs/heads/main/FenorikHubINIT.lua"))()`,
-      color: 'teal'
-    },
-    {
-      name: 'ForkT3',
-      title: t('home.scripts.forkT3.title') as string,
-      description: t('home.scripts.forkT3.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/forkT3/Steal-a-Brianrot/main/Steal-A-Brianrot.lua"))()`,
-      color: 'cyan'
-    },
-    {
-      name: 'OPScript',
-      title: t('home.scripts.opScript.title') as string,
-      description: t('home.scripts.opScript.description') as string,
-      code: `loadstring(game:HttpGet("https://pastebin.com/raw/mccy77qw")`,
-      color: 'lime'
-    },
-    {
-      name: 'Polaris',
-      title: t('home.scripts.polaris.title') as string,
-      description: t('home.scripts.polaris.description') as string,
-      code: `loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d7be76c234d46ce6770101fded39760c.lua"))()`,
-      color: 'amber'
-    },
-    {
-      name: 'KeylessOP',
-      title: t('home.scripts.keylessOP.title') as string,
-      description: t('home.scripts.keylessOP.description') as string,
-      code: `loadstring(game:HttpGet("https://pastefy.app/Zk7UIkDN/raw"))()`,
-      color: 'emerald'
-    },
-    {
-      name: 'LockBaseAutoSell',
-      title: t('home.scripts.lockBaseAutoSell.title') as string,
-      description: t('home.scripts.lockBaseAutoSell.description') as string,
-      code: `loadstring(game:HttpGet('https://raw.githubusercontent.com/Silentoffa/nullptr/refs/heads/main/hub'))()`,
-      color: 'rose'
-    },
-    {
-      name: 'CrawlChicken',
-      title: t('home.scripts.crawlChicken.title') as string,
-      description: t('home.scripts.crawlChicken.description') as string,
-      code: `loadstring(game:HttpGet('https://raw.githubusercontent.com/checkurasshole/Script/refs/heads/main/IQ'))();`,
-      color: 'violet'
-    },
-    {
-      name: 'FeronikHubAlt',
-      title: t('home.scripts.feronikHubAlt.title') as string,
-      description: t('home.scripts.feronikHubAlt.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/Fenorik/FenorikHub/main/FenorikHubINIT.lua"))()`,
-      color: 'fuchsia'
-    },
-    {
-      name: 'GhostHub',
-      title: t('home.scripts.ghostHub.title') as string,
-      description: t('home.scripts.ghostHub.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/Akbar123s/Script-Roblox-/main/Script%20Brainrot%20New"))()`,
-      color: 'slate'
-    },
-    {
-      name: 'QuantumPulsarAlt',
-      title: t('home.scripts.quantumPulsarAlt.title') as string,
-      description: t('home.scripts.quantumPulsarAlt.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/Estevansit0/KJJK/main/PusarX-loader.lua"))()`,
-      color: 'stone'
-    },
-    {
-      name: 'SilentScript',
-      title: t('home.scripts.silentScript.title') as string,
-      description: t('home.scripts.silentScript.description') as string,
-      code: `loadstring(game:HttpGet('https://raw.githubusercontent.com/Silentoffa/nullptr/main/hub'))()`,
-      color: 'zinc'
-    },
-    {
-      name: 'LaserhunFinal',
-      title: t('home.scripts.laserhunFinal.title') as string,
-      description: t('home.scripts.laserhunFinal.description') as string,
-      code: `loadstring(game:HttpGet("https://raw.githubusercontent.com/Hamza3270308/Stealabrainrot/main/StealScript.lua", true))()`,
-      color: 'neutral'
-    }
-  ]
+  // iframe引用
+  const iframeRef = useRef<HTMLIFrameElement>(null)
 
+  // iframe加载处理
+  const handleIframeLoad = () => {
+    setGameLoadingState('loaded')
+    if (gameLoadTimeout) {
+      clearTimeout(gameLoadTimeout)
+      setGameLoadTimeout(null)
+    }
+  }
+
+  // iframe错误处理
+  const handleIframeError = () => {
+    setGameLoadingState('error')
+  }
+
+  // 基础功能数据
   const features = [
     {
       title: t('home.features.database.title'),
@@ -197,16 +223,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     }
   ]
 
-  // 游戏特性数据 - 当前未使用，但保留以备将来使用
-  // const gameFeatures = [
-  //   { icon: Zap, title: t('home.gameFeatures.fastPaced.title'), desc: t('home.gameFeatures.fastPaced.description') },
-  //   { icon: Play, title: t('home.gameFeatures.simpleControls.title'), desc: t('home.gameFeatures.simpleControls.description') },
-  //   { icon: Shield, title: t('home.gameFeatures.powerUps.title'), desc: t('home.gameFeatures.powerUps.description') },
-  //   { icon: Users, title: t('home.gameFeatures.multiplayer.title'), desc: t('home.gameFeatures.multiplayer.description') },
-  //   { icon: Trophy, title: t('home.gameFeatures.leaderboards.title'), desc: t('home.gameFeatures.leaderboards.description') },
-  //   { icon: Star, title: t('home.gameFeatures.customization.title'), desc: t('home.gameFeatures.customization.description') }
-  // ]
-
+  // FAQ数据
   const faqs = [
     {
       question: t('home.faq.protect.question'),
@@ -226,8 +243,43 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     }
   ]
 
+  // 脚本数据
+  const scripts = [
+    {
+      name: 'StealEveryone',
+      title: t('home.scripts.stealEveryone.title') as string,
+      description: t('home.scripts.stealEveryone.description') as string,
+      code: `loadstring(game:HttpGet('https://raw.githubusercontent.com/checkurasshole/Script/refs/heads/main/IQ'))();`,
+      color: 'blue'
+    }
+  ]
+
   return (
     <>
+      {/* Yandex Games SDK Scripts - 一比一复制playhop.com的实现 */}
+      <Script
+        id="yandex-sdk-earlyEvents"
+        src="https://sdk.yandexgames.net/sdk-earlyEvents.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        id="yandex-sdk-setup"
+        src="https://sdk.yandexgames.net/setup-sdk.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        id="yandex-sdk-frame-event"
+        src="https://sdk.yandexgames.net/frame-event.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        id="yandex-sdk-loading-api"
+        src="https://sdk.yandexgames.net/loading-api.js"
+        strategy="beforeInteractive"
+      />
+      
+
+      
       <PageSEO
         title={t('home.seo.title') as string}
         description={t('home.seo.description') as string}
@@ -243,7 +295,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
         tags={['Steal a Brainrot', 'Roblox', 'Game Guide', 'Brainrot', 'Gaming Tools']}
       />
       <div className="space-y-12">
-        {/* Hero Section with Features - 全宽显示 */}
+        {/* Hero Section with Game Embed - 全宽显示 */}
       <section className="relative text-center py-20 rounded-none shadow-xl mb-8 overflow-hidden">
         {/* 毛玻璃背景图片 */}
         <div className="absolute inset-0 overflow-hidden">
@@ -261,22 +313,371 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
         <div className="absolute bottom-4 right-4 w-48 h-48 bg-purple-400/40 rounded-full blur-3xl decoration-float z-0" />
         <div className="absolute top-1/3 left-1/3 w-32 h-32 bg-blue-400/35 rounded-full blur-2xl decoration-float z-0" />
         <div className="absolute bottom-1/3 right-1/3 w-36 h-36 bg-pink-400/35 rounded-full blur-2xl decoration-float z-0" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white drop-shadow mb-6 relative z-10">
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* 游戏标题 - 在游戏上方 */}
+          <div className="text-center mb-10">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-white drop-shadow mb-3">
+              Steal a Brainrot Online
+            </h1>
+            <h2 className="text-lg md:text-2xl font-bold text-blue-100 drop-shadow">
+              🎮 {resolvedParams.lang === 'es' ? '¡Robar Brainrots Nunca Fue Tan Divertido! | Juego Gratis | Sin Descarga' : 
+                   resolvedParams.lang === 'en' ? 'Steal Brainrots Like Never Before! | Free Online | No Download' : 
+                   '偷取脑腐从未如此有趣！| 免费在线 | 无需下载'} 🚀
+            </h2>
+          </div>
+          
+          {/* 游戏选择区域 - 左侧 */}
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            {/* 游戏选择侧边栏 */}
+            <div className="w-full lg:w-72 space-y-3">
+              <h3 className="text-xl font-bold text-white text-center lg:text-left mb-4">
+                {resolvedParams.lang === 'es' ? 'Seleccionar Juego' : 
+                 resolvedParams.lang === 'en' ? 'Select Game' : 
+                 '选择游戏'}
+              </h3>
+              
+              {/* 游戏选项 */}
+              <div className="space-y-4">
+                {/* 主游戏 - Steal a Brainrot */}
+                <div className="relative group">
+                  <button
+                    onClick={() => {
+                      setCurrentGame('main')
+                      updateSDKConfig('main')
+                      resetGameLoading()
+                    }}
+                    disabled={gameLoadingState === 'unavailable'}
+                    className={`w-full h-44 rounded-xl text-left transition-all duration-300 overflow-hidden ${
+                      currentGame === 'main' 
+                        ? 'ring-2 ring-blue-400 shadow-xl scale-102' 
+                        : 'hover:scale-102 hover:shadow-lg'
+                    }`}
+                  >
+                    {/* 游戏背景图片 */}
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={gameInfo.main.image}
+                        alt="Steal a Brainrot"
+                        fill
+                        className="object-cover"
+                      />
+                      {/* 渐变遮罩 */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                      
+                      {/* 游戏信息 */}
+                      <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
+                        <div className="flex items-center gap-2 mb-1">
+                          <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center text-sm shadow-lg">
+                            🎮
+                          </div>
+                          <div>
+                            <h4 className="font-bold text-base">Steal a Brainrot</h4>
+                            <p className="text-xs opacity-90">
+                              {resolvedParams.lang === 'es' ? 'Juego Principal' : 
+                               resolvedParams.lang === 'en' ? 'Main Game' : 
+                               '主游戏'}
+                            </p>
+                          </div>
+                        </div>
+                        
+                        {/* 状态指示器 */}
+                        <div className="flex items-center gap-2">
+                          {gameLoadingState === 'loading' && (
+                            <>
+                              <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                              <span className="text-xs text-blue-200">
+                                {resolvedParams.lang === 'es' ? 'Cargando...' : 
+                                 resolvedParams.lang === 'en' ? 'Loading...' : 
+                                 '加载中...'}
+                              </span>
+                            </>
+                          )}
+                          {gameLoadingState === 'loaded' && (
+                            <>
+                              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                              <span className="text-xs text-green-200">
+                                {resolvedParams.lang === 'es' ? 'Listo' : 
+                                 resolvedParams.lang === 'en' ? 'Ready' : 
+                                 '就绪'}
+                              </span>
+                            </>
+                          )}
+                          {gameLoadingState === 'error' && (
+                            <>
+                              <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                              <span className="text-xs text-red-200">
+                                {resolvedParams.lang === 'es' ? 'Error' : 
+                                 resolvedParams.lang === 'en' ? 'Error' : 
+                                 '错误'}
+                              </span>
+                            </>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  
+                  {/* 视频预览 - 鼠标悬停时显示 */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl overflow-hidden">
+                    <video
+                      src={gameInfo.main.video}
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    />
+                    {/* 视频上的渐变遮罩 */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  </div>
+                </div>
+
+                {/* 游戏1 */}
+                <div className="relative group">
+                  <button
+                    onClick={() => {
+                      setCurrentGame('game1')
+                      updateSDKConfig('game1')
+                      resetGameLoading()
+                    }}
+                    disabled={gameLoadingState === 'unavailable'}
+                    className={`w-full h-44 rounded-xl text-left transition-all duration-300 overflow-hidden ${
+                      currentGame === 'game1' 
+                        ? 'ring-2 ring-green-400 shadow-xl scale-102' 
+                        : 'hover:scale-102 hover:shadow-lg'
+                    }`}
+                  >
+                    {/* 游戏背景图片 */}
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={gameInfo.game1.image}
+                        alt="Obby: Gym Simulator, Escape"
+                        fill
+                        className="object-cover"
+                      />
+                      {/* 渐变遮罩 */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                      
+                      {/* 游戏信息 */}
+                      <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
+                        <div className="flex items-center gap-2 mb-1">
+                          <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-blue-500 rounded-lg flex items-center justify-center text-sm shadow-lg">
+                            🏋️
+                          </div>
+                          <div>
+                            <h4 className="font-bold text-base">
+                              {resolvedParams.lang === 'es' ? 'Simulador de Gimnasio' : 
+                               resolvedParams.lang === 'en' ? 'Gym Simulator' : 
+                               '健身房模拟器'}
+                            </h4>
+                            <p className="text-xs opacity-90">
+                              {resolvedParams.lang === 'es' ? 'Nuevo Juego' : 
+                               resolvedParams.lang === 'en' ? 'New Game' : 
+                               '新游戏'}
+                            </p>
+                          </div>
+                        </div>
+                        
+                        {/* 状态指示器 */}
+                        <div className="flex items-center gap-2">
+                          {gameLoadingState === 'loading' && (
+                            <>
+                              <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                              <span className="text-xs text-blue-200">
+                                {resolvedParams.lang === 'es' ? 'Cargando...' : 
+                                 resolvedParams.lang === 'en' ? 'Loading...' : 
+                                 '加载中...'}
+                              </span>
+                            </>
+                          )}
+                          {gameLoadingState === 'loaded' && (
+                            <>
+                              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                              <span className="text-xs text-green-200">
+                                {resolvedParams.lang === 'es' ? 'Listo' : 
+                                 resolvedParams.lang === 'en' ? 'Ready' : 
+                                 '就绪'}
+                              </span>
+                            </>
+                          )}
+                          {gameLoadingState === 'error' && (
+                            <>
+                              <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                              <span className="text-xs text-red-200">
+                                {resolvedParams.lang === 'es' ? 'Error' : 
+                                 resolvedParams.lang === 'en' ? 'Error' : 
+                                 '错误'}
+                              </span>
+                            </>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  
+                  {/* 视频预览 - 鼠标悬停时显示 */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl overflow-hidden">
+                    <video
+                      src={gameInfo.game1.video}
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    />
+                    {/* 视频上的渐变遮罩 */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  </div>
+                </div>
+              </div>
+              
+              {/* 游戏加载提示 */}
+              <div className="mt-6 p-4 bg-blue-900/30 rounded-xl border border-blue-500/30">
+                <p className="text-sm text-blue-200 text-center">
+                  {resolvedParams.lang === 'es' ? '💡 Los juegos embebidos pueden tardar más en cargar que visitar el sitio original. Esto es normal debido a las restricciones de seguridad del navegador.' : 
+                   resolvedParams.lang === 'en' ? '💡 Embedded games may take longer to load than visiting the original site. This is normal due to browser security restrictions.' : 
+                   '💡 嵌入游戏可能比访问原网站加载更慢。这是由于浏览器安全限制造成的正常现象。'}
+                </p>
+              </div>
+            </div>
+
+            {/* 游戏嵌入区域 - 右侧 */}
+            <div className="flex-1">
+              <div className="bg-black rounded-2xl p-2 sm:p-4 shadow-2xl border border-white/20 w-full h-[600px]">
+                <div className="relative w-full h-full">
+                  {/* 加载状态提示 */}
+                  {gameLoadingState === 'loading' && (
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 to-purple-900/80 rounded-xl flex flex-col items-center justify-center text-white z-10">
+                      <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-white mb-4"></div>
+                      <p className="text-lg font-semibold mb-2">
+                        {resolvedParams.lang === 'es' ? 'Cargando Juego...' : 
+                         resolvedParams.lang === 'en' ? 'Loading Game...' : 
+                         '游戏加载中...'}
+                      </p>
+                      <p className="text-sm text-blue-200 text-center max-w-xs">
+                        {resolvedParams.lang === 'es' ? 'Por favor espera, el juego se está cargando' : 
+                         resolvedParams.lang === 'en' ? 'Please wait, the game is loading' : 
+                         '请稍等，游戏正在加载中'}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* 超时提示 */}
+                  {gameLoadingState === 'timeout' && (
+                    <div className="absolute inset-0 bg-gradient-to-br from-orange-900/80 to-red-900/80 rounded-xl flex flex-col items-center justify-center text-white z-10">
+                      <div className="text-6xl mb-4">⏰</div>
+                      <p className="text-lg font-semibold mb-2">
+                        {resolvedParams.lang === 'es' ? 'Tiempo de Carga Excedido' : 
+                         resolvedParams.lang === 'en' ? 'Loading Timeout' : 
+                         '加载超时'}
+                      </p>
+                      <p className="text-sm text-orange-200 text-center max-w-xs mb-4">
+                        {resolvedParams.lang === 'es' ? 'El juego está tardando más de lo esperado. Puedes esperar o usar el enlace directo.' : 
+                         resolvedParams.lang === 'en' ? 'The game is taking longer than expected. You can wait or use the direct link.' : 
+                         '游戏加载时间超出预期。您可以等待或使用直接链接。'}
+                      </p>
+                      <div className="flex gap-3">
+                        <button
+                          onClick={retryGameLoad}
+                          className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+                        >
+                          {resolvedParams.lang === 'es' ? 'Reintentar' : 
+                           resolvedParams.lang === 'en' ? 'Retry' : 
+                           '重试'}
+                        </button>
+                        <a
+                          href={gameUrls[currentGame as keyof typeof gameUrls]}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-6 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors"
+                        >
+                          {resolvedParams.lang === 'es' ? 'Abrir Directo' : 
+                           resolvedParams.lang === 'en' ? 'Open Direct' : 
+                           '直接打开'}
+                        </a>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 错误提示 */}
+                  {gameLoadingState === 'error' && (
+                    <div className="absolute inset-0 bg-gradient-to-br from-red-900/80 to-pink-900/80 rounded-xl flex flex-col items-center justify-center text-white z-10">
+                      <div className="text-6xl mb-4">❌</div>
+                      <p className="text-lg font-semibold mb-2">
+                        {resolvedParams.lang === 'es' ? 'Error al Cargar' : 
+                         resolvedParams.lang === 'en' ? 'Loading Error' : 
+                         '加载错误'}
+                      </p>
+                      <p className="text-sm text-red-200 text-center max-w-xs mb-4">
+                        {resolvedParams.lang === 'es' ? 'No se pudo cargar el juego. Intenta de nuevo o usa el enlace directo.' : 
+                         resolvedParams.lang === 'en' ? 'Could not load the game. Try again or use the direct link.' : 
+                         '无法加载游戏。请重试或使用直接链接。'}
+                      </p>
+                      <div className="flex gap-3">
+                        <button
+                          onClick={retryGameLoad}
+                          className="px-6 py-2 bg-red-600 hover:bg-red-700 rounded-lg transition-colors"
+                        >
+                          {resolvedParams.lang === 'es' ? 'Reintentar' : 
+                           resolvedParams.lang === 'en' ? 'Retry' : 
+                           '重试'}
+                        </button>
+                        <a
+                          href={gameUrls[currentGame as keyof typeof gameUrls]}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-6 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors"
+                        >
+                          {resolvedParams.lang === 'es' ? 'Abrir Directo' : 
+                           resolvedParams.lang === 'en' ? 'Open Direct' : 
+                           '直接打开'}
+                        </a>
+                      </div>
+                    </div>
+                  )}
+                  
+                  <iframe 
+                    id="game-frame"
+                    ref={iframeRef}
+                    src={gameUrls[currentGame as keyof typeof gameUrls]}
+                    className="w-full h-full border-0 rounded-lg"
+                    allow="accelerometer; gyroscope;"
+                    data-allowed-origins="https://playhop.com"
+                    data-origin-src={gameUrls[currentGame as keyof typeof gameUrls]}
+                    onLoad={handleIframeLoad}
+                    onError={handleIframeError}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+      </section>
+
+      {/* 其他内容保持居中 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* 新的标题区块 - 原来的 H1、H2 移到这里 */}
+        <section className="text-center mb-16">
+          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6">
             {t('home.title') as string}
-            <span className="block text-blue-100 text-2xl md:text-4xl font-bold mt-2">{t('home.subtitle') as string}</span>
+            <span className="block text-blue-600 text-2xl md:text-4xl font-bold mt-2">{t('home.subtitle') as string}</span>
           </h1>
-          <p className="text-2xl text-white/90 mb-10 max-w-3xl mx-auto font-medium relative z-10">
+          <p className="text-2xl text-gray-600 mb-10 max-w-3xl mx-auto font-medium">
             {t('home.description') as string}
           </p>
-          
-          {/* Features Grid in Hero */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10 relative z-10">
+        </section>
+        
+        {/* Features Grid */}
+        <section className="mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon
               return (
                 <Link key={index} href={feature.href}>
-                  <div className={`bg-white/90 rounded-2xl glow card-hover p-7 text-center group cursor-pointer transition-all duration-200 ${feature.color}`}
+                  <div className={`bg-white rounded-2xl glow card-hover p-7 text-center group cursor-pointer transition-all duration-200 shadow-lg hover:shadow-xl ${feature.color}`}
                     style={{boxShadow:'0 4px 24px 0 rgba(99,102,241,0.10)'}}>
                     <div className={`${feature.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
                       <Icon className="w-8 h-8 text-white" />
@@ -288,7 +689,11 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               )
             })}
           </div>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
+        </section>
+        
+        {/* Action Buttons */}
+        <section className="text-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link 
               href={`/${resolvedParams.lang}/brainrots`}
               className="inline-block bg-blue-600 text-white px-10 py-4 rounded-xl text-xl font-bold shadow-lg hover:bg-blue-700 transition-colors card-hover animate-float"
@@ -306,11 +711,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               {t('home.buttons.playNow') as string}
             </a>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* 其他内容保持居中 */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* What is Steal a Brainrot */}
         <section className="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 rounded-2xl shadow-lg p-10">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">{t('home.whatIs.title') as string}</h2>

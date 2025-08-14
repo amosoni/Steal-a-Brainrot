@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏嵌入测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f0f0f0;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .game-test {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .game-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .status {
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .loading { background: #fff3cd; color: #856404; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .timeout { background: #ffeaa7; color: #d63031; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🎮 游戏嵌入测试页面</h1>
+        <p>这个页面用来测试游戏是否可以正常嵌入到iframe中。</p>
+        
+        <div class="game-test">
+            <div class="game-title">游戏1: Steal a Brainrot (Yandex Games)</div>
+            <div class="iframe-container">
+                <iframe 
+                    src="https://app-447574.games.s3.yandex.net/447574/cu83a1p7pu7vaakzrv093px1ench2auj/index.html?sdk=%2Fsdk%2Fv2.c68e1234372250dd975a.js#origin=https%3A%2F%2Fplayhop.com&app-id=447574&device-type=desktop"
+                    title="Steal a Brainrot"
+                    onload="updateStatus('game1', 'success', '游戏加载成功！')"
+                    onerror="updateStatus('game1', 'error', '游戏加载失败')">
+                </iframe>
+            </div>
+            <div id="game1-status" class="status loading">正在加载游戏...</div>
+        </div>
+
+        <div class="game-test">
+            <div class="game-title">游戏2: Action Game (Yandex Games)</div>
+            <div class="iframe-container">
+                <iframe 
+                    src="https://app-447526.games.s3.yandex.net/447526/f3nbrv390m42ja34gqhu9h6abw0011sm/index.html?sdk=%2Fsdk%2Fv2.c68e1234372250dd975a.js#origin=https%3A%2F%2Fplayhop.com&app-id=447526&device-type=desktop"
+                    title="Action Game"
+                    onload="updateStatus('game2', 'success', '游戏加载成功！')"
+                    onerror="updateStatus('game2', 'error', '游戏加载失败')">
+                </iframe>
+            </div>
+            <div id="game2-status" class="status loading">正在加载游戏...</div>
+        </div>
+
+        <div class="game-test">
+            <div class="game-title">游戏3: Strategy Game (Yandex Frontend)</div>
+            <div class="iframe-container">
+                <iframe 
+                    src="https://frontend.vh.yandex.ru/player/vvVMW3sfW-gU"
+                    title="Strategy Game"
+                    onload="updateStatus('game3', 'success', '游戏加载成功！')"
+                    onerror="updateStatus('game3', 'error', '游戏加载失败')">
+                </iframe>
+            </div>
+            <div id="game3-status" class="status loading">正在加载游戏...</div>
+        </div>
+
+        <div class="game-test">
+            <div class="game-title">测试: 简单HTML页面 (应该能正常显示)</div>
+            <div class="iframe-container">
+                <iframe 
+                    src="data:text/html,<html><body style='background:linear-gradient(45deg,#ff6b6b,#4ecdc4);color:white;font-family:Arial;text-align:center;padding:50px;'><h1>✅ 测试页面</h1><p>如果你能看到这个页面，说明iframe功能正常</p><p>问题可能出在游戏网站本身</p></body></html>"
+                    title="Test Page"
+                    onload="updateStatus('test', 'success', '测试页面加载成功！')"
+                    onerror="updateStatus('test', 'error', '测试页面加载失败')">
+                </iframe>
+            </div>
+            <div id="test-status" class="status loading">正在加载测试页面...</div>
+        </div>
+
+        <div style="margin-top: 30px; padding: 15px; background: #e9ecef; border-radius: 8px;">
+            <h3>🔍 诊断信息</h3>
+            <p><strong>如果游戏无法加载，可能的原因：</strong></p>
+            <ul>
+                <li><strong>X-Frame-Options:</strong> 游戏网站设置了 DENY 或 SAMEORIGIN</li>
+                <li><strong>CSP (Content Security Policy):</strong> 禁止了frame-ancestors</li>
+                <li><strong>JavaScript 检测:</strong> 游戏检测到被嵌入而拒绝加载</li>
+                <li><strong>网络限制:</strong> 游戏网站限制了跨域访问</li>
+            </ul>
+            <p><strong>解决方案：</strong></p>
+            <ul>
+                <li>联系游戏开发者，请求允许嵌入</li>
+                <li>使用游戏提供的官方嵌入代码</li>
+                <li>考虑使用游戏API而不是直接嵌入</li>
+                <li>提供直接链接让用户在新窗口打开</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function updateStatus(gameId, status, message) {
+            const statusElement = document.getElementById(gameId + '-status');
+            if (statusElement) {
+                statusElement.className = 'status ' + status;
+                statusElement.textContent = message;
+            }
+        }
+
+        // 设置超时检测
+        setTimeout(() => {
+            const games = ['game1', 'game2', 'game3'];
+            games.forEach(gameId => {
+                const statusElement = document.getElementById(gameId + '-status');
+                if (statusElement && statusElement.className.includes('loading')) {
+                    updateStatus(gameId, 'timeout', '加载超时 - 游戏可能不允许嵌入');
+                }
+            });
+        }, 15000); // 15秒超时
+    </script>
+</body>
+</html> 
