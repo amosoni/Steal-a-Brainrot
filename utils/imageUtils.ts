@@ -119,7 +119,7 @@ export const checkImageExists = async (imageUrl: string): Promise<boolean> => {
   }
 }
 
-import { characterImages, getDefaultImageByRarity } from '../data/imageMapping'
+import { characterImages, getDefaultImageByRarity } from '@/data/imageMapping'
 
 // 获取角色图片URL，处理多语言路由问题
 export const getCharacterImageUrl = (characterId: string, rarity?: number): string => {

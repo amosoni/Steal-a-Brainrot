@@ -8,6 +8,7 @@
   },
   "common": {
     "backToHome": "← Back to Home",
+    "backToGuides": "← Back to Guides",
     "showMore": "Show more",
     "showLess": "Show less"
   },
@@ -599,214 +600,159 @@
   },
   "guides": {
     "title": "Strategy Guides",
-    "description": "Complete guides from beginner to expert, to help you become a master of Steal a Brainrot",
-    "quickGuide": "Quick Start Guide",
-    "step1": "Step 1: Understand the Basics",
-    "step1Desc": "Steal a Brainrot is a character collection and improvement game. Each character has different rarity levels and profits.",
-    "step2": "Step 2: Choose Initial Characters",
-    "step2Desc": "It's recommended that beginners start with common characters like Sigma Boy or Alpha Male, which have low prices but stable profits.",
-    "step3": "Step 3: Develop Strategy",
-    "step3Desc": "Based on your investment budget and time, choose the right combination of characters to maximize profits.",
-    "strategies": {
-      "title": "Investment Strategies",
-      "conservative": {
-        "title": "Conservative Strategy",
-        "description": "Choose common characters with high profit/price ratio for stable growth"
-      },
-      "balanced": {
-        "title": "Balanced Strategy",
-        "description": "Combine common and rare characters to balance risk and profits"
-      },
-      "aggressive": {
-        "title": "Aggressive Strategy",
-        "description": "Invest in high-rarity characters to maximize profits"
-      }
-    },
-    "risk": "Risk:",
-    "return": "Return:",
-    "low": "Low",
-    "medium": "Medium",
-    "high": "High",
+    "description": "Tutorials for beginners and advanced strategies",
     "backToGuides": "← Back to Guides",
-    "segundoPiso": {
-      "title": "How to Reach the Second Floor",
-      "subtitle": "Master parkour on the Downtown map and gain a tactical advantage with our step-by-step guide",
-      "readingTime": "8 min read",
-      "difficulty": "Intermediate",
-      "rating": "4.8/5",
-      "quickNav": "Quick Navigation",
-      "step1": {
-        "shortTitle": "Preparation",
-        "title": "Preparation and Location",
-        "description": "Before attempting to reach the second floor, you need to prepare properly. Locate yourself on the Downtown map and find the main building.",
-        "tip": "Pro Tip",
-        "tipDetail": "Make sure you have at least 3 lives before attempting this challenge. Parkour can be frustrating at first."
+    "quickGuide": "Quick Start Guide",
+    "stealDeadlyRails": {
+      "title": "Steal Deadly Rails Guide",
+      "subtitle": "Master the most dangerous rail system in the game",
+      "seoTitle": "Steal Deadly Rails Guide - Complete Strategy",
+      "seoDescription": "Learn how to survive and master the deadly rails system in Steal a Brainrot",
+      "seoKeywords": "steal deadly rails, dangerous rails, survival strategy",
+      "readingTime": "10 min read",
+      "difficulty": "Expert",
+      "lastUpdated": "Updated: July 2025",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "gameOverview": "Game Overview",
+        "railTypes": "Rail Types",
+        "survivalStrategies": "Survival Strategies",
+        "faq": "FAQ"
       },
-      "step2": {
-        "shortTitle": "First Jump",
-        "title": "The Critical First Jump",
-        "description": "The first jump is the most important. You need to jump from the roof of the main building to the first platform.",
-        "instructionsTitle": "Detailed Instructions",
-        "instructions": [
-          "Climb to the roof of the main building",
-          "Align your character with the edge",
-          "Jump towards the nearest platform",
-          "Hold the jump button"
-        ]
-      },
-      "step3": {
-        "shortTitle": "Sequence",
-        "title": "Movement Sequence",
-        "description": "Once on the first platform, you must follow a specific sequence of movements to reach the second floor.",
-        "warning": "Important Warning",
-        "warningDetail": "Don't rush. Each movement must be precise. One mistake can make you fall and lose lives."
-      },
-      "step4": {
-        "shortTitle": "Final",
-        "title": "The Final Jump",
-        "description": "The last jump is the most challenging. You need to calculate the distance and timing perfectly.",
-        "instructionsTitle": "Final Steps",
-        "instructions": [
-          "Position yourself on the last platform",
-          "Calculate the distance to the second floor",
-          "Execute the jump with precision",
-          "Land smoothly on the second floor"
-        ]
-      },
-      "step5": {
-        "shortTitle": "Success",
-        "title": "You Reached the Second Floor!",
-        "description": "Congratulations! You've completed the most difficult challenge in the game. Now you have access to exclusive rewards.",
-        "reward": "Exclusive Reward",
-        "rewardDetail": "You gain access to rare characters, special power-ups, and a significant advantage over other players."
-      },
-      "prerequisites": {
-        "title": "Prerequisites",
-        "requirements": "Minimum Requirements",
-        "list": [
-          "At least 3 lives",
-          "Basic parkour experience",
-          "Patience and perseverance",
-          "Knowledge of Downtown map"
+      "gameOverview": "Game Overview",
+      "gameOverviewDesc": "Deadly Rails is the most challenging rail system in the game, requiring perfect timing and strategy.",
+      "gameFeatures": "Game Features",
+      "gameFeaturesList": [
+        "Extreme difficulty",
+        "High risk, high reward",
+        "Requires perfect timing",
+        "Advanced strategies needed"
+      ],
+      "defaultFeature": "Advanced gameplay feature",
+      "railTypes": "Rail Types",
+      "easyRails": {
+        "title": "Easy Rails",
+        "description": "Basic rails for beginners",
+        "characteristics": "Characteristics",
+        "features": [
+          "Low difficulty",
+          "Good for practice",
+          "Basic rewards"
         ],
-        "recommended": "Recommended",
-        "recommendedList": [
-          "5+ lives for greater safety",
-          "Speed power-ups",
-          "Communication equipment",
-          "Previous practice in safe areas"
-        ]
+        "defaultFeature": "Basic rail feature"
       },
-      "advancedTips": {
-        "title": "Advanced Tips",
-        "timing": {
-          "title": "Perfect Timing",
-          "description": "Timing is crucial for success in this challenge.",
-          "tips": [
-            "Practice timing in safe areas",
-            "Use game sound as reference",
-            "Maintain a constant rhythm",
-            "Don't rush critical jumps"
-          ]
-        },
-        "strategy": {
-          "title": "Movement Strategy",
-          "description": "Develop a solid strategy before attempting the challenge.",
-          "tips": [
-            "Plan each movement in advance",
-            "Identify rest points",
-            "Have a backup plan",
-            "Practice the complete sequence"
-          ]
-        },
-        "equipment": {
-          "title": "Recommended Equipment",
-          "description": "Proper equipment can make a difference.",
-          "tips": [
-            "Use characters with high mobility",
-            "Equip speed power-ups",
-            "Consider using assistance scripts",
-            "Keep backup power-ups"
-          ]
-        },
-        "teamwork": {
-          "title": "Teamwork",
-          "description": "Teamwork can make the challenge easier.",
-          "tips": [
-            "Coordinate with other players",
-            "Share timing information",
-            "Help other players",
-            "Form a stable team"
-          ]
-        }
+      "hardRails": {
+        "title": "Hard Rails",
+        "description": "Intermediate difficulty rails",
+        "characteristics": "Characteristics",
+        "features": [
+          "Medium difficulty",
+          "Better rewards",
+          "Requires skill"
+        ],
+        "defaultFeature": "Intermediate rail feature"
       },
-      "commonMistakes": {
-        "title": "Common Mistakes",
-        "solution": "Solution",
-        "list": [
-          {
-            "title": "Premature Jump",
-            "description": "Trying to jump before being completely aligned.",
-            "solution": "Wait until you're perfectly aligned before jumping."
-          },
-          {
-            "title": "Lack of Patience",
-            "description": "Rushing critical movements.",
-            "solution": "Take your time and stay calm."
-          },
-          {
-            "title": "Ignoring Timing",
-            "description": "Not paying attention to jump timing.",
-            "solution": "Practice timing until it becomes natural."
-          },
-          {
-            "title": "Not Using Power-ups",
-            "description": "Attempting the challenge without assistance power-ups.",
-            "solution": "Use speed and mobility power-ups."
-          }
-        ]
+      "deadlyRails": {
+        "title": "Deadly Rails",
+        "description": "The most dangerous rail system",
+        "characteristics": "Characteristics",
+        "features": [
+          "Extreme difficulty",
+          "Highest rewards",
+          "Perfect timing required"
+        ],
+        "defaultFeature": "Expert rail feature"
+      },
+      "survivalStrategies": "Survival Strategies",
+      "defenseTactics": {
+        "title": "Defense Tactics",
+        "description": "Learn how to defend yourself on deadly rails",
+        "tips": "Defense Tips",
+        "tipsList": [
+          "Stay alert at all times",
+          "Use defensive power-ups",
+          "Know your escape routes"
+        ],
+        "defaultTip": "Stay defensive and alert"
+      },
+      "timingStrategies": {
+        "title": "Timing Strategies",
+        "description": "Master the timing for deadly rails",
+        "tips": "Timing Tips",
+        "tipsList": [
+          "Practice timing in safe areas",
+          "Learn rail patterns",
+          "Use audio cues"
+        ],
+        "defaultTip": "Perfect timing is crucial"
       },
       "faq": {
         "title": "Frequently Asked Questions",
         "questions": [
           {
-            "question": "How long does it take to learn this trick?",
-            "answer": "It depends on your experience, but most players need 2-3 hours of practice."
-          },
-          {
-            "question": "Is it possible to do it without power-ups?",
-            "answer": "Yes, but it's extremely difficult. Using speed power-ups is recommended."
-          },
-          {
-            "question": "What happens if I fail and lose all my lives?",
-            "answer": "You can try again after regenerating lives or use life codes."
-          },
-          {
-            "question": "Are there special rewards on the second floor?",
-            "answer": "Yes, there are rare characters and exclusive power-ups that can only be found there."
+            "question": "How do I survive deadly rails?",
+            "answer": "Practice timing, use defensive strategies, and learn the rail patterns."
           }
-        ]
+        ],
+        "defaultQuestion": "What are deadly rails?",
+        "defaultAnswer": "Deadly rails are the most challenging rail system in the game."
+      },
+      "prerequisites": {
+        "title": "Prerequisites",
+        "list": [
+          "Master basic rails",
+          "Good timing skills",
+          "Defensive strategies"
+        ],
+        "default": "Basic rail mastery"
+      },
+      "warning": {
+        "title": "Warning",
+        "description": "Deadly rails are extremely difficult and dangerous."
       },
       "relatedGuides": {
         "title": "Related Guides",
-        "rebirth": {
-          "title": "Rebirth Guide",
-          "description": "Learn about the rebirth system and how to maximize your profits."
-        },
-        "scripts": {
-          "title": "Scripts Guide",
-          "description": "Discover the best scripts to improve your game."
-        },
-        "secrets": {
-          "title": "Game Secrets",
-          "description": "Explore all the hidden secrets of Steal a Brainrot."
-        }
+        "fish": "Fish Guide",
+        "labubu": "Labubu Guide",
+        "anime": "Anime Guide"
       },
       "cta": {
         "title": "Ready for the Challenge?",
-        "description": "Now that you have all the information, are you ready to try reaching the second floor?",
-        "viewCharacters": "View Characters",
-        "calculator": "Calculator"
+        "description": "Are you ready to master the deadly rails?",
+        "button": "Start Learning"
+      }
+    },
+    "stealAnAnime": {
+      "title": "Steal an Anime Guide",
+      "subtitle": "Master anime character collection strategies",
+      "seoTitle": "Steal an Anime Guide - Complete Strategy",
+      "seoDescription": "Learn how to collect and master anime characters in Steal a Brainrot",
+      "seoKeywords": "steal an anime, anime characters, collection strategy",
+      "readingTime": "8 min read",
+      "difficulty": "Intermediate",
+      "lastUpdated": "Updated: July 2025",
+      "quickNavigation": "Quick Navigation",
+      "nav": {
+        "gameOverview": "Game Overview",
+        "animeCharacters": "Anime Characters",
+        "otakuStrategies": "Otaku Strategies",
+        "faq": "FAQ"
+      },
+      "gameOverview": "Game Overview",
+      "gameOverviewDesc": "Anime characters are special collectibles with unique abilities and high value.",
+      "gameFeatures": "Game Features",
+      "gameFeaturesList": [
+        "Unique anime characters",
+        "Special abilities",
+        "High collection value",
+        "Otaku strategies"
+      ],
+      "defaultFeature": "Anime character feature",
+      "animeCharacters": "Anime Characters",
+      "popularCharacters": {
+        "title": "Popular Characters",
+        "description": "The most sought-after anime characters",
+        "characteristics": "Characteristics"
       }
     },
     "scripts": {
@@ -1020,6 +966,7 @@
     },
     "rebirth": {
       "title": "Ultimate Rebirth Guide",
+      "description": "Learn about the rebirth system and how to maximize your profits through strategic progression.",
       "subtitle": "Understand the most important progression system, and why sacrificing current progress is key to becoming stronger",
       "seoTitle": "Steal a Brainrot Rebirth Guide - Complete Progression System",
       "seoDescription": "Learn everything about the Rebirth system in Steal a Brainrot, when to do it, its benefits and strategies to maximize your progress.",
@@ -1034,6 +981,81 @@
         "process": "Process",
         "faq": "FAQ"
       },
+      "whatIs": {
+        "title": "What is Rebirth?",
+        "description": "Rebirth is a progression system that allows you to sacrifice your current progress to gain permanent bonuses.",
+        "benefits": {
+          "title": "Benefits of Rebirth",
+          "benefit1": "Permanent experience multipliers",
+          "benefit2": "Increased damage and combat power",
+          "benefit3": "Enhanced movement and jumping abilities"
+        },
+        "costs": {
+          "title": "Costs of Rebirth",
+          "cost1": "Loss of current level and progress",
+          "cost2": "Reset of all temporary upgrades",
+          "cost3": "Need to rebuild from scratch"
+        }
+      },
+      "whenTo": {
+        "title": "When to Rebirth",
+        "optimal": {
+          "title": "Optimal Timing",
+          "description": "Rebirth when you reach level 50+ and have accumulated significant resources for maximum benefit."
+        },
+        "consider": {
+          "title": "Consider Rebirth When",
+          "description": "You've hit a progress plateau or want to unlock permanent bonuses for future runs."
+        },
+        "avoid": {
+          "title": "Avoid Rebirth When",
+          "description": "You're close to important milestones or don't have enough resources saved up."
+        }
+      },
+      "strategy": {
+        "title": "Rebirth Strategy",
+        "step1": {
+          "title": "Prepare Resources",
+          "description": "Save up brainrots and resources before rebirth to maximize permanent bonuses."
+        },
+        "step2": {
+          "title": "Choose Timing",
+          "description": "Rebirth at level 50+ when you have significant progress to sacrifice."
+        },
+        "step3": {
+          "title": "Execute Plan",
+          "description": "Follow the rebirth process carefully and confirm your decision."
+        }
+      },
+      "tips": {
+        "title": "Tips and Warnings",
+        "dos": {
+          "title": "Do's",
+          "tip1": "Save resources before rebirth",
+          "tip2": "Rebirth at optimal levels (50+)",
+          "tip3": "Plan your rebirth strategy",
+          "tip4": "Use bonuses from previous rebirths"
+        },
+        "donts": {
+          "title": "Don'ts",
+          "tip1": "Rebirth too early without preparation",
+          "tip2": "Forget to save important items",
+          "tip3": "Rebirth without a clear plan",
+          "tip4": "Ignore the permanent benefits"
+        }
+      },
+      "community": {
+        "title": "Community Insights",
+        "experience": {
+          "title": "Player Experience",
+          "description": "Learn from other players who have successfully used the rebirth system."
+        },
+        "strategies": {
+          "title": "Proven Strategies",
+          "description": "Discover the most effective rebirth strategies used by top players."
+        }
+      },
+      "cta": "View All Characters",
       "whatIsRebirth": "What is Rebirth?",
       "whatIsRebirthDesc": "Rebirth is a progression system that allows you to sacrifice your current progress to gain permanent bonuses.",
       "definition": "Definition",

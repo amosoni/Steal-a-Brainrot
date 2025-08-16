@@ -4,7 +4,7 @@ import { brainrots, getRarityText } from '@/data/brainrots'
 import BrainrotCard from '@/components/BrainrotCard'
 import { Filter, Search, SortAsc, SortDesc, Grid, List } from 'lucide-react'
 import Link from 'next/link'
-import { useTranslation } from '../../../hooks/useTranslation'
+import { useTranslation } from '@/hooks/useTranslation'
 import { use } from 'react'
 
 export default function BrainrotsPage({ params }: { params: Promise<{ lang: string }> }) {

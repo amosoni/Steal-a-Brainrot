@@ -494,6 +494,7 @@
   },
   "common": {
     "backToHome": "← 返回首页",
+    "backToGuides": "← 返回指南",
     "showMore": "显示更多",
     "showLess": "显示更少",
     "loading": "加载中...",
@@ -528,454 +529,159 @@
   },
   "guides": {
     "title": "策略指南",
-    "description": "从初学者到专家的完整指南，帮助您成为Steal a Brainrot大师",
-    "quickGuide": "快速指南",
-    "step1": "第1步：了解基础知识",
-    "step1Desc": "Steal a Brainrot是一个角色收集和升级游戏。每个角色都有不同的稀有度和收益等级。",
-    "step2": "第2步：选择初始角色",
-    "step2Desc": "建议初学者从Sigma Boy或Alpha Male等普通角色开始，这些角色价格低但收益稳定。",
-    "step3": "第3步：制定策略",
-    "step3Desc": "根据您的投资预算和时间，选择正确的角色组合以最大化收益。",
-    "strategies": {
-      "title": "投资策略",
-      "conservative": {
-        "title": "保守策略",
-        "description": "选择收益/价格比高的普通角色以实现稳定增长"
-      },
-      "balanced": {
-        "title": "平衡策略",
-        "description": "结合普通和稀有角色以平衡风险和收益"
-      },
-      "aggressive": {
-        "title": "激进策略",
-        "description": "投资高稀有度角色以最大化收益"
-      }
-    },
-    "optimization": {
-      "title": "收益优化",
-      "tips": [
-        "定期审查角色价格变化",
-        "注意新角色发布时间",
-        "使用重生系统增加收益",
-        "分散投资以降低风险",
-        "设定合理的投资目标"
-      ]
-    },
-    "rarity": {
-      "title": "稀有度指南",
-      "common": {
-        "title": "普通（1级）",
-        "description": "价格低，适合初学者"
-      },
-      "rare": {
-        "title": "稀有（2级）",
-        "description": "良好的价格/价值比，推荐"
-      },
-      "epic": {
-        "title": "史诗（3级）",
-        "description": "可观收益，中期目标"
-      },
-      "legendary": {
-        "title": "传说+（4-7级）",
-        "description": "精英角色，长期投资"
-      }
-    },
-    "tips": {
-      "title": "实用技巧",
-      "beginners": {
-        "title": "初学者技巧",
-        "tips": [
-          "从小投资开始",
-          "学习使用计算器工具",
-          "关注社区讨论",
-          "不要急于追求稀有角色",
-          "建立稳固的收益基础"
-        ]
-      },
-      "advanced": {
-        "title": "高级技巧",
-        "tips": [
-          "研究市场趋势",
-          "优化角色组合",
-          "利用重生时机",
-          "关注更新进展",
-          "建立投资组合"
-        ]
-      }
-    },
-    "community": {
-      "title": "社区资源",
-      "discord": {
-        "title": "Discord社区",
-        "description": "加入官方Discord获取最新新闻和指南"
-      },
-      "youtube": {
-        "title": "YouTube频道",
-        "description": "观看视频指南和游戏画面"
-      },
-      "reddit": {
-        "title": "Reddit论坛",
-        "description": "参与讨论，分享经验和策略"
-      }
-    },
-    "risk": "风险：",
-    "return": "回报：",
-    "low": "低",
-    "medium": "中",
-    "high": "高",
+    "description": "从初学者到专家的完整指南，帮助您成为Steal a Brainrot的大师",
     "backToGuides": "← 返回指南",
-    "segundoPiso": {
-      "title": "如何到达二楼",
-      "subtitle": "掌握Downtown地图的跑酷技巧，通过我们的分步指南获得战术优势",
-      "readingTime": "8分钟阅读",
-      "difficulty": "中级",
-      "rating": "4.8/5",
-      "quickNav": "快速导航",
-      "step1": {
-        "shortTitle": "准备",
-        "title": "准备和定位",
-        "description": "在尝试到达二楼之前，您需要做好充分准备。在Downtown地图上定位自己并找到主建筑。",
-        "tip": "专业提示",
-        "tipDetail": "确保在尝试这个挑战之前至少有3条生命。跑酷一开始可能会很令人沮丧。"
+    "quickGuide": "快速入门指南",
+    "stealDeadlyRails": {
+      "title": "致命轨道偷取指南",
+      "subtitle": "掌握游戏中最危险的轨道系统",
+      "seoTitle": "致命轨道偷取指南 - 完整策略",
+      "seoDescription": "学习如何在Steal a Brainrot中生存并掌握致命轨道系统",
+      "seoKeywords": "偷取致命轨道, 危险轨道, 生存策略",
+      "readingTime": "10 分钟阅读",
+      "difficulty": "专家级",
+      "lastUpdated": "更新：2025年7月",
+      "quickNavigation": "快速导航",
+      "nav": {
+        "gameOverview": "游戏概览",
+        "railTypes": "轨道类型",
+        "survivalStrategies": "生存策略",
+        "faq": "常见问题"
       },
-      "step2": {
-        "shortTitle": "第一跳",
-        "title": "关键的第一跳",
-        "description": "第一跳是最重要的。您需要从主建筑屋顶跳到第一个平台。",
-        "instructionsTitle": "详细说明",
-        "instructions": [
-          "爬到主建筑屋顶",
-          "将角色与边缘对齐",
-          "向最近的平台跳跃",
-          "按住跳跃按钮"
-        ]
-      },
-      "step3": {
-        "shortTitle": "序列",
-        "title": "移动序列",
-        "description": "一旦到达第一个平台，您必须遵循特定的移动序列才能到达二楼。",
-        "warning": "重要警告",
-        "warningDetail": "不要着急。每个动作都必须精确。一个错误可能会让您摔倒并失去生命。"
-      },
-      "step4": {
-        "shortTitle": "最终",
-        "title": "最后的跳跃",
-        "description": "最后一跳是最具挑战性的。您需要完美计算距离和时间。",
-        "instructionsTitle": "最终步骤",
-        "instructions": [
-          "在最后一个平台上定位",
-          "计算到二楼的距离",
-          "精确执行跳跃",
-          "平稳降落在二楼"
-        ]
-      },
-      "step5": {
-        "shortTitle": "成功",
-        "title": "您到达了二楼！",
-        "description": "恭喜！您已经完成了游戏中最困难的挑战。现在您可以获得独家奖励。",
-        "reward": "独家奖励",
-        "rewardDetail": "您可以获得稀有角色、特殊道具，并比其他玩家有显著优势。"
-      },
-      "prerequisites": {
-        "title": "前提条件",
-        "requirements": "最低要求",
-        "list": [
-          "至少3条生命",
-          "基础跑酷经验",
-          "耐心和毅力",
-          "了解Downtown地图"
+      "gameOverview": "游戏概览",
+      "gameOverviewDesc": "致命轨道是游戏中最具挑战性的轨道系统，需要完美的时机和策略。",
+      "gameFeatures": "游戏特色",
+      "gameFeaturesList": [
+        "极高难度",
+        "高风险，高回报",
+        "需要完美时机",
+        "需要高级策略"
+      ],
+      "defaultFeature": "高级游戏特色",
+      "railTypes": "轨道类型",
+      "easyRails": {
+        "title": "简单轨道",
+        "description": "适合初学者的基础轨道",
+        "characteristics": "特征",
+        "features": [
+          "低难度",
+          "适合练习",
+          "基础奖励"
         ],
-        "recommended": "推荐",
-        "recommendedList": [
-          "5+条生命以确保安全",
-          "速度道具",
-          "通讯设备",
-          "在安全区域预先练习"
-        ]
+        "defaultFeature": "基础轨道特色"
       },
-      "advancedTips": {
-        "title": "高级技巧",
-        "timing": {
-          "title": "完美时机",
-          "description": "时机对这个挑战的成功至关重要。",
-          "tips": [
-            "在安全区域练习时机",
-            "使用游戏声音作为参考",
-            "保持恒定节奏",
-            "不要急于关键跳跃"
-          ]
-        },
-        "strategy": {
-          "title": "移动策略",
-          "description": "在尝试挑战之前制定坚实的策略。",
-          "tips": [
-            "提前计划每个动作",
-            "识别休息点",
-            "有备用计划",
-            "练习完整序列"
-          ]
-        },
-        "equipment": {
-          "title": "推荐装备",
-          "description": "合适的装备可以产生差异。",
-          "tips": [
-            "使用高机动性角色",
-            "装备速度道具",
-            "考虑使用辅助脚本",
-            "保持备用道具"
-          ]
-        },
-        "teamwork": {
-          "title": "团队合作",
-          "description": "团队合作可以让挑战更容易。",
-          "tips": [
-            "与其他玩家协调",
-            "分享时机信息",
-            "帮助其他玩家",
-            "组建稳定团队"
-          ]
-        }
+      "hardRails": {
+        "title": "困难轨道",
+        "description": "中等难度的轨道",
+        "characteristics": "特征",
+        "features": [
+          "中等难度",
+          "更好奖励",
+          "需要技能"
+        ],
+        "defaultFeature": "中级轨道特色"
       },
-      "commonMistakes": {
-        "title": "常见错误",
-        "solution": "解决方案",
-        "list": [
-          {
-            "title": "过早跳跃",
-            "description": "在完全对齐之前尝试跳跃。",
-            "solution": "等待完全对齐后再跳跃。"
-          },
-          {
-            "title": "缺乏耐心",
-            "description": "急于关键动作。",
-            "solution": "慢慢来，保持冷静。"
-          },
-          {
-            "title": "忽视时机",
-            "description": "不注意跳跃时机。",
-            "solution": "练习时机直到变得自然。"
-          },
-          {
-            "title": "不使用道具",
-            "description": "在没有辅助道具的情况下尝试挑战。",
-            "solution": "使用速度和机动性道具。"
-          }
-        ]
+      "deadlyRails": {
+        "title": "致命轨道",
+        "description": "最危险的轨道系统",
+        "characteristics": "特征",
+        "features": [
+          "极高难度",
+          "最高奖励",
+          "需要完美时机"
+        ],
+        "defaultFeature": "专家轨道特色"
+      },
+      "survivalStrategies": "生存策略",
+      "defenseTactics": {
+        "title": "防御战术",
+        "description": "学习如何在致命轨道上防御自己",
+        "tips": "防御技巧",
+        "tipsList": [
+          "始终保持警惕",
+          "使用防御能量道具",
+          "了解逃生路线"
+        ],
+        "defaultTip": "保持防御和警惕"
+      },
+      "timingStrategies": {
+        "title": "时机策略",
+        "description": "掌握致命轨道的时机",
+        "tips": "时机技巧",
+        "tipsList": [
+          "在安全区域练习时机",
+          "学习轨道模式",
+          "使用音频提示"
+        ],
+        "defaultTip": "完美时机至关重要"
       },
       "faq": {
         "title": "常见问题",
         "questions": [
           {
-            "question": "学习这个技巧需要多长时间？",
-            "answer": "这取决于您的经验，但大多数玩家需要2-3小时的练习。"
-          },
-          {
-            "question": "不使用道具是否可能做到？",
-            "answer": "是的，但极其困难。建议使用速度道具。"
-          },
-          {
-            "question": "如果我失败并失去所有生命怎么办？",
-            "answer": "您可以在重新生成生命后重试或使用生命代码。"
-          },
-          {
-            "question": "二楼有特殊奖励吗？",
-            "answer": "是的，有稀有角色和独家道具只能在那里找到。"
+            "question": "如何在致命轨道上生存？",
+            "answer": "练习时机，使用防御策略，学习轨道模式。"
           }
-        ]
+        ],
+        "defaultQuestion": "什么是致命轨道？",
+        "defaultAnswer": "致命轨道是游戏中最具挑战性的轨道系统。"
+      },
+      "prerequisites": {
+        "title": "前提条件",
+        "list": [
+          "掌握基础轨道",
+          "良好的时机技能",
+          "防御策略"
+        ],
+        "default": "基础轨道掌握"
+      },
+      "warning": {
+        "title": "警告",
+        "description": "致命轨道极其困难和危险。"
       },
       "relatedGuides": {
         "title": "相关指南",
-        "rebirth": {
-          "title": "重生指南",
-          "description": "了解重生系统以及如何最大化您的利润。"
-        },
-        "scripts": {
-          "title": "脚本指南",
-          "description": "发现改善游戏的最佳脚本。"
-        },
-        "secrets": {
-          "title": "游戏秘密",
-          "description": "探索Steal a Brainrot的所有隐藏秘密。"
-        }
+        "fish": "鱼类指南",
+        "labubu": "拉布布指南",
+        "anime": "动漫指南"
       },
       "cta": {
         "title": "准备好挑战了吗？",
-        "description": "现在您有了所有信息，准备好尝试到达二楼了吗？",
-        "viewCharacters": "查看角色",
-        "calculator": "计算器"
+        "description": "你准备好掌握致命轨道了吗？",
+        "button": "开始学习"
       }
     },
-    "high": "高",
-    "backToGuides": "← 返回指南",
-    "segundoPiso": {
-      "title": "如何到达二楼",
-      "subtitle": "掌握市中心地图的跑酷技巧，获得战术优势",
-      "stepByStep": "分步指南",
-      "step1": {
-        "title": "1. 起始位置",
-        "description": "起始点位于市中心地图的西南角。寻找主喷泉附近的小型高架平台。",
-        "tip": "💡 提示：在开始跑酷之前，确保附近没有其他玩家。"
-      },
-      "step2": {
-        "title": "2. 第一跳 - 小平台",
-        "description": "从初始平台向右跳向小型矩形平台。这是最简单的跳跃，但需要精确度。",
-        "instructions": [
-          "使用跳跃键（空格键）",
-          "按住右方向键",
-          "不要按跳跃键太用力"
-        ]
-      },
-      "step3": {
-        "title": "3. 第二跳 - 中型平台",
-        "description": "从第一个平台向前跳向更大的平台。这个跳跃需要更多动量。",
-        "warning": "⚠️ 警告：如果你在这里掉下去，你必须回到起点。"
-      },
-      "step4": {
-        "title": "4. 第三跳 - 挑战",
-        "description": "这是最困难的跳跃。从中型平台，你需要跳向更高更远的平台。",
-        "instructions": [
-          "向后跑以获得动量",
-          "用最大力量跳跃",
-          "按住前进方向键",
-          "如有必要使用二段跳"
-        ]
-      },
-      "step5": {
-        "title": "5. 最终平台",
-        "description": "一旦到达最高平台，向右跳到达二楼。恭喜！你已经完成了跑酷。",
-        "reward": "🎉 奖励：从二楼你可以战略性地观察地图，并获得专属能量道具。"
-      },
-      "advancedTips": {
-        "title": "高级技巧",
-        "timing": {
-          "title": "完美时机",
-          "description": "练习跳跃的时机。时机把握好的跳跃可以为你节省宝贵的时间。"
-        },
-        "powerups": {
-          "title": "使用能量道具",
-          "description": "考虑在开始跑酷前使用速度能量道具，使跳跃更容易。"
-        }
-      }
-    },
-    "rebirth": {
-      "title": "终极重生指南",
-      "subtitle": "了解最重要的进度系统，以及为什么牺牲当前进度是变强的关键",
-      "seoTitle": "Steal a Brainrot 重生指南 - 完整进度系统",
-      "seoDescription": "了解Steal a Brainrot中的重生系统，何时进行重生，其好处以及最大化进度的策略。",
-      "seoKeywords": "rebirth steal a brainrot, 进度系统, 倍数, 永久奖励",
+    "stealAnAnime": {
+      "title": "偷取动漫指南",
+      "subtitle": "掌握动漫角色收集策略",
+      "seoTitle": "偷取动漫指南 - 完整策略",
+      "seoDescription": "学习如何在Steal a Brainrot中收集和掌握动漫角色",
+      "seoKeywords": "偷取动漫, 动漫角色, 收集策略",
       "readingTime": "8 分钟阅读",
       "difficulty": "中级",
       "lastUpdated": "更新：2025年7月",
       "quickNavigation": "快速导航",
       "nav": {
-        "whatIsRebirth": "什么是重生？",
-        "benefits": "好处",
-        "process": "过程",
+        "gameOverview": "游戏概览",
+        "animeCharacters": "动漫角色",
+        "otakuStrategies": "御宅族策略",
         "faq": "常见问题"
       },
-      "whatIsRebirth": "什么是重生？",
-      "whatIsRebirthDesc": "重生是一个进度系统，允许你牺牲当前进度来获得永久奖励。",
-      "definition": "定义",
-      "definitionDesc": "重生系统是一个进度机制，允许玩家重置进度以换取永久奖励，显著改善未来的表现。",
-      "rebirthBenefits": "重生好处",
-      "benefits": [
-        {
-          "title": "经验倍数",
-          "description": "永久增加经验获得速度"
-        },
-        {
-          "title": "伤害奖励",
-          "description": "改善攻击伤害和战斗能力"
-        },
-        {
-          "title": "移动改进",
-          "description": "增加移动速度和跳跃能力"
-        },
-        {
-          "title": "专属访问",
-          "description": "解锁专属内容和区域"
-        }
+      "gameOverview": "游戏概览",
+      "gameOverviewDesc": "动漫角色是具有独特能力和高价值的特殊收藏品。",
+      "gameFeatures": "游戏特色",
+      "gameFeaturesList": [
+        "独特动漫角色",
+        "特殊能力",
+        "高收藏价值",
+        "御宅族策略"
       ],
-      "defaultBenefit": {
-        "title": "永久奖励",
-        "description": "获得让你变强的永久改进"
-      },
-      "rebirthProcess": "重生过程",
-      "processSteps": [
-        {
-          "step": "1",
-          "title": "达到最低等级",
-          "description": "确保在考虑重生前至少达到50级"
-        },
-        {
-          "step": "2",
-          "title": "收集资源",
-          "description": "积累足够的brainrots和资源以最大化好处"
-        },
-        {
-          "step": "3",
-          "title": "找到NPC",
-          "description": "在游戏地图上找到重生NPC"
-        },
-        {
-          "step": "4",
-          "title": "确认牺牲",
-          "description": "确认牺牲当前进度的决定"
-        },
-        {
-          "step": "5",
-          "title": "享受改进",
-          "description": "带着永久奖励开始新生活"
-        }
-      ],
-      "step1": "1. 达到最低要求等级",
-      "step2": "2. 收集足够资源",
-      "step3": "3. 前往重生NPC",
-      "step4": "4. 确认牺牲",
-      "step5": "5. 享受新的奖励",
-      "faq": {
-        "title": "常见问题",
-        "questions": [
-          {
-            "question": "什么时候应该进行第一次重生？",
-            "answer": "建议在达到50级并积累足够资源后进行第一次重生。"
-          },
-          {
-            "question": "重生时会失去所有进度吗？",
-            "answer": "是的，你会失去当前进度但获得让你变强的永久奖励。"
-          },
-          {
-            "question": "重生奖励是永久的吗？",
-            "answer": "是的，从重生获得的所有奖励都是永久的，并随着每次重生而累积。"
-          }
-        ],
-        "defaultQuestion": "什么是重生系统？",
-        "defaultAnswer": "重生是一个允许牺牲当前进度换取永久奖励的系统。"
-      },
-      "prerequisites": {
-        "title": "前提条件",
-        "list": [
-          "最低等级50",
-          "足够资源",
-          "理解系统",
-          "心理准备"
-        ],
-        "default": "最低等级50"
-      },
-      "warning": {
-        "title": "重要警告",
-        "description": "重生是不可逆的。在继续之前确保完全准备好。"
-      },
-      "relatedGuides": {
-        "title": "相关指南",
-        "scripts": "脚本指南",
-        "codes": "代码指南",
-        "secondFloor": "二楼指南"
-      },
-      "cta": {
-        "title": "需要更多帮助？",
-        "description": "探索我们的其他指南以最大化你的进度并改善游戏体验。",
-        "button": "查看所有指南"
+      "defaultFeature": "动漫角色特色",
+      "animeCharacters": "动漫角色",
+      "popularCharacters": {
+        "title": "热门角色",
+        "description": "最受欢迎的动漫角色",
+        "characteristics": "特征"
       }
     },
     "scripts": {

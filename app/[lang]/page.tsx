@@ -2,9 +2,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Calculator, Database, TrendingUp, BookOpen, Play, Users, Trophy, Shield, Zap, Star, Copy, Check, ArrowRight } from 'lucide-react'
-import { useTranslation } from '../../hooks/useTranslation'
+import { useTranslation } from '@/hooks/useTranslation'
 import { use, useState, useEffect, useRef } from 'react'
-import PageSEO from '../../components/PageSEO'
+import PageSEO from '@/components/PageSEO'
 import Script from 'next/script'
 
 // 网络信息接口定义

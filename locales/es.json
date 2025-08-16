@@ -518,7 +518,8 @@
   "guides": {
     "title": "Guías de Estrategia",
     "description": "Guías completas desde principiante hasta experto, para ayudarte a convertirte en un maestro de Steal a Brainrot",
-    "quickGuide": "Guía Rápida",
+    "backToGuides": "← Volver a Guías",
+    "quickGuide": "Guía de Inicio Rápido",
     "step1": "Paso 1: Entender los Fundamentos",
     "step1Desc": "Steal a Brainrot es un juego de recolección y mejora de personajes. Cada personaje tiene diferentes niveles de rareza y ganancias.",
     "step2": "Paso 2: Elegir Personajes Iniciales",
@@ -611,71 +612,6 @@
     "return": "Retorno:",
     "low": "Bajo",
     "medium": "Medio",
-    "high": "Alto"
-  },
-  "common": {
-    "backToHome": "← Volver al Inicio",
-    "showMore": "Ver más",
-    "showLess": "Ver menos",
-    "loading": "Cargando...",
-    "error": "Error",
-    "success": "Éxito",
-    "save": "Guardar",
-    "cancel": "Cancelar",
-    "confirm": "Confirmar",
-    "delete": "Eliminar",
-    "edit": "Editar",
-    "view": "Ver",
-    "search": "Buscar",
-    "filter": "Filtrar",
-    "sort": "Ordenar",
-    "refresh": "Actualizar",
-    "close": "Cerrar",
-    "next": "Siguiente",
-    "previous": "Anterior",
-    "first": "Primero",
-    "last": "Último",
-    "page": "Página",
-    "of": "de",
-    "items": "elementos",
-    "noResults": "No se encontraron resultados",
-    "noData": "No hay datos disponibles",
-    "tryAgain": "Intentar de nuevo",
-    "goBack": "Volver atrás"
-  },
-  "footer": {
-    "playOnRoblox": "Jugar en Roblox",
-    "allRightsReserved": "Todos los derechos reservados"
-  },
-  "guides": {
-    "title": "Guías de Estrategia",
-    "description": "Guías completas desde principiante hasta experto, para ayudarte a convertirte en un maestro de Steal a Brainrot",
-    "quickGuide": "Guía Rápida",
-    "step1": "Paso 1: Entender los Fundamentos",
-    "step1Desc": "Steal a Brainrot es un juego de recolección y mejora de personajes. Cada personaje tiene diferentes niveles de rareza y ganancias.",
-    "step2": "Paso 2: Elegir Personajes Iniciales",
-    "step2Desc": "Se recomienda que los principiantes comiencen con personajes comunes como Sigma Boy o Alpha Male, que tienen precios bajos pero ganancias estables.",
-    "step3": "Paso 3: Desarrollar Estrategia",
-    "step3Desc": "Según tu presupuesto de inversión y tiempo, elige la combinación adecuada de personajes para maximizar las ganancias.",
-    "strategies": {
-      "title": "Estrategias de Inversión",
-      "conservative": {
-        "title": "Estrategia Conservadora",
-        "description": "Elige personajes comunes con alta relación ganancia/precio para un crecimiento estable"
-      },
-      "balanced": {
-        "title": "Estrategia Balanceada",
-        "description": "Combina personajes comunes y raros para equilibrar riesgo y ganancias"
-      },
-      "aggressive": {
-        "title": "Estrategia Agresiva",
-        "description": "Invierte en personajes de alta rareza para maximizar las ganancias"
-      }
-    },
-    "risk": "Riesgo:",
-    "return": "Retorno:",
-    "low": "Bajo",
-    "medium": "Medio",
     "high": "Alto",
     "backToGuides": "← Volver a Guías",
     "segundoPiso": {
@@ -730,10 +666,11 @@
     },
     "rebirth": {
       "title": "Guía Definitiva de Rebirth",
-      "subtitle": "Entiende el sistema de progresión más importante y por qué sacrificar tu progreso es clave para volverte más fuerte",
-      "seoTitle": "Guía de Rebirth Steal a Brainrot - Sistema de Progresión Completo",
-      "seoDescription": "Aprende todo sobre el sistema de Rebirth en Steal a Brainrot, cuándo hacerlo, sus beneficios y estrategias para maximizar tu progreso.",
-      "seoKeywords": "rebirth steal a brainrot, sistema de progresión, multiplicadores, bonificaciones permanentes",
+      "description": "Aprende sobre el sistema de rebirth y cómo maximizar tus ganancias a través del progreso estratégico",
+      "subtitle": "Comprende el sistema de progreso más importante y por qué sacrificar el progreso actual es la clave para volverse más fuerte",
+      "seoTitle": "Guía de Rebirth de Steal a Brainrot - Sistema de Progreso Completo",
+      "seoDescription": "Aprende sobre el sistema de rebirth en Steal a Brainrot, cuándo hacer rebirth, sus beneficios y estrategias para maximizar el progreso",
+      "seoKeywords": "rebirth steal a brainrot, sistema de progreso, multiplicadores, recompensas permanentes",
       "readingTime": "8 min de lectura",
       "difficulty": "Intermedio",
       "lastUpdated": "Actualizado: Julio 2025",
@@ -744,84 +681,159 @@
         "process": "Proceso",
         "faq": "Preguntas Frecuentes"
       },
+      "whatIs": {
+        "title": "¿Qué es Rebirth?",
+        "description": "Rebirth es un sistema de progreso que te permite sacrificar el progreso actual para obtener recompensas permanentes.",
+        "benefits": {
+          "title": "Beneficios del Rebirth",
+          "benefit1": "Multiplicadores de experiencia permanentes",
+          "benefit2": "Aumento de daño y poder de combate",
+          "benefit3": "Mejoras en movilidad y capacidad de salto"
+        },
+        "costs": {
+          "title": "Costos del Rebirth",
+          "cost1": "Perder nivel y progreso actual",
+          "cost2": "Resetear todas las mejoras temporales",
+          "cost3": "Necesidad de reconstruir desde cero"
+        }
+      },
+      "whenTo": {
+        "title": "Cuándo Hacer Rebirth",
+        "optimal": {
+          "title": "Momento Óptimo",
+          "description": "Haz rebirth cuando alcances el nivel 50+ y hayas acumulado recursos importantes para maximizar los beneficios."
+        },
+        "consider": {
+          "title": "Cuándo Considerar Rebirth",
+          "description": "Cuando encuentres un cuello de botella en el progreso o quieras desbloquear recompensas permanentes para futuras ejecuciones."
+        },
+        "avoid": {
+          "title": "Cuándo Evitar Rebirth",
+          "description": "Cuando estés cerca de hitos importantes o no tengas suficientes recursos de respaldo."
+        }
+      },
+      "strategy": {
+        "title": "Estrategia de Rebirth",
+        "step1": {
+          "title": "Preparar Recursos",
+          "description": "Guarda brainrots y recursos antes del rebirth para maximizar las recompensas permanentes."
+        },
+        "step2": {
+          "title": "Elegir Momento",
+          "description": "Haz rebirth en nivel 50+ cuando tengas progreso significativo que sacrificar."
+        },
+        "step3": {
+          "title": "Ejecutar Plan",
+          "description": "Sigue cuidadosamente el proceso de rebirth y confirma tu decisión."
+        }
+      },
+      "tips": {
+        "title": "Consejos y Advertencias",
+        "dos": {
+          "title": "Qué Hacer",
+          "tip1": "Guarda recursos antes del rebirth",
+          "tip2": "Rebirth en nivel óptimo (50+)",
+          "tip3": "Planifica tu estrategia de rebirth",
+          "tip4": "Usa recompensas de rebirths anteriores"
+        },
+        "donts": {
+          "title": "Qué No Hacer",
+          "tip1": "Rebirth prematuro sin preparación",
+          "tip2": "Olvidar guardar artículos importantes",
+          "tip3": "Rebirth sin plan claro",
+          "tip4": "Ignorar recompensas permanentes"
+        }
+      },
+      "community": {
+        "title": "Perspectivas de la Comunidad",
+        "experience": {
+          "title": "Experiencia de Jugadores",
+          "description": "Aprende de otros jugadores que han usado exitosamente el sistema de rebirth."
+        },
+        "strategies": {
+          "title": "Estrategias Verificadas",
+          "description": "Descubre las estrategias de rebirth más efectivas utilizadas por jugadores de élite."
+        }
+      },
+      "cta": "Ver Todos los Personajes",
       "whatIsRebirth": "¿Qué es Rebirth?",
-      "whatIsRebirthDesc": "Rebirth es un sistema de progresión que te permite sacrificar tu progreso actual para obtener bonificaciones permanentes.",
+      "whatIsRebirthDesc": "Rebirth es un sistema de progreso que te permite sacrificar el progreso actual para obtener recompensas permanentes.",
       "definition": "Definición",
-      "definitionDesc": "El sistema de Rebirth es un mecanismo de progresión que permite a los jugadores reiniciar su progreso a cambio de bonificaciones permanentes que mejoran significativamente su rendimiento futuro.",
+      "definitionDesc": "El sistema de rebirth es un mecanismo de progreso que permite a los jugadores resetear el progreso a cambio de recompensas permanentes, mejorando significativamente el rendimiento futuro.",
       "rebirthBenefits": "Beneficios del Rebirth",
       "benefits": [
         {
           "title": "Multiplicadores de Experiencia",
-          "description": "Aumenta permanentemente la velocidad de ganancia de experiencia"
+          "description": "Aumento permanente en la velocidad de obtención de experiencia"
         },
         {
-          "title": "Bonificaciones de Daño",
-          "description": "Mejora el daño de ataque y las capacidades de combate"
+          "title": "Recompensas de Daño",
+          "description": "Mejora en el daño de ataque y capacidad de combate"
         },
         {
-          "title": "Mejoras de Movimiento",
-          "description": "Aumenta la velocidad de movimiento y capacidad de salto"
+          "title": "Mejoras de Movilidad",
+          "description": "Aumento en velocidad de movimiento y capacidad de salto"
         },
         {
           "title": "Acceso Exclusivo",
-          "description": "Desbloquea contenido y áreas exclusivas"
+          "description": "Desbloqueo de contenido y áreas exclusivas"
         }
       ],
       "defaultBenefit": {
-        "title": "Bonificaciones Permanentes",
-        "description": "Obtén mejoras permanentes que te harán más fuerte"
+        "title": "Recompensas Permanentes",
+        "description": "Obtén mejoras permanentes que te hacen más fuerte"
       },
       "rebirthProcess": "Proceso de Rebirth",
       "processSteps": [
         {
           "step": "1",
-          "title": "Alcanza el Nivel Mínimo",
-          "description": "Asegúrate de haber alcanzado al menos el nivel 50 antes de considerar el Rebirth"
+          "title": "Alcanzar Nivel Mínimo",
+          "description": "Asegúrate de alcanzar al menos el nivel 50 antes de considerar rebirth"
         },
         {
           "step": "2",
-          "title": "Reúne Recursos",
+          "title": "Recolectar Recursos",
           "description": "Acumula suficientes brainrots y recursos para maximizar los beneficios"
         },
         {
           "step": "3",
-          "title": "Encuentra el NPC",
-          "description": "Localiza al NPC de Rebirth en el mapa del juego"
+          "title": "Encontrar NPC",
+          "description": "Localiza el NPC de rebirth en el mapa del juego"
         },
         {
           "step": "4",
-          "title": "Confirma el Sacrificio",
-          "description": "Confirma tu decisión de sacrificar tu progreso actual"
+          "title": "Confirmar Sacrificio",
+          "description": "Confirma tu decisión de sacrificar el progreso actual"
         },
         {
           "step": "5",
-          "title": "Disfruta las Mejoras",
-          "description": "Comienza tu nueva vida con bonificaciones permanentes"
+          "title": "Disfrutar Mejoras",
+          "description": "Comienza una nueva vida con recompensas permanentes"
         }
       ],
-      "step1": "1. Alcanza el nivel mínimo requerido",
-      "step2": "2. Reúne suficientes recursos",
-      "step3": "3. Ve al NPC de Rebirth",
-      "step4": "4. Confirma el sacrificio",
-      "step5": "5. Disfruta de tus nuevas bonificaciones",
+      "step1": "1. Alcanzar el nivel mínimo requerido",
+      "step2": "2. Recolectar suficientes recursos",
+      "step3": "3. Ir al NPC de rebirth",
+      "step4": "4. Confirmar el sacrificio",
+      "step5": "5. Disfrutar de las nuevas recompensas",
       "faq": {
         "title": "Preguntas Frecuentes",
         "questions": [
           {
-            "question": "¿Cuándo debo hacer mi primer Rebirth?",
-            "answer": "Se recomienda hacer el primer Rebirth después de alcanzar el nivel 50 y haber acumulado suficientes recursos."
+            "question": "¿Cuándo debería hacer mi primer rebirth?",
+            "answer": "Se recomienda hacer el primer rebirth después de alcanzar el nivel 50 y acumular suficientes recursos."
           },
           {
-            "question": "¿Pierdo todo mi progreso al hacer Rebirth?",
-            "answer": "Sí, pierdes tu progreso actual pero obtienes bonificaciones permanentes que te harán más fuerte."
+            "question": "¿Perderé todo mi progreso al hacer rebirth?",
+            "answer": "Sí, perderás el progreso actual pero obtendrás recompensas permanentes que te hacen más fuerte."
           },
           {
-            "question": "¿Los beneficios del Rebirth son permanentes?",
-            "answer": "Sí, todas las bonificaciones obtenidas del Rebirth son permanentes y se acumulan con cada Rebirth."
+            "question": "¿Las recompensas de rebirth son permanentes?",
+            "answer": "Sí, todas las recompensas obtenidas del rebirth son permanentes y se acumulan con cada rebirth."
           }
         ],
-        "defaultQuestion": "¿Qué es el sistema de Rebirth?",
-        "defaultAnswer": "El Rebirth es un sistema que permite sacrificar progreso actual por bonificaciones permanentes."
+        "defaultQuestion": "¿Qué es el sistema de rebirth?",
+        "defaultAnswer": "Rebirth es un sistema que permite sacrificar el progreso actual a cambio de recompensas permanentes."
       },
       "prerequisites": {
         "title": "Prerrequisitos",
@@ -835,7 +847,7 @@
       },
       "warning": {
         "title": "Advertencia Importante",
-        "description": "El Rebirth es irreversible. Asegúrate de estar completamente preparado antes de proceder."
+        "description": "Rebirth es irreversible. Asegúrate de estar completamente preparado antes de continuar."
       },
       "relatedGuides": {
         "title": "Guías Relacionadas",
@@ -844,7 +856,7 @@
         "secondFloor": "Guía del Segundo Piso"
       },
       "cta": {
-        "title": "¿Necesitas más ayuda?",
+        "title": "¿Necesitas Más Ayuda?",
         "description": "Explora nuestras otras guías para maximizar tu progreso y mejorar tu experiencia de juego.",
         "button": "Ver Todas las Guías"
       }
@@ -2620,6 +2632,158 @@
         "viewCharacters": "Ver Personajes",
         "calculator": "Calculadora"
       }
+    },
+    "stealDeadlyRails": {
+      "title": "Guía de Robo de Rieles Mortales",
+      "subtitle": "Domina el sistema de rieles más peligroso del juego",
+      "seoTitle": "Guía de Robo de Rieles Mortales - Estrategia Completa",
+      "seoDescription": "Aprende cómo sobrevivir y dominar el sistema de rieles mortales en Steal a Brainrot",
+      "seoKeywords": "robo rieles mortales, rieles peligrosos, estrategia de supervivencia",
+      "readingTime": "10 min de lectura",
+      "difficulty": "Experto",
+      "lastUpdated": "Actualizado: Julio 2025",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "gameOverview": "Vista General del Juego",
+        "railTypes": "Tipos de Rieles",
+        "survivalStrategies": "Estrategias de Supervivencia",
+        "faq": "Preguntas Frecuentes"
+      },
+      "gameOverview": "Vista General del Juego",
+      "gameOverviewDesc": "Los Rieles Mortales son el sistema de rieles más desafiante del juego, requiriendo timing perfecto y estrategia.",
+      "gameFeatures": "Características del Juego",
+      "gameFeaturesList": [
+        "Dificultad extrema",
+        "Alto riesgo, alta recompensa",
+        "Requiere timing perfecto",
+        "Se necesitan estrategias avanzadas"
+      ],
+      "defaultFeature": "Característica de juego avanzada",
+      "railTypes": "Tipos de Rieles",
+      "easyRails": {
+        "title": "Rieles Fáciles",
+        "description": "Rieles básicos para principiantes",
+        "characteristics": "Características",
+        "features": [
+          "Baja dificultad",
+          "Bueno para practicar",
+          "Recompensas básicas"
+        ],
+        "defaultFeature": "Característica de riel básica"
+      },
+      "hardRails": {
+        "title": "Rieles Difíciles",
+        "description": "Rieles de dificultad intermedia",
+        "characteristics": "Características",
+        "features": [
+          "Dificultad media",
+          "Mejores recompensas",
+          "Requiere habilidad"
+        ],
+        "defaultFeature": "Característica de riel intermedia"
+      },
+      "deadlyRails": {
+        "title": "Rieles Mortales",
+        "description": "El sistema de rieles más peligroso",
+        "characteristics": "Características",
+        "features": [
+          "Dificultad extrema",
+          "Mayores recompensas",
+          "Se requiere timing perfecto"
+        ],
+        "defaultFeature": "Característica de riel experta"
+      },
+      "survivalStrategies": "Estrategias de Supervivencia",
+      "defenseTactics": {
+        "title": "Tácticas Defensivas",
+        "description": "Aprende cómo defenderte en rieles mortales",
+        "tips": "Consejos Defensivos",
+        "tipsList": [
+          "Mantente alerta en todo momento",
+          "Usa power-ups defensivos",
+          "Conoce tus rutas de escape"
+        ],
+        "defaultTip": "Mantente defensivo y alerta"
+      },
+      "timingStrategies": {
+        "title": "Estrategias de Timing",
+        "description": "Domina el timing para rieles mortales",
+        "tips": "Consejos de Timing",
+        "tipsList": [
+          "Practica timing en áreas seguras",
+          "Aprende patrones de rieles",
+          "Usa señales de audio"
+        ],
+        "defaultTip": "El timing perfecto es crucial"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": [
+          {
+            "question": "¿Cómo sobrevivo en rieles mortales?",
+            "answer": "Practica timing, usa estrategias defensivas y aprende patrones de rieles."
+          }
+        ],
+        "defaultQuestion": "¿Qué son los rieles mortales?",
+        "defaultAnswer": "Los rieles mortales son el sistema de rieles más desafiante del juego."
+      },
+      "prerequisites": {
+        "title": "Prerrequisitos",
+        "list": [
+          "Dominar rieles básicos",
+          "Buenas habilidades de timing",
+          "Estrategias defensivas"
+        ],
+        "default": "Dominio básico de rieles"
+      },
+      "warning": {
+        "title": "Advertencia",
+        "description": "Los rieles mortales son extremadamente difíciles y peligrosos."
+      },
+      "relatedGuides": {
+        "title": "Guías Relacionadas",
+        "fish": "Guía de Peces",
+        "labubu": "Guía de Labubu",
+        "anime": "Guía de Anime"
+      },
+      "cta": {
+        "title": "¿Listo para el Desafío?",
+        "description": "¿Estás listo para dominar los rieles mortales?",
+        "button": "Comenzar a Aprender"
+      }
+    },
+    "stealAnAnime": {
+      "title": "Guía de Robo de Anime",
+      "subtitle": "Domina estrategias de colección de personajes de anime",
+      "seoTitle": "Guía de Robo de Anime - Estrategia Completa",
+      "seoDescription": "Aprende cómo coleccionar y dominar personajes de anime en Steal a Brainrot",
+      "seoKeywords": "robo anime, personajes anime, estrategia de colección",
+      "readingTime": "8 min de lectura",
+      "difficulty": "Intermedio",
+      "lastUpdated": "Actualizado: Julio 2025",
+      "quickNavigation": "Navegación Rápida",
+      "nav": {
+        "gameOverview": "Vista General del Juego",
+        "animeCharacters": "Personajes de Anime",
+        "otakuStrategies": "Estrategias Otaku",
+        "faq": "Preguntas Frecuentes"
+      },
+      "gameOverview": "Vista General del Juego",
+      "gameOverviewDesc": "Los personajes de anime son coleccionables especiales con habilidades únicas y alto valor.",
+      "gameFeatures": "Características del Juego",
+      "gameFeaturesList": [
+        "Personajes de anime únicos",
+        "Habilidades especiales",
+        "Alto valor de colección",
+        "Estrategias otaku"
+      ],
+      "defaultFeature": "Característica de personaje anime",
+      "animeCharacters": "Personajes de Anime",
+      "popularCharacters": {
+        "title": "Personajes Populares",
+        "description": "Los personajes de anime más buscados",
+        "characteristics": "Características"
+      }
     }
   },
   "brainrots": {
@@ -2662,4 +2826,4 @@
     "comparisonFeatureComingSoon": "Función de comparación próximamente"
   }
 } 
- 
+  

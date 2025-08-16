@@ -1,7 +1,7 @@
 import { Star, TrendingUp, DollarSign, Eye, Heart } from 'lucide-react'
 import { useState } from 'react'
 import Link from 'next/link'
-import { useTranslation } from '../hooks/useTranslation'
+import { useTranslation } from '@/hooks/useTranslation'
 
 interface Brainrot {
   id: string

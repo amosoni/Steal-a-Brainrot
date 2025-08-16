@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import LanguageSwitcher from './LanguageSwitcher'
-import { useTranslation } from '../hooks/useTranslation'
+import { useTranslation } from '@/hooks/useTranslation'
 import { usePathname } from 'next/navigation'
 
 export default function Header() {

@@ -2,9 +2,9 @@ import { useRouter } from 'next/navigation'
 import { useMemo } from 'react'
 
 // 导入翻译文件
-import esTranslations from '../locales/es.json'
-import enTranslations from '../locales/en.json'
-import zhTranslations from '../locales/zh.json'
+import esTranslations from '@/locales/es.json'
+import enTranslations from '@/locales/en.json'
+import zhTranslations from '@/locales/zh.json'
 
 // 翻译数据
 const translations = {
