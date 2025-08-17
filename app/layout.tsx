@@ -12,26 +12,15 @@ export const metadata: Metadata = {
     default: "Steal a Brainrot - La Guía Más Completa de Roblox",
     template: "%s | Steal a Brainrot"
   },
-  description: "🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos completa de personajes, calculadora de ganancias, guías de estrategia y consejos expertos. ¡Domina el juego con nuestra asistencia profesional!",
+  description: "🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos de personajes, calculadora de ganancias y guías expertas.",
   keywords: [
     "Steal a Brainrot",
     "Roblox",
     "Brainrot",
-    "Personajes Brainrot",
-    "Calculadora de ganancias",
-    "Base de datos de personajes",
-    "Guía de juego",
-    "Estrategias Brainrot",
-    "Guía de Roblox",
-    "Steal a Brainrot guide",
-    "Brainrot characters",
-    "Profit calculator",
-    "Game strategy",
-    "Roblox game guide",
-    "Brainrot database",
-    "Steal a Brainrot calculator",
-    "Roblox game tips",
-    "Brainrot strategies"
+    "Personajes",
+    "Calculadora",
+    "Guía",
+    "Estrategias"
   ],
   authors: [{ name: "Steal a Brainrot Team" }],
   creator: "Steal a Brainrot Team",
@@ -43,7 +32,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-      metadataBase: new URL('https://www.stealabrainrot.live'),
+  metadataBase: new URL('https://www.stealabrainrot.live'),
   alternates: {
     canonical: '/',
     languages: {
@@ -56,6 +45,8 @@ export const metadata: Metadata = {
     icon: [
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
       { url: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
@@ -65,8 +56,8 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     title: "Steal a Brainrot - La Guía Más Completa de Roblox",
-    description: "🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos completa de personajes, calculadora de ganancias, guías de estrategia y consejos expertos.",
-          url: 'https://www.stealabrainrot.live',
+    description: "🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos de personajes, calculadora de ganancias y guías expertas.",
+    url: 'https://www.stealabrainrot.live',
     siteName: 'Steal a Brainrot',
     images: [
       {
@@ -83,7 +74,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Steal a Brainrot - La Guía Más Completa de Roblox",
-    description: "🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos completa de personajes, calculadora de ganancias, guías de estrategia y consejos expertos.",
+    description: "🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos de personajes, calculadora de ganancias y guías expertas.",
     images: ['/og-image.jpg'],
     creator: '@stealabrainrot',
     site: '@stealabrainrot',
@@ -117,6 +108,7 @@ export const metadata: Metadata = {
     'author': 'Steal a Brainrot Team',
     'viewport': 'width=device-width, initial-scale=1',
     'charset': 'utf-8',
+    'X-Robots-Tag': 'index, follow',
   },
 };
 
