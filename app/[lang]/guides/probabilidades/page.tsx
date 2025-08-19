@@ -29,16 +29,49 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
   }, [params])
 
   const { t } = useTranslation(lang)
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
+
 
   return (
     <>
       <SEOHead
-        title={t('guides.probabilidades.seoTitle') as string}
-        description={t('guides.probabilidades.seoDescription') as string}
-        keywords={t('guides.probabilidades.seoKeywords') as string}
+        title={t('guides.probabilidades.seoTitle')}
+        description={t('guides.probabilidades.seoDescription')}
+        keywords={(() => {
+          const keywords = t('guides.probabilidades.seoKeywords')
+          if (Array.isArray(keywords)) {
+            return keywords as string[]
+          }
+          return [keywords as string]
+        })()}
         url={`/${lang}/guides/probabilidades`}
         lang={lang}
-        type="guide"
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -110,8 +143,7 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.probabilidades.common.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.probabilidades.common.features')) ? 
-                        (t('guides.probabilidades.common.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.probabilidades.common.features').length > 0 ? getArrayData('guides.probabilidades.common.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -133,8 +165,7 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.probabilidades.rare.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.probabilidades.rare.features')) ? 
-                        (t('guides.probabilidades.rare.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.probabilidades.rare.features').length > 0 ? getArrayData('guides.probabilidades.rare.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -156,8 +187,7 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.probabilidades.epic.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.probabilidades.epic.features')) ? 
-                        (t('guides.probabilidades.epic.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.probabilidades.epic.features').length > 0 ? getArrayData('guides.probabilidades.epic.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -179,8 +209,7 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.probabilidades.legendary.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.probabilidades.legendary.features')) ? 
-                        (t('guides.probabilidades.legendary.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.probabilidades.legendary.features').length > 0 ? getArrayData('guides.probabilidades.legendary.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -202,8 +231,7 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.probabilidades.mythic.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.probabilidades.mythic.features')) ? 
-                        (t('guides.probabilidades.mythic.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.probabilidades.mythic.features').length > 0 ? getArrayData('guides.probabilidades.mythic.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-red-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -229,8 +257,8 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">{t('guides.probabilidades.howToIncreaseLuck') as string}</h3>
               <div className="grid md:grid-cols-2 gap-6">
-                {Array.isArray(t('guides.probabilidades.luckMethods')) ? 
-                  (t('guides.probabilidades.luckMethods') as Array<{title: string, description: string}>).map((method, index: number) => (
+                {getArrayData('guides.probabilidades.luckMethods').length > 0 ? 
+                  getTipsData('guides.probabilidades.luckMethods').map((method, index: number) => (
                     <div key={index} className="bg-green-50 rounded-lg p-4">
                       <div className="flex items-center mb-2">
                         <TrendingUp className="w-5 h-5 text-green-600 mr-2" />
@@ -261,8 +289,7 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
                   <div className="bg-white rounded-lg p-4">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.probabilidades.farming.tips') as string}</h4>
                     <ul className="space-y-2 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.probabilidades.farming.tipsList')) ? 
-                        (t('guides.probabilidades.farming.tipsList') as string[]).map((tip: string, index: number) => (
+                      {getArrayData('guides.probabilidades.farming.tipsList').length > 0 ? getArrayData('guides.probabilidades.farming.tipsList').map((tip: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <Zap className="w-4 h-4 text-indigo-500 mr-2 mt-0.5 flex-shrink-0" />
                             {tip}
@@ -283,8 +310,7 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
                   <div className="bg-white rounded-lg p-4">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.probabilidades.timing.tips') as string}</h4>
                     <ul className="space-y-2 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.probabilidades.timing.tipsList')) ? 
-                        (t('guides.probabilidades.timing.tipsList') as string[]).map((tip: string, index: number) => (
+                      {getArrayData('guides.probabilidades.timing.tipsList').length > 0 ? getArrayData('guides.probabilidades.timing.tipsList').map((tip: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <Clock className="w-4 h-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                             {tip}
@@ -305,8 +331,8 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
             <div id="faq" className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.probabilidades.faq.title') as string}</h2>
               <div className="space-y-6">
-                {Array.isArray(t('guides.probabilidades.faq.questions')) ? 
-                  (t('guides.probabilidades.faq.questions') as Array<{question: string, answer: string}>).map((faq, index: number) => (
+                {getArrayData('guides.probabilidades.faq.questions').length > 0 ? 
+                  getFAQData('guides.probabilidades.faq.questions').map((faq, index: number) => (
                     <div key={index} className="border-b border-gray-200 pb-4">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
                       <p className="text-gray-700">{faq.answer}</p>
@@ -327,8 +353,7 @@ export default function ProbabilidadesGuide({ params }: ProbabilidadesGuideProps
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">{t('guides.probabilidades.prerequisites.title') as string}</h3>
               <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.probabilidades.prerequisites.list')) ? 
-                  (t('guides.probabilidades.prerequisites.list') as string[]).map((prereq: string, index: number) => (
+                {getArrayData('guides.probabilidades.prerequisites.list').length > 0 ? getArrayData('guides.probabilidades.prerequisites.list').map((prereq: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                       {prereq}

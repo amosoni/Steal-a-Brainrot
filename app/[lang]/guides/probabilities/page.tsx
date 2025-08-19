@@ -17,6 +17,34 @@ export default function ProbabilitiesPage({ params }: ProbabilitiesPageProps) {
   }, [params])
 
   const { t } = useTranslation(lang)
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
+
 
   // 调试信息
   console.log('ProbabilitiesPage - Current lang:', lang)
@@ -85,8 +113,7 @@ export default function ProbabilitiesPage({ params }: ProbabilitiesPageProps) {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.probabilidades.howToIncreaseLuck') as string}</h2>
           
           <div className="grid md:grid-cols-2 gap-4">
-            {Array.isArray(t('guides.probabilidades.luckMethods')) ? 
-              (t('guides.probabilidades.luckMethods') as string[]).map((method: string, index: number) => (
+            {getArrayData('guides.probabilidades.luckMethods').length > 0 ? getArrayData('guides.probabilidades.luckMethods').map((method: string, index: number) => (
                 <div key={index} className="flex items-center space-x-3">
                   <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                     <span className="text-green-600 text-sm">🍀</span>
@@ -103,8 +130,7 @@ export default function ProbabilitiesPage({ params }: ProbabilitiesPageProps) {
         <div className="bg-yellow-50 rounded-lg p-6">
           <h2 className="text-2xl font-bold text-yellow-800 mb-4">💡 {t('guides.probabilidades.tips') as string}</h2>
           <ul className="text-yellow-800 space-y-2">
-            {Array.isArray(t('guides.probabilidades.tipsList')) ? 
-              (t('guides.probabilidades.tipsList') as string[]).map((tip: string, index: number) => (
+            {getArrayData('guides.probabilidades.tipsList').length > 0 ? getArrayData('guides.probabilidades.tipsList').map((tip: string, index: number) => (
                 <li key={index}>• {tip}</li>
               )) : 
               <li>• {t('guides.probabilidades.defaultTip') as string}</li>

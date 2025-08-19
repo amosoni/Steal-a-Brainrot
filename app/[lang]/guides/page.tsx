@@ -27,6 +27,34 @@ export default function GuidesPage({ params }: GuidesPageProps) {
   }, [params])
 
   const { t } = useTranslation(lang)
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
+
   
   // 调试信息
   console.log('Current lang:', lang)
@@ -287,7 +315,7 @@ export default function GuidesPage({ params }: GuidesPageProps) {
           
           <div className="bg-yellow-50 rounded-lg p-4">
             <ul className="space-y-2 text-gray-700">
-              {Array.isArray(t('guides.optimization.tips') as unknown) ? (t('guides.optimization.tips') as string[]).map((tip: string, index: number) => (
+              {Array.isArray(t('guides.optimization.tips') as unknown) ? getArrayData('guides.optimization.tips').map((tip: string, index: number) => (
                 <li key={index}>• {tip}</li>
               )) : [
                 t('guides.optimization.tips.0') as string,
@@ -340,7 +368,7 @@ export default function GuidesPage({ params }: GuidesPageProps) {
             <div>
               <h3 className="font-semibold text-lg mb-3">{t('guides.tips.beginners.title') as string}</h3>
               <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.tips.beginners.tips') as unknown) ? (t('guides.tips.beginners.tips') as string[]).map((tip: string, index: number) => (
+                {Array.isArray(t('guides.tips.beginners.tips') as unknown) ? getArrayData('guides.tips.beginners.tips').map((tip: string, index: number) => (
                   <li key={index}>• {tip}</li>
                 )) : [
                   t('guides.tips.beginners.tips.0') as string,
@@ -356,7 +384,7 @@ export default function GuidesPage({ params }: GuidesPageProps) {
             <div>
               <h3 className="font-semibold text-lg mb-3">{t('guides.tips.advanced.title') as string}</h3>
               <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.tips.advanced.tips') as unknown) ? (t('guides.tips.advanced.tips') as string[]).map((tip: string, index: number) => (
+                {Array.isArray(t('guides.tips.advanced.tips') as unknown) ? getArrayData('guides.tips.advanced.tips').map((tip: string, index: number) => (
                   <li key={index}>• {tip}</li>
                 )) : [
                   t('guides.tips.advanced.tips.0') as string,

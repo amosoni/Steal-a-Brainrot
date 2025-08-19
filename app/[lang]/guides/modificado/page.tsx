@@ -33,6 +33,24 @@ export default function ModificadoGuide({ params }: ModificadoGuideProps) {
 
   const { t } = useTranslation(lang)
 
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
   return (
     <>
       <SEOHead
@@ -228,8 +246,8 @@ export default function ModificadoGuide({ params }: ModificadoGuideProps) {
             <div id="faq" className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.modificado.faq.title') as string}</h2>
               <div className="space-y-6">
-                {Array.isArray(t('guides.modificado.faq.questions')) ? 
-                  (t('guides.modificado.faq.questions') as Array<{question: string, answer: string}>).map((faq, index: number) => (
+                {getFAQData('guides.modificado.faq.questions').length > 0 ? 
+                  getFAQData('guides.modificado.faq.questions').map((faq, index: number) => (
                     <div key={index} className="border-b border-gray-200 pb-4">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
                       <p className="text-gray-700">{faq.answer}</p>
@@ -250,8 +268,8 @@ export default function ModificadoGuide({ params }: ModificadoGuideProps) {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">{t('guides.modificado.prerequisites.title') as string}</h3>
               <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.modificado.prerequisites.list')) ? 
-                  (t('guides.modificado.prerequisites.list') as string[]).map((prereq: string, index: number) => (
+                {getArrayData('guides.modificado.prerequisites.list').length > 0 ? 
+                  getArrayData('guides.modificado.prerequisites.list').map((prereq: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                       {prereq}
@@ -272,8 +290,8 @@ export default function ModificadoGuide({ params }: ModificadoGuideProps) {
               <div className="bg-white rounded-lg p-3">
                 <h4 className="font-semibold text-green-800 mb-2">{t('guides.modificado.safeAlternatives') as string}</h4>
                 <ul className="space-y-1 text-green-700 text-sm">
-                  {Array.isArray(t('guides.modificado.safeAlternativesList')) ? 
-                    (t('guides.modificado.safeAlternativesList') as string[]).map((alternative: string, index: number) => (
+                  {getArrayData('guides.modificado.safeAlternativesList').length > 0 ? 
+                    getArrayData('guides.modificado.safeAlternativesList').map((alternative: string, index: number) => (
                       <li key={index} className="flex items-start">
                         <CheckCircle className="w-3 h-3 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                         {alternative}

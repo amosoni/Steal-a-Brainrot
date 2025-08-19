@@ -32,16 +32,49 @@ export default function ScriptsPage({ params }: ScriptsPageProps) {
   }, [params])
 
   const { t } = useTranslation(lang)
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
+
 
   return (
     <>
       <SEOHead
-        title={t('guides.scripts.seoTitle') as string}
-        description={t('guides.scripts.seoDescription') as string}
-        keywords={t('guides.scripts.seoKeywords') as string}
+        title={t('guides.scripts.seoTitle')}
+        description={t('guides.scripts.seoDescription')}
+        keywords={(() => {
+          const keywords = t('guides.scripts.seoKeywords')
+          if (Array.isArray(keywords)) {
+            return keywords as string[]
+          }
+          return [keywords as string]
+        })()}
         url={`/${lang}/guides/scripts`}
         lang={lang}
-        type="guide"
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -234,8 +267,7 @@ export default function ScriptsPage({ params }: ScriptsPageProps) {
                 <div className="bg-blue-50 rounded-lg p-6">
                   <h3 className="text-lg font-semibold text-blue-800 mb-4">{t('guides.scripts.setup.title') as string}</h3>
                   <div className="space-y-3">
-                    {Array.isArray(t('guides.scripts.setup.steps')) ? 
-                      (t('guides.scripts.setup.steps') as string[]).map((step: string, index: number) => (
+                    {getArrayData('guides.scripts.setup.steps').length > 0 ? getArrayData('guides.scripts.setup.steps').map((step: string, index: number) => (
                         <div key={index} className="flex items-start">
                           <div className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0">
                             {index + 1}
@@ -256,8 +288,7 @@ export default function ScriptsPage({ params }: ScriptsPageProps) {
                 <div className="bg-green-50 rounded-lg p-6">
                   <h3 className="text-lg font-semibold text-green-800 mb-4">{t('guides.scripts.instructions.title') as string}</h3>
                   <ul className="space-y-2 text-green-700">
-                    {Array.isArray(t('guides.scripts.instructions')) ? 
-                      (t('guides.scripts.instructions') as string[]).map((instruction: string, index: number) => (
+                    {getArrayData('guides.scripts.instructions').length > 0 ? getArrayData('guides.scripts.instructions').map((instruction: string, index: number) => (
                         <li key={index} className="flex items-start">
                           <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                           {instruction}
@@ -277,8 +308,8 @@ export default function ScriptsPage({ params }: ScriptsPageProps) {
             <div id="faq" className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.scripts.faq.title') as string}</h2>
               <div className="space-y-6">
-                {Array.isArray(t('guides.scripts.faq.questions')) ? 
-                  (t('guides.scripts.faq.questions') as Array<{question: string, answer: string}>).map((faq, index: number) => (
+                {getArrayData('guides.scripts.faq.questions').length > 0 ? 
+                  getFAQData('guides.scripts.faq.questions').map((faq, index: number) => (
                     <div key={index} className="border-b border-gray-200 pb-4">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
                       <p className="text-gray-700">{faq.answer}</p>
@@ -299,8 +330,7 @@ export default function ScriptsPage({ params }: ScriptsPageProps) {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">{t('guides.scripts.prerequisites.title') as string}</h3>
               <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.scripts.prerequisites.list')) ? 
-                  (t('guides.scripts.prerequisites.list') as string[]).map((prereq: string, index: number) => (
+                {getArrayData('guides.scripts.prerequisites.list').length > 0 ? getArrayData('guides.scripts.prerequisites.list').map((prereq: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                       {prereq}
@@ -319,8 +349,7 @@ export default function ScriptsPage({ params }: ScriptsPageProps) {
               <h3 className="text-lg font-bold text-red-800 mb-4">⚠️ {t('guides.scripts.importantWarning') as string}</h3>
           <div className="bg-white p-4 rounded">
             <ul className="text-red-700 space-y-1">
-              {Array.isArray(t('guides.scripts.warningList')) ? 
-                (t('guides.scripts.warningList') as string[]).map((warning: string, index: number) => (
+              {getArrayData('guides.scripts.warningList').length > 0 ? getArrayData('guides.scripts.warningList').map((warning: string, index: number) => (
                   <li key={index}>• {warning}</li>
                 )) : 
                 <li>• {t('guides.scripts.defaultWarning') as string}</li>

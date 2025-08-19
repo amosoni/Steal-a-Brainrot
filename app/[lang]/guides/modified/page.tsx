@@ -17,6 +17,34 @@ export default function ModifiedPage({ params }: ModifiedPageProps) {
   }, [params])
 
   const { t } = useTranslation(lang)
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
+
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -110,8 +138,7 @@ export default function ModifiedPage({ params }: ModifiedPageProps) {
         <div className="bg-yellow-50 rounded-lg p-6">
           <h2 className="text-2xl font-bold text-yellow-800 mb-4">🛡️ {t('guides.modificado.safetyTips') as string}</h2>
           <ul className="text-yellow-800 space-y-2">
-            {Array.isArray(t('guides.modificado.safetyTipsList')) ? 
-              (t('guides.modificado.safetyTipsList') as string[]).map((tip: string, index: number) => (
+            {getArrayData('guides.modificado.safetyTipsList').length > 0 ? getArrayData('guides.modificado.safetyTipsList').map((tip: string, index: number) => (
                 <li key={index}>• {tip}</li>
               )) : 
               <li>• {t('guides.modificado.defaultSafetyTip') as string}</li>

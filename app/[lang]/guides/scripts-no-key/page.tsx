@@ -17,6 +17,34 @@ export default function ScriptsNoKeyPage({ params }: ScriptsNoKeyPageProps) {
   }, [params])
 
   const { t } = useTranslation(lang)
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
+
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -54,8 +82,7 @@ export default function ScriptsNoKeyPage({ params }: ScriptsNoKeyPageProps) {
           <div className="bg-white p-4 rounded">
             <h3 className="font-semibold text-red-800 mb-2">⚠️ {t('guides.scripts.importantWarning') as string}</h3>
             <ul className="text-red-700 space-y-1">
-              {Array.isArray(t('guides.scripts.warningList')) ? 
-                (t('guides.scripts.warningList') as string[]).map((warning: string, index: number) => (
+              {getArrayData('guides.scripts.warningList').length > 0 ? getArrayData('guides.scripts.warningList').map((warning: string, index: number) => (
                   <li key={index}>• {warning}</li>
                 )) : 
                 <li>• {t('guides.scripts.defaultWarning') as string}</li>
@@ -70,8 +97,7 @@ export default function ScriptsNoKeyPage({ params }: ScriptsNoKeyPageProps) {
           
           <div className="space-y-4">
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              {Array.isArray(t('guides.scriptsNoKey.steps')) ? 
-                (t('guides.scriptsNoKey.steps') as string[]).map((step: string, index: number) => (
+              {getArrayData('guides.scriptsNoKey.steps').length > 0 ? getArrayData('guides.scriptsNoKey.steps').map((step: string, index: number) => (
                   <li key={index}>{step}</li>
                 )) : 
                 <li>Pasos no disponibles</li>
@@ -84,8 +110,7 @@ export default function ScriptsNoKeyPage({ params }: ScriptsNoKeyPageProps) {
         <div className="bg-yellow-50 rounded-lg p-6">
           <h2 className="text-2xl font-bold text-yellow-800 mb-4">💡 {t('guides.scriptsNoKey.tips') as string}</h2>
           <ul className="text-yellow-800 space-y-2">
-            {Array.isArray(t('guides.scriptsNoKey.tipsList')) ? 
-              (t('guides.scriptsNoKey.tipsList') as string[]).map((tip: string, index: number) => (
+            {getArrayData('guides.scriptsNoKey.tipsList').length > 0 ? getArrayData('guides.scriptsNoKey.tipsList').map((tip: string, index: number) => (
                 <li key={index}>• {tip}</li>
               )) : 
               <li>• {t('guides.scriptsNoKey.defaultTip') as string}</li>

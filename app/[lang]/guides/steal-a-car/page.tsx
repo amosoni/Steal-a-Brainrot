@@ -33,16 +33,50 @@ export default function StealACarGuide({ params }: StealACarGuideProps) {
   }, [params])
 
   const { t } = useTranslation(lang)
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
+
 
   return (
     <>
       <SEOHead
         title={t('guides.stealACar.seoTitle') as string}
         description={t('guides.stealACar.seoDescription') as string}
-        keywords={t('guides.stealACar.seoKeywords') as string}
+        keywords={(() => {
+          const keywords = t('guides.stealACar.seoKeywords')
+          if (Array.isArray(keywords)) {
+            return keywords as string[]
+          }
+          return [keywords as string]
+        })()}
         url={`/${lang}/guides/steal-a-car`}
         lang={lang}
-        type="guide"
+
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -107,8 +141,7 @@ export default function StealACarGuide({ params }: StealACarGuideProps) {
                 <div className="bg-white rounded-lg p-4">
                   <h3 className="font-semibold text-gray-900 mb-2">{t('guides.stealACar.gameFeatures') as string}</h3>
                   <ul className="space-y-2 text-gray-700">
-                    {Array.isArray(t('guides.stealACar.gameFeaturesList')) ? 
-                      (t('guides.stealACar.gameFeaturesList') as string[]).map((feature: string, index: number) => (
+                    {getArrayData('guides.stealACar.gameFeaturesList').length > 0 ? getArrayData('guides.stealACar.gameFeaturesList').map((feature: string, index: number) => (
                         <li key={index} className="flex items-start">
                           <CheckCircle className="w-4 h-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                           {feature}
@@ -138,8 +171,7 @@ export default function StealACarGuide({ params }: StealACarGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealACar.commonCars.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealACar.commonCars.features')) ? 
-                        (t('guides.stealACar.commonCars.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.stealACar.commonCars.features').length > 0 ? getArrayData('guides.stealACar.commonCars.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -163,8 +195,7 @@ export default function StealACarGuide({ params }: StealACarGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealACar.luxuryCars.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealACar.luxuryCars.features')) ? 
-                        (t('guides.stealACar.luxuryCars.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.stealACar.luxuryCars.features').length > 0 ? getArrayData('guides.stealACar.luxuryCars.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -188,8 +219,7 @@ export default function StealACarGuide({ params }: StealACarGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealACar.legendaryCars.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealACar.legendaryCars.features')) ? 
-                        (t('guides.stealACar.legendaryCars.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.stealACar.legendaryCars.features').length > 0 ? getArrayData('guides.stealACar.legendaryCars.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -220,8 +250,7 @@ export default function StealACarGuide({ params }: StealACarGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealACar.planningTactics.tips') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealACar.planningTactics.tipsList')) ? 
-                        (t('guides.stealACar.planningTactics.tipsList') as string[]).map((tip: string, index: number) => (
+                      {getArrayData('guides.stealACar.planningTactics.tipsList').length > 0 ? getArrayData('guides.stealACar.planningTactics.tipsList').map((tip: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <Zap className="w-3 h-3 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                             {tip}
@@ -245,8 +274,7 @@ export default function StealACarGuide({ params }: StealACarGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealACar.executionTactics.tips') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealACar.executionTactics.tipsList')) ? 
-                        (t('guides.stealACar.executionTactics.tipsList') as string[]).map((tip: string, index: number) => (
+                      {getArrayData('guides.stealACar.executionTactics.tipsList').length > 0 ? getArrayData('guides.stealACar.executionTactics.tipsList').map((tip: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <Zap className="w-3 h-3 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
                             {tip}
@@ -267,8 +295,8 @@ export default function StealACarGuide({ params }: StealACarGuideProps) {
             <div id="faq" className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.stealACar.faq.title') as string}</h2>
               <div className="space-y-6">
-                {Array.isArray(t('guides.stealACar.faq.questions')) ? 
-                  (t('guides.stealACar.faq.questions') as Array<{question: string, answer: string}>).map((faq, index: number) => (
+                {getArrayData('guides.stealACar.faq.questions').length > 0 ? 
+                  getFAQData('guides.stealACar.faq.questions').map((faq, index: number) => (
                     <div key={index} className="border-b border-gray-200 pb-4">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
                       <p className="text-gray-700">{faq.answer}</p>
@@ -289,8 +317,7 @@ export default function StealACarGuide({ params }: StealACarGuideProps) {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">{t('guides.stealACar.prerequisites.title') as string}</h3>
             <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.stealACar.prerequisites.list')) ? 
-                  (t('guides.stealACar.prerequisites.list') as string[]).map((prereq: string, index: number) => (
+                {getArrayData('guides.stealACar.prerequisites.list').length > 0 ? getArrayData('guides.stealACar.prerequisites.list').map((prereq: string, index: number) => (
                   <li key={index} className="flex items-start">
                       <CheckCircle className="w-4 h-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                       {prereq}

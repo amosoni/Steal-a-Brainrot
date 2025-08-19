@@ -17,6 +17,34 @@ export default function SegundoPisoGuide({ params }: SegundoPisoGuideProps) {
   }, [params])
 
   const { t } = useTranslation(lang)
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
+
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -50,8 +78,7 @@ export default function SegundoPisoGuide({ params }: SegundoPisoGuideProps) {
               {t('guides.segundoPiso.step2.description') as string}
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              {Array.isArray(t('guides.segundoPiso.step2.instructions')) ? 
-                (t('guides.segundoPiso.step2.instructions') as string[]).map((instruction: string, index: number) => (
+              {getArrayData('guides.segundoPiso.step2.instructions').length > 0 ? getArrayData('guides.segundoPiso.step2.instructions').map((instruction: string, index: number) => (
                   <li key={index}>{instruction}</li>
                 )) : 
                 <li>Instrucciones no disponibles</li>
@@ -77,8 +104,7 @@ export default function SegundoPisoGuide({ params }: SegundoPisoGuideProps) {
               {t('guides.segundoPiso.step4.description') as string}
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              {Array.isArray(t('guides.segundoPiso.step4.instructions')) ? 
-                (t('guides.segundoPiso.step4.instructions') as string[]).map((instruction: string, index: number) => (
+              {getArrayData('guides.segundoPiso.step4.instructions').length > 0 ? getArrayData('guides.segundoPiso.step4.instructions').map((instruction: string, index: number) => (
                   <li key={index}>{instruction}</li>
                 )) : 
                 <li>Instrucciones no disponibles</li>

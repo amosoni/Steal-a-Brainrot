@@ -33,16 +33,49 @@ export default function StealAnAnimeGuide({ params }: StealAnAnimeGuideProps) {
   }, [params])
 
   const { t } = useTranslation(lang)
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
+
 
   return (
     <>
       <SEOHead
-        title={t('guides.stealAnAnime.seoTitle') as string}
-        description={t('guides.stealAnAnime.seoDescription') as string}
-        keywords={t('guides.stealAnAnime.seoKeywords') as string}
+        title={t('guides.stealAnAnime.seoTitle')}
+        description={t('guides.stealAnAnime.seoDescription')}
+        keywords={(() => {
+          const keywords = t('guides.stealAnAnime.seoKeywords')
+          if (Array.isArray(keywords)) {
+            return keywords as string[]
+          }
+          return [keywords as string]
+        })()}
         url={`/${lang}/guides/steal-an-anime`}
         lang={lang}
-        type="guide"
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -107,8 +140,7 @@ export default function StealAnAnimeGuide({ params }: StealAnAnimeGuideProps) {
                 <div className="bg-white rounded-lg p-4">
                   <h3 className="font-semibold text-gray-900 mb-2">{t('guides.stealAnAnime.gameFeatures') as string}</h3>
                   <ul className="space-y-2 text-gray-700">
-                    {Array.isArray(t('guides.stealAnAnime.gameFeaturesList')) ? 
-                      (t('guides.stealAnAnime.gameFeaturesList') as string[]).map((feature: string, index: number) => (
+                    {getArrayData('guides.stealAnAnime.gameFeaturesList').length > 0 ? getArrayData('guides.stealAnAnime.gameFeaturesList').map((feature: string, index: number) => (
                         <li key={index} className="flex items-start">
                           <CheckCircle className="w-4 h-4 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
                           {feature}
@@ -138,8 +170,7 @@ export default function StealAnAnimeGuide({ params }: StealAnAnimeGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealAnAnime.popularCharacters.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealAnAnime.popularCharacters.features')) ? 
-                        (t('guides.stealAnAnime.popularCharacters.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.stealAnAnime.popularCharacters.features').length > 0 ? getArrayData('guides.stealAnAnime.popularCharacters.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -163,8 +194,7 @@ export default function StealAnAnimeGuide({ params }: StealAnAnimeGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealAnAnime.rareCharacters.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealAnAnime.rareCharacters.features')) ? 
-                        (t('guides.stealAnAnime.rareCharacters.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.stealAnAnime.rareCharacters.features').length > 0 ? getArrayData('guides.stealAnAnime.rareCharacters.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -188,8 +218,7 @@ export default function StealAnAnimeGuide({ params }: StealAnAnimeGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealAnAnime.legendaryCharacters.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealAnAnime.legendaryCharacters.features')) ? 
-                        (t('guides.stealAnAnime.legendaryCharacters.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.stealAnAnime.legendaryCharacters.features').length > 0 ? getArrayData('guides.stealAnAnime.legendaryCharacters.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-pink-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -220,8 +249,7 @@ export default function StealAnAnimeGuide({ params }: StealAnAnimeGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealAnAnime.animeKnowledge.tips') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealAnAnime.animeKnowledge.tipsList')) ? 
-                        (t('guides.stealAnAnime.animeKnowledge.tipsList') as string[]).map((tip: string, index: number) => (
+                      {getArrayData('guides.stealAnAnime.animeKnowledge.tipsList').length > 0 ? getArrayData('guides.stealAnAnime.animeKnowledge.tipsList').map((tip: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <Zap className="w-3 h-3 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
                             {tip}
@@ -245,8 +273,7 @@ export default function StealAnAnimeGuide({ params }: StealAnAnimeGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealAnAnime.communityParticipation.tips') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealAnAnime.communityParticipation.tipsList')) ? 
-                        (t('guides.stealAnAnime.communityParticipation.tipsList') as string[]).map((tip: string, index: number) => (
+                      {getArrayData('guides.stealAnAnime.communityParticipation.tipsList').length > 0 ? getArrayData('guides.stealAnAnime.communityParticipation.tipsList').map((tip: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <Zap className="w-3 h-3 text-pink-500 mr-2 mt-0.5 flex-shrink-0" />
                             {tip}
@@ -267,8 +294,8 @@ export default function StealAnAnimeGuide({ params }: StealAnAnimeGuideProps) {
             <div id="faq" className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.stealAnAnime.faq.title') as string}</h2>
               <div className="space-y-6">
-                {Array.isArray(t('guides.stealAnAnime.faq.questions')) ? 
-                  (t('guides.stealAnAnime.faq.questions') as Array<{question: string, answer: string}>).map((faq, index: number) => (
+                {getArrayData('guides.stealAnAnime.faq.questions').length > 0 ? 
+                  getFAQData('guides.stealAnAnime.faq.questions').map((faq, index: number) => (
                     <div key={index} className="border-b border-gray-200 pb-4">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
                       <p className="text-gray-700">{faq.answer}</p>
@@ -289,8 +316,7 @@ export default function StealAnAnimeGuide({ params }: StealAnAnimeGuideProps) {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">{t('guides.stealAnAnime.prerequisites.title') as string}</h3>
             <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.stealAnAnime.prerequisites.list')) ? 
-                  (t('guides.stealAnAnime.prerequisites.list') as string[]).map((prereq: string, index: number) => (
+                {getArrayData('guides.stealAnAnime.prerequisites.list').length > 0 ? getArrayData('guides.stealAnAnime.prerequisites.list').map((prereq: string, index: number) => (
                   <li key={index} className="flex items-start">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                       {prereq}

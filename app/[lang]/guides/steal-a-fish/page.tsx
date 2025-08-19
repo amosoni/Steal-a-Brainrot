@@ -29,16 +29,50 @@ export default function StealAFishGuide({ params }: StealAFishGuideProps) {
   }, [params])
 
   const { t } = useTranslation(lang)
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
+
 
   return (
     <>
       <SEOHead
         title={t('guides.stealAFish.seoTitle') as string}
         description={t('guides.stealAFish.seoDescription') as string}
-        keywords={t('guides.stealAFish.seoKeywords') as string}
+        keywords={(() => {
+          const keywords = t('guides.stealAFish.seoKeywords')
+          if (Array.isArray(keywords)) {
+            return keywords as string[]
+          }
+          return [keywords as string]
+        })()}
         url={`/${lang}/guides/steal-a-fish`}
         lang={lang}
-        type="guide"
+
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -103,8 +137,7 @@ export default function StealAFishGuide({ params }: StealAFishGuideProps) {
                 <div className="bg-white rounded-lg p-4">
                   <h3 className="font-semibold text-gray-900 mb-2">{t('guides.stealAFish.gameFeatures') as string}</h3>
                   <ul className="space-y-2 text-gray-700">
-                    {Array.isArray(t('guides.stealAFish.gameFeaturesList')) ? 
-                      (t('guides.stealAFish.gameFeaturesList') as string[]).map((feature: string, index: number) => (
+                    {getArrayData('guides.stealAFish.gameFeaturesList').length > 0 ? getArrayData('guides.stealAFish.gameFeaturesList').map((feature: string, index: number) => (
                         <li key={index} className="flex items-start">
                           <CheckCircle className="w-4 h-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                           {feature}
@@ -134,8 +167,7 @@ export default function StealAFishGuide({ params }: StealAFishGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealAFish.commonFish.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealAFish.commonFish.features')) ? 
-                        (t('guides.stealAFish.commonFish.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.stealAFish.commonFish.features').length > 0 ? getArrayData('guides.stealAFish.commonFish.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-gray-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -159,8 +191,7 @@ export default function StealAFishGuide({ params }: StealAFishGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealAFish.rareFish.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealAFish.rareFish.features')) ? 
-                        (t('guides.stealAFish.rareFish.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.stealAFish.rareFish.features').length > 0 ? getArrayData('guides.stealAFish.rareFish.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -184,8 +215,7 @@ export default function StealAFishGuide({ params }: StealAFishGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealAFish.legendaryFish.characteristics') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealAFish.legendaryFish.features')) ? 
-                        (t('guides.stealAFish.legendaryFish.features') as string[]).map((feature: string, index: number) => (
+                      {getArrayData('guides.stealAFish.legendaryFish.features').length > 0 ? getArrayData('guides.stealAFish.legendaryFish.features').map((feature: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
                             {feature}
@@ -216,8 +246,7 @@ export default function StealAFishGuide({ params }: StealAFishGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealAFish.underwaterCombat.tips') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealAFish.underwaterCombat.tipsList')) ? 
-                        (t('guides.stealAFish.underwaterCombat.tipsList') as string[]).map((tip: string, index: number) => (
+                      {getArrayData('guides.stealAFish.underwaterCombat.tipsList').length > 0 ? getArrayData('guides.stealAFish.underwaterCombat.tipsList').map((tip: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <Zap className="w-3 h-3 text-cyan-500 mr-2 mt-0.5 flex-shrink-0" />
                             {tip}
@@ -241,8 +270,7 @@ export default function StealAFishGuide({ params }: StealAFishGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.stealAFish.fishLocations.tips') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.stealAFish.fishLocations.tipsList')) ? 
-                        (t('guides.stealAFish.fishLocations.tipsList') as string[]).map((tip: string, index: number) => (
+                      {getArrayData('guides.stealAFish.fishLocations.tipsList').length > 0 ? getArrayData('guides.stealAFish.fishLocations.tipsList').map((tip: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <Zap className="w-3 h-3 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                             {tip}
@@ -263,8 +291,8 @@ export default function StealAFishGuide({ params }: StealAFishGuideProps) {
             <div id="faq" className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.stealAFish.faq.title') as string}</h2>
               <div className="space-y-6">
-                {Array.isArray(t('guides.stealAFish.faq.questions')) ? 
-                  (t('guides.stealAFish.faq.questions') as Array<{question: string, answer: string}>).map((faq, index: number) => (
+                {getArrayData('guides.stealAFish.faq.questions').length > 0 ? 
+                  getFAQData('guides.stealAFish.faq.questions').map((faq, index: number) => (
                     <div key={index} className="border-b border-gray-200 pb-4">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
                       <p className="text-gray-700">{faq.answer}</p>
@@ -285,8 +313,7 @@ export default function StealAFishGuide({ params }: StealAFishGuideProps) {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">{t('guides.stealAFish.prerequisites.title') as string}</h3>
               <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.stealAFish.prerequisites.list')) ? 
-                  (t('guides.stealAFish.prerequisites.list') as string[]).map((prereq: string, index: number) => (
+                {getArrayData('guides.stealAFish.prerequisites.list').length > 0 ? getArrayData('guides.stealAFish.prerequisites.list').map((prereq: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                       {prereq}
