@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PerformanceMonitor from "@/components/PerformanceMonitor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,11 +35,12 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://www.stealabrainrot.live'),
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.stealabrainrot.live/es',
     languages: {
-      'es': '/es',
-      'en': '/en',
-      'zh': '/zh',
+      'es': 'https://www.stealabrainrot.live/es',
+      'en': 'https://www.stealabrainrot.live/en',
+      'zh': 'https://www.stealabrainrot.live/zh',
+      'x-default': 'https://www.stealabrainrot.live/es',
     },
   },
   icons: {
@@ -255,6 +257,7 @@ export default function RootLayout({
           </div>
         </main>
         <Footer />
+        <PerformanceMonitor />
       </body>
     </html>
   );

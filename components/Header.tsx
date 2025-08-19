@@ -6,6 +6,28 @@ import LanguageSwitcher from './LanguageSwitcher'
 import { useTranslation } from '@/hooks/useTranslation'
 import { usePathname } from 'next/navigation'
 
+// 路径映射配置
+const pathMappings = {
+  'es': {
+    'calculadora': 'calculadora',
+    'brainrots': 'brainrots',
+    'updates': 'updates',
+    'guides': 'guides'
+  },
+  'en': {
+    'calculadora': 'calculator',
+    'brainrots': 'brainrots',
+    'updates': 'updates',
+    'guides': 'guides'
+  },
+  'zh': {
+    'calculadora': 'calculator',
+    'brainrots': 'brainrots',
+    'updates': 'updates',
+    'guides': 'guides'
+  }
+}
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
@@ -21,13 +43,27 @@ export default function Header() {
   
   const { t } = useTranslation(currentLang)
 
+  // 根据语言生成正确的导航链接
+  const getNavigationPath = (basePath: string) => {
+    const mappedPath = pathMappings[currentLang as keyof typeof pathMappings]?.[basePath as keyof typeof pathMappings.es]
+    return `/${currentLang}/${mappedPath || basePath}`
+  }
+
   const navigation = [
-    { name: t('nav.home'), href: `/${currentLang}` },
-    { name: t('nav.brainrots'), href: `/${currentLang}/brainrots` },
-    { name: t('nav.calculator'), href: `/${currentLang}/calculadora` },
-    { name: t('nav.updates'), href: `/${currentLang}/updates` },
-    { name: t('nav.guides'), href: `/${currentLang}/guides` }
+    { name: t('nav.home'), href: `/${currentLang}`, key: 'home' },
+    { name: t('nav.brainrots'), href: getNavigationPath('brainrots'), key: 'brainrots' },
+    { name: t('nav.calculator'), href: getNavigationPath('calculadora'), key: 'calculator' },
+    { name: t('nav.updates'), href: getNavigationPath('updates'), key: 'updates' },
+    { name: t('nav.guides'), href: getNavigationPath('guides'), key: 'guides' }
   ]
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
 
   return (
     <header className="bg-gradient-to-r from-white via-blue-50 to-purple-50 shadow-lg border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm">
@@ -35,7 +71,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href={`/${currentLang}`} className="flex items-center group">
+            <Link href={`/${currentLang}`} className="flex items-center group" onClick={closeMenu}>
               {/* 像素化游戏风格Logo */}
               <div className="relative w-12 h-12 mr-3 group-hover:scale-110 transition-transform duration-200">
                 {/* 主体 - 像素化方块 */}
@@ -74,12 +110,13 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-2">
+          <nav className="hidden md:flex space-x-2" role="navigation" aria-label="Main navigation">
             {navigation.map((item) => (
               <Link
-                key={item.name as string}
+                key={item.key}
                 href={item.href}
                 className="relative px-4 py-2 text-gray-700 hover:text-blue-600 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-white/80 hover:shadow-md group"
+                onClick={closeMenu}
               >
                 {item.name as string}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-200 group-hover:w-full"></span>
@@ -95,8 +132,11 @@ export default function Header() {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={toggleMenu}
               className="text-gray-700 hover:text-blue-600 p-2 rounded-lg hover:bg-white/80 transition-colors"
+              aria-label="Toggle mobile menu"
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -109,24 +149,30 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-sm border-t border-gray-200 rounded-b-lg shadow-lg">
+          <nav 
+            id="mobile-menu"
+            className="md:hidden py-4 border-t border-gray-200"
+            role="navigation"
+            aria-label="Mobile navigation"
+          >
+            <div className="space-y-2">
               {navigation.map((item) => (
                 <Link
-                  key={item.name as string}
+                  key={item.key}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 block px-4 py-3 text-base font-medium rounded-lg hover:bg-blue-50 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-white/80 rounded-lg transition-colors"
+                  onClick={closeMenu}
                 >
                   {item.name as string}
                 </Link>
               ))}
+              
               {/* Mobile Language Switcher */}
-              <div className="px-4 py-3">
+              <div className="pt-4 border-t border-gray-200">
                 <LanguageSwitcher currentLang={currentLang} />
               </div>
             </div>
-          </div>
+          </nav>
         )}
       </div>
     </header>

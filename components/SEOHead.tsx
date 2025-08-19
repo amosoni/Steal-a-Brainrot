@@ -1,119 +1,123 @@
+'use client'
 import Head from 'next/head'
+import { usePathname } from 'next/navigation'
 
 interface SEOHeadProps {
-  title: string
-  description: string
-  keywords?: string
+  title?: string
+  description?: string
+  keywords?: string[]
   image?: string
   url?: string
   lang?: string
-  type?: string
+  noindex?: boolean
+  canonical?: string
 }
 
-export default function SEOHead({ 
-  title, 
-  description, 
-  keywords = '', 
-  image = '/og-image.jpg', 
-  url = '', 
+export default function SEOHead({
+  title = 'Steal a Brainrot - La Guía Más Completa de Roblox',
+  description = '🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos completa de personajes, calculadora de ganancias, guías de estrategia y consejos expertos.',
+  keywords = ['Steal a Brainrot', 'Roblox', 'Brainrot', 'Personajes', 'Calculadora', 'Guía', 'Estrategias'],
+  image = '/og-image.jpg',
+  url,
   lang = 'es',
-  type = 'website'
+  noindex = false,
+  canonical
 }: SEOHeadProps) {
-  const fullUrl = url ? `https://www.stealabrainrot.live${url}` : 'https://www.stealabrainrot.live'
-  const fullImage = image.startsWith('http') ? image : `https://www.stealabrainrot.live${image}`
+  const pathname = usePathname()
+  const baseUrl = 'https://www.stealabrainrot.live'
+  const fullUrl = url || `${baseUrl}${pathname}`
+  const canonicalUrl = canonical || fullUrl
+  const fullImageUrl = image.startsWith('http') ? image : `${baseUrl}${image}`
+
+  // 根据语言设置hreflang
+  const getHreflangUrl = (targetLang: string) => {
+    const pathSegments = pathname.split('/')
+    if (pathSegments[1] && ['es', 'en', 'zh'].includes(pathSegments[1])) {
+      pathSegments[1] = targetLang
+      return `${baseUrl}${pathSegments.join('/')}`
+    }
+    return `${baseUrl}/${targetLang}${pathname}`
+  }
 
   return (
     <Head>
-      {/* Basic Meta Tags */}
+      {/* 基本元数据 */}
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="language" content={lang} />
-      <meta name="robots" content="index, follow" />
-      <meta name="author" content="Steal a Brainrot Guide" />
+      <meta name="keywords" content={keywords.join(', ')} />
+      <meta name="author" content="Steal a Brainrot Team" />
+      <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
       
-      {/* Open Graph Meta Tags */}
+      {/* 语言和区域设置 */}
+      <meta httpEquiv="Content-Language" content={lang} />
+      <meta name="language" content={lang} />
+      
+      {/* 规范URL */}
+      <link rel="canonical" href={canonicalUrl} />
+      
+      {/* Hreflang标签 */}
+      <link rel="alternate" hrefLang="es" href={getHreflangUrl('es')} />
+      <link rel="alternate" hrefLang="en" href={getHreflangUrl('en')} />
+      <link rel="alternate" hrefLang="zh" href={getHreflangUrl('zh')} />
+      <link rel="alternate" hrefLang="x-default" href={getHreflangUrl('es')} />
+      
+      {/* Open Graph标签 */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={fullImage} />
+      <meta property="og:image" content={fullImageUrl} />
       <meta property="og:url" content={fullUrl} />
-      <meta property="og:type" content={type} />
-      <meta property="og:site_name" content="Steal a Brainrot Guide" />
-      <meta property="og:locale" content={lang === 'es' ? 'es_ES' : lang === 'zh' ? 'zh_CN' : 'en_US'} />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Steal a Brainrot" />
+      <meta property="og:locale" content={lang === 'es' ? 'es_ES' : lang === 'en' ? 'en_US' : 'zh_CN'} />
       
-      {/* Twitter Card Meta Tags */}
+      {/* Twitter Card标签 */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={fullImage} />
+      <meta name="twitter:image" content={fullImageUrl} />
+      <meta name="twitter:site" content="@stealabrainrot" />
+      <meta name="twitter:creator" content="@stealabrainrot" />
       
-      {/* Additional SEO Meta Tags */}
+      {/* 其他重要元数据 */}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#3B82F6" />
       <meta name="msapplication-TileColor" content="#3B82F6" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <meta name="apple-mobile-web-app-title" content="Steal a Brainrot" />
       
-      {/* Canonical URL */}
-      <link rel="canonical" href={fullUrl} />
-      
-      {/* Alternate Language Links */}
-      <link rel="alternate" hrefLang="es" href={`https://www.stealabrainrot.live/es${url}`} />
-      <link rel="alternate" hrefLang="en" href={`https://www.stealabrainrot.live/en${url}`} />
-      <link rel="alternate" hrefLang="zh" href={`https://www.stealabrainrot.live/zh${url}`} />
-      <link rel="alternate" hrefLang="x-default" href={`https://www.stealabrainrot.live/es${url}`} />
-      
-      {/* Structured Data */}
+      {/* 结构化数据 */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HowTo",
+            "@type": "WebPage",
             "name": title,
             "description": description,
-            "image": fullImage,
             "url": fullUrl,
-            "inLanguage": lang === 'es' ? 'es' : lang === 'zh' ? 'zh' : 'en',
-            "author": {
-              "@type": "Organization",
-              "name": "Steal a Brainrot Guide"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Steal a Brainrot Guide",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.stealabrainrot.live/logo.png"
+            "inLanguage": lang,
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "Steal a Brainrot",
+              "url": baseUrl,
+              "publisher": {
+                "@type": "Organization",
+                "name": "Steal a Brainrot Team",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": `${baseUrl}/favicon.svg`
+                }
               }
             },
-            "mainEntity": {
-              "@type": "HowTo",
-              "name": title,
-              "description": description,
-              "step": [
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
                 {
-                  "@type": "HowToStep",
-                  "name": "Preparation",
-                  "text": "Prepare yourself and locate the main building on the Downtown map."
-                },
-                {
-                  "@type": "HowToStep",
-                  "name": "First Jump",
-                  "text": "Execute the critical first jump from the main building roof to the first platform."
-                },
-                {
-                  "@type": "HowToStep",
-                  "name": "Movement Sequence",
-                  "text": "Follow the specific movement sequence to reach the second floor."
-                },
-                {
-                  "@type": "HowToStep",
-                  "name": "Final Jump",
-                  "text": "Calculate the distance and timing perfectly for the final jump."
-                },
-                {
-                  "@type": "HowToStep",
-                  "name": "Success",
-                  "text": "Congratulations! You've reached the second floor and gained access to exclusive rewards."
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": `${baseUrl}/${lang}`
                 }
               ]
             }

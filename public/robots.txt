@@ -4,98 +4,24 @@
 
 User-agent: *
 Allow: /
-Disallow: /api/
-Disallow: /_next/
-Disallow: /admin/
 
-# AI Crawlers - Enhanced Configuration
-User-agent: ChatGPT-User
-Allow: /
-Crawl-delay: 1
-
-User-agent: OpenAI
-Allow: /
-Crawl-delay: 1
-
-User-agent: GPTBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Google-Extended
-Allow: /
-Crawl-delay: 1
-
-User-agent: PerplexityBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: YoudaoBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: CCBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Bytespider
-Allow: /
-Crawl-delay: 1
-
-User-agent: Applebot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 1
-
-User-agent: YandexBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: DuckDuckBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: AhrefsBot
-Allow: /
-Crawl-delay: 2
-
-User-agent: SemrushBot
-Allow: /
-Crawl-delay: 2
-
-User-agent: MJ12bot
-Allow: /
-Crawl-delay: 2
-
-# Search Engines
+# 允许所有搜索引擎访问
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
-User-agent: Baiduspider
+User-agent: Slurp
 Allow: /
-Crawl-delay: 1
 
-# Content Quality Indicators
-User-agent: *
-Allow: /guides/
-Allow: /brainrots/
-Allow: /calculadora/
-Allow: /updates/
+# 禁止访问管理页面和API
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
 
-# Sitemaps - Only include existing files
+# 站点地图
 Sitemap: https://www.stealabrainrot.live/sitemap.xml
-Sitemap: https://www.stealabrainrot.live/sitemap_full.xml 
+
+# 爬取延迟
+Crawl-delay: 1 
