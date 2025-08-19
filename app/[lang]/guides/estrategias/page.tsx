@@ -44,12 +44,17 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
   return (
     <>
       <SEOHead
-        title={t('guides.estrategias.seoTitle') as string}
-        description={t('guides.estrategias.seoDescription') as string}
-        keywords={t('guides.estrategias.seoKeywords') as string}
+        title={t('guides.estrategias.seoTitle')}
+        description={t('guides.estrategias.seoDescription')}
+        keywords={(() => {
+          const keywords = t('guides.estrategias.seoKeywords')
+          if (Array.isArray(keywords)) {
+            return keywords as string[]
+          }
+          return [keywords as string]
+        })()}
         url={`/${lang}/guides/estrategias`}
         lang={lang}
-        type="guide"
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

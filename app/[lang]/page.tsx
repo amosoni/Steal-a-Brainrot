@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Calculator, Database, TrendingUp, BookOpen, Play, Users, Trophy, Shield, Zap, Star, Copy, Check, ArrowRight } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
-import { use, useState, useEffect, useRef } from 'react'
+import { use, useState, useEffect, useRef, useMemo, useCallback } from 'react'
 import PageSEO from '@/components/PageSEO'
 import Script from 'next/script'
 
@@ -23,14 +23,14 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
   const [gameLoadingState, setGameLoadingState] = useState<'loading' | 'timeout' | 'error' | 'loaded' | 'unavailable' | 'available' | 'testing' | 'testingAlt' | 'comprehensiveCheck' | 'networkMonitor'>('loading')
   const [gameLoadTimeout, setGameLoadTimeout] = useState<NodeJS.Timeout | null>(null)
 
-  // 游戏URL映射 - 只保留两个游戏
-  const gameUrls = {
-    main: "https://app-447526.games.s3.yandex.net/447526/f3nbrv390m42ja34gqhu9h6abw0011sm/index.html?sdk=%2Fsdk%2Fv2.c68e1234372250dd975a.js#origin=https%3A%2F%2Fplayhop.com&app-id=447526&device-type=desktop",
-    game1: "https://app-291696.games.s3.yandex.net/291696/x9n9e72j49hyd5vp176oor871e83datc_brotli/index.html?sdk=%2Fsdk%2F_%2Fv2.c68e1234372250dd975a.js#origin=https%3A%2F%2Fplayhop.com&app-id=291696&device-type=desktop"
-  }
+  // 游戏URL映射 - 使用useMemo优化
+  const gameUrls = useMemo(() => ({
+    main: "https://app-447526.games.s3.yandex.net/447526/f3nbrv390m42ja34gqhu9h6abw0011sm/index.html?sdk=%2Fsdk%2Fv2.c68e1234372250dd975a.js#origin=https%3A%2F2Fplayhop.com&app-id=447526&device-type=desktop",
+    game1: "https://app-291696.games.s3.yandex.net/291696/x9n9e72j49hyd5vp176oor871e83datc_brotli/index.html?sdk=%2Fsdk%2F_%2Fv2.c68e1234372250dd975a.js#origin=https%3A%2F2Fplayhop.com&app-id=291696&device-type=desktop"
+  }), [])
 
-  // 游戏信息
-  const gameInfo = {
+  // 游戏信息 - 使用useMemo优化
+  const gameInfo = useMemo(() => ({
     main: {
       title: 'Steal a Brainrot Original 3D',
       description: resolvedParams.lang === 'es' ? 'Juego Principal' : 
@@ -49,16 +49,16 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
       icon: '🏋️',
       color: 'from-green-400 to-blue-500'
     }
-  }
+  }), [resolvedParams.lang])
 
   // 从游戏URL中提取app-id
-  const getAppIdFromUrl = (url: string) => {
+  const getAppIdFromUrl = useCallback((url: string) => {
     const match = url.match(/app-id=(\d+)/)
     return match ? match[1] : '447526' // 默认值
-  }
+  }, [])
 
   // 动态更新SDK配置
-  const updateSDKConfig = (gameKey: string) => {
+  const updateSDKConfig = useCallback((gameKey: string) => {
     if (typeof window !== 'undefined') {
       const gameUrl = gameUrls[gameKey as keyof typeof gameUrls]
       const appId = getAppIdFromUrl(gameUrl)
@@ -78,7 +78,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
       
       console.log(`已更新SDK配置: app-id=${appId}, game=${gameKey}`)
     }
-  }
+  }, [gameUrls, getAppIdFromUrl])
 
   // 初始化Yandex Games SDK环境
   useEffect(() => {
@@ -97,7 +97,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
         }
       }
     }
-  }, [])
+  }, [updateSDKConfig])
 
   // 预加载所有游戏资源
   useEffect(() => {
@@ -138,16 +138,16 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
   }, [gameLoadingState])
 
   // 重置游戏加载状态
-  const resetGameLoading = () => {
+  const resetGameLoading = useCallback(() => {
     setGameLoadingState('loading')
     if (gameLoadTimeout) {
       clearTimeout(gameLoadTimeout)
       setGameLoadTimeout(null)
     }
-  }
+  }, [gameLoadTimeout])
 
   // 重试加载游戏
-  const retryGameLoad = () => {
+  const retryGameLoad = useCallback(() => {
     console.log('重试加载游戏...')
     resetGameLoading()
     
@@ -161,10 +161,10 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
         }
       }, 100)
     }
-  }
+  }, [resetGameLoading])
 
   // 复制脚本到剪贴板
-  const copyToClipboard = async (script: string, scriptName: string) => {
+  const copyToClipboard = useCallback(async (script: string, scriptName: string) => {
     try {
       await navigator.clipboard.writeText(script)
       setCopiedScript(scriptName)
@@ -172,27 +172,27 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     } catch (err) {
       console.error('复制失败:', err)
     }
-  }
+  }, [])
 
   // iframe引用
   const iframeRef = useRef<HTMLIFrameElement>(null)
 
   // iframe加载处理
-  const handleIframeLoad = () => {
+  const handleIframeLoad = useCallback(() => {
     setGameLoadingState('loaded')
     if (gameLoadTimeout) {
       clearTimeout(gameLoadTimeout)
       setGameLoadTimeout(null)
     }
-  }
+  }, [gameLoadTimeout])
 
   // iframe错误处理
-  const handleIframeError = () => {
+  const handleIframeError = useCallback(() => {
     setGameLoadingState('error')
-  }
+  }, [])
 
-  // 基础功能数据
-  const features = [
+  // 基础功能数据 - 使用useMemo优化
+  const features = useMemo(() => [
     {
       title: t('home.features.database.title'),
       description: t('home.features.database.description'),
@@ -221,10 +221,10 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
       href: '../guides',
       color: 'bg-orange-500'
     }
-  ]
+  ], [t])
 
-  // FAQ数据
-  const faqs = [
+  // FAQ数据 - 使用useMemo优化
+  const faqs = useMemo(() => [
     {
       question: t('home.faq.protect.question'),
       answer: t('home.faq.protect.answer')
@@ -241,10 +241,10 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
       question: t('home.faq.rebirths.question'),
       answer: t('home.faq.rebirths.answer')
     }
-  ]
+  ], [t])
 
-  // 脚本数据
-  const scripts = [
+  // 脚本数据 - 使用useMemo优化
+  const scripts = useMemo(() => [
     {
       name: 'StealEveryone',
       title: t('home.scripts.stealEveryone.title') as string,
@@ -252,7 +252,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
       code: `loadstring(game:HttpGet('https://raw.githubusercontent.com/checkurasshole/Script/refs/heads/main/IQ'))();`,
       color: 'blue'
     }
-  ]
+  ], [t])
 
   return (
     <>
@@ -1040,20 +1040,26 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
           
           {/* Warning Section */}
           <div className="bg-red-50 rounded-lg p-6 mb-8">
-            <h3 className="text-xl font-bold text-red-800 mb-4">{t('home.scripts.warning.title') as string}</h3>
-            <p className="text-red-700 mb-4">{t('home.scripts.warning.description') as string}</p>
+            <h3 className="text-xl font-bold text-red-800 mb-4">{t('home.scripts.warning.title')}</h3>
+            <p className="text-red-700 mb-4">{t('home.scripts.warning.description')}</p>
             <div className="bg-white p-4 rounded">
               <ul className="text-red-700 space-y-1">
-                {Array.isArray(t('home.scripts.warning.list') as unknown) ? (t('home.scripts.warning.list') as string[]).map((item: string, index: number) => (
-                  <li key={index}>{item}</li>
-                )) : [
-                  "• The use of scripts may result in permanent account ban",
-                  "• Scripts may contain malicious code", 
-                  "• The use of scripts violates the game's terms of service",
-                  "• Use scripts at your own risk"
-                ].map((item: string, index: number) => (
-                  <li key={index}>{item}</li>
-                ))}
+                {(() => {
+                  const warningList = t('home.scripts.warning.list')
+                  if (Array.isArray(warningList)) {
+                    return warningList.map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
+                    ))
+                  }
+                  return [
+                    "• The use of scripts may result in permanent account ban",
+                    "• Scripts may contain malicious code", 
+                    "• The use of scripts violates the game's terms of service",
+                    "• Use scripts at your own risk"
+                  ].map((item: string, index: number) => (
+                    <li key={index}>{item}</li>
+                  ))
+                })()}
               </ul>
             </div>
           </div>
@@ -1072,12 +1078,12 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                     {copiedScript === script.name ? (
                       <>
                         <Check className="mr-2 h-4 w-4" />
-                        {t('home.scripts.copiedButton') as string}
+                        {t('home.scripts.copiedButton')}
                       </>
                     ) : (
                       <>
                         <Copy className="mr-2 h-4 w-4" />
-                        {t('home.scripts.copyButton') as string}
+                        {t('home.scripts.copyButton')}
                       </>
                     )}
                   </button>
@@ -1096,7 +1102,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               href={`/${resolvedParams.lang}/guides/scripts`}
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
             >
-              {t('home.scripts.viewMoreButton') as string}
+              {t('home.scripts.viewMoreButton')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
@@ -1104,7 +1110,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
 
         {/* More Game Screenshots */}
         <section className="bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 rounded-2xl p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">✨ {t('home.moreScreenshots.title') as string}</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">✨ {t('home.moreScreenshots.title')}</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="bg-white rounded-xl p-4 shadow-md">
@@ -1116,8 +1122,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                     className="object-cover rounded-lg mb-3"
                   />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.gameOverview.title') as string}</h3>
-                <p className="text-sm text-gray-600">{t('home.moreScreenshots.gameOverview.description') as string}</p>
+                <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.gameOverview.title')}</h3>
+                <p className="text-sm text-gray-600">{t('home.moreScreenshots.gameOverview.description')}</p>
               </div>
               <div className="bg-white rounded-xl p-4 shadow-md">
                 <div className="relative w-full h-40">
@@ -1128,8 +1134,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                     className="object-cover rounded-lg mb-3"
                   />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.userInterface.title') as string}</h3>
-                <p className="text-sm text-gray-600">{t('home.moreScreenshots.userInterface.description') as string}</p>
+                <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.userInterface.title')}</h3>
+                <p className="text-sm text-gray-600">{t('home.moreScreenshots.userInterface.description')}</p>
               </div>
             </div>
             <div className="space-y-4">
@@ -1142,8 +1148,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                     className="object-cover rounded-lg mb-3"
                   />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.uniqueCharacters.title') as string}</h3>
-                <p className="text-sm text-gray-600">{t('home.moreScreenshots.uniqueCharacters.description') as string}</p>
+                <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.uniqueCharacters.title')}</h3>
+                <p className="text-sm text-gray-600">{t('home.moreScreenshots.uniqueCharacters.description')}</p>
               </div>
               <div className="bg-white rounded-xl p-4 shadow-md">
                 <div className="relative w-full h-40">
@@ -1154,8 +1160,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                     className="object-cover rounded-lg mb-3"
                   />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.constantAction.title') as string}</h3>
-                <p className="text-sm text-gray-600">{t('home.moreScreenshots.constantAction.description') as string}</p>
+                <h3 className="font-semibold text-gray-900 mb-2">{t('home.moreScreenshots.constantAction.title')}</h3>
+                <p className="text-sm text-gray-600">{t('home.moreScreenshots.constantAction.description')}</p>
               </div>
             </div>
           </div>
@@ -1163,9 +1169,9 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
 
         {/* CTA Section */}
         <section className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-10 text-center text-white shadow-2xl">
-          <h2 className="text-4xl font-extrabold mb-6 drop-shadow">{t('home.cta.title') as string}</h2>
+          <h2 className="text-4xl font-extrabold mb-6 drop-shadow">{t('home.cta.title')}</h2>
           <p className="text-2xl mb-8 opacity-90 font-medium">
-            {t('home.cta.description') as string}
+            {t('home.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
@@ -1175,14 +1181,14 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               className="inline-block bg-white text-blue-600 px-10 py-4 rounded-xl text-xl font-bold border-2 border-white hover:bg-blue-50 hover:text-blue-700 transition-colors card-hover animate-float"
               style={{animationDelay:'0.2s'}}
             >
-              {t('home.cta.playNow') as string}
+              {t('home.cta.playNow')}
             </a>
             <Link 
               href={`/${resolvedParams.lang}/guides`}
               className="inline-block bg-transparent border-2 border-white text-white px-10 py-4 rounded-xl text-xl font-bold hover:bg-white hover:text-blue-600 transition-colors card-hover animate-float"
               style={{animationDelay:'0.4s'}}
             >
-              {t('home.cta.viewGuides') as string}
+              {t('home.cta.viewGuides')}
             </Link>
           </div>
         </section>

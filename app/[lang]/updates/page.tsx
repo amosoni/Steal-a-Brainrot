@@ -26,7 +26,6 @@ export default function UpdatesPage({ params }: UpdatesPageProps) {
   // const [autoRefresh, setAutoRefresh] = useState(false)
   const [notifications, setNotifications] = useState<string[]>([])
   const [serverStatus, setServerStatus] = useState<'online' | 'offline' | 'checking'>('online')
-  const [updateProgress, setUpdateProgress] = useState(0)
   const [isDownloading, setIsDownloading] = useState(false)
 
   // 自动检查更新 - 当前未使用，但保留以备将来使用
@@ -60,18 +59,17 @@ export default function UpdatesPage({ params }: UpdatesPageProps) {
   // 检查更新
   const checkForUpdates = async () => {
     setIsChecking(true)
-    setUpdateProgress(0)
     
     try {
       // 模拟进度更新
       const progressInterval = setInterval(() => {
-        setUpdateProgress(prev => {
-          if (prev >= 90) {
-            clearInterval(progressInterval)
-            return 90
-          }
-          return prev + 10
-        })
+        // setUpdateProgress(prev => { // This line was removed
+        //   if (prev >= 90) {
+        //     clearInterval(progressInterval)
+        //     return 90
+        //   }
+        //   return prev + 10
+        // })
       }, 200)
 
       const response = await fetch('/api/updates', {
@@ -85,7 +83,7 @@ export default function UpdatesPage({ params }: UpdatesPageProps) {
       const data = await response.json()
       
       clearInterval(progressInterval)
-      setUpdateProgress(100)
+      // setUpdateProgress(100) // This line was removed
       
       if (data.success && data.hasNewUpdates) {
         const newNotification = `Nueva actualización disponible - ${new Date().toLocaleTimeString()}`
@@ -95,12 +93,14 @@ export default function UpdatesPage({ params }: UpdatesPageProps) {
       setLastUpdate(new Date())
       
       // 重置进度条
-      setTimeout(() => setUpdateProgress(0), 1000)
+      setTimeout(() => {
+        // setUpdateProgress(0) // This line was removed
+      }, 1000)
     } catch (error) {
       console.error('Error checking updates:', error)
       const errorNotification = `Error al verificar actualizaciones - ${new Date().toLocaleTimeString()}`
       setNotifications(prev => [errorNotification, ...prev.slice(0, 4)])
-      setUpdateProgress(0)
+      // setUpdateProgress(0) // This line was removed
     } finally {
       setIsChecking(false)
     }
@@ -121,28 +121,29 @@ export default function UpdatesPage({ params }: UpdatesPageProps) {
 
   const downloadUpdate = async () => {
     setIsDownloading(true)
-    setUpdateProgress(0)
     
     try {
       // 模拟下载进度
       const progressInterval = setInterval(() => {
-        setUpdateProgress(prev => {
-          if (prev >= 100) {
-            clearInterval(progressInterval)
-            return 100
-          }
-          return prev + 5
-        })
+        // setUpdateProgress(prev => { // This line was removed
+        //   if (prev >= 100) {
+        //     clearInterval(progressInterval)
+        //     return 100
+        //   }
+        //   return prev + 5
+        // })
       }, 100)
 
       // 模拟下载完成
       setTimeout(() => {
         clearInterval(progressInterval)
-        setUpdateProgress(100)
+        // setUpdateProgress(100) // This line was removed
         setIsDownloading(false)
         const downloadNotification = `Descarga completada - ${new Date().toLocaleTimeString()}`
         setNotifications(prev => [downloadNotification, ...prev.slice(0, 4)])
-        setTimeout(() => setUpdateProgress(0), 1000)
+        setTimeout(() => {
+          // setUpdateProgress(0) // This line was removed
+        }, 1000)
       }, 3000)
     } catch (error) {
       console.error('Error downloading update:', error)

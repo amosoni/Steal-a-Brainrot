@@ -11,7 +11,11 @@ import {
   CheckCircle, 
   Calendar,
   Info,
-  Zap
+  Zap,
+  BookOpen,
+  Shield,
+  Users,
+  TrendingUp
 } from 'lucide-react'
 
 interface CodigosGuideProps {
@@ -29,15 +33,44 @@ export default function CodigosGuide({ params }: CodigosGuideProps) {
 
   const { t } = useTranslation(lang)
 
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  const statusList = getArrayData('guides.codigos.statusList')
+  const expiredCodesList = getArrayData('guides.codigos.expiredCodesList')
+  const reasons = getArrayData('guides.codigos.reasons')
+  const alternatives = getArrayData('guides.codigos.alternatives')
+  const faqQuestions = getFAQData('guides.codigos.faq.questions')
+
   return (
     <>
       <SEOHead
-        title={t('guides.codigos.seoTitle') as string}
-        description={t('guides.codigos.seoDescription') as string}
-        keywords={t('guides.codigos.seoKeywords') as string}
+        title={t('guides.codigos.seoTitle')}
+        description={t('guides.codigos.seoDescription')}
+        keywords={(() => {
+          const keywords = t('guides.codigos.seoKeywords')
+          if (Array.isArray(keywords)) {
+            return keywords as string[]
+          }
+          return [keywords as string]
+        })()}
         url={`/${lang}/guides/codigos`}
         lang={lang}
-        type="guide"
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -97,23 +130,17 @@ export default function CodigosGuide({ params }: CodigosGuideProps) {
                   <h2 className="text-2xl font-bold text-red-800">{t('guides.codigos.noActiveCodes') as string}</h2>
                 </div>
                 <p className="text-gray-700 text-lg mb-4">
-                  {t('guides.codigos.noActiveCodesDesc') as string}
+                  {t('guides.codigos.noActiveCodesDesc')}
                 </p>
                 <div className="bg-white rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-900 mb-2">{t('guides.codigos.currentStatus') as string}</h3>
+                  <h3 className="font-semibold text-gray-900 mb-2">{t('guides.codigos.currentStatus')}</h3>
                   <ul className="space-y-2 text-gray-700">
-                    {Array.isArray(t('guides.codigos.statusList')) ? 
-                      (t('guides.codigos.statusList') as string[]).map((status: string, index: number) => (
+                    {statusList.map((status: string, index: number) => (
                         <li key={index} className="flex items-start">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                           {status}
                         </li>
-                      )) : 
-                      <li className="flex items-start">
-                        <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                        {t('guides.codigos.defaultStatus') as string}
-                      </li>
-                    }
+                      ))}
                   </ul>
                 </div>
               </div>
@@ -121,62 +148,42 @@ export default function CodigosGuide({ params }: CodigosGuideProps) {
 
             {/* Expired Codes Section */}
             <div id="expired-codes" className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.codigos.expiredCodes') as string}</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.codigos.expiredCodes')}</h2>
               <div className="space-y-4">
-                {Array.isArray(t('guides.codigos.expiredCodesList')) ? 
-                  (t('guides.codigos.expiredCodesList') as string[]).map((code: string, index: number) => (
+                {expiredCodesList.map((code: string, index: number) => (
                     <div key={index} className="bg-gray-50 rounded-lg p-4 flex items-center justify-between">
                       <span className="font-mono text-gray-700">{code}</span>
-                      <span className="text-red-500 text-sm font-medium">{t('guides.codigos.expired') as string}</span>
+                      <span className="text-red-500 text-sm font-medium">{t('guides.codigos.expired')}</span>
                     </div>
-                  )) : 
-                  <div className="bg-gray-50 rounded-lg p-4">
-                    <span className="text-gray-500">{t('guides.codigos.noExpiredCodes') as string}</span>
-                  </div>
-                }
+                  ))}
               </div>
               
               <div className="mt-6 bg-yellow-50 rounded-lg p-4">
-                <h3 className="text-lg font-semibold text-yellow-800 mb-2">{t('guides.codigos.whyExpired') as string}</h3>
+                <h3 className="text-lg font-semibold text-yellow-800 mb-2">{t('guides.codigos.whyExpired')}</h3>
                 <ul className="space-y-2 text-gray-700">
-                  {Array.isArray(t('guides.codigos.reasons')) ? 
-                    (t('guides.codigos.reasons') as string[]).map((reason: string, index: number) => (
+                  {reasons.map((reason: string, index: number) => (
                       <li key={index} className="flex items-start">
                         <Info className="w-4 h-4 text-yellow-600 mr-2 mt-0.5 flex-shrink-0" />
                         {reason}
                       </li>
-                    )) : 
-                    <li className="flex items-start">
-                      <Info className="w-4 h-4 text-yellow-600 mr-2 mt-0.5 flex-shrink-0" />
-                      {t('guides.codigos.defaultReason') as string}
-                    </li>
-                  }
+                    ))}
                 </ul>
               </div>
             </div>
 
             {/* Alternatives Section */}
             <div id="alternatives" className="bg-white rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.codigos.alternativesTitle') as string}</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.codigos.alternativesTitle')}</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                {Array.isArray(t('guides.codigos.alternatives')) ? 
-                  (t('guides.codigos.alternatives') as string[]).map((alternative: string, index: number) => (
+                {alternatives.map((alternative: string, index: number) => (
                     <div key={index} className="bg-green-50 rounded-lg p-4">
                       <div className="flex items-center mb-2">
                         <Zap className="w-5 h-5 text-green-600 mr-2" />
-                        <h3 className="font-semibold text-green-800">{t(`guides.codigos.alternative${index + 1}.title`) as string}</h3>
+                        <h3 className="font-semibold text-green-800">{t(`guides.codigos.alternative${index + 1}.title`)}</h3>
                       </div>
                       <p className="text-green-700">{alternative}</p>
                     </div>
-                  )) : 
-                  <div className="bg-green-50 rounded-lg p-4">
-                    <div className="flex items-center mb-2">
-                      <Zap className="w-5 h-5 text-green-600 mr-2" />
-                      <h3 className="font-semibold text-green-800">{t('guides.codigos.defaultAlternative.title') as string}</h3>
-                    </div>
-                    <p className="text-green-700">{t('guides.codigos.defaultAlternative.description') as string}</p>
-                  </div>
-                }
+                  ))}
               </div>
             </div>
 
@@ -184,18 +191,12 @@ export default function CodigosGuide({ params }: CodigosGuideProps) {
             <div id="faq" className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.codigos.faq.title') as string}</h2>
               <div className="space-y-6">
-                {Array.isArray(t('guides.codigos.faq.questions')) ? 
-                  (t('guides.codigos.faq.questions') as Array<{question: string, answer: string}>).map((faq, index: number) => (
+                {faqQuestions.map((faq, index: number) => (
                     <div key={index} className="border-b border-gray-200 pb-4">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
                       <p className="text-gray-700">{faq.answer}</p>
                     </div>
-                  )) : 
-                  <div className="border-b border-gray-200 pb-4">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('guides.codigos.faq.defaultQuestion') as string}</h3>
-                    <p className="text-gray-700">{t('guides.codigos.faq.defaultAnswer') as string}</p>
-                  </div>
-                }
+                  ))}
               </div>
             </div>
           </div>
@@ -206,18 +207,12 @@ export default function CodigosGuide({ params }: CodigosGuideProps) {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">{t('guides.codigos.prerequisites.title') as string}</h3>
               <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.codigos.prerequisites.list')) ? 
-                  (t('guides.codigos.prerequisites.list') as string[]).map((prereq: string, index: number) => (
+                {getArrayData('guides.codigos.prerequisites.list').map((prereq: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                       {prereq}
                     </li>
-                  )) : 
-                  <li className="flex items-start">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    {t('guides.codigos.prerequisites.default') as string}
-                  </li>
-                }
+                  ))}
               </ul>
             </div>
 

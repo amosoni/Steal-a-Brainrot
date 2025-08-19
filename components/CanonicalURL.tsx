@@ -1,12 +1,7 @@
 'use client'
 import { usePathname } from 'next/navigation'
-import Head from 'next/head'
 
-interface CanonicalURLProps {
-  lang: string
-}
-
-export default function CanonicalURL({ lang }: CanonicalURLProps) {
+export default function CanonicalURL() {
   const pathname = usePathname()
   const baseUrl = 'https://www.stealabrainrot.live'
   
