@@ -36,12 +36,17 @@ export default function ModificadoGuide({ params }: ModificadoGuideProps) {
   return (
     <>
       <SEOHead
-        title={t('guides.modificado.seoTitle') as string}
-        description={t('guides.modificado.seoDescription') as string}
-        keywords={t('guides.modificado.seoKeywords') as string}
+        title={t('guides.modificado.seoTitle')}
+        description={t('guides.modificado.seoDescription')}
+        keywords={(() => {
+          const keywords = t('guides.modificado.seoKeywords')
+          if (Array.isArray(keywords)) {
+            return keywords as string[]
+          }
+          return [keywords as string]
+        })()}
         url={`/${lang}/guides/modificado`}
         lang={lang}
-        type="guide"
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

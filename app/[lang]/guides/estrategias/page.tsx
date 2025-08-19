@@ -41,6 +41,33 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
 
   const { t } = useTranslation(lang)
 
+  // 安全地获取数组数据
+  const getArrayData = (key: string): string[] => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as string[]
+    }
+    return []
+  }
+
+  // 安全地获取FAQ数据
+  const getFAQData = (key: string): Array<{question: string, answer: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{question: string, answer: string}>
+    }
+    return []
+  }
+
+  // 安全地获取提示数据
+  const getTipsData = (key: string): Array<{title: string, description: string}> => {
+    const data = t(key)
+    if (Array.isArray(data)) {
+      return data as Array<{title: string, description: string}>
+    }
+    return []
+  }
+
   return (
     <>
       <SEOHead
@@ -128,8 +155,8 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.estrategias.hitAndRun.advantages') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.estrategias.hitAndRun.advantagesList')) ? 
-                        (t('guides.estrategias.hitAndRun.advantagesList') as string[]).map((advantage: string, index: number) => (
+                      {getArrayData('guides.estrategias.hitAndRun.advantagesList').length > 0 ? 
+                        getArrayData('guides.estrategias.hitAndRun.advantagesList').map((advantage: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-red-500 mr-2 mt-0.5 flex-shrink-0" />
                             {advantage}
@@ -137,7 +164,7 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
                         )) : 
                         <li className="flex items-start">
                           <CheckCircle className="w-3 h-3 text-red-500 mr-2 mt-0.5 flex-shrink-0" />
-                          {t('guides.estrategias.hitAndRun.defaultAdvantage') as string}
+                          {t('guides.estrategias.hitAndRun.defaultAdvantage')}
                         </li>
                       }
                     </ul>
@@ -153,8 +180,8 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.estrategias.stealthApproach.advantages') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.estrategias.stealthApproach.advantagesList')) ? 
-                        (t('guides.estrategias.stealthApproach.advantagesList') as string[]).map((advantage: string, index: number) => (
+                      {getArrayData('guides.estrategias.stealthApproach.advantagesList').length > 0 ? 
+                        getArrayData('guides.estrategias.stealthApproach.advantagesList').map((advantage: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                             {advantage}
@@ -162,7 +189,7 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
                         )) : 
                         <li className="flex items-start">
                           <CheckCircle className="w-3 h-3 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                          {t('guides.estrategias.stealthApproach.defaultAdvantage') as string}
+                          {t('guides.estrategias.stealthApproach.defaultAdvantage')}
                         </li>
                       }
                     </ul>
@@ -178,8 +205,8 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.estrategias.teamTactics.advantages') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.estrategias.teamTactics.advantagesList')) ? 
-                        (t('guides.estrategias.teamTactics.advantagesList') as string[]).map((advantage: string, index: number) => (
+                      {getArrayData('guides.estrategias.teamTactics.advantagesList').length > 0 ? 
+                        getArrayData('guides.estrategias.teamTactics.advantagesList').map((advantage: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <CheckCircle className="w-3 h-3 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                             {advantage}
@@ -187,7 +214,7 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
                         )) : 
                         <li className="flex items-start">
                           <CheckCircle className="w-3 h-3 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                          {t('guides.estrategias.teamTactics.defaultAdvantage') as string}
+                          {t('guides.estrategias.teamTactics.defaultAdvantage')}
                         </li>
                       }
                     </ul>
@@ -210,8 +237,8 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.estrategias.prioritize.tips') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.estrategias.prioritize.tipsList')) ? 
-                        (t('guides.estrategias.prioritize.tipsList') as string[]).map((tip: string, index: number) => (
+                      {getArrayData('guides.estrategias.prioritize.tipsList').length > 0 ? 
+                        getArrayData('guides.estrategias.prioritize.tipsList').map((tip: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <Zap className="w-3 h-3 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
                             {tip}
@@ -235,8 +262,8 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
                   <div className="bg-white rounded-lg p-3">
                     <h4 className="font-semibold text-gray-900 mb-2">{t('guides.estrategias.efficiency.tips') as string}</h4>
                     <ul className="space-y-1 text-gray-700 text-sm">
-                      {Array.isArray(t('guides.estrategias.efficiency.tipsList')) ? 
-                        (t('guides.estrategias.efficiency.tipsList') as string[]).map((tip: string, index: number) => (
+                      {getArrayData('guides.estrategias.efficiency.tipsList').length > 0 ? 
+                        getArrayData('guides.estrategias.efficiency.tipsList').map((tip: string, index: number) => (
                           <li key={index} className="flex items-start">
                             <Zap className="w-3 h-3 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
                             {tip}
@@ -262,8 +289,8 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
               </div>
               
               <div className="grid md:grid-cols-2 gap-6">
-                {Array.isArray(t('guides.estrategias.tips')) ? 
-                  (t('guides.estrategias.tips') as Array<{title: string, description: string}>).map((tip, index: number) => (
+                {getTipsData('guides.estrategias.tips').length > 0 ? 
+                  getTipsData('guides.estrategias.tips').map((tip, index: number) => (
                     <div key={index} className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6">
                       <div className="flex items-center mb-3">
                         <AwardIcon className="w-5 h-5 text-indigo-600 mr-2" />
@@ -287,8 +314,8 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
             <div id="faq" className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('guides.estrategias.faq.title') as string}</h2>
               <div className="space-y-6">
-                {Array.isArray(t('guides.estrategias.faq.questions')) ? 
-                  (t('guides.estrategias.faq.questions') as Array<{question: string, answer: string}>).map((faq, index: number) => (
+                {getFAQData('guides.estrategias.faq.questions').length > 0 ? 
+                  getFAQData('guides.estrategias.faq.questions').map((faq, index: number) => (
                     <div key={index} className="border-b border-gray-200 pb-4">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
                       <p className="text-gray-700">{faq.answer}</p>
@@ -309,8 +336,8 @@ export default function EstrategiasGuide({ params }: EstrategiasGuideProps) {
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-lg font-bold text-gray-900 mb-4">{t('guides.estrategias.prerequisites.title') as string}</h3>
             <ul className="space-y-2 text-gray-700">
-                {Array.isArray(t('guides.estrategias.prerequisites.list')) ? 
-                  (t('guides.estrategias.prerequisites.list') as string[]).map((prereq: string, index: number) => (
+                {getArrayData('guides.estrategias.prerequisites.list').length > 0 ? 
+                  getArrayData('guides.estrategias.prerequisites.list').map((prereq: string, index: number) => (
                   <li key={index} className="flex items-start">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                       {prereq}
