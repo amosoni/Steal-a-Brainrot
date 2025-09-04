@@ -47,11 +47,6 @@ export default function ProbabilitiesPage({ params }: ProbabilitiesPageProps) {
 
 
   // 调试信息
-  console.log('ProbabilitiesPage - Current lang:', lang)
-  console.log('ProbabilitiesPage - Title translation:', t('guides.probabilidades.title'))
-  console.log('ProbabilitiesPage - Subtitle translation:', t('guides.probabilidades.subtitle'))
-  console.log('ProbabilitiesPage - Spawn rates translation:', t('guides.probabilidades.spawnRates'))
-  console.log('ProbabilitiesPage - Common title translation:', t('guides.probabilidades.common.title'))
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

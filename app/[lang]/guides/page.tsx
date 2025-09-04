@@ -57,9 +57,6 @@ export default function GuidesPage({ params }: GuidesPageProps) {
 
   
   // 调试信息
-  console.log('Current lang:', lang)
-  console.log('Translation test:', t('guides.title'))
-  console.log('Translation test 2:', t('guides.description'))
 
   // 策略数据
   const strategies = {

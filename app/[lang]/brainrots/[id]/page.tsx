@@ -107,20 +107,17 @@ export default function BrainrotDetailPage({ params }: BrainrotDetailPageProps) 
 
   // 功能按钮处理函数
   const handleBuyNow = () => {
-    console.log('Buy Now clicked!', brainrot)
     setShowSuccessMessage(t('brainrots.addedToCart') as string)
     setTimeout(() => setShowSuccessMessage(''), 3000)
   }
 
   const handleAddToFavorites = () => {
-    console.log('Add to Favorites clicked!', brainrot)
     setIsLiked(true)
     setShowSuccessMessage(t('brainrots.addedToFavorites') as string)
     setTimeout(() => setShowSuccessMessage(''), 3000)
   }
 
   const handleComparePrices = () => {
-    console.log('Compare Prices clicked!', brainrot)
     setShowSuccessMessage(t('brainrots.comparisonFeatureComingSoon') as string)
     setTimeout(() => setShowSuccessMessage(''), 3000)
   }

@@ -79,7 +79,6 @@ export default function BrainrotDetailPage() {
 
   // 功能按钮处理函数
   const handleBuyNow = () => {
-    console.log('Buy Now clicked!', brainrot)
     try {
       CartManager.addToCart({
         id: brainrot.id,
@@ -89,7 +88,6 @@ export default function BrainrotDetailPage() {
       })
       setShowSuccessMessage('¡Agregado al carrito!')
       setTimeout(() => setShowSuccessMessage(''), 3000)
-      console.log('Added to cart successfully')
     } catch (error) {
       console.error('Error adding to cart:', error)
       setShowSuccessMessage('Error al agregar al carrito')
@@ -97,7 +95,6 @@ export default function BrainrotDetailPage() {
   }
 
   const handleAddToFavorites = () => {
-    console.log('Add to Favorites clicked!', brainrot)
     try {
       FavoritesManager.addToFavorites({
         id: brainrot.id,
@@ -107,7 +104,6 @@ export default function BrainrotDetailPage() {
       })
       setShowSuccessMessage('¡Agregado a favoritos!')
       setTimeout(() => setShowSuccessMessage(''), 3000)
-      console.log('Added to favorites successfully')
     } catch (error) {
       console.error('Error adding to favorites:', error)
       setShowSuccessMessage('Error al agregar a favoritos')

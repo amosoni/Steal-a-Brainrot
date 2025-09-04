@@ -76,7 +76,6 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
         isEmbedded: true
       }
       
-      console.log(`已更新SDK配置: app-id=${appId}, game=${gameKey}`)
     }
   }, [gameUrls, getAppIdFromUrl])
 
@@ -122,7 +121,6 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     if (gameLoadingState === 'loading') {
       const timeout = setTimeout(() => {
         setGameLoadingState('timeout')
-        console.log('游戏加载超时，尝试重试...')
         // 自动重试一次
         setTimeout(() => {
           retryGameLoad()
@@ -148,7 +146,6 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
 
   // 重试加载游戏
   const retryGameLoad = useCallback(() => {
-    console.log('重试加载游戏...')
     resetGameLoading()
     
     // 强制刷新iframe
