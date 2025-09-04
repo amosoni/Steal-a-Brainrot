@@ -91,7 +91,7 @@ export default function BrainrotsPage() {
         {/* Header */}
         <div className="text-center">
           <Link href="/" className="text-blue-600 hover:text-blue-700 mb-4 inline-block">
-            ← Volver al Inicio
+            �?Volver al Inicio
           </Link>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">🧠 Base de Datos Brainrot</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -222,7 +222,7 @@ export default function BrainrotsPage() {
 
         {/* Brainrots Grid/List */}
         <div className={viewMode === 'grid' 
-          ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+          ? "grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-3"
           : "space-y-4"
         }>
           {currentBrainrots.map((brainrot) => (
@@ -315,19 +315,19 @@ export default function BrainrotsPage() {
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">Estrategias de Colección</h4>
               <ul className="text-gray-700 space-y-1">
-                <li>• Enfócate en personajes de alta rareza</li>
-                <li>• Usa los filtros para encontrar personajes específicos</li>
-                <li>• Compara precios y ganancias antes de comprar</li>
-                <li>• Mantén un registro de tu colección</li>
+                <li>�?Enfócate en personajes de alta rareza</li>
+                <li>�?Usa los filtros para encontrar personajes específicos</li>
+                <li>�?Compara precios y ganancias antes de comprar</li>
+                <li>�?Mantén un registro de tu colección</li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">Optimización de Búsqueda</h4>
               <ul className="text-gray-700 space-y-1">
-                <li>• Usa la búsqueda por nombre para encontrar personajes específicos</li>
-                <li>• Ordena por precio o ganancia para encontrar las mejores ofertas</li>
-                <li>• Cambia entre vista de cuadrícula y lista según tus preferencias</li>
-                <li>• Usa la paginación para navegar por grandes colecciones</li>
+                <li>�?Usa la búsqueda por nombre para encontrar personajes específicos</li>
+                <li>�?Ordena por precio o ganancia para encontrar las mejores ofertas</li>
+                <li>�?Cambia entre vista de cuadrícula y lista según tus preferencias</li>
+                <li>�?Usa la paginación para navegar por grandes colecciones</li>
               </ul>
             </div>
           </div>

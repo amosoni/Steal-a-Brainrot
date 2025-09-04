@@ -1,0 +1,20 @@
+{
+  "name": "image-collection",
+  "version": "1.0.0",
+  "description": "自动采集游戏图片工具",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "collect-screenshots": "node collect-screenshots.js",
+    "collect-characters": "node collect-characters.js",
+    "process-images": "node process-images.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "axios": "^1.6.0",
+    "sharp": "^0.32.0",
+    "fs-extra": "^11.1.0",
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^3.3.0"
+  }
+}

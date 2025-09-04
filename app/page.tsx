@@ -26,7 +26,7 @@ export default function RootPage() {
     router.replace(`/${preferredLang}`)
   }, [router])
 
-  // 显示加载状态
+  // 显示加载状�?
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="text-center">
@@ -37,3 +37,4 @@ export default function RootPage() {
     </div>
   )
 } 
+

@@ -5,6 +5,7 @@ import { DollarSign, Target, Users } from 'lucide-react'
 
 import Link from 'next/link'
 import { useTranslation } from '@/hooks/useTranslation'
+import Image from 'next/image'
 
 
 interface CalculadoraPageProps {
@@ -167,9 +168,14 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
                     />
                     <div className="flex items-center flex-1">
                       <div className="w-12 h-12 mr-3 relative flex-shrink-0">
-                        <div className="w-12 h-12 flex items-center justify-center bg-gray-200 rounded-full text-gray-500 text-sm font-medium shadow-sm hover:shadow-md transition-shadow duration-200">
-                          {brainrot.name.charAt(0)}
-                        </div>
+                        <Image
+                          src={brainrot.image}
+                          alt={brainrot.name}
+                          width={48}
+                          height={48}
+                          className="w-12 h-12 rounded-full object-cover shadow-sm hover:shadow-md transition-shadow duration-200"
+                          unoptimized
+                        />
                       </div>
                       <div className="flex-1">
                         <div className="font-medium text-gray-900">{brainrot.name}</div>
@@ -274,9 +280,14 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
                     <div key={item.id} className="flex justify-between items-center p-2 bg-gray-50 rounded">
                       <div className="flex items-center">
                         <div className="w-6 h-6 mr-2 relative">
-                          <div className="w-6 h-6 flex items-center justify-center bg-gray-200 rounded text-gray-500 text-xs font-medium">
-                            {item.name.charAt(0)}
-                          </div>
+                          <Image
+                            src={item.image}
+                            alt={item.name}
+                            width={24}
+                            height={24}
+                            className="w-6 h-6 rounded-full object-cover shadow-sm hover:shadow-md transition-shadow duration-200"
+                            unoptimized
+                          />
                         </div>
                         <span className="font-medium">{item.name}</span>
                       </div>
