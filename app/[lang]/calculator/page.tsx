@@ -98,7 +98,7 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
             ← {t('common.backToHome') as string}
           </Link>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">💰 {t('calculator.title') as string}</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
             {t('calculator.description') as string}
           </p>
         </div>
@@ -111,7 +111,7 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
               
               {/* Investment Amount */}
               <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-800 mb-2">
                   {t('calculator.investment') as string} (Robux)
                 </label>
                 <div className="relative">
@@ -128,7 +128,7 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
 
               {/* Time Frame */}
               <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-800 mb-2">
                   {t('calculator.timeFrame') as string} (horas)
                 </label>
                 <select
@@ -179,7 +179,7 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
                       </div>
                       <div className="flex-1">
                         <div className="font-medium text-gray-900">{brainrot.name}</div>
-                        <div className="text-sm text-gray-600">
+                        <div className="text-sm text-gray-800">
                           {t('calculator.price') as string}: <span className="font-medium">{brainrot.price.toLocaleString()}</span> | {t('calculator.profit') as string}: <span className="font-medium text-green-600">{brainrot.profit.toLocaleString()}</span>/h
                         </div>
                       </div>
@@ -198,7 +198,7 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
               <div className="bg-white rounded-lg shadow-md p-6 text-center">
                 <Users className="w-8 h-8 text-blue-600 mx-auto mb-2" />
                 <div className="text-2xl font-bold text-gray-900">{selectedBrainrots.length}</div>
-                <div className="text-gray-600">{t('calculator.selectCharacters') as string}</div>
+                <div className="text-gray-800">{t('calculator.selectCharacters') as string}</div>
               </div>
               
               <div className="bg-white rounded-lg shadow-md p-6 text-center">
@@ -206,7 +206,7 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
                 <div className="text-2xl font-bold text-gray-900">
                   {totalInvestment.toLocaleString()}
                 </div>
-                <div className="text-gray-600">{t('calculator.totalInvestment') as string}</div>
+                <div className="text-gray-800">{t('calculator.totalInvestment') as string}</div>
               </div>
             </div>
 
@@ -216,49 +216,49 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
               
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-600">{t('calculator.hourlyProfit') as string}:</span>
+                  <span className="text-gray-800">{t('calculator.hourlyProfit') as string}:</span>
                   <span className="text-lg font-semibold text-green-600">
                     {totalHourlyProfit.toLocaleString()} Robux/h
                   </span>
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-600">{t('calculator.totalProfit') as string} ({timeFrame}h):</span>
+                  <span className="text-gray-800">{t('calculator.totalProfit') as string} ({timeFrame}h):</span>
                   <span className="text-lg font-semibold text-green-600">
                     {totalProfit.toLocaleString()} Robux
                   </span>
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-600">{t('calculator.netProfit') as string}:</span>
+                  <span className="text-gray-800">{t('calculator.netProfit') as string}:</span>
                   <span className={`text-lg font-semibold ${netProfit >= 0 ? 'text-green-600' : 'text-red-600'}`}>
                     {netProfit.toLocaleString()} Robux
                   </span>
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-600">{t('calculator.hourlyROI') as string}:</span>
+                  <span className="text-gray-800">{t('calculator.hourlyROI') as string}:</span>
                   <span className={`text-lg font-semibold ${hourlyROI >= 0 ? 'text-green-600' : 'text-red-600'}`}>
                     {hourlyROI.toFixed(2)}%
                   </span>
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-600">{t('calculator.roi') as string}:</span>
+                  <span className="text-gray-800">{t('calculator.roi') as string}:</span>
                   <span className={`text-lg font-semibold ${roi >= 0 ? 'text-green-600' : 'text-red-600'}`}>
                     {roi.toFixed(2)}%
                   </span>
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-600">{t('calculator.timePeriod') as string}:</span>
+                  <span className="text-gray-800">{t('calculator.timePeriod') as string}:</span>
                   <span className="text-lg font-semibold">{timeFrame} {t('calculator.hours') as string}</span>
                 </div>
               </div>
 
               {/* ROI Bar */}
               <div className="mt-6">
-                <div className="flex justify-between text-sm text-gray-600 mb-2">
+                <div className="flex justify-between text-sm text-gray-800 mb-2">
                   <span>{t('calculator.roi') as string}</span>
                   <span>{roi.toFixed(2)}%</span>
                 </div>
@@ -335,7 +335,7 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
       {/* Tips */}
       <div className="bg-blue-50 rounded-lg p-6">
         <h3 className="text-lg font-bold mb-4">💡 {t('calculator.investmentTips') as string}</h3>
-        <ul className="space-y-2 text-gray-700">
+        <ul className="space-y-2 text-gray-800">
           <li>• {t('calculator.tip1') as string}</li>
           <li>• {t('calculator.tip2') as string}</li>
           <li>• {t('calculator.tip3') as string}</li>
