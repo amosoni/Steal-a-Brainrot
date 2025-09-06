@@ -1,8 +1,28 @@
-﻿import Image from "next/image"
+import Image from "next/image"
 import { Star, TrendingUp, DollarSign, Eye, Heart } from "lucide-react"
 import { useState } from "react"
 
-export default function BrainrotCard({ brainrot }: any) {
+interface Brainrot {
+  id: string
+  name: string
+  rarity: number
+  price: number
+  profit: number
+  image: string
+  description: {
+    en: string
+    es: string
+    zh: string
+  }
+}
+
+interface BrainrotCardProps {
+  brainrot: Brainrot
+  showDetails: boolean
+  lang: string
+}
+
+export default function BrainrotCard({ brainrot, showDetails, lang }: BrainrotCardProps) {
   const [isLiked, setIsLiked] = useState(false)
 
   const getRarityColor = (rarity: number) => {
@@ -49,9 +69,12 @@ export default function BrainrotCard({ brainrot }: any) {
     setIsLiked(!isLiked)
   }
 
+  const handleCardClick = () => {
+    window.location.href = `/${lang}/brainrots/${brainrot.id}`
+  }
+
   return (
-    <div className={`${getCardBackground(brainrot.rarity)} rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 p-4 group cursor-pointer transform hover:-translate-y-2 border border-white/20`}>
-      {/* Header with name and like button */}
+    <div className={`${getCardBackground(brainrot.rarity)} rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 p-4 group cursor-pointer transform hover:-translate-y-2 border border-white/20`} onClick={handleCardClick}>
       <div className="flex items-center justify-between mb-3">
         <h3 className="text-lg font-bold text-white truncate pr-2 group-hover:text-yellow-300 transition-colors">
           {brainrot.name}
@@ -68,7 +91,6 @@ export default function BrainrotCard({ brainrot }: any) {
         </button>
       </div>
 
-      {/* Rarity badge */}
       <div className="flex justify-center mb-4">
         <span className={`px-3 py-1 rounded-full text-xs font-semibold bg-black/30 ${getRarityColor(brainrot.rarity)}`}>
           <Star className="w-3 h-3 inline mr-1" />
@@ -76,7 +98,6 @@ export default function BrainrotCard({ brainrot }: any) {
         </span>
       </div>
 
-      {/* Image container - smaller to show full image like reference */}
       <div className="relative rounded-xl h-24 mb-4 overflow-hidden bg-black/20 group-hover:scale-105 transition-transform duration-300">
         <Image
           src={brainrot.image}
@@ -86,13 +107,11 @@ export default function BrainrotCard({ brainrot }: any) {
           className="object-contain w-full h-full p-2"
           unoptimized
         />
-        {/* ROI overlay */}
         <div className="absolute top-1 right-1 bg-black/80 text-white text-xs px-2 py-1 rounded font-semibold">
           {((brainrot.profit / brainrot.price) * 100).toFixed(1)}%
         </div>
       </div>
 
-      {/* Stats section - simplified for dark theme */}
       <div className="space-y-2">
         <div className="flex justify-between items-center">
           <span className="text-sm text-gray-300">Price</span>
@@ -110,7 +129,6 @@ export default function BrainrotCard({ brainrot }: any) {
         </div>
       </div>
 
-      {/* Action button - dark theme */}
       <button className="w-full mt-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-black py-2 px-4 rounded-xl font-bold hover:from-yellow-400 hover:to-orange-400 transition-all duration-300 transform hover:scale-105 shadow-lg">
         View Details
       </button>
