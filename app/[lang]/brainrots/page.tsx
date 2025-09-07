@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { brainrots } from '@/data/brainrots'
+import { brainrots, getRarityText } from '@/data/brainrots'
 import BrainrotCard from '@/components/BrainrotCard'
 import { Filter, Search, SortAsc, SortDesc, Grid, List } from 'lucide-react'
 import Link from 'next/link'

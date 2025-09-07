@@ -124,16 +124,22 @@ export default function RootLayout({
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-12FSDQM646"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="beforeInteractive">
           {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-12FSDQM646');
+              gtag('config', 'G-12FSDQM646', {
+                page_title: document.title,
+                page_location: window.location.href,
+              });
           `}
         </Script>
+        
+        {/* Google Analytics 验证元标签 */}
+        <meta name="google-site-verification" content="G-12FSDQM646" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
