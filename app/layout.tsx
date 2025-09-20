@@ -34,12 +34,12 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://www.stealabrainrot.live'),
   alternates: {
-    canonical: 'https://www.stealabrainrot.live/es',
+    canonical: 'https://www.stealabrainrot.live/',
     languages: {
       'es': 'https://www.stealabrainrot.live/es',
       'en': 'https://www.stealabrainrot.live/en',
       'zh': 'https://www.stealabrainrot.live/zh',
-      'x-default': 'https://www.stealabrainrot.live/es',
+      'x-default': 'https://www.stealabrainrot.live/',
     },
   },
   icons: {

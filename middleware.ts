@@ -5,8 +5,15 @@ const locales = ['es', 'en', 'zh']
 const defaultLocale = 'es'
 
 export function middleware(request: NextRequest) {
-  // 获取路径名
+  const url = request.nextUrl
   const pathname = request.nextUrl.pathname
+  
+  // 强制使用 www 子域名
+  if (url.hostname === 'stealabrainrot.live') {
+    const newUrl = new URL(request.url)
+    newUrl.hostname = 'www.stealabrainrot.live'
+    return NextResponse.redirect(newUrl, 301)
+  }
   
   // 检查路径是否已经包含语言代码
   const pathnameHasLocale = locales.some(
@@ -15,7 +22,13 @@ export function middleware(request: NextRequest) {
 
   // 如果路径没有语言代码，重定向到默认语言
   if (!pathnameHasLocale) {
-    // 获取用户的首选语言
+    // 对于根路径，始终重定向到西班牙语
+    if (pathname === '/') {
+      const newUrl = new URL('/es', request.url)
+      return NextResponse.redirect(newUrl, 302)
+    }
+    
+    // 对于其他路径，根据用户的首选语言重定向
     const acceptLanguage = request.headers.get('accept-language') || ''
     let preferredLocale = defaultLocale
     
@@ -30,7 +43,7 @@ export function middleware(request: NextRequest) {
     
     // 重定向到首选语言
     const newUrl = new URL(`/${preferredLocale}${pathname}`, request.url)
-    return NextResponse.redirect(newUrl)
+    return NextResponse.redirect(newUrl, 302)
   }
 
   // 如果路径有语言代码，继续处理
@@ -44,8 +57,8 @@ export const config = {
     // - _next/static (static files)
     // - _next/image (image optimization files)
     // - favicon.ico (favicon file)
-    // - 已经包含语言代码的路径
-    '/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)',
+    // - 静态文件
+    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.).*)',
   ],
 } 
  

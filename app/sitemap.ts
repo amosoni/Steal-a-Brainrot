@@ -7,22 +7,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 基础页面
   const basePages = [
     {
-      url: `${baseUrl}/es`,
+      url: `${baseUrl}/`,
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 1,
+    },
+    {
+      url: `${baseUrl}/es`,
+      lastModified: currentDate,
+      changeFrequency: 'daily' as const,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/en`,
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
-      priority: 1,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/zh`,
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
-      priority: 1,
+      priority: 0.9,
     },
   ]
 
