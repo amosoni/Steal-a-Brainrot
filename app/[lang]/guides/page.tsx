@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { BookOpen, Target, TrendingUp, Users, Star } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
+import PageSEO from '@/components/PageSEO'
 
 interface GuidesPageProps {
   params: Promise<{ lang: string }>
@@ -192,6 +193,22 @@ export default function GuidesPage({ params }: GuidesPageProps) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <PageSEO
+        title={t('guides.title') as string}
+        description={t('guides.description') as string}
+        keywords={[
+          t('guides.title') as string,
+          'Steal a Brainrot',
+          'Roblox',
+          'Guides',
+          'Strategy',
+          'Tips',
+          'Tutorials'
+        ].join(', ')}
+        url={`/${lang}/guides`}
+        lang={lang}
+        type="guide"
+      />
       <div className="space-y-8">
         {/* Header */}
         <div className="text-center">

@@ -1,11 +1,12 @@
 'use client'
 import { useState } from 'react'
-import { brainrots, getRarityText } from '@/data/brainrots'
+import { brainrots } from '@/data/brainrots'
 import BrainrotCard from '@/components/BrainrotCard'
 import { Filter, Search, SortAsc, SortDesc, Grid, List } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from '@/hooks/useTranslation'
 import { use } from 'react'
+import PageSEO from '@/components/PageSEO'
 
 export default function BrainrotsPage({ params }: { params: Promise<{ lang: string }> }) {
   const resolvedParams = use(params)
@@ -74,6 +75,8 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
     { value: 7, label: t('brainrots.divine') }
   ]
 
+  const selectedRarityLabel = rarityOptions.find(option => option.value === selectedRarity)?.label
+
   const sortOptions = [
     { value: 'name', label: t('brainrots.sortByName') },
     { value: 'price', label: t('brainrots.sortByPrice') },
@@ -93,6 +96,22 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <PageSEO
+        title={t('brainrots.title') as string}
+        description={t('brainrots.description') as string}
+        keywords={[
+          t('brainrots.title') as string,
+          'Steal a Brainrot',
+          'Characters',
+          'Database',
+          'Rarity',
+          'Prices',
+          'Profit'
+        ].join(', ')}
+        url={`/${resolvedParams.lang}/brainrots${currentPage > 1 ? `?page=${currentPage}` : ''}`}
+        lang={resolvedParams.lang}
+        type="website"
+      />
       <div className="space-y-8">
         {/* Header */}
         <div className="text-center">
@@ -199,7 +218,7 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
           {/* Results Count */}
           <div className="mt-4 text-sm text-gray-600">
             {t('brainrots.showingResults') as string} {filteredBrainrots.length} {(t('brainrots.totalCharacters') as string).toLowerCase()}
-            {selectedRarity && ` (${getRarityText(selectedRarity)})`}
+            {selectedRarity !== null && selectedRarityLabel ? ` (${selectedRarityLabel as string})` : ''}
             {searchTerm && ` (${t('brainrots.searchPlaceholder') as string}: "${searchTerm}")`}
           </div>
         </div>
@@ -225,7 +244,7 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
           </div>
         )}
 
-        {/* Pagination */}
+        {/* Pagination with rel prev/next for SEO */}
         {totalPages > 1 && (
           <div className="flex justify-center items-center space-x-2">
             <button
@@ -257,6 +276,13 @@ export default function BrainrotsPage({ params }: { params: Promise<{ lang: stri
             >
               {t('brainrots.next') as string}
             </button>
+            {/* Invisible links to hint crawlers about prev/next */}
+            {currentPage > 1 && (
+              <a href={`?page=${currentPage - 1}`} rel="prev" className="sr-only">prev</a>
+            )}
+            {currentPage < totalPages && (
+              <a href={`?page=${currentPage + 1}`} rel="next" className="sr-only">next</a>
+            )}
           </div>
         )}
       </div>

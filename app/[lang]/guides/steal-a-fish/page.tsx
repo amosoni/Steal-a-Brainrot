@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { useTranslation } from '@/hooks/useTranslation'
-import SEOHead from '@/components/SEOHead'
+import PageSEO from '@/components/PageSEO'
 import { 
   ArrowLeft, 
   Star, 
@@ -60,19 +60,18 @@ export default function StealAFishGuide({ params }: StealAFishGuideProps) {
 
   return (
     <>
-      <SEOHead
+      <PageSEO
         title={t('guides.stealAFish.seoTitle') as string}
         description={t('guides.stealAFish.seoDescription') as string}
         keywords={(() => {
           const keywords = t('guides.stealAFish.seoKeywords')
-          if (Array.isArray(keywords)) {
-            return keywords as string[]
-          }
-          return [keywords as string]
+          const base = Array.isArray(keywords) ? (keywords as string[]).join(', ') : (keywords as string)
+          const suffix = lang === 'es' ? 'Guía, Consejos, Estrategias' : lang === 'zh' ? '指南, 技巧, 策略' : 'Guide, Tips, Strategies'
+          return `${base}, ${suffix}`
         })()}
         url={`/${lang}/guides/steal-a-fish`}
         lang={lang}
-
+        type="guide"
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

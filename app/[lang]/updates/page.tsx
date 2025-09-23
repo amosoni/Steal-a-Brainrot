@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Calendar, Star, TrendingUp, Users, Bell, CheckCircle, AlertCircle, Download, Clock } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
+import PageSEO from '@/components/PageSEO'
 
 interface UpdatesPageProps {
   params: Promise<{ lang: string }>
@@ -227,6 +228,22 @@ export default function UpdatesPage({ params }: UpdatesPageProps) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <PageSEO
+        title={t('updates.title') as string}
+        description={t('updates.description') as string}
+        keywords={[
+          t('updates.title') as string,
+          'Steal a Brainrot',
+          'Updates',
+          'Patch Notes',
+          'Changelog',
+          'Balance',
+          'New Characters'
+        ].join(', ')}
+        url={`/${lang}/updates`}
+        lang={lang}
+        type="article"
+      />
       <div className="space-y-8">
         {/* Header */}
         <div className="text-center">

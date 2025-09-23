@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { CartManager, FavoritesManager } from '@/utils/cartUtils'
 import CartModal from '@/components/CartModal'
 import PriceComparisonModal from '@/components/PriceComparisonModal'
+import PageSEO from '@/components/PageSEO'
 
 export default function BrainrotDetailPage() {
   const params = useParams()
@@ -116,6 +117,22 @@ export default function BrainrotDetailPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <PageSEO
+        title={`${brainrot ? brainrot.name : 'Brainrot'} | Detalle`}
+        description={brainrot ? `Información, precio, ganancia y ROI de ${brainrot.name}. Rareza: ${brainrot.rarity}/7, Precio: ${brainrot.price}, Ganancia: ${brainrot.profit}/h.` : 'Detalle de personaje Brainrot'}
+        keywords={brainrot ? [
+          brainrot.name,
+          'Steal a Brainrot',
+          'Roblox',
+          'Precio',
+          'Ganancia',
+          'ROI',
+          'Rareza'
+        ].join(', ') : 'Steal a Brainrot, Roblox, Brainrot'}
+        url={`/brainrots/${params.id}`}
+        lang={'es'}
+        type="article"
+      />
       <div className="space-y-8">
         {/* Header */}
         <div className="flex items-center justify-between">

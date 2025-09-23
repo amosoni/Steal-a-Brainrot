@@ -6,6 +6,7 @@ import { DollarSign, Target, Users } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from '@/hooks/useTranslation'
 import Image from 'next/image'
+import PageSEO from '@/components/PageSEO'
 
 
 interface CalculadoraPageProps {
@@ -91,6 +92,14 @@ export default function CalculadoraPage({ params }: CalculadoraPageProps) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <PageSEO
+        title={t('calculator.title') as string}
+        description={t('calculator.description') as string}
+        keywords={[t('calculator.title') as string, 'Steal a Brainrot', 'Calculator'].join(', ')}
+        url={`/${lang}/calculadora`}
+        lang={lang}
+        type="website"
+      />
       <div className="space-y-8">
         {/* Header */}
         <div className="text-center">

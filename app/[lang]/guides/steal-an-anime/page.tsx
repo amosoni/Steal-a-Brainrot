@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { useTranslation } from '@/hooks/useTranslation'
-import SEOHead from '@/components/SEOHead'
+import PageSEO from '@/components/PageSEO'
 import { 
   ArrowLeft, 
   Star, 
@@ -64,18 +64,18 @@ export default function StealAnAnimeGuide({ params }: StealAnAnimeGuideProps) {
 
   return (
     <>
-      <SEOHead
-        title={t('guides.stealAnAnime.seoTitle')}
-        description={t('guides.stealAnAnime.seoDescription')}
+      <PageSEO
+        title={t('guides.stealAnAnime.seoTitle') as string}
+        description={t('guides.stealAnAnime.seoDescription') as string}
         keywords={(() => {
           const keywords = t('guides.stealAnAnime.seoKeywords')
-          if (Array.isArray(keywords)) {
-            return keywords as string[]
-          }
-          return [keywords as string]
+          const base = Array.isArray(keywords) ? (keywords as string[]).join(', ') : (keywords as string)
+          const suffix = lang === 'es' ? 'Guía, Consejos, Estrategias' : lang === 'zh' ? '指南, 技巧, 策略' : 'Guide, Tips, Strategies'
+          return `${base}, ${suffix}`
         })()}
         url={`/${lang}/guides/steal-an-anime`}
         lang={lang}
+        type="guide"
       />
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

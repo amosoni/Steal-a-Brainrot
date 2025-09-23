@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SetHtmlLang from "@/components/SetHtmlLang";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -92,7 +93,8 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'G-12FSDQM646',
+  // Remove invalid Search Console site verification here. Keep GA via Script below.
+  // google: '...',
   },
   other: {
     'theme-color': '#3B82F6',
@@ -138,8 +140,7 @@ export default function RootLayout({
           `}
         </Script>
         
-        {/* Google Analytics 验证元标签 */}
-        <meta name="google-site-verification" content="G-12FSDQM646" />
+        {/* Remove incorrect Search Console verification meta. Add real token if needed. */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -255,6 +256,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
+        <SetHtmlLang />
         <Header />
         <main className="min-h-screen bg-gray-50">
           <div className="w-full">
