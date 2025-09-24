@@ -285,11 +285,11 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
         lang={resolvedParams.lang}
         type="website"
         contentQuality="expert"
-        wordCount={1500}
-        readingTime={5}
+        wordCount={2500}
+        readingTime={8}
         difficulty="medium"
         category="Gaming"
-        tags={['Steal a Brainrot', 'Roblox', 'Game Guide', 'Brainrot', 'Gaming Tools']}
+        tags={['Steal a Brainrot', 'Roblox', 'Game Guide', 'Brainrot', 'Gaming Tools', 'Steal a Brainrot Roblox', 'Steal a Brainrot online', 'Steal a Brainrot free', 'Brainrot characters', 'Steal a Brainrot guide']}
       />
       <div className="space-y-12">
         {/* Hero Section with Game Embed - 全宽显示 */}
@@ -665,6 +665,60 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
           <p className="text-2xl text-gray-600 mb-10 max-w-3xl mx-auto font-medium">
             {t('home.description') as string}
           </p>
+          
+          {/* SEO优化的关键词区块 */}
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              {resolvedParams.lang === 'es' ? '¿Qué es Steal a Brainrot?' : 
+               resolvedParams.lang === 'en' ? 'What is Steal a Brainrot?' : 
+               '什么是Steal a Brainrot？'}
+            </h2>
+            <p className="text-lg text-gray-700 mb-4">
+              {resolvedParams.lang === 'es' ? 
+                'Steal a Brainrot es un juego de Roblox extremadamente popular donde los jugadores compiten por robar el valioso objeto "Brainrot" entre sí. Este juego de ritmo rápido combina estrategia, habilidad y suerte para crear una experiencia de juego única y emocionante.' :
+               resolvedParams.lang === 'en' ? 
+                'Steal a Brainrot is an extremely popular Roblox game where players compete to steal the valuable "Brainrot" object from each other. This fast-paced game combines strategy, skill, and luck to create a unique and exciting gaming experience.' :
+               'Steal a Brainrot是一款极其受欢迎的Roblox游戏，玩家们互相竞争偷取珍贵的"Brainrot"物品。这个快节奏的游戏结合了策略、技巧和运气，创造了独特而令人兴奋的游戏体验。'}
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 text-sm">
+              <div className="bg-white rounded-lg p-4">
+                <h3 className="font-semibold text-blue-600 mb-2">
+                  {resolvedParams.lang === 'es' ? '🎮 Juego Online Gratis' : 
+                   resolvedParams.lang === 'en' ? '🎮 Free Online Game' : 
+                   '🎮 免费在线游戏'}
+                </h3>
+                <p className="text-gray-600">
+                  {resolvedParams.lang === 'es' ? 'Juega Steal a Brainrot completamente gratis en Roblox' :
+                   resolvedParams.lang === 'en' ? 'Play Steal a Brainrot completely free on Roblox' :
+                   '在Roblox上完全免费玩Steal a Brainrot'}
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-4">
+                <h3 className="font-semibold text-green-600 mb-2">
+                  {resolvedParams.lang === 'es' ? '📊 Base de Datos Completa' : 
+                   resolvedParams.lang === 'en' ? '📊 Complete Database' : 
+                   '📊 完整数据库'}
+                </h3>
+                <p className="text-gray-600">
+                  {resolvedParams.lang === 'es' ? 'Más de 100 personajes Brainrot con estadísticas detalladas' :
+                   resolvedParams.lang === 'en' ? 'Over 100 Brainrot characters with detailed statistics' :
+                   '超过100个Brainrot角色，包含详细统计'}
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-4">
+                <h3 className="font-semibold text-purple-600 mb-2">
+                  {resolvedParams.lang === 'es' ? '🧮 Calculadora de Ganancias' : 
+                   resolvedParams.lang === 'en' ? '🧮 Profit Calculator' : 
+                   '🧮 利润计算器'}
+                </h3>
+                <p className="text-gray-600">
+                  {resolvedParams.lang === 'es' ? 'Calcula la configuración óptima para maximizar ganancias' :
+                   resolvedParams.lang === 'en' ? 'Calculate optimal setup to maximize profits' :
+                   '计算最佳配置以最大化利润'}
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
         
         {/* Features Grid */}

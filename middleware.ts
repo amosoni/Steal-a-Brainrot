@@ -60,5 +60,4 @@ export const config = {
     // - 静态文件
     '/((?!api|_next/static|_next/image|favicon.ico|.*\\.).*)',
   ],
-} 
- 
+}

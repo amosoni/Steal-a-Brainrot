@@ -1,6 +1,7 @@
 # AI-Friendly Robots.txt for Steal a Brainrot
 # Optimized for AI crawlers and search engines
 # Based on successful SEO experience sharing
+# Updated for maximum SEO performance
 
 User-agent: *
 Allow: /
@@ -8,20 +9,49 @@ Allow: /
 # 允许所有搜索引擎访问
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# 允许AI爬虫
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 # 禁止访问管理页面和API
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
+Disallow: /debug-*
+Disallow: /test-*
+
+# 允许访问重要资源
+Allow: /images/
+Allow: /videos/
+Allow: /favicon.ico
+Allow: /sitemap.xml
+Allow: /robots.txt
 
 # 站点地图
 Sitemap: https://www.stealabrainrot.live/sitemap.xml
+Sitemap: https://www.stealabrainrot.live/sitemap_full.xml
 
 # 爬取延迟
 Crawl-delay: 1 

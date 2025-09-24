@@ -8,9 +8,9 @@
   },
   "home": {
     "seo": {
-      "title": "Steal a Brainrot - La Guía Más Completa de Roblox",
-      "description": "🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos completa de personajes, calculadora de ganancias, guías de estrategia y consejos expertos. ¡Domina el juego con nuestra asistencia profesional!",
-      "keywords": "Steal a Brainrot, Roblox, Brainrot, Personajes Brainrot, Calculadora de ganancias, Base de datos de personajes, Guía de juego, Estrategias Brainrot, Guía de Roblox"
+      "title": "Steal a Brainrot - La Guía Más Completa de Roblox 2024 | Juego Online Gratis",
+      "description": "🎮 La herramienta definitiva para Steal a Brainrot en Roblox. Base de datos completa de personajes, calculadora de ganancias, guías de estrategia y consejos expertos. ¡Juega Steal a Brainrot online gratis y domina el juego con nuestra asistencia profesional!",
+      "keywords": "Steal a Brainrot, Steal a Brainrot Roblox, Steal a Brainrot juego, Steal a Brainrot online, Steal a Brainrot gratis, Roblox Steal a Brainrot, Brainrot, Personajes Brainrot, Calculadora de ganancias, Base de datos de personajes, Guía de juego, Estrategias Brainrot, Guía de Roblox, Juego Roblox, Roblox gratis, Brainrot characters, Steal a Brainrot guide, Steal a Brainrot calculator, Steal a Brainrot characters, Steal a Brainrot tips, Steal a Brainrot tricks, Steal a Brainrot strategies"
     },
     "title": "Steal a Brainrot",
     "subtitle": "Guía Completa",
@@ -2824,6 +2824,40 @@
     "description": "Descripción:",
     "buyNow": "Comprar Ahora",
     "comparisonFeatureComingSoon": "Función de comparación próximamente"
+  },
+  "footer": {
+    "allRightsReserved": "Todos los derechos reservados",
+    "playOnRoblox": "Jugar en Roblox"
+  },
+  "home": {
+    "screenshots": {
+      "gameOverview": {
+        "title": "Vista General del Juego",
+        "description": "Interfaz principal del juego con controles intuitivos"
+      },
+      "userInterface": {
+        "title": "Interfaz de Usuario",
+        "description": "Diseño limpio y fácil de usar"
+      },
+      "uniqueCharacters": {
+        "title": "Personajes Únicos",
+        "description": "Más de 100 personajes diferentes para coleccionar"
+      },
+      "constantAction": {
+        "title": "Acción Constante",
+        "description": "Juego de ritmo rápido con acción continua"
+      }
+    },
+    "moreGames": {
+      "stealDeadlyRails": {
+        "title": "Steal Deadly Rails",
+        "description": "Un juego emocionante de robo en rieles mortales"
+      },
+      "stealACar": {
+        "title": "Steal a Car",
+        "description": "Roba autos en este juego de acción"
+      }
+    }
   }
 } 
   
