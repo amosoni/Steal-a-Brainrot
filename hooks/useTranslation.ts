@@ -28,6 +28,14 @@ export function useTranslation(lang?: string) {
   // 调试信息
   if (process.env.NODE_ENV === 'development') {
     console.log('useTranslation called with lang:', lang, 'locale:', locale)
+    const cur = translations[locale] as Record<string, unknown>
+    if (cur && typeof cur === 'object') {
+      const topKeys = Object.keys(cur)
+      console.log('translation top-level keys for', locale, topKeys.slice(0, 20))
+      console.log('has home key?', Object.prototype.hasOwnProperty.call(cur, 'home'))
+    } else {
+      console.log('translation object invalid for', locale, typeof cur)
+    }
   }
 
   const t = useCallback((key: string, fallback?: string): string => {
@@ -50,7 +58,7 @@ export function useTranslation(lang?: string) {
         let fallbackValue: unknown = fallbackTranslations
         
         for (const fallbackKey of keys) {
-          if (fallbackValue && typeof fallbackValue === 'object' && fallbackKey in fallbackTranslations) {
+          if (fallbackValue && typeof fallbackValue === 'object' && fallbackKey in (fallbackValue as Record<string, unknown>)) {
             fallbackValue = (fallbackValue as Record<string, unknown>)[fallbackKey]
           } else {
             // 如果英文也找不到，尝试西班牙语
@@ -58,7 +66,7 @@ export function useTranslation(lang?: string) {
             let spanishValue: unknown = spanishTranslations
             
             for (const spanishKey of keys) {
-              if (spanishValue && typeof spanishValue === 'object' && spanishKey in spanishValue) {
+              if (spanishValue && typeof spanishValue === 'object' && spanishKey in (spanishValue as Record<string, unknown>)) {
                 spanishValue = (spanishValue as Record<string, unknown>)[spanishKey]
               } else {
                 // 最后的后备方案
@@ -68,10 +76,10 @@ export function useTranslation(lang?: string) {
                 return fallback || key
               }
             }
-            return spanishValue as string || fallback || key
+            return (typeof spanishValue === 'string' ? spanishValue : fallback || key) as string
           }
         }
-        return fallbackValue as string || fallback || key
+        return (typeof fallbackValue === 'string' ? fallbackValue : fallback || key) as string
       }
     }
     

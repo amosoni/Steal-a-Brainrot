@@ -2848,36 +2848,6 @@
   "footer": {
     "allRightsReserved": "Todos los derechos reservados",
     "playOnRoblox": "Jugar en Roblox"
-  },
-  "home": {
-    "screenshots": {
-      "gameOverview": {
-        "title": "Vista General del Juego",
-        "description": "Interfaz principal del juego con controles intuitivos"
-      },
-      "userInterface": {
-        "title": "Interfaz de Usuario",
-        "description": "Diseño limpio y fácil de usar"
-      },
-      "uniqueCharacters": {
-        "title": "Personajes Únicos",
-        "description": "Más de 100 personajes diferentes para coleccionar"
-      },
-      "constantAction": {
-        "title": "Acción Constante",
-        "description": "Juego de ritmo rápido con acción continua"
-      }
-    },
-    "moreGames": {
-      "stealDeadlyRails": {
-        "title": "Steal Deadly Rails",
-        "description": "Un juego emocionante de robo en rieles mortales"
-      },
-      "stealACar": {
-        "title": "Steal a Car",
-        "description": "Roba autos en este juego de acción"
-      }
-    }
   }
-} 
+}
   
