@@ -12,6 +12,10 @@ export function middleware(request: NextRequest) {
   if (url.hostname === 'stealabrainrot.live') {
     const newUrl = new URL(request.url)
     newUrl.hostname = 'www.stealabrainrot.live'
+    // 如果路径是根路径，直接重定向到 /es
+    if (pathname === '/') {
+      newUrl.pathname = '/es'
+    }
     return NextResponse.redirect(newUrl, 301)
   }
   
