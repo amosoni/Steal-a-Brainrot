@@ -15,6 +15,26 @@
     "title": "Steal a Brainrot",
     "subtitle": "Guía Completa",
     "description": "La guía más completa de Roblox Steal a Brainrot, incluyendo base de datos de personajes, calculadora de ganancias, guías de estrategia y otras herramientas útiles",
+    "hero": {
+      "subtitle": "¡Robar Brainrots Nunca Fue Tan Divertido! | Juego Gratis | Sin Descarga"
+    },
+    "gameSelection": {
+      "title": "Seleccionar Juego"
+    },
+    "games": {
+      "main": {
+        "description": "Juego Principal"
+      },
+      "game1": {
+        "description": "Simulador de Gimnasio"
+      }
+    },
+    "gameStatus": {
+      "loading": "Cargando...",
+      "ready": "Listo",
+      "error": "Error",
+      "newGame": "Nuevo Juego"
+    },
     "features": {
       "database": {
         "title": "Base de Datos Brainrot",

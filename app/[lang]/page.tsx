@@ -38,8 +38,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
   const gameInfo = useMemo(() => ({
     main: {
       title: 'Steal a Brainrot Original 3D',
-      description: currentLang === 'es' ? 'Juego Principal' : 
-                   currentLang === 'en' ? 'Main Game' : '主游戏',
+      description: t('home.games.main.description'),
       image: '/images/Steal-a-Brainrot-Original-3D.webp',
       video: '/videos/Steal-a-Brainrot-Original-3D.mp4',
       icon: '🎮',
@@ -47,14 +46,13 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     },
     game1: {
       title: 'Obby: Gym Simulator, Escape',
-      description: currentLang === 'es' ? 'Simulador de Gimnasio' : 
-                   currentLang === 'en' ? 'Gym Simulator' : '健身房模拟器',
+      description: t('home.games.game1.description'),
       image: '/images/Obby-Gym-Simulator-Escape.webp',
       video: '/videos/Obby-Gym-Simulator-Escape.mp4',
       icon: '🏋️',
       color: 'from-green-400 to-blue-500'
     }
-  }), [currentLang])
+  }), [t])
 
   // 从游戏URL中提取app-id
   const getAppIdFromUrl = useCallback((url: string) => {
@@ -323,9 +321,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               Steal a Brainrot Online
             </h1>
             <h2 className="text-lg md:text-2xl font-bold text-blue-100 drop-shadow">
-              🎮 {currentLang === 'es' ? '¡Robar Brainrots Nunca Fue Tan Divertido! | Juego Gratis | Sin Descarga' : 
-                   currentLang === 'en' ? 'Steal Brainrots Like Never Before! | Free Online | No Download' : 
-                   '偷取脑腐从未如此有趣！| 免费在线 | 无需下载'} 🚀
+              🎮 {t('home.hero.subtitle')} 🚀
             </h2>
           </div>
           
@@ -334,9 +330,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
             {/* 游戏选择侧边栏 */}
             <div className="w-full lg:w-72 space-y-3">
               <h3 className="text-xl font-bold text-white text-center lg:text-left mb-4">
-                {currentLang === 'es' ? 'Seleccionar Juego' : 
-                 currentLang === 'en' ? 'Select Game' : 
-                 '选择游戏'}
+                {t('home.gameSelection.title')}
               </h3>
               
               {/* 游戏选项 */}
@@ -376,9 +370,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                           <div>
                             <h4 className="font-bold text-base">Steal a Brainrot</h4>
                             <p className="text-xs opacity-90">
-                              {currentLang === 'es' ? 'Juego Principal' : 
-                               currentLang === 'en' ? 'Main Game' : 
-                               '主游戏'}
+                              {t('home.games.main.description')}
                             </p>
                           </div>
                         </div>
@@ -389,9 +381,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
                               <span className="text-xs text-blue-200">
-                                {currentLang === 'es' ? 'Cargando...' : 
-                                 currentLang === 'en' ? 'Loading...' : 
-                                 '加载中...'}
+                                {t('home.gameStatus.loading')}
                               </span>
                             </>
                           )}
@@ -399,9 +389,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                               <span className="text-xs text-green-200">
-                                {currentLang === 'es' ? 'Listo' : 
-                                 currentLang === 'en' ? 'Ready' : 
-                                 '就绪'}
+                                {t('home.gameStatus.ready')}
                               </span>
                             </>
                           )}
@@ -409,9 +397,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                               <span className="text-xs text-red-200">
-                                {currentLang === 'es' ? 'Error' : 
-                                 currentLang === 'en' ? 'Error' : 
-                                 '错误'}
+                                {t('home.gameStatus.error')}
                               </span>
                             </>
                           )}
@@ -469,14 +455,10 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                           </div>
                           <div>
                             <h4 className="font-bold text-base">
-                              {currentLang === 'es' ? 'Simulador de Gimnasio' : 
-                               currentLang === 'en' ? 'Gym Simulator' : 
-                               '健身房模拟器'}
+                              {t('home.games.game1.description')}
                             </h4>
                             <p className="text-xs opacity-90">
-                              {currentLang === 'es' ? 'Nuevo Juego' : 
-                               currentLang === 'en' ? 'New Game' : 
-                               '新游戏'}
+                              {t('home.gameStatus.newGame')}
                             </p>
                           </div>
                         </div>
@@ -487,9 +469,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
                               <span className="text-xs text-blue-200">
-                                {currentLang === 'es' ? 'Cargando...' : 
-                                 currentLang === 'en' ? 'Loading...' : 
-                                 '加载中...'}
+                                {t('home.gameStatus.loading')}
                               </span>
                             </>
                           )}
@@ -497,9 +477,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                               <span className="text-xs text-green-200">
-                                {currentLang === 'es' ? 'Listo' : 
-                                 currentLang === 'en' ? 'Ready' : 
-                                 '就绪'}
+                                {t('home.gameStatus.ready')}
                               </span>
                             </>
                           )}
@@ -507,9 +485,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                               <span className="text-xs text-red-200">
-                                {currentLang === 'es' ? 'Error' : 
-                                 currentLang === 'en' ? 'Error' : 
-                                 '错误'}
+                                {t('home.gameStatus.error')}
                               </span>
                             </>
                           )}

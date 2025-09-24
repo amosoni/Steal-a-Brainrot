@@ -15,6 +15,26 @@
     "title": "Steal a Brainrot",
     "subtitle": "完整指南",
     "description": "最完整的Roblox Steal a Brainrot指南，包括角色数据库、利润计算器、策略指南和其他实用工具",
+    "hero": {
+      "subtitle": "偷取脑腐从未如此有趣！| 免费在线 | 无需下载"
+    },
+    "gameSelection": {
+      "title": "选择游戏"
+    },
+    "games": {
+      "main": {
+        "description": "主游戏"
+      },
+      "game1": {
+        "description": "健身房模拟器"
+      }
+    },
+    "gameStatus": {
+      "loading": "加载中...",
+      "ready": "就绪",
+      "error": "错误",
+      "newGame": "新游戏"
+    },
     "features": {
       "database": {
         "title": "角色数据库",
