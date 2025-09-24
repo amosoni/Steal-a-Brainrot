@@ -8,21 +8,8 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl
   const pathname = request.nextUrl.pathname
   
-  // 强制使用 www 子域名
-  if (url.hostname === 'stealabrainrot.live') {
-    const newUrl = new URL(request.url)
-    newUrl.hostname = 'www.stealabrainrot.live'
-    // 如果路径是根路径，直接重定向到 /es
-    if (pathname === '/') {
-      newUrl.pathname = '/es'
-    }
-    return NextResponse.redirect(newUrl, 301)
-  }
-  
-  // 只处理 www 子域名的请求
-  if (url.hostname !== 'www.stealabrainrot.live') {
-    return NextResponse.next()
-  }
+  // 不再强制切换 www，避免与 Vercel 域级 301 互相重定向
+  // 仅做语言前缀处理：当路径没有语言代码时才介入
   
   // 检查路径是否已经包含语言代码
   const pathnameHasLocale = locales.some(
