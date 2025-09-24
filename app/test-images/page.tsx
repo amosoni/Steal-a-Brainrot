@@ -16,7 +16,7 @@ export default function TestImagesPage() {
             <div key={brainrot.id} className="bg-white rounded-lg shadow-md p-4">
               <h3 className="text-lg font-semibold mb-2">{brainrot.name}</h3>
               <p className="text-sm text-gray-600 mb-4">ID: {brainrot.id}</p>
-              <BrainrotCard brainrot={brainrot} lang="en" />
+              <BrainrotCard brainrot={brainrot} lang="en" showDetails={true} />
             </div>
           ))}
         </div>

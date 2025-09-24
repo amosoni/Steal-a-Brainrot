@@ -20,7 +20,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
   
   // 验证语言参数，确保是支持的语言
   const validLanguages = ['es', 'en', 'zh']
-  const currentLang = validLanguages.includes(currentLang) ? currentLang : 'es'
+  const currentLang = validLanguages.includes(resolvedParams.lang) ? resolvedParams.lang : 'es'
   
   const { t } = useTranslation(currentLang)
   const [copiedScript, setCopiedScript] = useState<string | null>(null)

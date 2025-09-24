@@ -38,9 +38,10 @@ export default function SEOPerformanceMonitor({ pageName, lang }: SEOPerformance
     // 监控FID (First Input Delay)
     const fidObserver = new PerformanceObserver((list) => {
       for (const entry of list.getEntries()) {
+        const fidEntry = entry as PerformanceEventTiming
         reportWebVitals({
           name: 'FID',
-          value: entry.processingStart - entry.startTime,
+          value: fidEntry.processingStart - fidEntry.startTime,
         })
       }
     })

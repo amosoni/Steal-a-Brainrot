@@ -6,7 +6,7 @@ import {
   extractLanguageFromPath,
   getPreferredLanguageFromHeader,
   generateLanguageRedirectUrl
-} from './utils/languageUtils'
+} from '@/utils/languageUtils'
 
 export function middleware(request: NextRequest) {
   const url = request.nextUrl
@@ -31,14 +31,14 @@ export function middleware(request: NextRequest) {
     const preferredLanguage = getPreferredLanguageFromHeader(acceptLanguage)
     
     // 重定向到首选语言
-    const newUrl = generateLanguageRedirectUrl(request.url, preferredLanguage, pathname)
+    const newUrl = generateLanguageRedirectUrl(url, preferredLanguage, pathname)
     return NextResponse.redirect(newUrl, 302)
   }
   
   // 验证语言代码是否有效
   if (!isValidLanguage(currentLanguage)) {
     // 如果语言代码无效，重定向到默认语言
-    const newUrl = generateLanguageRedirectUrl(request.url, getDefaultLanguage(), pathname)
+    const newUrl = generateLanguageRedirectUrl(url, getDefaultLanguage(), pathname)
     return NextResponse.redirect(newUrl, 302)
   }
 
