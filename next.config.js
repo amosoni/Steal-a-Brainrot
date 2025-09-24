@@ -18,8 +18,8 @@ const nextConfig = {
   compress: true,
   // 实验性功能
   experimental: {
-    optimizeCss: true,
-    optimizePackageImports: ['lucide-react', '@headlessui/react'],
+    optimizeCss: false, // 暂时禁用，避免构建问题
+    optimizePackageImports: ['lucide-react'],
   },
   // 头部配置
   async headers() {
