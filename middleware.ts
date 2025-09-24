@@ -15,6 +15,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(newUrl, 301)
   }
   
+  // 只处理 www 子域名的请求
+  if (url.hostname !== 'www.stealabrainrot.live') {
+    return NextResponse.next()
+  }
+  
   // 检查路径是否已经包含语言代码
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
@@ -58,6 +63,8 @@ export const config = {
     // - _next/image (image optimization files)
     // - favicon.ico (favicon file)
     // - 静态文件
-    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.).*)',
+    // - sitemap.xml
+    // - robots.txt
+    '/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|.*\\.).*)',
   ],
 }
