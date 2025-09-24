@@ -17,7 +17,12 @@ interface NetworkInformation {
 
 export default function HomePage({ params }: { params: Promise<{ lang: string }> }) {
   const resolvedParams = use(params)
-  const { t } = useTranslation(resolvedParams.lang)
+  
+  // 验证语言参数，确保是支持的语言
+  const validLanguages = ['es', 'en', 'zh']
+  const currentLang = validLanguages.includes(currentLang) ? currentLang : 'es'
+  
+  const { t } = useTranslation(currentLang)
   const [copiedScript, setCopiedScript] = useState<string | null>(null)
   const [currentGame, setCurrentGame] = useState('main') // 'main', 'game1'
   const [gameLoadingState, setGameLoadingState] = useState<'loading' | 'timeout' | 'error' | 'loaded' | 'unavailable' | 'available' | 'testing' | 'testingAlt' | 'comprehensiveCheck' | 'networkMonitor'>('loading')
@@ -33,8 +38,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
   const gameInfo = useMemo(() => ({
     main: {
       title: 'Steal a Brainrot Original 3D',
-      description: resolvedParams.lang === 'es' ? 'Juego Principal' : 
-                   resolvedParams.lang === 'en' ? 'Main Game' : '主游戏',
+      description: currentLang === 'es' ? 'Juego Principal' : 
+                   currentLang === 'en' ? 'Main Game' : '主游戏',
       image: '/images/Steal-a-Brainrot-Original-3D.webp',
       video: '/videos/Steal-a-Brainrot-Original-3D.mp4',
       icon: '🎮',
@@ -42,14 +47,14 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     },
     game1: {
       title: 'Obby: Gym Simulator, Escape',
-      description: resolvedParams.lang === 'es' ? 'Simulador de Gimnasio' : 
-                   resolvedParams.lang === 'en' ? 'Gym Simulator' : '健身房模拟器',
+      description: currentLang === 'es' ? 'Simulador de Gimnasio' : 
+                   currentLang === 'en' ? 'Gym Simulator' : '健身房模拟器',
       image: '/images/Obby-Gym-Simulator-Escape.webp',
       video: '/videos/Obby-Gym-Simulator-Escape.mp4',
       icon: '🏋️',
       color: 'from-green-400 to-blue-500'
     }
-  }), [resolvedParams.lang])
+  }), [currentLang])
 
   // 从游戏URL中提取app-id
   const getAppIdFromUrl = useCallback((url: string) => {
@@ -281,8 +286,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
         title={t('home.seo.title') as string}
         description={t('home.seo.description') as string}
         keywords={t('home.seo.keywords') as string}
-        url={`/${resolvedParams.lang}`}
-        lang={resolvedParams.lang}
+        url={`/${currentLang}`}
+        lang={currentLang}
         type="website"
         contentQuality="expert"
         wordCount={2500}
@@ -318,8 +323,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               Steal a Brainrot Online
             </h1>
             <h2 className="text-lg md:text-2xl font-bold text-blue-100 drop-shadow">
-              🎮 {resolvedParams.lang === 'es' ? '¡Robar Brainrots Nunca Fue Tan Divertido! | Juego Gratis | Sin Descarga' : 
-                   resolvedParams.lang === 'en' ? 'Steal Brainrots Like Never Before! | Free Online | No Download' : 
+              🎮 {currentLang === 'es' ? '¡Robar Brainrots Nunca Fue Tan Divertido! | Juego Gratis | Sin Descarga' : 
+                   currentLang === 'en' ? 'Steal Brainrots Like Never Before! | Free Online | No Download' : 
                    '偷取脑腐从未如此有趣！| 免费在线 | 无需下载'} 🚀
             </h2>
           </div>
@@ -329,8 +334,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
             {/* 游戏选择侧边栏 */}
             <div className="w-full lg:w-72 space-y-3">
               <h3 className="text-xl font-bold text-white text-center lg:text-left mb-4">
-                {resolvedParams.lang === 'es' ? 'Seleccionar Juego' : 
-                 resolvedParams.lang === 'en' ? 'Select Game' : 
+                {currentLang === 'es' ? 'Seleccionar Juego' : 
+                 currentLang === 'en' ? 'Select Game' : 
                  '选择游戏'}
               </h3>
               
@@ -371,8 +376,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                           <div>
                             <h4 className="font-bold text-base">Steal a Brainrot</h4>
                             <p className="text-xs opacity-90">
-                              {resolvedParams.lang === 'es' ? 'Juego Principal' : 
-                               resolvedParams.lang === 'en' ? 'Main Game' : 
+                              {currentLang === 'es' ? 'Juego Principal' : 
+                               currentLang === 'en' ? 'Main Game' : 
                                '主游戏'}
                             </p>
                           </div>
@@ -384,8 +389,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
                               <span className="text-xs text-blue-200">
-                                {resolvedParams.lang === 'es' ? 'Cargando...' : 
-                                 resolvedParams.lang === 'en' ? 'Loading...' : 
+                                {currentLang === 'es' ? 'Cargando...' : 
+                                 currentLang === 'en' ? 'Loading...' : 
                                  '加载中...'}
                               </span>
                             </>
@@ -394,8 +399,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                               <span className="text-xs text-green-200">
-                                {resolvedParams.lang === 'es' ? 'Listo' : 
-                                 resolvedParams.lang === 'en' ? 'Ready' : 
+                                {currentLang === 'es' ? 'Listo' : 
+                                 currentLang === 'en' ? 'Ready' : 
                                  '就绪'}
                               </span>
                             </>
@@ -404,8 +409,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                               <span className="text-xs text-red-200">
-                                {resolvedParams.lang === 'es' ? 'Error' : 
-                                 resolvedParams.lang === 'en' ? 'Error' : 
+                                {currentLang === 'es' ? 'Error' : 
+                                 currentLang === 'en' ? 'Error' : 
                                  '错误'}
                               </span>
                             </>
@@ -464,13 +469,13 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                           </div>
                           <div>
                             <h4 className="font-bold text-base">
-                              {resolvedParams.lang === 'es' ? 'Simulador de Gimnasio' : 
-                               resolvedParams.lang === 'en' ? 'Gym Simulator' : 
+                              {currentLang === 'es' ? 'Simulador de Gimnasio' : 
+                               currentLang === 'en' ? 'Gym Simulator' : 
                                '健身房模拟器'}
                             </h4>
                             <p className="text-xs opacity-90">
-                              {resolvedParams.lang === 'es' ? 'Nuevo Juego' : 
-                               resolvedParams.lang === 'en' ? 'New Game' : 
+                              {currentLang === 'es' ? 'Nuevo Juego' : 
+                               currentLang === 'en' ? 'New Game' : 
                                '新游戏'}
                             </p>
                           </div>
@@ -482,8 +487,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
                               <span className="text-xs text-blue-200">
-                                {resolvedParams.lang === 'es' ? 'Cargando...' : 
-                                 resolvedParams.lang === 'en' ? 'Loading...' : 
+                                {currentLang === 'es' ? 'Cargando...' : 
+                                 currentLang === 'en' ? 'Loading...' : 
                                  '加载中...'}
                               </span>
                             </>
@@ -492,8 +497,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                               <span className="text-xs text-green-200">
-                                {resolvedParams.lang === 'es' ? 'Listo' : 
-                                 resolvedParams.lang === 'en' ? 'Ready' : 
+                                {currentLang === 'es' ? 'Listo' : 
+                                 currentLang === 'en' ? 'Ready' : 
                                  '就绪'}
                               </span>
                             </>
@@ -502,8 +507,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                             <>
                               <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                               <span className="text-xs text-red-200">
-                                {resolvedParams.lang === 'es' ? 'Error' : 
-                                 resolvedParams.lang === 'en' ? 'Error' : 
+                                {currentLang === 'es' ? 'Error' : 
+                                 currentLang === 'en' ? 'Error' : 
                                  '错误'}
                               </span>
                             </>
@@ -532,8 +537,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               {/* 游戏加载提示 */}
               <div className="mt-6 p-4 bg-blue-900/30 rounded-xl border border-blue-500/30">
                 <p className="text-sm text-blue-200 text-center">
-                  {resolvedParams.lang === 'es' ? '💡 Los juegos embebidos pueden tardar más en cargar que visitar el sitio original. Esto es normal debido a las restricciones de seguridad del navegador.' : 
-                   resolvedParams.lang === 'en' ? '💡 Embedded games may take longer to load than visiting the original site. This is normal due to browser security restrictions.' : 
+                  {currentLang === 'es' ? '💡 Los juegos embebidos pueden tardar más en cargar que visitar el sitio original. Esto es normal debido a las restricciones de seguridad del navegador.' : 
+                   currentLang === 'en' ? '💡 Embedded games may take longer to load than visiting the original site. This is normal due to browser security restrictions.' : 
                    '💡 嵌入游戏可能比访问原网站加载更慢。这是由于浏览器安全限制造成的正常现象。'}
                 </p>
               </div>
@@ -548,13 +553,13 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 to-purple-900/80 rounded-xl flex flex-col items-center justify-center text-white z-10">
                       <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-white mb-4"></div>
                       <p className="text-lg font-semibold mb-2">
-                        {resolvedParams.lang === 'es' ? 'Cargando Juego...' : 
-                         resolvedParams.lang === 'en' ? 'Loading Game...' : 
+                        {currentLang === 'es' ? 'Cargando Juego...' : 
+                         currentLang === 'en' ? 'Loading Game...' : 
                          '游戏加载中...'}
                       </p>
                       <p className="text-sm text-blue-200 text-center max-w-xs">
-                        {resolvedParams.lang === 'es' ? 'Por favor espera, el juego se está cargando' : 
-                         resolvedParams.lang === 'en' ? 'Please wait, the game is loading' : 
+                        {currentLang === 'es' ? 'Por favor espera, el juego se está cargando' : 
+                         currentLang === 'en' ? 'Please wait, the game is loading' : 
                          '请稍等，游戏正在加载中'}
                       </p>
                     </div>
@@ -565,13 +570,13 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                     <div className="absolute inset-0 bg-gradient-to-br from-orange-900/80 to-red-900/80 rounded-xl flex flex-col items-center justify-center text-white z-10">
                       <div className="text-6xl mb-4">⏰</div>
                       <p className="text-lg font-semibold mb-2">
-                        {resolvedParams.lang === 'es' ? 'Tiempo de Carga Excedido' : 
-                         resolvedParams.lang === 'en' ? 'Loading Timeout' : 
+                        {currentLang === 'es' ? 'Tiempo de Carga Excedido' : 
+                         currentLang === 'en' ? 'Loading Timeout' : 
                          '加载超时'}
                       </p>
                       <p className="text-sm text-orange-200 text-center max-w-xs mb-4">
-                        {resolvedParams.lang === 'es' ? 'El juego está tardando más de lo esperado. Puedes esperar o usar el enlace directo.' : 
-                         resolvedParams.lang === 'en' ? 'The game is taking longer than expected. You can wait or use the direct link.' : 
+                        {currentLang === 'es' ? 'El juego está tardando más de lo esperado. Puedes esperar o usar el enlace directo.' : 
+                         currentLang === 'en' ? 'The game is taking longer than expected. You can wait or use the direct link.' : 
                          '游戏加载时间超出预期。您可以等待或使用直接链接。'}
                       </p>
                       <div className="flex gap-3">
@@ -579,8 +584,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                           onClick={retryGameLoad}
                           className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
                         >
-                          {resolvedParams.lang === 'es' ? 'Reintentar' : 
-                           resolvedParams.lang === 'en' ? 'Retry' : 
+                          {currentLang === 'es' ? 'Reintentar' : 
+                           currentLang === 'en' ? 'Retry' : 
                            '重试'}
                         </button>
                         <a
@@ -589,8 +594,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                           rel="noopener noreferrer"
                           className="px-6 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors"
                         >
-                          {resolvedParams.lang === 'es' ? 'Abrir Directo' : 
-                           resolvedParams.lang === 'en' ? 'Open Direct' : 
+                          {currentLang === 'es' ? 'Abrir Directo' : 
+                           currentLang === 'en' ? 'Open Direct' : 
                            '直接打开'}
                         </a>
                       </div>
@@ -602,13 +607,13 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                     <div className="absolute inset-0 bg-gradient-to-br from-red-900/80 to-pink-900/80 rounded-xl flex flex-col items-center justify-center text-white z-10">
                       <div className="text-6xl mb-4">❌</div>
                       <p className="text-lg font-semibold mb-2">
-                        {resolvedParams.lang === 'es' ? 'Error al Cargar' : 
-                         resolvedParams.lang === 'en' ? 'Loading Error' : 
+                        {currentLang === 'es' ? 'Error al Cargar' : 
+                         currentLang === 'en' ? 'Loading Error' : 
                          '加载错误'}
                       </p>
                       <p className="text-sm text-red-200 text-center max-w-xs mb-4">
-                        {resolvedParams.lang === 'es' ? 'No se pudo cargar el juego. Intenta de nuevo o usa el enlace directo.' : 
-                         resolvedParams.lang === 'en' ? 'Could not load the game. Try again or use the direct link.' : 
+                        {currentLang === 'es' ? 'No se pudo cargar el juego. Intenta de nuevo o usa el enlace directo.' : 
+                         currentLang === 'en' ? 'Could not load the game. Try again or use the direct link.' : 
                          '无法加载游戏。请重试或使用直接链接。'}
                       </p>
                       <div className="flex gap-3">
@@ -616,8 +621,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                           onClick={retryGameLoad}
                           className="px-6 py-2 bg-red-600 hover:bg-red-700 rounded-lg transition-colors"
                         >
-                          {resolvedParams.lang === 'es' ? 'Reintentar' : 
-                           resolvedParams.lang === 'en' ? 'Retry' : 
+                          {currentLang === 'es' ? 'Reintentar' : 
+                           currentLang === 'en' ? 'Retry' : 
                            '重试'}
                         </button>
                         <a
@@ -626,8 +631,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                           rel="noopener noreferrer"
                           className="px-6 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors"
                         >
-                          {resolvedParams.lang === 'es' ? 'Abrir Directo' : 
-                           resolvedParams.lang === 'en' ? 'Open Direct' : 
+                          {currentLang === 'es' ? 'Abrir Directo' : 
+                           currentLang === 'en' ? 'Open Direct' : 
                            '直接打开'}
                         </a>
                       </div>
@@ -669,51 +674,51 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
           {/* SEO优化的关键词区块 */}
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              {resolvedParams.lang === 'es' ? '¿Qué es Steal a Brainrot?' : 
-               resolvedParams.lang === 'en' ? 'What is Steal a Brainrot?' : 
+              {currentLang === 'es' ? '¿Qué es Steal a Brainrot?' : 
+               currentLang === 'en' ? 'What is Steal a Brainrot?' : 
                '什么是Steal a Brainrot？'}
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              {resolvedParams.lang === 'es' ? 
+              {currentLang === 'es' ? 
                 'Steal a Brainrot es un juego de Roblox extremadamente popular donde los jugadores compiten por robar el valioso objeto "Brainrot" entre sí. Este juego de ritmo rápido combina estrategia, habilidad y suerte para crear una experiencia de juego única y emocionante.' :
-               resolvedParams.lang === 'en' ? 
+               currentLang === 'en' ? 
                 'Steal a Brainrot is an extremely popular Roblox game where players compete to steal the valuable "Brainrot" object from each other. This fast-paced game combines strategy, skill, and luck to create a unique and exciting gaming experience.' :
                'Steal a Brainrot是一款极其受欢迎的Roblox游戏，玩家们互相竞争偷取珍贵的"Brainrot"物品。这个快节奏的游戏结合了策略、技巧和运气，创造了独特而令人兴奋的游戏体验。'}
             </p>
             <div className="grid md:grid-cols-3 gap-4 text-sm">
               <div className="bg-white rounded-lg p-4">
                 <h3 className="font-semibold text-blue-600 mb-2">
-                  {resolvedParams.lang === 'es' ? '🎮 Juego Online Gratis' : 
-                   resolvedParams.lang === 'en' ? '🎮 Free Online Game' : 
+                  {currentLang === 'es' ? '🎮 Juego Online Gratis' : 
+                   currentLang === 'en' ? '🎮 Free Online Game' : 
                    '🎮 免费在线游戏'}
                 </h3>
                 <p className="text-gray-600">
-                  {resolvedParams.lang === 'es' ? 'Juega Steal a Brainrot completamente gratis en Roblox' :
-                   resolvedParams.lang === 'en' ? 'Play Steal a Brainrot completely free on Roblox' :
+                  {currentLang === 'es' ? 'Juega Steal a Brainrot completamente gratis en Roblox' :
+                   currentLang === 'en' ? 'Play Steal a Brainrot completely free on Roblox' :
                    '在Roblox上完全免费玩Steal a Brainrot'}
                 </p>
               </div>
               <div className="bg-white rounded-lg p-4">
                 <h3 className="font-semibold text-green-600 mb-2">
-                  {resolvedParams.lang === 'es' ? '📊 Base de Datos Completa' : 
-                   resolvedParams.lang === 'en' ? '📊 Complete Database' : 
+                  {currentLang === 'es' ? '📊 Base de Datos Completa' : 
+                   currentLang === 'en' ? '📊 Complete Database' : 
                    '📊 完整数据库'}
                 </h3>
                 <p className="text-gray-600">
-                  {resolvedParams.lang === 'es' ? 'Más de 100 personajes Brainrot con estadísticas detalladas' :
-                   resolvedParams.lang === 'en' ? 'Over 100 Brainrot characters with detailed statistics' :
+                  {currentLang === 'es' ? 'Más de 100 personajes Brainrot con estadísticas detalladas' :
+                   currentLang === 'en' ? 'Over 100 Brainrot characters with detailed statistics' :
                    '超过100个Brainrot角色，包含详细统计'}
                 </p>
               </div>
               <div className="bg-white rounded-lg p-4">
                 <h3 className="font-semibold text-purple-600 mb-2">
-                  {resolvedParams.lang === 'es' ? '🧮 Calculadora de Ganancias' : 
-                   resolvedParams.lang === 'en' ? '🧮 Profit Calculator' : 
+                  {currentLang === 'es' ? '🧮 Calculadora de Ganancias' : 
+                   currentLang === 'en' ? '🧮 Profit Calculator' : 
                    '🧮 利润计算器'}
                 </h3>
                 <p className="text-gray-600">
-                  {resolvedParams.lang === 'es' ? 'Calcula la configuración óptima para maximizar ganancias' :
-                   resolvedParams.lang === 'en' ? 'Calculate optimal setup to maximize profits' :
+                  {currentLang === 'es' ? 'Calcula la configuración óptima para maximizar ganancias' :
+                   currentLang === 'en' ? 'Calculate optimal setup to maximize profits' :
                    '计算最佳配置以最大化利润'}
                 </p>
               </div>
@@ -746,7 +751,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
         <section className="text-center mb-16">
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link 
-              href={`/${resolvedParams.lang}/brainrots`}
+              href={`/${currentLang}/brainrots`}
               className="inline-block bg-blue-600 text-white px-10 py-4 rounded-xl text-xl font-bold shadow-lg hover:bg-blue-700 transition-colors card-hover animate-float"
               style={{animationDelay:'0.2s'}}
             >
@@ -972,55 +977,55 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">{t('home.featuredGuides.title') as string}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/segundo-piso`} className="block">
+              <Link href={`/${currentLang}/guides/segundo-piso`} className="block">
                 <h3 className="text-lg font-semibold text-blue-600 mb-3 hover:text-blue-700 transition-colors">{t('home.featuredGuides.secondFloor.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.featuredGuides.secondFloor.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/rebirth`} className="block">
+              <Link href={`/${currentLang}/guides/rebirth`} className="block">
                 <h3 className="text-lg font-semibold text-blue-600 mb-3 hover:text-blue-700 transition-colors">{t('home.featuredGuides.rebirth.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.featuredGuides.rebirth.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/scripts`} className="block">
+              <Link href={`/${currentLang}/guides/scripts`} className="block">
                 <h3 className="text-lg font-semibold text-blue-600 mb-3 hover:text-blue-700 transition-colors">{t('home.featuredGuides.scripts.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.featuredGuides.scripts.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/secretos`} className="block">
+              <Link href={`/${currentLang}/guides/secretos`} className="block">
                 <h3 className="text-lg font-semibold text-blue-600 mb-3 hover:text-blue-700 transition-colors">{t('home.featuredGuides.secrets.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.featuredGuides.secrets.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/codigos`} className="block">
+              <Link href={`/${currentLang}/guides/codigos`} className="block">
                 <h3 className="text-lg font-semibold text-blue-600 mb-3 hover:text-blue-700 transition-colors">{t('home.featuredGuides.codes.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.featuredGuides.codes.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/modificado`} className="block">
+              <Link href={`/${currentLang}/guides/modificado`} className="block">
                 <h3 className="text-lg font-semibold text-blue-600 mb-3 hover:text-blue-700 transition-colors">{t('home.featuredGuides.modified.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.featuredGuides.modified.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/scripts`} className="block">
+              <Link href={`/${currentLang}/guides/scripts`} className="block">
                 <h3 className="text-lg font-semibold text-blue-600 mb-3 hover:text-blue-700 transition-colors">{t('home.featuredGuides.scriptsNoKey.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.featuredGuides.scriptsNoKey.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/probabilidades`} className="block">
+              <Link href={`/${currentLang}/guides/probabilidades`} className="block">
                 <h3 className="text-lg font-semibold text-blue-600 mb-3 hover:text-blue-700 transition-colors">{t('home.featuredGuides.probabilities.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.featuredGuides.probabilities.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/estrategias`} className="block">
+              <Link href={`/${currentLang}/guides/estrategias`} className="block">
                 <h3 className="text-lg font-semibold text-blue-600 mb-3 hover:text-blue-700 transition-colors">{t('home.featuredGuides.advancedStrategies.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.featuredGuides.advancedStrategies.description') as string}</p>
               </Link>
@@ -1033,7 +1038,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">{t('home.moreGames.title') as string}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/steal-a-fish`} className="block">
+              <Link href={`/${currentLang}/guides/steal-a-fish`} className="block">
                 <h3 className="text-lg font-semibold text-green-600 mb-3 hover:text-green-700 transition-colors">{t('home.moreGames.stealAFish.title') as string}</h3>
                 <p className="text-gray-600 text-sm mb-4">{t('home.moreGames.stealAFish.description') as string}</p>
               </Link>
@@ -1043,37 +1048,37 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               </a>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/steal-a-labubu`} className="block">
+              <Link href={`/${currentLang}/guides/steal-a-labubu`} className="block">
                 <h3 className="text-lg font-semibold text-purple-600 mb-3 hover:text-purple-700 transition-colors">{t('home.moreGames.stealALabubu.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.moreGames.stealALabubu.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/steal-an-anime`} className="block">
+              <Link href={`/${currentLang}/guides/steal-an-anime`} className="block">
                 <h3 className="text-lg font-semibold text-red-600 mb-3 hover:text-red-700 transition-colors">{t('home.moreGames.stealAnAnime.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.moreGames.stealAnAnime.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/steal-a-pet`} className="block">
+              <Link href={`/${currentLang}/guides/steal-a-pet`} className="block">
                 <h3 className="text-lg font-semibold text-orange-500 mb-3 hover:text-orange-600 transition-colors">{t('home.moreGames.stealAPet.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.moreGames.stealAPet.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/steal-a-meme`} className="block">
+              <Link href={`/${currentLang}/guides/steal-a-meme`} className="block">
                 <h3 className="text-lg font-semibold text-yellow-500 mb-3 hover:text-yellow-600 transition-colors">{t('home.moreGames.stealAMeme.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.moreGames.stealAMeme.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/steal-deadly-rails`} className="block">
+              <Link href={`/${currentLang}/guides/steal-deadly-rails`} className="block">
                 <h3 className="text-lg font-semibold text-red-500 mb-3 hover:text-red-600 transition-colors">{t('home.moreGames.stealDeadlyRails.title') as string}</h3>
                 <p className="text-gray-600 text-sm">{t('home.moreGames.stealDeadlyRails.description') as string}</p>
               </Link>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <Link href={`/${resolvedParams.lang}/guides/steal-a-car`} className="block">
+              <Link href={`/${currentLang}/guides/steal-a-car`} className="block">
                 <h3 className="text-lg font-semibold text-blue-600 mb-3 hover:text-blue-700 transition-colors">{t('home.moreGames.stealACar.title') as string}</h3>
                 <p className="text-gray-600 text-sm mb-4">{t('home.moreGames.stealACar.description') as string}</p>
               </Link>
@@ -1150,7 +1155,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
           {/* View More Scripts Link */}
           <div className="text-center mt-8">
             <Link 
-              href={`/${resolvedParams.lang}/guides/scripts`}
+              href={`/${currentLang}/guides/scripts`}
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
             >
               {t('home.scripts.viewMoreButton')}
@@ -1235,7 +1240,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               {t('home.cta.playNow')}
             </a>
             <Link 
-              href={`/${resolvedParams.lang}/guides`}
+              href={`/${currentLang}/guides`}
               className="inline-block bg-transparent border-2 border-white text-white px-10 py-4 rounded-xl text-xl font-bold hover:bg-white hover:text-blue-600 transition-colors card-hover animate-float"
               style={{animationDelay:'0.4s'}}
             >

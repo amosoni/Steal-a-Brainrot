@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
-
-// 支持的语言列表
-const locales = ['es', 'en', 'zh']
-const defaultLocale = 'es'
+import { 
+  supportedLanguages, 
+  isValidLanguage, 
+  getDefaultLanguage, 
+  extractLanguageFromPath,
+  getPreferredLanguageFromHeader,
+  generateLanguageRedirectUrl
+} from './utils/languageUtils'
 
 export function middleware(request: NextRequest) {
   const url = request.nextUrl
@@ -12,12 +16,10 @@ export function middleware(request: NextRequest) {
   // 仅做语言前缀处理：当路径没有语言代码时才介入
   
   // 检查路径是否已经包含语言代码
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  )
-
+  const currentLanguage = extractLanguageFromPath(pathname)
+  
   // 如果路径没有语言代码，重定向到默认语言
-  if (!pathnameHasLocale) {
+  if (!currentLanguage) {
     // 对于根路径，始终重定向到西班牙语
     if (pathname === '/') {
       const newUrl = new URL('/es', request.url)
@@ -25,20 +27,18 @@ export function middleware(request: NextRequest) {
     }
     
     // 对于其他路径，根据用户的首选语言重定向
-    const acceptLanguage = request.headers.get('accept-language') || ''
-    let preferredLocale = defaultLocale
-    
-    // 根据Accept-Language头确定首选语言
-    if (acceptLanguage.includes('zh') || acceptLanguage.includes('zh-CN') || acceptLanguage.includes('zh-TW')) {
-      preferredLocale = 'zh'
-    } else if (acceptLanguage.includes('en')) {
-      preferredLocale = 'en'
-    } else {
-      preferredLocale = 'es'
-    }
+    const acceptLanguage = request.headers.get('accept-language')
+    const preferredLanguage = getPreferredLanguageFromHeader(acceptLanguage)
     
     // 重定向到首选语言
-    const newUrl = new URL(`/${preferredLocale}${pathname}`, request.url)
+    const newUrl = generateLanguageRedirectUrl(request.url, preferredLanguage, pathname)
+    return NextResponse.redirect(newUrl, 302)
+  }
+  
+  // 验证语言代码是否有效
+  if (!isValidLanguage(currentLanguage)) {
+    // 如果语言代码无效，重定向到默认语言
+    const newUrl = generateLanguageRedirectUrl(request.url, getDefaultLanguage(), pathname)
     return NextResponse.redirect(newUrl, 302)
   }
 
